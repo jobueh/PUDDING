@@ -1,4 +1,4 @@
-# HeiChips 2025 Hackathon Template
+# PUDDING (Public Use DAC for Icy Nano-ampere current Generation)
 
 This repository is the submission template for the HeiChips 2025 Hackathon.
 
