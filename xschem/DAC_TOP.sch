@@ -1,9 +1,8 @@
-v {xschem version=3.4.8RC file_version=1.3}
+v {xschem version=3.4.7 file_version=1.2}
 G {}
 K {}
 V {}
 S {}
-F {}
 E {}
 P 4 1 590 -570 {}
 N 970 -500 1180 -500 {lab=CASCODE_SW[255:0]}
@@ -38,8 +37,8 @@ N 660 -520 670 -520 {lab=Iref}
 N 160 -560 670 -560 {lab=ON[255:0]}
 N 400 -650 540 -650 {lab=VDD}
 N 540 -480 670 -480 {lab=VDD}
-C {/home/user/PUDDING/schematic/Pmirrors_top.sym} 1330 -460 0 0 {name=x1}
-C {/home/user/PUDDING/schematic/DAC_SW.sym} 820 -500 0 0 {name=SW}
+C {Pmirrors_top.sym} 1330 -460 0 0 {name=x1}
+C {DAC_SW.sym} 820 -500 0 0 {name=SW}
 C {ipin.sym} 160 -650 0 0 {name=p1 lab=VDD}
 C {opin.sym} 1610 -450 0 0 {name=p2 lab=Iout}
 C {ipin.sym} 820 -310 3 0 {name=p3 lab=ESDGND}
