@@ -147,6 +147,21 @@ To view the layout of the macro with KLayout:
 make macro-klayout
 ```
 
+## Analog Design
+
+**xschem**
+
+To create a schematic using xschem, change your directory to the `xschem/` folder and run `xschem`. This folder already contains an xschemrc that will be automatically loaded and which sources the PDK xschemrc file.
+
+**ngspice**
+
+TODO
+
+**KLayout**
+
+TODO
+
+
 ## Submission
 
 In order to submit your design for integration into the HeiChips 2025 Tapeout, please open an issue at the following repository: https://github.com/FPGA-Research/heichips25-tapeout/issues
