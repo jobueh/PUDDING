@@ -54,6 +54,11 @@
           icestorm
           trellis
           openfpgaloader
+          
+          # Analog tools
+          xschem
+          ngspice
+          klayout
         ];
         
         extra-python-packages = with pkgs.python3.pkgs; (pkgs.lib.optionals pkgs.stdenv.isLinux [
