@@ -149,18 +149,35 @@ make macro-klayout
 
 ## Analog Design
 
+First, export the following environment variables:
+
+```
+export PDK_ROOT=~/.ciel && export PDK=ihp-sg13g2
+```
+
 **xschem**
 
 To create a schematic using xschem, change your directory to the `xschem/` folder and run `xschem`. This folder already contains an xschemrc that will be automatically loaded and which sources the PDK xschemrc file.
 
 **ngspice**
 
-TODO
+Before you can use the PDK, you need to compile the models.
+
+Under `$PDK_ROOT/$PDK/libs.tech/verilog-a/` there is the `openvaf-compile-va.sh` script. Unfortunately, OpenVAF is not yet included in the Nix environment, therefore you need to [download it manually](https://openvaf.semimod.de/download/) and add the binary to the `PATH` environment variable before you run the script. This is done by `export PATH="$PATH:/path/to/openvaf/"`.
+
+Finally, before you run the simulation in xschem you need to copy the `.spiceinit` from the PDK. First set the simulation directory of ngspice in xschem by selecting "Simulation" -> "Use 'simulation' dir in schematic dir". When you click on "Netlist", xschem will create a simulation directory in the `xschem/` folder. Copy `$PDK_ROOT/$PDK/libs.tech/ngspice/.spiceinit` to the simulation directory. This ensures ngpsice will be able to find the model files.
 
 **KLayout**
 
-TODO
+To start KLayout in edit mode with the PDK loaded, run:
 
+```
+KLAYOUT_PATH=$PDK_ROOT/$PDK/libs.tech/klayout klayout -e
+```
+
+To run DRC, select "Tools" -> "DRC" and either the minimal or maximal runset.
+
+You can run LVS using the "SG13G2 PDK" menu.
 
 ## Submission
 
