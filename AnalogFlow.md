@@ -47,3 +47,8 @@ and accurate extraction and modeling of the key analog elements.
     * External input pad  
     * on-chip current reference (if sufficient time and support)  
 * Design cascode bias generator  
+
+## References  
+
+[IHP Open PDK](https://github.com/IHP-GmbH/IHP-Open-PDK/)  
+[IHP Open PDK docs](https://github.com/IHP-GmbH/IHP-Open-PDK-docs/)  
