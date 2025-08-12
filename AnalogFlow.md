@@ -20,6 +20,10 @@ and accurate extraction and modeling of the key analog elements.
     * define as DRC clean parametrizable cell
         * cascode length  
         * cascode width  
+
+        Took *forever* to figure out how to set the macro generation option in `klayout` to produce a `.lym` file  
+        ... and it's still not reliably reproducible.  
+
 * Extend cascode transistor to switched cascoded current source  
     * for good matching and low 1/f noise, long and narrow  
     * arrangeable in an array by abutment  
