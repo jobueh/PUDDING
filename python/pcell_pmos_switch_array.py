@@ -19,9 +19,9 @@ class PMOSSwitchArray(pya.PCellDeclarationHelper):
         super(PMOSSwitchArray, self).__init__()
 
         # ---------- Parameters ----------
-        self.param("n", self.TypeInt, "Number of devices", default=4)
-        self.param("w", self.TypeDouble, "Gate width (um)", default=1.0)
-        self.param("l", self.TypeDouble, "Gate length (um)", default=0.13)
+        self.param("n", self.TypeInt, "Number of devices", default=2)
+        self.param("w", self.TypeDouble, "Gate width (um)", default=0.3)
+        self.param("l", self.TypeDouble, "Gate length (um)", default=0.4)
         self.param("sd_ext", self.TypeDouble, "S/D OD extension (um)", default=0.10)
         self.param("bot_gap", self.TypeDouble, "Bottom OD gap for drain isolation (um)", default=0.20)
 
@@ -34,8 +34,8 @@ class PMOSSwitchArray(pya.PCellDeclarationHelper):
         self.param("po_space", self.TypeDouble, "Poly to poly spacing (um)", default=0.28)
 
         self.param("m1_lbl_prefix", self.TypeString, "M1 drain label prefix", default="D")
-        self.param("add_gate_strap", self.TypeBoolean, "Add shared gate strap (M1)", default=True)
-        self.param("add_nwell_tap", self.TypeBoolean, "Add N-well tap at left", default=True)
+        self.param("add_gate_strap", self.TypeBoolean, "Add shared gate strap (M1)", default=False)
+        self.param("add_nwell_tap", self.TypeBoolean, "Add N-well tap at left", default=False)
 
         # ---------- Layers (map to SG13G2) ----------
         self.param("ly_od", self.TypeLayer, "Diffusion (OD)", default=pya.LayerInfo(1, 0))
@@ -44,9 +44,9 @@ class PMOSSwitchArray(pya.PCellDeclarationHelper):
         self.param("ly_po", self.TypeLayer, "Poly (Gate)", default=pya.LayerInfo(5, 0))
         self.param("ly_co", self.TypeLayer, "Contact (CO)", default=pya.LayerInfo(6, 0))
         self.param("ly_m1", self.TypeLayer, "Metal1 (M1)", default=pya.LayerInfo(8, 0))
-        self.param("ly_lbl", self.TypeLayer, "Text Labels", default=pya.LayerInfo(68, 5))
-        self.param("ly_ntap", self.TypeLayer, "N-well tap diffusion", default=pya.LayerInfo(65, 21))
-        self.param("ly_pr", self.TypeLayer, "Placement boundary", default=pya.LayerInfo(235, 0))
+        self.param("ly_lbl", self.TypeLayer, "Text Labels", default=pya.LayerInfo(63, 0))
+        self.param("ly_ntap", self.TypeLayer, "N-well tap diffusion", default=pya.LayerInfo(1, 0))
+        self.param("ly_pr", self.TypeLayer, "Placement boundary", default=pya.LayerInfo(63, 0))
 
     def display_text_impl(self):
         return f"PMOSSwitchArray_n{self.n}_W{self.w}_L{self.l}"
