@@ -7,7 +7,7 @@ It is rather counterproductive to do a top down design.
 The proof is in the analog layout pudding, 
 and accurate extraction and modeling of the key analog elements.  
 
-## To do  
+## In progress  
 
 * Lay out switched cascode transistor  
     * pmos transistor with  
@@ -20,14 +20,21 @@ and accurate extraction and modeling of the key analog elements.
     * define as DRC clean parametrizable cell
         * cascode length  
         * cascode width  
-
-        Took *forever* to figure out how to set the macro generation option in `klayout` to produce a `.lym` file  
-        ... and it's still not reliably reproducible.  
-
 * Extend cascode transistor to switched cascoded current source  
     * for good matching and low 1/f noise, long and narrow  
     * arrangeable in an array by abutment  
     * shared poly for common bias voltage  
+
+### Proof-of-concept unit cell
+
+width: 1.1&mu;m, height 3.9&mu;m  
+
+#### Layout
+![proof-of-concept: array of 16 switched cascoded pmos current sources](pix/swsources16.jpg)  
+
+## To do  
+
+* Extend cascode transistor to switched cascoded current source  
     * define as DRC clean parametrizable cell  
         * current source length  
         * current source width  
