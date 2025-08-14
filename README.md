@@ -1,5 +1,7 @@
 # PUDDING (Public Use DAC for Icy Nano-ampere current Generation)
 
+This submission contains [analog circuits](./AnalogFlow.md) that need their own design flow.
+
 This repository is the submission template for the HeiChips 2025 Hackathon.
 
 Please implement your group project based on this template and notify us once you are done, so we can integrate your macro into the chip for tapeout. See [Submission](#Submission).
