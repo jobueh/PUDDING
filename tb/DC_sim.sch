@@ -97,7 +97,7 @@ N -180 -120 -150 -120 {lab=GND}
 N -180 -120 -180 -80 {lab=GND}
 N -230 -80 -180 -80 {lab=GND}
 N -230 -110 -230 -80 {lab=GND}
-C {/home/user/PUDDING/schematic/DAC_TOP.sym} 220 -200 0 0 {name=Xdut}
+C {../schematic/DAC_TOP.sym} 220 -200 0 0 {name=Xdut}
 C {vsource.sym} 40 -340 0 0 {name=V1 value=1.5 savecurrent=true}
 C {gnd.sym} 40 -290 0 0 {name=l1 lab=GND}
 C {vsource.sym} 570 -140 0 0 {name=Vout value=0.4 savecurrent=true}
