@@ -17,7 +17,7 @@ and accurate extraction and modeling of the key analog elements.
     * arrangeable in an array by abutment  
         * the width of the cascode transistor, plus the gate contact and poly spacing, 
           determine the width of a unit current source  
-    * define as DRC clean parametrizable cell
+    * define as [DRC clean parametrizable cell](https://github.com/tatzelbrumm/klayoutAPI/blob/master/switched_pmos_cascode.py)  
         * cascode length  
         * cascode width  
 * Extend cascode transistor to switched cascoded current source  
@@ -25,7 +25,7 @@ and accurate extraction and modeling of the key analog elements.
     * arrangeable in an array by abutment  
     * shared poly for common bias voltage  
 
-### Proof-of-concept unit cell
+### [Proof-of-concept unit cell](https://github.com/tatzelbrumm/PUDDING/blob/tatzelbranch/gds/swcascsrc_playground.gds)  
 
 width: 1.1&mu;m, height 3.9&mu;m  
 
