@@ -1,16 +1,10 @@
-# KLayout 0.30.2‑compatible PCell: PMOSSwitchArray
-# -------------------------------------------------------------
-# Parametric array of switchable PMOS transistors, side‑by‑side.
-# Bottom diffusion (drain) has CO→M1 contacts; top diffusion is
-# left clean for abutment (so stacking two instances vertically
-# shorts the sources by OD abutment).
-#
-# NOTE for IHP SG13G2: map the placeholder LayerInfo tuples to
-# your exact PDK layer numbers/datatypes and tune rules.
-#
-# This version avoids Box.from_dpoint/from_dbox and DTrans usage
-# so it runs on KLayout 0.30.2.
-# -------------------------------------------------------------
+# KLayout 0.30.2‑compatible PCell: PMOSSwitchArray (simplified, integer params)
+# ----------------------------------------------------------------------
+# PMOS switch array, side‑by‑side. Bottom diffusion gets CO→M1 drains.
+# Top diffusion left clean for abutment. No substrate tap in this
+# simplified version. All geometry parameters are **integers in nm**
+# (no TypeDouble anywhere).
+# ----------------------------------------------------------------------
 
 import pya
 
@@ -18,24 +12,23 @@ class PMOSSwitchArray(pya.PCellDeclarationHelper):
     def __init__(self):
         super(PMOSSwitchArray, self).__init__()
 
-        # ---------- Parameters ----------
+        # ------------- Parameters (all nm, integers) -------------
         self.param("n", self.TypeInt, "Number of devices", default=2)
-        self.param("w", self.TypeDouble, "Gate width (um)", default=0.3)
-        self.param("l", self.TypeDouble, "Gate length (um)", default=0.4)
-        self.param("sd_ext", self.TypeDouble, "S/D OD extension (um)", default=0.10)
-        self.param("bot_gap", self.TypeDouble, "Bottom OD gap for drain isolation (um)", default=0.20)
+        self.param("w_nm", self.TypeInt, "Gate width (nm)", default=300)          # 0.30 um
+        self.param("l_nm", self.TypeInt, "Gate length (nm)", default=400)          # 0.4 um
+        self.param("sd_ext_nm", self.TypeInt, "S/D OD extension (nm)", default=100)
+        self.param("bot_gap_nm", self.TypeInt, "Bottom OD gap (nm)", default=200)
 
-        self.param("cont_size", self.TypeDouble, "Contact size (um)", default=0.14)
-        self.param("cont_pitch", self.TypeDouble, "Contact pitch (um)", default=0.24)
-        self.param("cont_enc_od", self.TypeDouble, "OD enclosure of contact (um)", default=0.03)
-        self.param("cont_enc_m1", self.TypeDouble, "M1 enclosure of contact (um)", default=0.03)
+        self.param("cont_size_nm", self.TypeInt, "Contact size (nm)", default=140)
+        self.param("cont_pitch_nm", self.TypeInt, "Contact pitch (nm)", default=240)
+        self.param("cont_enc_od_nm", self.TypeInt, "OD enclosure of CO (nm)", default=30)
+        self.param("cont_enc_m1_nm", self.TypeInt, "M1 enclosure of CO (nm)", default=30)
 
-        self.param("po_ovl_od", self.TypeDouble, "Poly over OD (um)", default=0.05)
-        self.param("po_space", self.TypeDouble, "Poly to poly spacing (um)", default=0.28)
+        self.param("po_ovl_od_nm", self.TypeInt, "Poly over OD (nm)", default=50)
+        self.param("po_space_nm", self.TypeInt, "Poly to poly spacing (nm)", default=280)
 
         self.param("m1_lbl_prefix", self.TypeString, "M1 drain label prefix", default="D")
-        self.param("add_gate_strap", self.TypeBoolean, "Add shared gate strap (M1)", default=False)
-        self.param("add_nwell_tap", self.TypeBoolean, "Add N-well tap at left", default=False)
+        self.param("add_gate_strap", self.TypeBoolean, "Add shared gate strap (M1)", default=True)
 
         # ---------- Layers (map to SG13G2) ----------
         self.param("ly_od", self.TypeLayer, "Diffusion (OD)", default=pya.LayerInfo(1, 0))
@@ -45,28 +38,30 @@ class PMOSSwitchArray(pya.PCellDeclarationHelper):
         self.param("ly_co", self.TypeLayer, "Contact (CO)", default=pya.LayerInfo(6, 0))
         self.param("ly_m1", self.TypeLayer, "Metal1 (M1)", default=pya.LayerInfo(8, 0))
         self.param("ly_lbl", self.TypeLayer, "Text Labels", default=pya.LayerInfo(63, 0))
-        self.param("ly_ntap", self.TypeLayer, "N-well tap diffusion", default=pya.LayerInfo(1, 0))
         self.param("ly_pr", self.TypeLayer, "Placement boundary", default=pya.LayerInfo(63, 0))
 
     def display_text_impl(self):
-        return f"PMOSSwitchArray_n{self.n}_W{self.w}_L{self.l}"
+        return f"PMOSSwitchArray_n{self.n}_W{self.w_nm}nm_L{self.l_nm}nm"
 
-    # ---- Helpers (integer DBU geometry only; 0.30.2 safe) ----
-    def _ibox(self, x0, y0, x1, y1, to_dbu):
-        return pya.Box(to_dbu(x0), to_dbu(y0), to_dbu(x1), to_dbu(y1))
+    # ---------- Helpers (integer nm → DBU; 0.30.2 safe) ----------
+    def _to_dbu_nm(self, nm, dbu):
+        # nm → um → dbu
+        return int(round((nm * 1e-3) / dbu))
 
-    def _ico(self, xc, yc, size, to_dbu):
-        s = size * 0.5
-        return self._ibox(xc - s, yc - s, xc + s, yc + s, to_dbu)
+    def _ibox_nm(self, x0, y0, x1, y1, dbu):
+        return pya.Box(self._to_dbu_nm(x0, dbu), self._to_dbu_nm(y0, dbu),
+                       self._to_dbu_nm(x1, dbu), self._to_dbu_nm(y1, dbu))
 
-    def _insert_text(self, shapes, layer, txt, x, y, to_dbu):
-        # Use integer Trans in DBU for 0.30.2 compatibility
-        t = pya.Trans(to_dbu(x), to_dbu(y))
+    def _ico_nm(self, xc, yc, size_nm, dbu):
+        s = size_nm // 2
+        return self._ibox_nm(xc - s, yc - s, xc + s, yc + s, dbu)
+
+    def _text_nm(self, shapes, layer, txt, x_nm, y_nm, dbu):
+        t = pya.Trans(self._to_dbu_nm(x_nm, dbu), self._to_dbu_nm(y_nm, dbu))
         shapes(layer).insert(pya.Text(txt, t))
 
     def produce_impl(self):
         dbu = self.layout.dbu
-        to_dbu = lambda x: int(round(x / dbu))
 
         # Layers
         ly_od = self.layout.layer(self.ly_od)
@@ -76,117 +71,97 @@ class PMOSSwitchArray(pya.PCellDeclarationHelper):
         ly_co = self.layout.layer(self.ly_co)
         ly_m1 = self.layout.layer(self.ly_m1)
         ly_lbl = self.layout.layer(self.ly_lbl)
-        ly_ntap = self.layout.layer(self.ly_ntap)
         ly_pr = self.layout.layer(self.ly_pr)
 
         shapes = self.cell.shapes
 
-        # Derived dimensions
-        gate_pitch = self.l + 2*self.sd_ext + self.po_space
-        array_width = self.n * gate_pitch - self.po_space
+        # --------- Derived layout (all nm) ---------
+        gate_pitch = self.l_nm + 2*self.sd_ext_nm + self.po_space_nm
+        array_width = self.n * gate_pitch - self.po_space_nm
 
-        # Vertical coordinates (y=0 at bottom drain contact centerline)
-        bottom_y = 0.0
-        drain_co_y = bottom_y + self.cont_enc_od + self.cont_size/2.0
+        bottom_y = 0  # drain CO centerline is at bottom + enc + size/2
+        drain_co_y = bottom_y + self.cont_enc_od_nm + self.cont_size_nm // 2
         od_bottom = bottom_y
-        od_height = self.w + 2*self.sd_ext + self.bot_gap
+        od_height = self.w_nm + 2*self.sd_ext_nm + self.bot_gap_nm
         od_top = od_bottom + od_height
-        gate_y0 = od_bottom + self.sd_ext
-        gate_y1 = gate_y0 + self.w
+        gate_y0 = od_bottom + self.sd_ext_nm
+        gate_y1 = gate_y0 + self.w_nm
 
-        # --- Build OD and PIMP as Regions, then add notches, then dump ---
-        od_reg = pya.Region(self._ibox(0.0, od_bottom, array_width, od_top, to_dbu))
-        pim_reg = pya.Region(self._ibox(0.0, od_bottom, array_width, od_top, to_dbu))
+        # OD and PIMP regions with bottom notches between devices
+        od_reg = pya.Region(self._ibox_nm(0, od_bottom, array_width, od_top, dbu))
+        pim_reg = pya.Region(self._ibox_nm(0, od_bottom, array_width, od_top, dbu))
 
-        # Gates + bottom notches
-        x0 = 0.0
         gate_boxes = []
+        x0 = 0
         for i in range(self.n):
-            g_x0 = x0 + self.sd_ext
-            g_x1 = g_x0 + self.l
-            gate_boxes.append(self._ibox(g_x0, gate_y0 - self.po_ovl_od, g_x1, gate_y1 + self.po_ovl_od, to_dbu))
+            g_x0 = x0 + self.sd_ext_nm
+            g_x1 = g_x0 + self.l_nm
+            gate_boxes.append(self._ibox_nm(g_x0, gate_y0 - self.po_ovl_od_nm, g_x1, gate_y1 + self.po_ovl_od_nm, dbu))
 
             if i < self.n - 1:
-                notch_x0 = x0 + gate_pitch - self.po_space/2.0
-                notch_x1 = notch_x0 + self.po_space
-                notch_box = self._ibox(notch_x0, od_bottom, notch_x1, od_bottom + self.bot_gap, to_dbu)
+                notch_x0 = x0 + gate_pitch - self.po_space_nm // 2
+                notch_x1 = notch_x0 + self.po_space_nm
+                notch_box = self._ibox_nm(notch_x0, od_bottom, notch_x1, od_bottom + self.bot_gap_nm, dbu)
                 od_reg -= pya.Region(notch_box)
                 pim_reg -= pya.Region(notch_box)
 
             x0 += gate_pitch
 
-        # Insert OD and PIMP
         shapes(ly_od).insert(od_reg)
         shapes(ly_pimp).insert(pim_reg)
 
-        # Insert poly gates
         for bx in gate_boxes:
             shapes(ly_po).insert(bx)
 
         # Bottom drain contacts + M1 bars + labels
-        x0 = 0.0
+        x0 = 0
         for i in range(self.n):
             od_left = x0
-            od_right = x0 + (self.l + 2*self.sd_ext)
-            usable_w = (od_right - od_left) - 2*self.cont_enc_od
-            n_cuts = max(1, int((usable_w + (self.cont_pitch - self.cont_size)) // self.cont_pitch))
-            total_cuts_w = n_cuts * self.cont_pitch - (self.cont_pitch - self.cont_size)
-            start_x = od_left + self.cont_enc_od + 0.5*(usable_w - total_cuts_w) + self.cont_size/2.0
+            od_right = x0 + (self.l_nm + 2*self.sd_ext_nm)
+            usable_w = (od_right - od_left) - 2*self.cont_enc_od_nm
+            n_cuts = max(1, (usable_w + (self.cont_pitch_nm - self.cont_size_nm)) // self.cont_pitch_nm)
+            total_cuts_w = n_cuts * self.cont_pitch_nm - (self.cont_pitch_nm - self.cont_size_nm)
+            start_x = od_left + self.cont_enc_od_nm + ((usable_w - total_cuts_w) // 2) + self.cont_size_nm // 2
 
             # Contacts
             for k in range(n_cuts):
-                cx = start_x + k*self.cont_pitch
-                shapes(ly_co).insert(self._ico(cx, drain_co_y, self.cont_size, to_dbu))
+                cx = start_x + k * self.cont_pitch_nm
+                shapes(ly_co).insert(self._ico_nm(cx, drain_co_y, self.cont_size_nm, dbu))
 
             # M1 landing
-            m1_y0 = drain_co_y - (self.cont_size/2.0 + self.cont_enc_m1)
-            m1_y1 = drain_co_y + (self.cont_size/2.0 + self.cont_enc_m1)
-            m1_x0 = start_x - self.cont_size/2.0 - self.cont_enc_m1
-            m1_x1 = start_x + (n_cuts - 1)*self.cont_pitch + self.cont_size/2.0 + self.cont_enc_m1
-            shapes(ly_m1).insert(self._ibox(m1_x0, m1_y0, m1_x1, m1_y1, to_dbu))
+            m1_y0 = drain_co_y - (self.cont_size_nm // 2 + self.cont_enc_m1_nm)
+            m1_y1 = drain_co_y + (self.cont_size_nm // 2 + self.cont_enc_m1_nm)
+            m1_x0 = start_x - self.cont_size_nm // 2 - self.cont_enc_m1_nm
+            m1_x1 = start_x + (n_cuts - 1) * self.cont_pitch_nm + self.cont_size_nm // 2 + self.cont_enc_m1_nm
+            shapes(ly_m1).insert(self._ibox_nm(m1_x0, m1_y0, m1_x1, m1_y1, dbu))
 
-            # Label (on label layer)
-            self._insert_text(shapes, ly_lbl, f"{self.m1_lbl_prefix}{i}", (m1_x0 + m1_x1)/2.0, m1_y1 + 0.05, to_dbu)
+            # Label
+            self._text_nm(shapes, ly_lbl, f"{self.m1_lbl_prefix}{i}", (m1_x0 + m1_x1) // 2, m1_y1 + 50, dbu)
 
             x0 += gate_pitch
 
         # Optional shared gate strap in M1 on the left (placeholder)
         if self.add_gate_strap:
-            gstrap_x0 = - self.po_space - 0.1
-            gstrap_x1 = - self.po_space + 0.1
-            shapes(ly_m1).insert(self._ibox(gstrap_x0, gate_y0 - 0.1, gstrap_x1, gate_y1 + 0.1, to_dbu))
-            # (PO↔M1 vias are PDK‑specific; left as a placeholder.)
+            gs_x0 = - self.po_space_nm - 100
+            gs_x1 = - self.po_space_nm + 100
+            shapes(ly_m1).insert(self._ibox_nm(gs_x0, gate_y0 - 100, gs_x1, gate_y1 + 100, dbu))
 
-        # N-Well and optional tap
-        shapes(ly_nwell).insert(self._ibox(-0.5, od_bottom - 0.5, array_width + 0.5, od_top + 0.5, to_dbu))
-        if self.add_nwell_tap:
-            tap_w = 0.6
-            tap_h = 0.6
-            tx0 = -0.9
-            ty0 = gate_y0
-            shapes(ly_ntap).insert(self._ibox(tx0, ty0, tx0 + tap_w, ty0 + tap_h, to_dbu))
-            # 2x2 COs in tap
-            cx0 = tx0 + self.cont_enc_od + self.cont_size/2.0
-            cy0 = ty0 + self.cont_enc_od + self.cont_size/2.0
-            for ix in range(2):
-                for iy in range(2):
-                    shapes(ly_co).insert(self._ico(cx0 + ix*self.cont_pitch, cy0 + iy*self.cont_pitch, self.cont_size, to_dbu))
-            # M1 over tap
-            shapes(ly_m1).insert(self._ibox(tx0 - self.cont_enc_m1, ty0 - self.cont_enc_m1, tx0 + tap_w + self.cont_enc_m1, ty0 + tap_h + self.cont_enc_m1, to_dbu))
+        # N-Well keep (no tap)
+        shapes(ly_nwell).insert(self._ibox_nm(-500, od_bottom - 500, array_width + 500, od_top + 500, dbu))
 
         # Placement boundary
-        shapes(ly_pr).insert(self._ibox(-1.2, od_bottom - 0.8, array_width + 0.8, od_top + 0.8, to_dbu))
+        shapes(ly_pr).insert(self._ibox_nm(-1200, od_bottom - 800, array_width + 800, od_top + 800, dbu))
 
-# Register as a library so it appears in the PCell list
+# Register library
 class PMOSSwitchArrayLib(pya.Library):
     def __init__(self):
         super(PMOSSwitchArrayLib, self).__init__()
-        self.description = "Templates for IHP SG13G2 (user-mapped layers)"
+        self.description = "Simplified PMOS array (integer nm params)"
         self.layout().register_pcell("PMOSSwitchArray", PMOSSwitchArray())
         self.register("PMOSSwitchArrayLib")
 
-# Instantiate library on load
 def load_libraries():
     PMOSSwitchArrayLib()
 
 load_libraries()
+
