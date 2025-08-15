@@ -1,9 +1,8 @@
-v {xschem version=3.4.8RC file_version=1.3}
+v {xschem version=3.4.7 file_version=1.2}
 G {}
 K {}
 V {}
 S {}
-F {}
 E {}
 B 2 840 -730 1400 -430 {flags=graph
 y1=0
@@ -138,7 +137,7 @@ set sim(spice,1,cmd) \{ngspice  \\"$N\\" -a\}
 set sim(spice,default) 0
 
 # Create FET and BIP .save file
-mkdir -p $netlist_dir
+exec mkdir -p $netlist_dir
 write_data [save_params] $netlist_dir/[file rootname [file tail [xschem get current_name]]].save
 
 # run netlist and simulation
