@@ -39,7 +39,7 @@ C {vsource.sym} 920 -550 0 0 {name=Vout value=-0.8 savecurrent=true}
 C {gnd.sym} 680 -280 0 0 {name=l2 lab=GND}
 C {devices/code_shown.sym} 40 -390 0 0 {name=NGSPICE only_toplevel=true 
 value="
-.include test_Nmirror_DC.save
+.include test_pcascsrc_DC.save
 .param temp=27
 .options savecurrents
 .control
@@ -49,8 +49,10 @@ write test_pcascsrc_DC.raw
 set appendwrite
 dc VlogI -8 -5 10m
 write test_pcascsrc_DC.raw
-plot vprobe#branch vout#branch
-plot vdda xref.drain xsrc.drain
+plot ylog vprobe#branch vout#branch
+plot vdda vpbias vpcbias vout xref.drain xsrc.drain
+plot @n.xref.xmsrc.nsg13_lv_pmos[gm]/vprobe#branch @n.xref.xmcasc.nsg13_lv_pmos[gm]/vprobe#branch @n.xsrc.xmsrc.nsg13_lv_pmos[gm]/vout#branch @n.xsrc.xmcasc.nsg13_lv_pmos[gm]/vout#branch
+plot @n.xref.xmsrc.nsg13_lv_pmos[gm]/@n.xref.xmsrc.nsg13_lv_pmos[gds] @n.xref.xmcasc.nsg13_lv_pmos[gm]/@n.xref.xmcasc.nsg13_lv_pmos[gds] @n.xsrc.xmsrc.nsg13_lv_pmos[gm]/@n.xsrc.xmsrc.nsg13_lv_pmos[gds] @n.xsrc.xmcasc.nsg13_lv_pmos[gm]/@n.xsrc.xmcasc.nsg13_lv_pmos[gds]
 .endc
 "}
 C {simulator_commands_shown.sym} 40 -690 0 0 {
@@ -109,6 +111,6 @@ C {pcascsrc.sym} 920 -680 0 0 {name=xsrc}
 C {vsource.sym} 680 -350 0 1 {name=VDDA value=1.8 savecurrent=true}
 C {lab_pin.sym} 620 -820 0 0 {name=p1 lab=VDDA}
 C {lab_pin.sym} 620 -600 0 0 {name=p2 lab=Vpbias}
-C {vsource.sym} 780 -790 0 0 {name=Vpcasc value=0.6 savecurrent=true}
+C {vsource.sym} 780 -790 0 0 {name=Vpcasc value=1.8 savecurrent=true}
 C {lab_pin.sym} 780 -740 0 0 {name=p3 lab=Vpcbias}
 C {lab_pin.sym} 920 -600 0 0 {name=p4 lab=Vout}
