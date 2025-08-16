@@ -66,7 +66,7 @@ name=Libs_Ngspice
 simulator=ngspice
 only_toplevel=false
 value="
-.lib cornerMOSlv.lib mos_ff
+.lib cornerMOSlv.lib mos_ss
 "
       }
 C {launcher.sym} 160 -820 0 0 {name=h3
