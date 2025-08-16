@@ -6,36 +6,39 @@ S {}
 E {}
 N 680 -300 680 -280 {lab=GND}
 N 540 -300 680 -300 {lab=GND}
-N 920 -860 920 -740 {lab=VDDA}
-N 620 -860 620 -740 {lab=VDDA}
-N 760 -700 860 -700 {lab=Vpbias}
-N 700 -700 700 -600 {lab=Vpbias}
-N 680 -700 700 -700 {lab=Vpbias}
-N 620 -600 700 -600 {lab=Vpbias}
-N 620 -620 620 -600 {lab=Vpbias}
-N 620 -600 620 -580 {lab=Vpbias}
-N 920 -620 920 -580 {lab=Vout}
-N 920 -520 920 -480 {lab=VDDA}
-N 920 -480 1040 -480 {lab=VDDA}
-N 1040 -860 1040 -480 {lab=VDDA}
-N 920 -860 1040 -860 {lab=VDDA}
+N 920 -1000 920 -880 {lab=VDDA}
+N 620 -1000 620 -880 {lab=VDDA}
+N 700 -840 700 -740 {lab=Vpbias}
+N 680 -840 700 -840 {lab=Vpbias}
+N 620 -740 700 -740 {lab=Vpbias}
+N 620 -760 620 -740 {lab=Vpbias}
+N 920 -760 920 -580 {lab=Vout}
+N 920 -520 920 -400 {lab=VDDA}
+N 1040 -1000 1040 -400 {lab=VDDA}
+N 920 -1000 1040 -1000 {lab=VDDA}
 N 620 -520 620 -480 {lab=#net1}
 N 620 -420 620 -400 {lab=VDDA}
-N 680 -400 1040 -400 {lab=VDDA}
-N 1040 -480 1040 -400 {lab=VDDA}
+N 920 -400 1040 -400 {lab=VDDA}
 N 680 -400 680 -380 {lab=VDDA}
 N 620 -400 680 -400 {lab=VDDA}
 N 680 -320 680 -300 {lab=GND}
-N 620 -860 920 -860 {lab=VDDA}
+N 620 -1000 920 -1000 {lab=VDDA}
 N 540 -320 540 -300 {lab=GND}
 N 540 -400 540 -380 {lab=logI}
-N 820 -660 860 -660 {lab=Vpcbias}
-N 760 -580 760 -540 {lab=Vpcbias}
-N 760 -540 820 -540 {lab=Vpcbias}
-N 820 -660 820 -540 {lab=Vpcbias}
-N 680 -660 820 -660 {lab=Vpcbias}
-N 760 -700 760 -640 {lab=Vpbias}
-N 700 -700 760 -700 {lab=Vpbias}
+N 720 -800 860 -800 {lab=Vpcbias}
+N 700 -840 860 -840 {lab=Vpbias}
+N 680 -400 920 -400 {lab=VDDA}
+N 620 -740 620 -690 {lab=Vpbias}
+N 620 -600 620 -580 {lab=Vpcbias}
+N 620 -600 720 -600 {lab=Vpcbias}
+N 620 -630 620 -600 {lab=Vpcbias}
+N 720 -660 720 -600 {lab=Vpcbias}
+N 660 -660 720 -660 {lab=Vpcbias}
+N 540 -1000 620 -1000 {lab=VDDA}
+N 540 -1000 540 -660 {lab=VDDA}
+N 540 -660 620 -660 {lab=VDDA}
+N 720 -800 720 -660 {lab=Vpcbias}
+N 680 -800 720 -800 {lab=Vpcbias}
 C {title.sym} 160 0 0 0 {name=l1 author="Christoph Maier"}
 C {vsource.sym} 920 -550 0 0 {name=Vout value=-0.6 savecurrent=true}
 C {gnd.sym} 680 -280 0 0 {name=l2 lab=GND}
@@ -109,12 +112,19 @@ C {vsource.sym} 620 -450 0 1 {name=Vprobe value=0 savecurrent=true}
 C {isource_arith.sym} 620 -550 0 0 {name=G1 CUR=10**V(logI)}
 C {vsource.sym} 540 -350 0 1 {name=VlogI value=-7 savecurrent=true}
 C {lab_pin.sym} 540 -400 0 0 {name=p6 lab=logI}
-C {pcascsrc.sym} 620 -680 0 1 {name=xref}
-C {pcascsrc.sym} 920 -680 0 0 {name=xsrc}
+C {pcascsrc.sym} 620 -820 0 1 {name=xref}
+C {pcascsrc.sym} 920 -820 0 0 {name=xsrc}
 C {vsource.sym} 680 -350 0 1 {name=VDDA value=1.8 savecurrent=true}
-C {lab_pin.sym} 620 -820 0 0 {name=p1 lab=VDDA}
-C {lab_pin.sym} 620 -600 0 0 {name=p2 lab=Vpbias}
-C {vsource.sym} 760 -610 0 0 {name=Vpcasc value=0.3 savecurrent=true}
-C {lab_pin.sym} 760 -560 0 0 {name=p3 lab=Vpcbias
+C {lab_pin.sym} 540 -1000 0 0 {name=p1 lab=VDDA}
+C {lab_pin.sym} 620 -740 0 0 {name=p2 lab=Vpbias}
+C {lab_pin.sym} 620 -600 0 0 {name=p3 lab=Vpcbias
 value=0.4}
-C {lab_pin.sym} 920 -600 0 0 {name=p4 lab=Vout}
+C {lab_pin.sym} 920 -720 0 0 {name=p4 lab=Vout}
+C {sg13g2_pr/sg13_lv_pmos.sym} 640 -660 0 1 {name=Mcbias
+l=0.15u
+w=6u
+ng=1
+m=1
+model=sg13_lv_pmos
+spiceprefix=X
+}
