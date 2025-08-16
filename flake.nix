@@ -47,6 +47,7 @@
           # Waveform viewing
           gtkwave
           surfer
+          gaw
           
           # FPGA protoyping
           #yosys # already in LibreLane
