@@ -62,7 +62,7 @@ value="
 .lib cornerCAP.lib cap_typ
 "
       }
-C {launcher.sym} 180 -300 0 0 {name=h3
+C {launcher.sym} 410 -300 0 0 {name=h3
 descr=SimulateNGSPICE
 tclcommand="
 # Setup the default simulation commands if not already set up
@@ -86,3 +86,14 @@ write_data [save_params] $netlist_dir/[file rootname [file tail [xschem get curr
 xschem netlist
 simulate
 "}
+C {devices/launcher.sym} 410 -270 0 0 {name=h1
+descr="OP annotate" 
+tclcommand="xschem annotate_op"
+}
+C {devices/launcher.sym} 410 -240 0 0 {name=h2
+descr="Load waves" 
+tclcommand="
+xschem raw_read $netlist_dir/[file rootname [file tail [xschem get current_name]]].raw dc
+xschem setprop rect 2 0 fullxzoom
+"
+}
