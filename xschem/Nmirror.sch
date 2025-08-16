@@ -9,7 +9,7 @@ N 700 -240 700 -120 {lab=SUB}
 N 500 -120 700 -120 {lab=SUB}
 N 680 -240 700 -240 {lab=SUB}
 N 700 -360 700 -240 {lab=SUB}
-N 680 -330 680 -270 {lab=vd_1}
+N 680 -330 680 -270 {lab=vd_2}
 N 480 -330 480 -270 {lab=vd_1}
 N 280 -330 280 -270 {lab=vd_in}
 N 680 -210 680 -160 {lab=VSSA}
@@ -50,7 +50,7 @@ N 680 -460 680 -390 {lab=Iout2}
 C {title.sym} 160 0 0 0 {name=l1 author="Christoph Maier"}
 C {sg13g2_pr/sg13_lv_nmos.sym} 300 -240 0 1 {name=M1
 l=4.0u
-w=1.0u
+w=0.4u
 ng=1
 m=1
 model=sg13_lv_nmos
@@ -58,7 +58,7 @@ spiceprefix=X
 }
 C {sg13g2_pr/sg13_lv_nmos.sym} 460 -240 0 0 {name=M3
 l=4.0u
-w=1.0u
+w=0.4u
 ng=1
 m=1
 model=sg13_lv_nmos
@@ -66,7 +66,7 @@ spiceprefix=X
 }
 C {sg13g2_pr/sg13_lv_nmos.sym} 300 -360 0 1 {name=M2
 l=0.26u
-w=1.0u
+w=4u
 ng=1
 m=1
 model=sg13_lv_nmos
@@ -74,7 +74,7 @@ spiceprefix=X
 }
 C {sg13g2_pr/sg13_lv_nmos.sym} 460 -360 0 0 {name=M4
 l=0.26u
-w=1.0u
+w=4u
 ng=1
 m=1
 model=sg13_lv_nmos
@@ -82,7 +82,7 @@ spiceprefix=X
 }
 C {sg13g2_pr/sg13_lv_nmos.sym} 660 -240 0 0 {name=M5
 l=4.0u
-w=1.0u
+w=0.4u
 ng=1
 m=1
 model=sg13_lv_nmos
@@ -90,7 +90,7 @@ spiceprefix=X
 }
 C {sg13g2_pr/sg13_lv_nmos.sym} 660 -360 0 0 {name=M6
 l=0.26u
-w=1.0u
+w=4u
 ng=1
 m=1
 model=sg13_lv_nmos
@@ -101,10 +101,6 @@ C {iopin.sym} 140 -120 0 1 {name=p2 lab=SUB}
 C {iopin.sym} 280 -460 3 0 {name=p3 lab=Iin}
 C {iopin.sym} 480 -460 3 0 {name=p4 lab=Iout1}
 C {iopin.sym} 680 -460 3 0 {name=p5 lab=Iout2}
-C {devices/launcher.sym} 310 -80 0 0 {name=h1
-descr="OP annotate" 
-tclcommand="xschem annotate_op"
-}
 C {lab_wire.sym} 280 -290 0 1 {name=p6 sig_type=std_logic lab=vd_in}
 C {lab_wire.sym} 480 -290 0 0 {name=p7 sig_type=std_logic lab=vd_1}
 C {lab_wire.sym} 680 -290 0 0 {name=p8 sig_type=std_logic lab=vd_2}
