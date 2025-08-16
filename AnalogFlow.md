@@ -34,6 +34,9 @@ width: 1.1&mu;m, height 3.9&mu;m
 
 ## To do  
 
+* **Design cascode bias generator**  
+    * **Create test schematics to characterize g<sub>m</sub>/I<sub>d</sub> and g<sub>m</sub>/g<sub>o</sub> of transistors**  
+    * **Create test schematics to characterize g<sub>o</sub> of cascoded current sources as function of voltage**  
 * Extend cascode transistor to switched cascoded current source  
     * define as DRC clean parametrizable cell  
         * current source length  
@@ -57,7 +60,6 @@ width: 1.1&mu;m, height 3.9&mu;m
 * Design input current sinks for unit current generation  
     * External input pad  
     * on-chip current reference (if sufficient time and support)  
-* Design cascode bias generator  
 
 ## References  
 
