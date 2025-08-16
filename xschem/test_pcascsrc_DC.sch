@@ -7,15 +7,13 @@ E {}
 N 680 -300 680 -280 {lab=GND}
 N 540 -300 680 -300 {lab=GND}
 N 920 -860 920 -740 {lab=VDDA}
-N 780 -860 920 -860 {lab=VDDA}
 N 620 -860 620 -740 {lab=VDDA}
-N 700 -700 860 -700 {lab=Vpbias}
+N 760 -700 860 -700 {lab=Vpbias}
 N 700 -700 700 -600 {lab=Vpbias}
 N 680 -700 700 -700 {lab=Vpbias}
 N 620 -600 700 -600 {lab=Vpbias}
 N 620 -620 620 -600 {lab=Vpbias}
 N 620 -600 620 -580 {lab=Vpbias}
-N 780 -660 860 -660 {lab=Vpcbias}
 N 920 -620 920 -580 {lab=Vout}
 N 920 -520 920 -480 {lab=VDDA}
 N 920 -480 1040 -480 {lab=VDDA}
@@ -28,12 +26,16 @@ N 1040 -480 1040 -400 {lab=VDDA}
 N 680 -400 680 -380 {lab=VDDA}
 N 620 -400 680 -400 {lab=VDDA}
 N 680 -320 680 -300 {lab=GND}
-N 780 -860 780 -820 {lab=VDDA}
-N 620 -860 780 -860 {lab=VDDA}
-N 780 -760 780 -660 {lab=Vpcbias}
-N 680 -660 780 -660 {lab=Vpcbias}
+N 620 -860 920 -860 {lab=VDDA}
 N 540 -320 540 -300 {lab=GND}
 N 540 -400 540 -380 {lab=logI}
+N 820 -660 860 -660 {lab=Vpcbias}
+N 760 -580 760 -540 {lab=Vpcbias}
+N 760 -540 820 -540 {lab=Vpcbias}
+N 820 -660 820 -540 {lab=Vpcbias}
+N 680 -660 820 -660 {lab=Vpcbias}
+N 760 -700 760 -640 {lab=Vpbias}
+N 700 -700 760 -700 {lab=Vpbias}
 C {title.sym} 160 0 0 0 {name=l1 author="Christoph Maier"}
 C {vsource.sym} 920 -550 0 0 {name=Vout value=-0.8 savecurrent=true}
 C {gnd.sym} 680 -280 0 0 {name=l2 lab=GND}
@@ -49,7 +51,7 @@ write test_pcascsrc_DC.raw
 set appendwrite
 dc VlogI -8 -5 10m
 write test_pcascsrc_DC.raw
-plot ylog vprobe#branch vout#branch
+plot 2*(vout#branch-vprobe#branch)/(vprobe#branch+vout#branch)
 plot vdda vpbias vpcbias vout xref.drain xsrc.drain
 plot @n.xref.xmsrc.nsg13_lv_pmos[gm]/vprobe#branch @n.xref.xmcasc.nsg13_lv_pmos[gm]/vprobe#branch @n.xsrc.xmsrc.nsg13_lv_pmos[gm]/vout#branch @n.xsrc.xmcasc.nsg13_lv_pmos[gm]/vout#branch
 plot @n.xref.xmsrc.nsg13_lv_pmos[gm]/@n.xref.xmsrc.nsg13_lv_pmos[gds] @n.xref.xmcasc.nsg13_lv_pmos[gm]/@n.xref.xmcasc.nsg13_lv_pmos[gds] @n.xsrc.xmsrc.nsg13_lv_pmos[gm]/@n.xsrc.xmsrc.nsg13_lv_pmos[gds] @n.xsrc.xmcasc.nsg13_lv_pmos[gm]/@n.xsrc.xmcasc.nsg13_lv_pmos[gds]
@@ -111,6 +113,7 @@ C {pcascsrc.sym} 920 -680 0 0 {name=xsrc}
 C {vsource.sym} 680 -350 0 1 {name=VDDA value=1.8 savecurrent=true}
 C {lab_pin.sym} 620 -820 0 0 {name=p1 lab=VDDA}
 C {lab_pin.sym} 620 -600 0 0 {name=p2 lab=Vpbias}
-C {vsource.sym} 780 -790 0 0 {name=Vpcasc value=1.8 savecurrent=true}
-C {lab_pin.sym} 780 -740 0 0 {name=p3 lab=Vpcbias}
+C {vsource.sym} 760 -610 0 0 {name=Vpcasc value=0.4 savecurrent=true}
+C {lab_pin.sym} 760 -560 0 0 {name=p3 lab=Vpcbias
+value=0.4}
 C {lab_pin.sym} 920 -600 0 0 {name=p4 lab=Vout}
