@@ -1,9 +1,9 @@
-v {xschem version=3.4.8RC file_version=1.3}
+v {xschem version=3.4.4 file_version=1.2
+}
 G {}
 K {}
 V {}
 S {}
-F {}
 E {}
 N 100 -160 100 -140 {lab=VDD}
 N -30 -110 60 -110 {lab=VbiasP}
@@ -18,15 +18,15 @@ N 100 -80 100 -40 {lab=#net1}
 N 100 20 100 60 {lab=Iout}
 C {sg13g2_pr/sg13_lv_pmos.sym} 80 -110 0 0 {name=M2
 l=1.5u
-w=0.2u
+w=0.5u
 ng=1
 m=1
 model=sg13_lv_pmos
 spiceprefix=X
 }
 C {sg13g2_pr/sg13_lv_pmos.sym} 80 -10 0 0 {name=M3
-l=1.5u
-w=0.2u
+l=0.5u
+w=0.5u
 ng=1
 m=1
 model=sg13_lv_pmos
