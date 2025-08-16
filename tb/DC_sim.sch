@@ -1,9 +1,8 @@
-v {xschem version=3.4.8RC file_version=1.3}
+v {xschem version=3.4.7 file_version=1.2}
 G {}
 K {}
 V {}
 S {}
-F {}
 E {}
 B 2 840 -730 1400 -430 {flags=graph
 y1=0
@@ -97,7 +96,7 @@ N -180 -120 -150 -120 {lab=GND}
 N -180 -120 -180 -80 {lab=GND}
 N -230 -80 -180 -80 {lab=GND}
 N -230 -110 -230 -80 {lab=GND}
-C {/home/user/PUDDING/schematic/DAC_TOP.sym} 220 -200 0 0 {name=Xdut}
+C {../schematic/DAC_TOP.sym} 220 -200 0 0 {name=Xdut}
 C {vsource.sym} 40 -340 0 0 {name=V1 value=1.5 savecurrent=true}
 C {gnd.sym} 40 -290 0 0 {name=l1 lab=GND}
 C {vsource.sym} 570 -140 0 0 {name=Vout value=0.4 savecurrent=true}
@@ -138,7 +137,7 @@ set sim(spice,1,cmd) \{ngspice  \\"$N\\" -a\}
 set sim(spice,default) 0
 
 # Create FET and BIP .save file
-mkdir -p $netlist_dir
+exec mkdir -p $netlist_dir
 write_data [save_params] $netlist_dir/[file rootname [file tail [xschem get current_name]]].save
 
 # run netlist and simulation

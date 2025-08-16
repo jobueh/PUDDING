@@ -178,7 +178,7 @@ N -20 640 -20 790 {lab=V_on_N[2]}
 N -20 850 -20 900 {lab=#net7}
 N -290 850 -290 910 {lab=#net8}
 N -560 840 -560 900 {lab=#net9}
-C {/home/user/PUDDING/schematic/DAC_TOP.sym} 60 10 0 0 {name=Xdut}
+C {../schematic/DAC_TOP.sym} 60 10 0 0 {name=Xdut}
 C {vsource.sym} -120 -130 0 0 {name=V1 value=1.5 savecurrent=true}
 C {gnd.sym} -120 -80 0 0 {name=l1 lab=GND}
 C {vsource.sym} 410 70 0 0 {name=Vout value=0.4 savecurrent=true}
