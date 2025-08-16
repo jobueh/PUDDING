@@ -4,41 +4,41 @@ K {}
 V {}
 S {}
 E {}
-N 760 -260 760 -220 {lab=Vsub}
-N 760 -160 760 -140 {lab=GND}
-N 720 -140 760 -140 {lab=GND}
-N 720 -260 720 -140 {lab=GND}
-N 960 -300 960 -140 {lab=GND}
-N 880 -140 960 -140 {lab=GND}
-N 880 -300 880 -140 {lab=GND}
-N 760 -140 880 -140 {lab=GND}
-N 780 -400 780 -380 {lab=Vout2}
-N 780 -400 880 -400 {lab=Vout2}
-N 880 -400 880 -360 {lab=Vout2}
-N 740 -420 740 -380 {lab=Vout1}
-N 740 -420 960 -420 {lab=Vout1}
-N 960 -420 960 -360 {lab=Vout1}
-N 700 -420 700 -380 {lab=Vin}
-N 700 -520 700 -480 {lab=probe}
-N 680 -140 720 -140 {lab=GND}
-N 680 -140 680 -120 {lab=GND}
-N 620 -140 680 -140 {lab=GND}
-N 620 -520 620 -360 {lab=probe}
-N 620 -520 700 -520 {lab=probe}
-N 620 -300 620 -140 {lab=GND}
-N 540 -160 540 -140 {lab=GND}
-N 540 -140 620 -140 {lab=GND}
-N 540 -240 540 -220 {lab=logI}
+N 760 -500 760 -460 {lab=Vsub}
+N 760 -400 760 -380 {lab=GND}
+N 720 -380 760 -380 {lab=GND}
+N 720 -500 720 -380 {lab=GND}
+N 960 -540 960 -380 {lab=GND}
+N 880 -380 960 -380 {lab=GND}
+N 880 -540 880 -380 {lab=GND}
+N 760 -380 880 -380 {lab=GND}
+N 780 -640 780 -620 {lab=Vout2}
+N 780 -640 880 -640 {lab=Vout2}
+N 880 -640 880 -600 {lab=Vout2}
+N 740 -660 740 -620 {lab=Vout1}
+N 740 -660 960 -660 {lab=Vout1}
+N 960 -660 960 -600 {lab=Vout1}
+N 700 -660 700 -620 {lab=Vin}
+N 700 -760 700 -720 {lab=probe}
+N 680 -380 720 -380 {lab=GND}
+N 680 -380 680 -360 {lab=GND}
+N 620 -380 680 -380 {lab=GND}
+N 620 -760 620 -600 {lab=probe}
+N 620 -760 700 -760 {lab=probe}
+N 620 -540 620 -380 {lab=GND}
+N 540 -400 540 -380 {lab=GND}
+N 540 -380 620 -380 {lab=GND}
+N 540 -480 540 -460 {lab=logI}
 C {title.sym} 160 0 0 0 {name=l1 author="Christoph Maier"}
-C {Nmirror.sym} 740 -320 0 0 {name=xDUT}
-C {vsource.sym} 960 -330 0 0 {name=V1 value=0.5 savecurrent=true}
-C {vsource.sym} 880 -330 0 0 {name=V2 value=0.1 savecurrent=true}
-C {vsource.sym} 760 -190 0 0 {name=VSUB value=0 savecurrent=true}
-C {gnd.sym} 680 -120 0 0 {name=l2 lab=GND}
-C {lab_wire.sym} 700 -390 0 0 {name=p1 lab=Vin}
-C {lab_wire.sym} 880 -370 0 0 {name=p2 lab=Vout2}
-C {lab_wire.sym} 960 -370 0 0 {name=p3 lab=Vout1}
-C {lab_wire.sym} 760 -230 0 1 {name=p4 lab=Vsub}
+C {Nmirror.sym} 740 -560 0 0 {name=xDUT}
+C {vsource.sym} 960 -570 0 0 {name=V1 value=0.5 savecurrent=true}
+C {vsource.sym} 880 -570 0 0 {name=V2 value=0.2 savecurrent=true}
+C {vsource.sym} 760 -430 0 0 {name=VSUB value=0 savecurrent=true}
+C {gnd.sym} 680 -360 0 0 {name=l2 lab=GND}
+C {lab_wire.sym} 700 -630 0 0 {name=p1 lab=Vin}
+C {lab_wire.sym} 880 -610 0 0 {name=p2 lab=Vout2}
+C {lab_wire.sym} 960 -610 0 0 {name=p3 lab=Vout1}
+C {lab_wire.sym} 760 -470 0 1 {name=p4 lab=Vsub}
 C {devices/code_shown.sym} 40 -550 0 0 {name=NGSPICE only_toplevel=true 
 value="
 .include test_Nmirror_DC.save
@@ -49,12 +49,14 @@ save all
 op
 write test_Nmirror_DC.raw
 set appendwrite
-dc V2 0 2 10m VlogI -8 -5 0.5
+dc V1 0 2 10m VlogI -8 -5 0.5
 write test_Nmirror_DC.raw
 plot vprobe#branch v1#branch v2#branch
 plot xdut.vd_in xdut.vd_1 xdut.vd_2
 plot @n.xdut.xm1.nsg13_lv_nmos[gm]/vprobe#branch @n.xdut.xm3.nsg13_lv_nmos[gm]/v1#branch @n.xdut.xm5.nsg13_lv_nmos[gm]/v2#branch
 plot @n.xdut.xm2.nsg13_lv_nmos[gm]/vprobe#branch @n.xdut.xm4.nsg13_lv_nmos[gm]/v1#branch @n.xdut.xm6.nsg13_lv_nmos[gm]/v2#branch
+plot @n.xdut.xm1.nsg13_lv_nmos[gm]/@n.xdut.xm1.nsg13_lv_nmos[gds] @n.xdut.xm3.nsg13_lv_nmos[gm]/@n.xdut.xm3.nsg13_lv_nmos[gds] @n.xdut.xm5.nsg13_lv_nmos[gm]/@n.xdut.xm5.nsg13_lv_nmos[gds]
+plot @n.xdut.xm2.nsg13_lv_nmos[gm]/@n.xdut.xm2.nsg13_lv_nmos[gds] @n.xdut.xm4.nsg13_lv_nmos[gm]/@n.xdut.xm4.nsg13_lv_nmos[gds] @n.xdut.xm6.nsg13_lv_nmos[gm]/@n.xdut.xm6.nsg13_lv_nmos[gds]
 .endc
 "}
 C {simulator_commands_shown.sym} 40 -160 0 0 {
@@ -104,8 +106,8 @@ xschem raw_read $netlist_dir/[file rootname [file tail [xschem get current_name]
 xschem setprop rect 2 0 fullxzoom
 "
 }
-C {vsource.sym} 620 -330 0 1 {name=Vprobe value=0 savecurrent=true}
-C {lab_wire.sym} 700 -490 0 0 {name=p5 lab=probe}
-C {isource_arith.sym} 700 -450 0 0 {name=G1 CUR=10**V(logI)}
-C {vsource.sym} 540 -190 0 1 {name=VlogI value=-7 savecurrent=true}
-C {lab_pin.sym} 540 -240 0 0 {name=p6 lab=logI}
+C {vsource.sym} 620 -570 0 1 {name=Vprobe value=0 savecurrent=true}
+C {lab_wire.sym} 700 -730 0 0 {name=p5 lab=probe}
+C {isource_arith.sym} 700 -690 0 0 {name=G1 CUR=10**V(logI)}
+C {vsource.sym} 540 -430 0 1 {name=VlogI value=-7 savecurrent=true}
+C {lab_pin.sym} 540 -480 0 0 {name=p6 lab=logI}
