@@ -1,0 +1,6 @@
+** sch_path: /home/cmaier/EDA/PUDDING/xschem/pcascsrc.sch
+.subckt pcascsrc VDD VbiasP VcascodeP Iout NWELL
+*.PININFO VcascodeP:I VbiasP:I Iout:O VDD:I NWELL:B
+Msrc drain VbiasP VDD NWELL sg13_lv_pmos w=0.74u l=2u ng=1 m=1
+Mcasc Iout VcascodeP drain NWELL sg13_lv_pmos w=0.3u l=0.3u ng=1 m=1
+.ends
