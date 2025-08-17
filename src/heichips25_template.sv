@@ -17,12 +17,19 @@ module heichips25_template (
 );
 
     // List all unused inputs to prevent warnings
-    wire _unused = &{ena, ui_in[7:1], uio_in[7:0]};
-
+    wire _unused = &{ena, uio_in[7:0]};
+	
     logic [7:0] count;
     logic dir_up = 1;
+    wire shift_en;
+    assign shift_en = uio_in[0];
+    
+    wire thermo_switch;
+    assign thermo_switch = uio_in[1];
     
 	reg [255:0] thermo;
+	reg [255:0] thermo_shift;
+	reg [255:0] thermo_out;
 
     always_ff @(posedge clk) begin
         if (!rst_n) begin
@@ -51,9 +58,29 @@ module heichips25_template (
 		.din (count),
 		.thermo (thermo)
 	);
+	
+	// shift register takes 8 bits at a time
+	always_ff @(posedge clk) begin
+        if (!rst_n) begin
+            thermo_shift <= '0;
+        end else if (shift_en) begin
+        	thermo_shift <= {thermo_shift[255-8:0], ui_in}; 
+        end
+    end
     
-    assign uo_out  = thermo[7:0];
-    assign uio_out = thermo[15:8];
-    assign uio_oe  = thermo[23:16];
+    // switch to choose between standard thermo encoder (thermo_switch = 0) or shift register (thermo_switch = 1)
+    always_ff @(posedge clk) begin
+        if (!rst_n) begin
+            thermo_out <= '0;
+        end else if (thermo_switch) begin
+        	thermo_out <= thermo_shift;
+        end else begin
+        	thermo_out <= thermo;
+        end
+    end
+    
+    assign uo_out  = thermo_out[7:0];
+    assign uio_out = thermo_out[15:8];
+    assign uio_oe  = thermo_out[23:16];
 
 endmodule
