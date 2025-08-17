@@ -20,19 +20,40 @@ module heichips25_template (
     wire _unused = &{ena, ui_in[7:1], uio_in[7:0]};
 
     logic [7:0] count;
+    logic dir_up = 1;
+    
+	reg [255:0] thermo;
 
     always_ff @(posedge clk) begin
         if (!rst_n) begin
             count <= '0;
         end else begin
             if (ui_in[0]) begin
-                count <= count + 1;
+                if (dir_up) begin 
+                	count <= count + 1;
+                	if (count == 254) begin
+                		dir_up <= 0;
+                	end
+                end else begin
+                	count <= count - 1;
+                	if (count == 1) begin
+                		dir_up <= 1;
+                	end
+                end                
             end
         end
     end
     
-    assign uo_out  = count;
-    assign uio_out = count;
-    assign uio_oe  = '1;
+	thermometer_encoder #(
+		.IN_WIDTH (8),
+		.OUT_WIDTH (256))
+	te_inst(
+		.din (count),
+		.thermo (thermo)
+	);
+    
+    assign uo_out  = thermo[7:0];
+    assign uio_out = thermo[15:8];
+    assign uio_oe  = thermo[23:16];
 
 endmodule
