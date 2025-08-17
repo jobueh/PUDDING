@@ -30,9 +30,11 @@ and accurate extraction and modeling of the key analog elements.
 width: 1.1&mu;m, height 3.9&mu;m  
 
 #### Layout
-![proof-of-concept: array of 16 switched cascoded pmos current sources](pix/swsources16.jpg)  
+![proof-of-concept: array of 16 switched cascoded pmos current sources](pix/swsources16.jpg)    
 
-## To do  
+* [DRC and LvS clean row of 16 unit current sources](https://github.com/jobueh/PUDDING/blob/tatzelbranch/gds/swsources16.gds)  
+* [Test schematic with 2 unit sources as reference current mirror, 16 output sources](https://github.com/jobueh/PUDDING/blob/tatzelbranch/xschem/test_pcascsrc16_DC.sch)  
+
 
 * **Design cascode bias generator**  
     * **Create test schematics to characterize g<sub>m</sub>/I<sub>d</sub> and g<sub>m</sub>/g<sub>o</sub> of transistors**  
@@ -43,6 +45,11 @@ width: 1.1&mu;m, height 3.9&mu;m
         * current source width  
         * cascode length  
         * cascode width  
+* Extract [post-layout netlist for LvS](https://github.com/jobueh/PUDDING/blob/tatzelbranch/gds/PCASCSRC16_extracted.cir)  
+  to compare against [xschem schematic](https://github.com/jobueh/PUDDING/blob/tatzelbranch/xschem/simulation/pcascsrc16.spice)  
+
+## To do  
+
 * Extract post-layout netlist with parasitics  
 * Use suitable device models  
     * that can handle millikelvin temperatures  
