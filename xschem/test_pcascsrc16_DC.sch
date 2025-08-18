@@ -34,14 +34,11 @@ N 620 -600 720 -600 {lab=Vpcbias}
 N 620 -630 620 -600 {lab=Vpcbias}
 N 720 -660 720 -600 {lab=Vpcbias}
 N 660 -660 720 -660 {lab=Vpcbias}
-N 600 -1000 620 -1000 {lab=VDDA}
 N 540 -1000 540 -660 {lab=VDDA}
 N 540 -660 620 -660 {lab=VDDA}
 N 720 -800 720 -660 {lab=Vpcbias}
 N 680 -800 720 -800 {lab=Vpcbias}
-N 600 -920 600 -880 {lab=NWELL}
-N 600 -1000 600 -980 {lab=VDDA}
-N 540 -1000 600 -1000 {lab=VDDA}
+N 540 -1000 620 -1000 {lab=VDDA}
 C {title.sym} 160 0 0 0 {name=l1 author="Christoph Maier"}
 C {vsource.sym} 920 -550 0 0 {name=Vout value=-0.6 savecurrent=true}
 C {gnd.sym} 680 -280 0 0 {name=l2 lab=GND}
@@ -124,5 +121,3 @@ m=2
 model=sg13_lv_pmos
 spiceprefix=X
 }
-C {vsource.sym} 600 -950 0 1 {name=VNWELL value=0 savecurrent=true}
-C {lab_pin.sym} 600 -900 0 0 {name=p5 lab=NWELL}
