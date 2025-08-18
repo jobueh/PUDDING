@@ -268,7 +268,7 @@ endmodule
 
 
 //500x200um, 500X415um
-module heicips25_template #(parameter N=256)(
+module heichips25_pudding #(parameter N=256)(
 input  [7:0] ui_in,
 output [7:0] uo_out,
 input  [7:0] uio_in,
