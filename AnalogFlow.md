@@ -23,7 +23,11 @@ and accurate extraction and modeling of the key analog elements.
 * Extend cascode transistor to switched cascoded current source  
     * for good matching and low 1/f noise, long and narrow  
     * arrangeable in an array by abutment  
-    * shared poly for common bias voltage  
+    * shared poly for common bias voltage    
+* Mockup [layout of a row of 256 unit current sources](https://github.com/tatzelbrumm/PUDDING/blob/tatzelbranch/gds/pcascsrc256.gds).  
+It doesn't make sense to lay out a 256 element thermometer code DAC as one row,  
+but this layout (column width: 282&mu;m, height: 4.4&mu;m)  
+shows that the analog part of the design will fit within a HeiChips tile comfortably.  
 
 ### [Proof-of-concept unit cell](https://github.com/tatzelbrumm/PUDDING/blob/tatzelbranch/gds/swcascsrc_playground.gds)  
 
@@ -47,6 +51,26 @@ width: 1.1&mu;m, height 3.9&mu;m
         * cascode width  
 * Extract [post-layout netlist for LvS](https://github.com/jobueh/PUDDING/blob/tatzelbranch/gds/PCASCSRC16_extracted.cir)  
   to compare against [xschem schematic](https://github.com/jobueh/PUDDING/blob/tatzelbranch/xschem/simulation/pcascsrc16.spice)  
+
+### Gotchas
+
+* Hierarchical bottom up analog design leads to crashes unless a verified best practice how to reference to [hierarchical klayout libraries](https://github.com/tatzelbrumm/klayoutAPI/tree/master) is established and verified    
+    **Problem:** This requires coordination by different domain experts, namely  
+    * klayout  
+    * IHP analog PDK  
+    * IHP analog standard cell library organization  
+    * any containers or other virtualization schemes that might be used  
+    In discussion forums, you get `#worksforme` answers from experts in *one* of the domains
+    that don't take into account side effects.    
+    Such answers are **less** than useless.  
+    **One** *czar of pcells* needs to be volunteered to establish, publish, and maintain    
+    **RECOMMENDED BEST PRACTICES** about directory structures, instantiation hierarchies, how to include sub-layout cells (parametric or not) into klayout GDS files.  
+* When thinking how to connect reference sources, or using the unit cascoded current source with individual outputs, the I<sub>out</sub> terminal needs space for a `metal2` via.    
+  This requires adjustment of the cascode switch layout primitive.  
+* Connecting V<sub>bias,p</sub> by poly abutment is *not* just a bad idea because at cryogenic temperatures, poly may become highly resistive.    
+    It is also advantageous to shield the current sources by `metal1`  
+    * so the connections to the switch/cascode transistors can be routed on top of the current sources without adverse effects on matching.  
+    * `metal1` density rules are met without random `metal1` fill on the most mismatch sensitive analog transistors.  
 
 ## To do  
 
