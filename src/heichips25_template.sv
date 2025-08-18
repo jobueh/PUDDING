@@ -30,6 +30,9 @@ module heichips25_template (
 	reg [255:0] thermo;
 	reg [255:0] thermo_shift;
 	reg [255:0] thermo_out;
+	
+	wire [255:0] ON;
+	wire [255:0] ON_N;
 
     always_ff @(posedge clk) begin
         if (!rst_n) begin
@@ -79,8 +82,16 @@ module heichips25_template (
         end
     end
     
+    non_overlap #(
+		.IN_WIDTH (256))
+	no_inst(
+		.thermo(thermo_out),
+		.ON(ON),
+		.ON_N(ON_N)
+	);
+    
     assign uo_out  = thermo_out[7:0];
-    assign uio_out = thermo_out[15:8];
-    assign uio_oe  = thermo_out[23:16];
+    assign uio_out = ON[7:0];
+    assign uio_oe  = ON_N[7:0];
 
 endmodule

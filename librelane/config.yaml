@@ -4,6 +4,7 @@ DESIGN_NAME: heichips25_template
 VERILOG_FILES: 
 - dir::../src/heichips25_template.sv
 - dir::../src/thermometer_encoder.sv
+- dir::../src/non_overlap.sv
 CLOCK_PORT: clk
 CLOCK_PERIOD: 10 # 10ns = 100MHz
 
@@ -15,6 +16,7 @@ RIGHT_MARGIN_MULT: 6
 
 # Absolute die size
 FP_SIZING: absolute
+PL_TARGET_DENSITY_PCT: 80
 
 # Small DEF template
 DIE_AREA: [0, 0, 500, 200]
