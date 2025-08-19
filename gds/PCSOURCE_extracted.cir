@@ -1,4 +1,4 @@
-* Extracted by KLayout with SG13G2 LVS runset on : 19/08/2025 03:43
+* Extracted by KLayout with SG13G2 LVS runset on : 19/08/2025 03:52
 
 .SUBCKT PCSOURCE
 M$1 \$1 \$2 \$6 \$1 sg13_lv_pmos L=2u W=0.55u AS=0.187p AD=0.07375p PS=1.78u
