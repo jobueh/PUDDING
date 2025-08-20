@@ -1,0 +1,41 @@
+changelog
+git merge dev_leardilap tatzelbranch [requires interactive merge in git gui]
+[nix-shell:~/EDA/PUDDING/src/xschem/non_overlap]$ cp -pv ../../../xschem/xschemrc .
+'../../../xschem/xschemrc' -> './xschemrc'
+
+PROVIDED the IHP technology is loaded and selected with ciel:
+Now xschem starts into the IHP start_page.sch 
+
+Now you can open in a new tab
+non_overlap_tran_logic.sch
+
+Menu
+Simulation →  Use 'simulation' dir in schematic dir
+
+Push netlist button
+
+cat simulation/non_overlap_tran_logic.spice 
+
+netlist looks sane, but ...
+
+Error: Could not find library file cornerMOSlv.lib
+ERROR, library file cornerMOSlv.lib not found
+
+ERROR: fatal error in ngspice, exit(1)
+
+[nix-shell:~/EDA/PUDDING/src/xschem/non_overlap]$ cp -pv ../../../xschem/simulation/.spiceinit simulation/
+'../../../xschem/simulation/.spiceinit' -> 'simulation/.spiceinit'
+
+Circuit: ** sch_path: /home/cmaier/eda/pudding/src/xschem/non_overlap/non_overlap_tran_logic.sch
+
+Error: unknown subckt: x1.x1 x1.net2 x1.net1 net1 0 sg13g2_inv_1
+    in line no. 34 from file /home/cmaier/EDA/PUDDING/src/xschem/non_overlap/simulation/non_overlap_tran_logic.spice
+    Simulation interrupted due to error!
+
+ChatGPT lies to me:
+https://chatgpt.com/share/68a5c607-ee68-8000-bf99-3f6a3f92ca82
+../../../libs.ref/sg13g2_stdcell/spice/sg13g2_stdcell.lib
+does not exist in the typical IHP PDK.
+~/EDA/PUDDING/xschem$ find ~/EDA -name sg13g2_stdcell.lib
+~/EDA/PUDDING/xschem$ find ~/.ciel/ -name sg13g2_stdcell.lib
+
