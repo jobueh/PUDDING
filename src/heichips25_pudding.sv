@@ -19,22 +19,81 @@ module heichips25_pudding (
 );
 
     // List all unused inputs to prevent warnings
-    wire _unused = &{ena, ui_in[7:1], uio_in[7:0]};
-
+    wire _unused = &{ena, uio_in[7:0]};
+	
     logic [7:0] count;
+    logic dir_up = 1;
+    wire shift_en;
+    assign shift_en = uio_in[0];
+    
+    wire thermo_switch;
+    assign thermo_switch = uio_in[1];
+    
+	reg [255:0] thermo;
+	reg [255:0] thermo_shift;
+	reg [255:0] thermo_out;
+	
+	wire [255:0] ON;
+	wire [255:0] ON_N;
 
     always_ff @(posedge clk) begin
         if (!rst_n) begin
             count <= '0;
         end else begin
             if (ui_in[0]) begin
-                count <= count + 1;
+                if (dir_up) begin 
+                	count <= count + 1;
+                	if (count == 254) begin
+                		dir_up <= 0;
+                	end
+                end else begin
+                	count <= count - 1;
+                	if (count == 1) begin
+                		dir_up <= 1;
+                	end
+                end                
             end
         end
     end
     
-    assign uo_out  = count;
-    assign uio_out = count;
-    assign uio_oe  = '1;
+	thermometer_encoder #(
+		.IN_WIDTH (8),
+		.OUT_WIDTH (256))
+	te_inst(
+		.din (count),
+		.thermo (thermo)
+	);
+	
+	// shift register takes 8 bits at a time
+	always_ff @(posedge clk) begin
+        if (!rst_n) begin
+            thermo_shift <= '0;
+        end else if (shift_en) begin
+        	thermo_shift <= {thermo_shift[255-8:0], ui_in}; 
+        end
+    end
+    
+    // switch to choose between standard thermo encoder (thermo_switch = 0) or shift register (thermo_switch = 1)
+    always_ff @(posedge clk) begin
+        if (!rst_n) begin
+            thermo_out <= '0;
+        end else if (thermo_switch) begin
+        	thermo_out <= thermo_shift;
+        end else begin
+        	thermo_out <= thermo;
+        end
+    end
+    
+    non_overlap #(
+		.IN_WIDTH (256))
+	no_inst(
+		.thermo(thermo_out),
+		.ON(ON),
+		.ON_N(ON_N)
+	);
+    
+    assign uo_out  = thermo_out[7:0];
+    assign uio_out = ON[7:0];
+    assign uio_oe  = ON_N[7:0];
 
 endmodule

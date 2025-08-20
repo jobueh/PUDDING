@@ -13,6 +13,7 @@ RIGHT_MARGIN_MULT: 6
 
 # Absolute die size
 FP_SIZING: absolute
+PL_TARGET_DENSITY_PCT: 80
 
 # Small DEF template
 DIE_AREA: [0, 0, 500, 200]
