@@ -1,8 +1,8 @@
 # LibreLane configuration file
 
-DESIGN_NAME: heichips25_template
-VERILOG_FILES: dir::../src/heichips25_template.sv
-CLOCK_PORT: clk
+DESIGN_NAME: heichips25_pudding
+VERILOG_FILES: [dir::../src/dac_s.sv, dir::../src/SPI_Slave.sv]
+CLOCK_PORT: ui_in[1]
 CLOCK_PERIOD: 10 # 10ns = 100MHz
 
 # Reduce wasted space
