@@ -16,16 +16,18 @@ N 150 20 190 20 {lab=ON_N}
 C {non_overlap.sym} 0 0 0 0 {name=xdut}
 C {devices/code_shown.sym} -650 200 0 0 {name=MODEL only_toplevel=true
 format="tcleval( @value )"
-value=".lib cornerMOSlv.lib mos_tt
+value="
+.include sg13g2_stdcell.spice
+.lib cornerMOSlv.lib mos_tt
 "}
 C {devices/code_shown.sym} -650 -330 0 0 {name=NGSPICE only_toplevel=true 
 value="
-*.include dc_lv_nmos.save
+*.include non_overlap_single_dc_sim.save
 .param temp=27
 .control
 save all 
 tran 50p 20n
-write non_overlap_tran_logic.raw
+write non_overlap_single_dc_sim.raw
 .endc
 "}
 C {vsource.sym} -600 70 0 0 {name=VDD value=1.5 savecurrent=false}
