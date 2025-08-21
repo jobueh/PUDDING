@@ -39,6 +39,9 @@ width: 1.1&mu;m, height 3.9&mu;m
 * [DRC and LvS clean row of 16 unit current sources](https://github.com/jobueh/PUDDING/blob/tatzelbranch/gds/swsources16.gds)  
 * [Test schematic with 2 unit sources as reference current mirror, 16 output sources](https://github.com/jobueh/PUDDING/blob/tatzelbranch/xschem/test_pcascsrc16_DC.sch)  
 
+![draft: 2 rows of 64 switched cascoded pmos current sources with 2x2 diode connected reference transistors at the ends of the rows](pix/dac128out4in_draft.jpg)  
+
+* [DRC clean 2x64 unit current sources analog-only layout](https://github.com/jobueh/PUDDING/blob/tatzelbranch/gds/dac128out4in.gds)
 
 * **Design cascode bias generator**  
     * **Create test schematics to characterize g<sub>m</sub>/I<sub>d</sub> and g<sub>m</sub>/g<sub>o</sub> of transistors**  
@@ -65,9 +68,13 @@ width: 1.1&mu;m, height 3.9&mu;m
     Such answers are **less** than useless.  
     **One** *czar of pcells* needs to be volunteered to establish, publish, and maintain    
     **RECOMMENDED BEST PRACTICES** about directory structures, instantiation hierarchies, how to include sub-layout cells (parametric or not) into klayout GDS files.  
-* When thinking how to connect reference sources, or using the unit cascoded current source with individual outputs, the I<sub>out</sub> terminal needs space for a `metal2` via.    
-  This requires adjustment of the cascode switch layout primitive.  
-* Connecting V<sub>bias,p</sub> by poly abutment is *not* just a bad idea because at cryogenic temperatures, poly may become highly resistive.    
+    **Solution for now:** Import sub-`.gds` schematic files into the top level schematic.  
+    * Invariant under various and sundry (and subtly incompatible) library integration schemes:    
+      The top level `.gds` file is self-contained.
+* When thinking how to connect digital outputs to the cascode switches,  
+    * the transistors that switch between VDDA and V<sub>casc,P</sub> should be directly adjacent to the switched sources  
+    * the pinout and form factor of the digital logic driving a row of 64 current sources needs to have matching form factor and pinout.
+* Connecting V<sub>bias,p</sub> by poly abutment is *not* just a bad idea because at cryogenic temperatures, poly may become highly resistive. *(Solved)*  
     It is also advantageous to shield the current sources by `metal1`  
     * so the connections to the switch/cascode transistors can be routed on top of the current sources without adverse effects on matching.  
     * `metal1` density rules are met without random `metal1` fill on the most mismatch sensitive analog transistors.  
