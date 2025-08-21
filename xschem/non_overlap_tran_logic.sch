@@ -21,12 +21,43 @@ dataset=-1
 unitx=1
 logx=0
 logy=0
-color="6 8 7"
+color="5 12 6 11 8 7 12 6 11 8 20"
+node="thermo
+x1.a1
+x1.a2
+x1.a3
+x1.a4
+ON
+x1.b1
+x1.b2
+x1.b3
+x1.b4
+ON_N"
+x1=4.8e-9
+x2=6.4e-9}
+B 2 570 -690 1370 -290 {flags=graph
+y1=0
+y2=1.8
+ypos1=0
+ypos2=2
+divy=5
+subdivy=1
+unity=1
+divx=5
+subdivx=1
+xlabmag=1.0
+ylabmag=1.0
+
+dataset=-1
+unitx=1
+logx=0
+logy=0
+color="6 7 11"
 node="thermo
 ON
 ON_N"
 x1=0
-x2=1e-7}
+x2=4e-8}
 N 410 -50 410 130 {
 lab=GND}
 N -270 40 -270 50 {
@@ -50,24 +81,24 @@ C {devices/code_shown.sym} -330 -530 0 0 {name=NGSPICE only_toplevel=true
 value="
 .param temp=27
 .param vdd=1.8
-.param tclock=40n
-.param thigh=20n
+.param tclock=10n
+.param thigh=5n
 .control
 save all 
-tran 10p 100n
+tran 50p 40n
 meas tran tdelay TRIG v(thermo) VAl=0.9 FALl=1 TARG v(ON) VAl=0.9 RISE=1
 write non_overlap_tran_logic.raw
 .endc
 "}
 C {devices/vsource.sym} 410 -80 0 0 {name=Vdd value=\{vdd\}}
 C {devices/gnd.sym} 410 130 0 0 {name=l3 lab=GND}
-C {devices/title.sym} -130 260 0 0 {name=l5 author="Luis Ardila"}
+C {devices/title.sym} -130 260 0 0 {name=l5 author="Original: Luis Ardila; Palimpsest: Christoph Maier"}
 C {devices/launcher.sym} -270 -610 0 0 {name=h5
 descr="load waves Ctrl + left click" 
 tclcommand="xschem raw_read $netlist_dir/non_overlap_tran_logic.raw tran"
 }
 C {devices/gnd.sym} -270 50 0 0 {name=l7 lab=GND}
-C {devices/vsource.sym} -270 10 0 0 {name=Vthermo value="dc 0 ac 0 pulse(0, \{vdd\}, 0, 100p, 100p, \{thigh\}, \{tclock\} ) "}
+C {devices/vsource.sym} -270 10 0 0 {name=Vthermo value="dc 0 ac 0 pulse(0, \{vdd\}, \{tclock/4\}, 100p, 100p, \{thigh\}, \{tclock\} ) "}
 C {devices/lab_pin.sym} -270 -80 0 0 {name=p3 sig_type=std_logic lab=thermo}
 C {non_overlap.sym} 80 -80 0 0 {name=x1}
 C {gnd.sym} 80 10 0 0 {name=l8 lab=GND}
