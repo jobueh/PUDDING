@@ -24,14 +24,17 @@ C {devices/code_shown.sym} -650 -330 0 0 {name=NGSPICE only_toplevel=true
 value="
 *.include non_overlap_single_dc_sim.save
 .param temp=27
+.param vdd=1.8
+.param tclock=10n
+.param thigh=5n
 .control
 save all 
 tran 50p 20n
 write non_overlap_single_dc_sim.raw
 .endc
 "}
-C {vsource.sym} -600 70 0 0 {name=VDD value=1.5 savecurrent=false}
-C {vsource.sym} -490 70 0 0 {name=VIN value="dc 0 ac 0 pulse(0, 1.2, 0, 100p, 100p, 2n, 4n)" savecurrent=false}
+C {vsource.sym} -600 70 0 0 {name=VDD value=\{vdd\} savecurrent=true}
+C {vsource.sym} -490 70 0 0 {name=VIN value="dc 0 ac 0 pulse(0, \{vdd\}, \{tclock/4\}, 100p, 100p, \{thigh\}, \{tclock\})" savecurrent=false}
 C {lab_pin.sym} -600 0 0 0 {name=p1 sig_type=std_logic lab=VDD}
 C {gnd.sym} -600 120 0 0 {name=l1 lab=GND}
 C {gnd.sym} -490 120 0 0 {name=l2 lab=GND}
@@ -41,4 +44,4 @@ C {lab_pin.sym} 0 -110 0 0 {name=p3 sig_type=std_logic lab=VDD}
 C {lab_pin.sym} -190 0 0 0 {name=p4 sig_type=std_logic lab=VIN}
 C {lab_pin.sym} 190 -20 2 0 {name=p5 sig_type=std_logic lab=ON}
 C {lab_pin.sym} 190 20 2 0 {name=p6 sig_type=std_logic lab=ON_N}
-C {title.sym} -500 280 0 0 {name=l4 author="Luis Ardila"}
+C {title.sym} -500 280 0 0 {name=l4 author="Original: Luis Ardila; Palimpsest: Christoph Maier"}
