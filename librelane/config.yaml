@@ -1,8 +1,11 @@
 # LibreLane configuration file
 
-DESIGN_NAME: heichips25_pudding
-VERILOG_FILES: [dir::../src/dac_s.sv, dir::../src/SPI_Slave.sv]
-CLOCK_PORT: ui_in[1]
+DESIGN_NAME: heichips25_template
+VERILOG_FILES: 
+- dir::../src/heichips25_template.sv
+- dir::../src/thermometer_encoder.sv
+
+CLOCK_PORT: clk
 CLOCK_PERIOD: 10 # 10ns = 100MHz
 
 # Reduce wasted space
@@ -13,6 +16,7 @@ RIGHT_MARGIN_MULT: 6
 
 # Absolute die size
 FP_SIZING: absolute
+PL_TARGET_DENSITY_PCT: 80
 
 # Small DEF template
 DIE_AREA: [0, 0, 500, 200]
@@ -28,3 +32,7 @@ RT_MAX_LAYER: TopMetal1
 
 # Enable for better SystemVerilog support
 #USE_SLANG: true
+
+# reserve space for the logo
+FP_OBSTRUCTIONS: 
+- [100, 0, 500, 200]
