@@ -47,6 +47,7 @@
           # Waveform viewing
           gtkwave
           surfer
+          gaw
           
           # FPGA protoyping
           #yosys # already in LibreLane
@@ -54,6 +55,13 @@
           icestorm
           trellis
           openfpgaloader
+          
+          # Analog
+          klayout
+          netgen
+          ngspice
+          magic
+          xschem
         ];
         
         extra-python-packages = with pkgs.python3.pkgs; (pkgs.lib.optionals pkgs.stdenv.isLinux [
