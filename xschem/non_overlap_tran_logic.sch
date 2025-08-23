@@ -1,8 +1,9 @@
-v {xschem version=3.4.7 file_version=1.2}
+v {xschem version=3.4.8RC file_version=1.3}
 G {}
 K {}
 V {}
 S {}
+F {}
 E {}
 B 2 570 -270 1370 130 {flags=graph
 y1=0
@@ -100,7 +101,7 @@ tclcommand="xschem raw_read $netlist_dir/non_overlap_tran_logic.raw tran"
 C {devices/gnd.sym} -270 50 0 0 {name=l7 lab=GND}
 C {devices/vsource.sym} -270 10 0 0 {name=Vthermo value="dc 0 ac 0 pulse(0, \{vdd\}, \{tclock/4\}, 100p, 100p, \{thigh\}, \{tclock\} ) "}
 C {devices/lab_pin.sym} -270 -80 0 0 {name=p3 sig_type=std_logic lab=thermo}
-C {non_overlap.sym} 80 -80 0 0 {name=x1}
 C {gnd.sym} 80 10 0 0 {name=l8 lab=GND}
 C {lab_pin.sym} 270 -100 2 0 {name=p6 sig_type=std_logic lab=ON}
 C {lab_pin.sym} 270 -60 2 0 {name=p7 sig_type=std_logic lab=ON_N}
+C {/home/user/projects/PUDDING/xschem/non_overlap.sym} 80 -80 0 0 {name=x1}

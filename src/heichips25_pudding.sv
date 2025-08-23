@@ -11,8 +11,8 @@ module heichips25_pudding (
     input  wire [7:0] uio_in,   // IOs: Input path
     output wire [7:0] uio_out,  // IOs: Output path
     output wire [7:0] uio_oe,   // IOs: Enable path (active high: 0=input, 1=output)
-    output wire Iout,
-    input  wire Iref,
+    output wire [255:0] on_out,
+    output wire [255:0] on_n_out,
     input  wire       ena,      // always 1 when the design is powered, so you can ignore it
     input  wire       clk,      // clock
     input  wire       rst_n     // reset_n - low to reset
@@ -81,6 +81,15 @@ module heichips25_pudding (
         	thermo_out <= thermo;
         end
     end
+
+    non_overlap #(
+    	.IN_WIDTH(256),
+	    .NUMBER_OF_DELAYS(5)
+    ) non_overlap_I (
+	    .thermo(thermo_out),
+	    .ON(on_out),
+	    .ON_N(on_n_out)
+    );
     
     
     assign uo_out  = thermo_out[7:0];

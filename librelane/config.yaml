@@ -1,9 +1,10 @@
 # LibreLane configuration file
 
-DESIGN_NAME: heichips25_template
+DESIGN_NAME: heichips25_pudding
 VERILOG_FILES: 
-- dir::../src/heichips25_template.sv
+- dir::../src/heichips25_pudding.sv
 - dir::../src/thermometer_encoder.sv
+- dir::../src/non_overlap.sv
 
 CLOCK_PORT: clk
 CLOCK_PERIOD: 10 # 10ns = 100MHz
