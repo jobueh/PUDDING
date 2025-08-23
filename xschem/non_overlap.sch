@@ -1,9 +1,8 @@
-v {xschem version=3.4.8RC file_version=1.3}
+v {xschem version=3.4.7 file_version=1.2}
 G {}
 K {}
 V {}
 S {}
-F {}
 E {}
 N -60 -170 -40 -170 {lab=thermo}
 N 180 -170 240 -170 {lab=a3}
@@ -16,15 +15,15 @@ N -470 150 -420 150 {lab=VSS}
 N -470 120 -420 120 {lab=VDD}
 N -60 -130 410 -130 {lab=thermo}
 N -60 -170 -60 -130 {lab=thermo}
-N 540 -250 560 -250 {lab=#net1}
-N 540 -150 540 -60 {lab=#net1}
-N 540 -60 550 -60 {lab=#net1}
-N 530 -150 540 -150 {lab=#net1}
-N 540 -250 540 -150 {lab=#net1}
+N 540 -250 560 -250 {lab=thermo_delay}
+N 540 -150 540 -60 {lab=thermo_delay}
+N 540 -60 550 -60 {lab=thermo_delay}
+N 530 -150 540 -150 {lab=thermo_delay}
+N 540 -250 540 -150 {lab=thermo_delay}
 N -100 -290 560 -290 {lab=thermo}
 N -100 -290 -100 -170 {lab=thermo}
 N -140 -170 -100 -170 {lab=thermo}
-N -30 -20 550 -20 {lab=#net2}
+N -30 -20 550 -20 {lab=thermo_n}
 N -140 -20 -110 -20 {lab=thermo}
 N -140 -170 -140 -20 {lab=thermo}
 N -410 -170 -140 -170 {lab=thermo}
@@ -49,3 +48,5 @@ C {sg13g2_stdcells/sg13g2_xor2_1.sym} 470 -150 0 0 {name=x1 VDD=VDD VSS=VSS pref
 C {sg13g2_stdcells/sg13g2_or2_2.sym} 620 -270 0 0 {name=x2 VDD=VDD VSS=VSS prefix=sg13g2_ }
 C {sg13g2_stdcells/sg13g2_or2_2.sym} 610 -40 0 0 {name=x4 VDD=VDD VSS=VSS prefix=sg13g2_ }
 C {sg13g2_stdcells/sg13g2_inv_2.sym} -70 -20 0 0 {name=x6 VDD=VDD VSS=VSS prefix=sg13g2_ }
+C {lab_wire.sym} 180 -20 0 0 {name=p6 sig_type=std_logic lab=thermo_n}
+C {lab_wire.sym} 540 -210 0 0 {name=p7 sig_type=std_logic lab=thermo_delay}

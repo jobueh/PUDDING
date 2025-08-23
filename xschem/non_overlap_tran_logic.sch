@@ -1,13 +1,12 @@
-v {xschem version=3.4.8RC file_version=1.3}
+v {xschem version=3.4.7 file_version=1.2}
 G {}
 K {}
 V {}
 S {}
-F {}
 E {}
 B 2 570 -270 1370 130 {flags=graph
-y1=0
-y2=1.8
+y1=-0.0067
+y2=1.9
 ypos1=0
 ypos2=2
 divy=5
@@ -22,20 +21,17 @@ dataset=-1
 unitx=1
 logx=0
 logy=0
-color="5 12 6 11 8 7 12 6 11 8 20"
+color="5 21 8 10 6 12 7 4"
 node="thermo
-x1.a1
+x1.thermo_n
+x1.thermo_delay
 x1.a2
 x1.a3
 x1.a4
-ON
-x1.b1
-x1.b2
-x1.b3
-x1.b4
-ON_N"
-x1=4.8e-9
-x2=6.4e-9}
+on
+on_n"
+x2=3.4e-9
+x1=2.4e-9}
 B 2 570 -690 1370 -290 {flags=graph
 y1=0
 y2=1.8
@@ -80,6 +76,7 @@ value="
 "}
 C {devices/code_shown.sym} -330 -530 0 0 {name=NGSPICE only_toplevel=true 
 value="
+.options gmin=1e-15 abstol=1p method=gear
 .param temp=27
 .param vdd=1.8
 .param tclock=10n
@@ -104,4 +101,4 @@ C {devices/lab_pin.sym} -270 -80 0 0 {name=p3 sig_type=std_logic lab=thermo}
 C {gnd.sym} 80 10 0 0 {name=l8 lab=GND}
 C {lab_pin.sym} 270 -100 2 0 {name=p6 sig_type=std_logic lab=ON}
 C {lab_pin.sym} 270 -60 2 0 {name=p7 sig_type=std_logic lab=ON_N}
-C {/home/user/projects/PUDDING/xschem/non_overlap.sym} 80 -80 0 0 {name=x1}
+C {non_overlap.sym} 80 -80 0 0 {name=x1}
