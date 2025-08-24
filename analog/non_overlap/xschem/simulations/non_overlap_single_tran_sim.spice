@@ -31,19 +31,13 @@ write non_overlap_tran_logic.raw
 *.opin ON
 *.opin ON_N
 *.iopin VDD
-x1 net4 net1 VDD VSS sg13g2_inv_1
-x2 net1 thermo net7 VDD VSS sg13g2_nor2_1
-x4 net3 net4 VDD VSS sg13g2_inv_1
-x5 net2 net3 VDD VSS sg13g2_inv_1
-x6 ON_N net2 VDD VSS sg13g2_inv_1
-x7 net8 net5 VDD VSS sg13g2_inv_1
-x8 net5 net3 net9 VDD VSS sg13g2_nor2_1
-x10 net7 net8 VDD VSS sg13g2_inv_1
-x11 net6 net7 VDD VSS sg13g2_inv_1
-x12 ON net6 VDD VSS sg13g2_inv_1
-x13 net9 thermo VDD VSS sg13g2_inv_1
-C1 net4 VSS 1p m=1
-C2 net8 VSS 1p m=1
+x0 thermon thermo VDD VSS sg13g2_inv_1
+x1 a1 thermo b2 VDD VSS sg13g2_nor2_1
+x2 b1 a2 thermon VDD VSS sg13g2_nor2_1
+x3 a2 a1 VDD VSS sg13g2_dlygate4sd3_1
+x4 b2 b1 VDD VSS sg13g2_dlygate4sd3_1
+x5 ON_N a2 VDD VSS sg13g2_buf_1
+x6 ON b2 VDD VSS sg13g2_buf_1
 .ends
 
 .GLOBAL GND
