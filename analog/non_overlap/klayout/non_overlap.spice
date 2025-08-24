@@ -1,0 +1,15 @@
+** sch_path: /foss/designs/PUDDING_dev_leardilap/analog/non_overlap/xschem/non_overlap.sch
+.subckt non_overlap thermo ON VDD VSS ON_N
+*.PININFO VSS:B thermo:I ON:O ON_N:O VDD:B
+x0 thermon thermo VDD VSS sg13g2_inv_1
+x1 a1 thermo b2 VDD VSS sg13g2_nor2_1
+x2 b1 a2 thermon VDD VSS sg13g2_nor2_1
+x3 a2 a1 VDD VSS sg13g2_dlygate4sd3_1
+x4 b2 b1 VDD VSS sg13g2_dlygate4sd3_1
+x5 ON_N a2 VDD VSS sg13g2_buf_1
+x6 ON b2 VDD VSS sg13g2_buf_1
+**** begin user architecture code
+ .lib cornerMOSlv.lib mos_tt
+
+**** end user architecture code
+.ends
