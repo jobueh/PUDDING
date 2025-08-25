@@ -30,7 +30,7 @@ x1.a3
 x1.a4
 on
 on_n"
-x2=3.4e-9
+x2=4.4e-9
 x1=2.4e-9}
 B 2 570 -690 1370 -290 {flags=graph
 y1=0
@@ -77,7 +77,7 @@ value="
 C {devices/code_shown.sym} -330 -530 0 0 {name=NGSPICE only_toplevel=true 
 value="
 .options gmin=1e-15 abstol=1p method=gear
-.param temp=27
+.temp=-55
 .param vdd=1.8
 .param tclock=10n
 .param thigh=5n
