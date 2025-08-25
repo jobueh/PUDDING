@@ -76,7 +76,7 @@ plot 2*(vout#branch-vprobe#branch)/(vprobe#branch+vout#branch)
 plot vdd vpbias vpcbias switch on_n off_n vpcasc vout xref.drain xsrc.drain
 plot vout#branch vprobe#branch
 plot switch on_n off_n Vpcasc
-plot @n.xsw.xmbias.nsg13_lv_pmos[ids] @n.xsw.xmpullup.nsg13_lv_pmos[ids]
+*plot @n.xsw.xmbias.nsg13_lv_pmos[ids] @n.xsw.xmpullup.nsg13_lv_pmos[ids]
 plot viswp#branch viswn#branch
 plot 0.5*(viswp#branch+viswn#branch) viswp#branch-viswn#branch
 .endc
