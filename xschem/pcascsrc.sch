@@ -17,16 +17,16 @@ N 500 -420 520 -420 {lab=VDD}
 N 520 -420 520 -360 {lab=VDD}
 C {title.sym} 160 0 0 0 {name=l1 author="Christoph Maier"}
 C {sg13g2_pr/sg13_lv_pmos.sym} 480 -360 0 0 {name=Msrc
-l=2u
-w=0.74u
+l=\{l\}
+w=\{w\}
 ng=1
 m=1
 model=sg13_lv_pmos
 spiceprefix=X
 }
 C {sg13g2_pr/sg13_lv_pmos.sym} 480 -240 0 0 {name=Mcasc
-l=0.3u
-w=0.3u
+l=\{lc\}
+w=\{wc\}
 ng=1
 m=1
 model=sg13_lv_pmos

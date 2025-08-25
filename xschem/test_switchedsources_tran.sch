@@ -127,8 +127,8 @@ C {vsource.sym} 620 -150 0 1 {name=Vprobe value=0 savecurrent=true}
 C {isource_arith.sym} 620 -250 0 0 {name=G1 CUR=10**V(logI)}
 C {vsource.sym} 540 -150 0 1 {name=VlogI value=\{logI\} savecurrent=true}
 C {lab_pin.sym} 540 -200 0 0 {name=p6 lab=logI}
-C {pcascsrc.sym} 620 -520 0 1 {name=xref}
-C {pcascsrc.sym} 1420 -520 0 0 {name=xsrc}
+C {pcascsrc.sym} 620 -520 0 1 {name=xref w=\{w\} l=\{l\} wc=\{wc\} lc=\{lc\}}
+C {pcascsrc.sym} 1420 -520 0 0 {name=xsrc w=\{w\} l=\{l\} wc=\{wc\} lc=\{lc\}}
 C {vsource.sym} 460 -250 0 1 {name=VDDA value=\{vdd\} savecurrent=true}
 C {lab_wire.sym} 760 -540 0 0 {name=p2 lab=Vpbias}
 C {sg13g2_pr/sg13_lv_pmos.sym} 640 -360 0 1 {name=Mcbias
@@ -150,17 +150,17 @@ C {lab_wire.sym} 1000 -440 0 0 {name=p8 sig_type=std_logic lab=on_n}
 C {vsource.sym} 820 -250 0 0 {name=VSW value="DC \{vdd\} PULSE(0 \{vdd\} \{td\} \{tr\} \{tf\} \{ton\} \{tcyc\})" savecurrent=true}
 C {lab_wire.sym} 820 -460 0 0 {name=p9 sig_type=std_logic lab=switch}
 C {devices/code_shown.sym} 60 -770 0 0 {name=params only_toplevel=false value="* device parameters
-.param l      = 8
-.param w      = 2
+.param l      = 2u
+.param w      = 0.55u
 .param nf     = 1
-.param lc     = 3.2
-.param wc     = 1.48
+.param lc     = 0.3u
+.param wc     = 0.3u
 .param nfc    = 1
-.param lb     = 16
-.param wb     = 1
+.param lb     = 16u
+.param wb     = 1u
 .param nfb    = 1
-.param lnmos  = 8
-.param wnmos  = 2
+.param lnmos  = 8u
+.param wnmos  = 2u
 .param nfn    = 1
 * instrumentation parameters
 .param logI=-7

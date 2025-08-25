@@ -45,7 +45,7 @@ C {gnd.sym} 680 -280 0 0 {name=l2 lab=GND}
 C {devices/code_shown.sym} 40 -390 0 0 {name=NGSPICE only_toplevel=true 
 value="
 .include test_pcsource_DC.save
-.param temp=27
+.temp=27
 .options savecurrents
 .control
 save all 
@@ -124,3 +124,28 @@ m=1
 model=sg13_lv_pmos
 spiceprefix=X
 }
+C {devices/code_shown.sym} 1120 -910 0 0 {name=params only_toplevel=false value="* device parameters
+.param l      = 2u
+.param w      = 0.55u
+.param nf     = 1
+.param lc     = 0.3u
+.param wc     = 0.3u
+.param nfc    = 1
+.param lb     = 16u
+.param wb     = 1u
+.param nfb    = 1
+.param lnmos  = 8u
+.param wnmos  = 2u
+.param nfn    = 1
+* instrumentation parameters
+.param logI=-7
+.param vdd=1.6
+.param vout=0.6
+* simulation parameters
+.param celsius = 25
+.param td     = 20n
+.param tr     = 10p
+.param tf     = 10p
+.param ton    = 400n
+.param tcyc   = 800n
+"}
