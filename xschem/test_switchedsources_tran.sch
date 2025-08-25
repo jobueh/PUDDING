@@ -4,93 +4,91 @@ K {}
 V {}
 S {}
 E {}
-N 660 -400 660 -380 {lab=GND}
-N 740 -400 820 -400 {lab=GND}
-N 1460 -1000 1460 -880 {lab=VDD}
-N 820 -1000 820 -880 {lab=VDD}
-N 900 -840 900 -740 {lab=Vpbias}
-N 880 -840 900 -840 {lab=Vpbias}
-N 820 -740 900 -740 {lab=Vpbias}
-N 820 -760 820 -740 {lab=Vpbias}
-N 1460 -760 1460 -580 {lab=Vout}
-N 1460 -520 1460 -400 {lab=GND}
-N 820 -520 820 -480 {lab=#net1}
-N 820 -420 820 -400 {lab=GND}
-N 740 -420 740 -400 {lab=GND}
-N 740 -500 740 -480 {lab=logI}
-N 900 -840 1400 -840 {lab=Vpbias}
-N 820 -740 820 -690 {lab=Vpbias}
-N 820 -600 820 -580 {lab=Vpcbias}
-N 820 -600 920 -600 {lab=Vpcbias}
-N 820 -630 820 -600 {lab=Vpcbias}
-N 920 -660 920 -600 {lab=Vpcbias}
-N 860 -660 920 -660 {lab=Vpcbias}
-N 740 -1000 820 -1000 {lab=VDD}
-N 740 -1000 740 -660 {lab=VDD}
-N 740 -660 820 -660 {lab=VDD}
-N 920 -800 920 -660 {lab=Vpcbias}
-N 880 -800 920 -800 {lab=Vpcbias}
-N 1280 -1000 1460 -1000 {lab=VDD}
-N 1380 -800 1400 -800 {lab=Vpcasc}
-N 1280 -640 1280 -600 {lab=Vpcbias}
-N 920 -600 1280 -600 {lab=Vpcbias}
-N 1280 -1000 1280 -760 {lab=VDD}
-N 1340 -700 1380 -700 {lab=Vpcasc}
-N 1380 -800 1380 -700 {lab=Vpcasc}
-N 1120 -1000 1280 -1000 {lab=VDD}
-N 660 -400 740 -400 {lab=GND}
-N 660 -520 660 -400 {lab=GND}
-N 660 -1000 660 -580 {lab=VDD}
-N 660 -1000 740 -1000 {lab=VDD}
-N 1120 -400 1460 -400 {lab=GND}
-N 1180 -720 1220 -720 {lab=off_n}
-N 1180 -680 1220 -680 {lab=on_n}
-N 1120 -640 1120 -400 {lab=GND}
-N 1020 -400 1120 -400 {lab=GND}
-N 1120 -1000 1120 -760 {lab=VDD}
-N 820 -1000 1120 -1000 {lab=VDD}
-N 1020 -520 1020 -400 {lab=GND}
-N 820 -400 1020 -400 {lab=GND}
-N 1020 -700 1020 -580 {lab=switch}
-N 1020 -700 1060 -700 {lab=switch}
+N 460 -100 460 -80 {lab=GND}
+N 540 -100 620 -100 {lab=GND}
+N 1420 -700 1420 -580 {lab=VDD}
+N 620 -700 620 -580 {lab=VDD}
+N 700 -540 700 -440 {lab=Vpbias}
+N 680 -540 700 -540 {lab=Vpbias}
+N 620 -440 700 -440 {lab=Vpbias}
+N 620 -460 620 -440 {lab=Vpbias}
+N 1420 -460 1420 -280 {lab=Vout}
+N 1420 -220 1420 -100 {lab=GND}
+N 620 -220 620 -180 {lab=#net1}
+N 620 -120 620 -100 {lab=GND}
+N 540 -120 540 -100 {lab=GND}
+N 540 -200 540 -180 {lab=logI}
+N 700 -540 1360 -540 {lab=Vpbias}
+N 620 -440 620 -390 {lab=Vpbias}
+N 620 -300 620 -280 {lab=Vpcbias}
+N 620 -300 720 -300 {lab=Vpcbias}
+N 620 -330 620 -300 {lab=Vpcbias}
+N 720 -360 720 -300 {lab=Vpcbias}
+N 660 -360 720 -360 {lab=Vpcbias}
+N 540 -700 620 -700 {lab=VDD}
+N 540 -700 540 -360 {lab=VDD}
+N 540 -360 620 -360 {lab=VDD}
+N 720 -500 720 -360 {lab=Vpcbias}
+N 680 -500 720 -500 {lab=Vpcbias}
+N 1340 -500 1360 -500 {lab=Vpcasc}
+N 720 -300 1160 -300 {lab=Vpcbias}
+N 1220 -460 1340 -460 {lab=Vpcasc}
+N 1340 -500 1340 -460 {lab=Vpcasc}
+N 1160 -700 1420 -700 {lab=VDD}
+N 460 -100 540 -100 {lab=GND}
+N 460 -220 460 -100 {lab=GND}
+N 460 -700 460 -280 {lab=VDD}
+N 460 -700 540 -700 {lab=VDD}
+N 920 -100 1420 -100 {lab=GND}
+N 980 -480 1100 -480 {lab=off_n}
+N 980 -440 1100 -440 {lab=on_n}
+N 920 -400 920 -100 {lab=GND}
+N 820 -100 920 -100 {lab=GND}
+N 920 -700 1160 -700 {lab=VDD}
+N 820 -220 820 -100 {lab=GND}
+N 620 -100 820 -100 {lab=GND}
+N 820 -460 820 -280 {lab=switch}
+N 820 -460 860 -460 {lab=switch}
+N 1160 -580 1160 -520 {lab=sw_p}
+N 1160 -400 1160 -380 {lab=sw_n}
+N 1160 -320 1160 -300 {lab=Vpcbias}
+N 1160 -700 1160 -640 {lab=VDD}
+N 920 -700 920 -520 {lab=VDD}
+N 620 -700 920 -700 {lab=VDD}
 C {title.sym} 160 0 0 0 {name=l1 author="Christoph Maier"}
-C {vsource.sym} 1460 -550 0 0 {name=Vout value=\{vdd-vout\} savecurrent=true}
-C {gnd.sym} 660 -380 0 0 {name=l2 lab=GND}
-C {devices/code_shown.sym} 40 -550 0 0 {name=NGSPICE only_toplevel=true 
+C {vsource.sym} 1420 -250 0 0 {name=Vout value=\{vdd-vout\} savecurrent=true}
+C {gnd.sym} 460 -80 0 0 {name=l2 lab=GND}
+C {devices/code_shown.sym} 1500 -670 0 0 {name=NGSPICE only_toplevel=true 
 value="
 .include test_switchedsources_tran.save
-.param temp=27
+.temp=27
 .options gmin=1e-15 abstol=1p method=gear
 .options savecurrents
-.param logI=-7
-.param vdd=1.6
-.param vout=0.6
-.param tclock=100n
-.param thigh=50n
-.param trise=10p
-.param tfall=10p
 .control
 save all 
 op
 write test_switchedsources_tran.raw
 set appendwrite
 *dc Vout 0 1.6 10m VlogI -8 -6 0.5
-tran 1n 1u
+tran 100p 5u
 write test_switchedsources_tran.raw
 plot 2*(vout#branch-vprobe#branch)/(vprobe#branch+vout#branch)
 plot vdd vpbias vpcbias switch on_n off_n vpcasc vout xref.drain xsrc.drain
-plot vprobe#branch vout#branch
+plot vout#branch vprobe#branch
 plot switch on_n off_n Vpcasc
+plot @n.xsw.xmbias.nsg13_lv_pmos[ids] @n.xsw.xmpullup.nsg13_lv_pmos[ids]
+plot viswp#branch viswn#branch
+plot 0.5*(viswp#branch+viswn#branch) viswp#branch-viswn#branch
 .endc
 "}
-C {simulator_commands_shown.sym} 40 -690 0 0 {
+C {simulator_commands_shown.sym} 60 -230 0 0 {
 name=Libs_Ngspice
 simulator=ngspice
 only_toplevel=false
 value=".include sg13g2_stdcell.spice
 .lib cornerMOSlv.lib mos_tt"
       }
-C {launcher.sym} 160 -820 0 0 {name=h3
+C {launcher.sym} 130 -130 0 0 {name=h3
 descr=SimulateNGSPICE
 tclcommand="
 # Setup the default simulation commands if not already set up
@@ -114,26 +112,26 @@ write_data [save_params] $netlist_dir/[file rootname [file tail [xschem get curr
 xschem netlist
 simulate
 "}
-C {devices/launcher.sym} 160 -790 0 0 {name=h1
+C {devices/launcher.sym} 130 -100 0 0 {name=h1
 descr="OP annotate" 
 tclcommand="xschem annotate_op"
 }
-C {devices/launcher.sym} 160 -760 0 0 {name=h2
+C {devices/launcher.sym} 130 -70 0 0 {name=h2
 descr="Load waves" 
 tclcommand="
 xschem raw_read $netlist_dir/[file rootname [file tail [xschem get current_name]]].raw dc
 xschem setprop rect 2 0 fullxzoom
 "
 }
-C {vsource.sym} 820 -450 0 1 {name=Vprobe value=0 savecurrent=true}
-C {isource_arith.sym} 820 -550 0 0 {name=G1 CUR=10**V(logI)}
-C {vsource.sym} 740 -450 0 1 {name=VlogI value=\{logI\} savecurrent=true}
-C {lab_pin.sym} 740 -500 0 0 {name=p6 lab=logI}
-C {pcascsrc.sym} 820 -820 0 1 {name=xref}
-C {pcascsrc.sym} 1460 -820 0 0 {name=xsrc}
-C {vsource.sym} 660 -550 0 1 {name=VDDA value=\{vdd\} savecurrent=true}
-C {lab_wire.sym} 960 -840 0 0 {name=p2 lab=Vpbias}
-C {sg13g2_pr/sg13_lv_pmos.sym} 840 -660 0 1 {name=Mcbias
+C {vsource.sym} 620 -150 0 1 {name=Vprobe value=0 savecurrent=true}
+C {isource_arith.sym} 620 -250 0 0 {name=G1 CUR=10**V(logI)}
+C {vsource.sym} 540 -150 0 1 {name=VlogI value=\{logI\} savecurrent=true}
+C {lab_pin.sym} 540 -200 0 0 {name=p6 lab=logI}
+C {pcascsrc.sym} 620 -520 0 1 {name=xref}
+C {pcascsrc.sym} 1420 -520 0 0 {name=xsrc}
+C {vsource.sym} 460 -250 0 1 {name=VDDA value=\{vdd\} savecurrent=true}
+C {lab_wire.sym} 760 -540 0 0 {name=p2 lab=Vpbias}
+C {sg13g2_pr/sg13_lv_pmos.sym} 640 -360 0 1 {name=Mcbias
 l=0.15u
 w=6u
 ng=1
@@ -141,13 +139,42 @@ m=1
 model=sg13_lv_pmos
 spiceprefix=X
 }
-C {lab_wire.sym} 890 -600 0 0 {name=p3 lab=Vpcbias}
-C {lab_wire.sym} 880 -1000 0 0 {name=p1 lab=VDD}
-C {lab_wire.sym} 1460 -750 3 0 {name=p4 lab=Vout}
-C {cascodeswitch_pmos.sym} 1280 -700 0 0 {name=xsw}
-C {lab_wire.sym} 1380 -800 0 0 {name=p5 lab=Vpcasc}
-C {switch_logic.sym} 1120 -700 0 0 {name=xlogic}
-C {lab_wire.sym} 1200 -720 0 0 {name=p7 sig_type=std_logic lab=off_n}
-C {lab_wire.sym} 1200 -680 0 0 {name=p8 sig_type=std_logic lab=on_n}
-C {vsource.sym} 1020 -550 0 0 {name=VSW value="dc 0 ac 0 pulse(0, \{vdd\}, \{tclock/4\}, \{trise\}, \{tfall\}, \{thigh\}, \{tclock\})" savecurrent=true}
-C {lab_wire.sym} 1020 -700 0 0 {name=p9 sig_type=std_logic lab=switch}
+C {lab_wire.sym} 690 -300 0 0 {name=p3 lab=Vpcbias}
+C {lab_wire.sym} 680 -700 0 0 {name=p1 lab=VDD}
+C {lab_wire.sym} 1420 -450 3 0 {name=p4 lab=Vout}
+C {cascodeswitch_pmos.sym} 1160 -460 0 0 {name=xsw}
+C {lab_wire.sym} 1340 -500 0 0 {name=p5 lab=Vpcasc}
+C {switch_logic.sym} 920 -460 0 0 {name=xlogic}
+C {lab_wire.sym} 1000 -480 0 0 {name=p7 sig_type=std_logic lab=off_n}
+C {lab_wire.sym} 1000 -440 0 0 {name=p8 sig_type=std_logic lab=on_n}
+C {vsource.sym} 820 -250 0 0 {name=VSW value="DC \{vdd\} PULSE(0 \{vdd\} \{td\} \{tr\} \{tf\} \{ton\} \{tcyc\})" savecurrent=true}
+C {lab_wire.sym} 820 -460 0 0 {name=p9 sig_type=std_logic lab=switch}
+C {devices/code_shown.sym} 60 -770 0 0 {name=params only_toplevel=false value="* device parameters
+.param l      = 8
+.param w      = 2
+.param nf     = 1
+.param lc     = 3.2
+.param wc     = 1.48
+.param nfc    = 1
+.param lb     = 16
+.param wb     = 1
+.param nfb    = 1
+.param lnmos  = 8
+.param wnmos  = 2
+.param nfn    = 1
+* instrumentation parameters
+.param logI=-7
+.param vdd=1.6
+.param vout=0.6
+* simulation parameters
+.param celsius = 25
+.param td     = 20n
+.param tr     = 10p
+.param tf     = 10p
+.param ton    = 400n
+.param tcyc   = 800n
+"}
+C {vsource.sym} 1160 -610 0 0 {name=Viswp value=0 savecurrent=true}
+C {vsource.sym} 1160 -350 0 0 {name=Viswn value=0 savecurrent=true}
+C {lab_wire.sym} 1160 -380 0 0 {name=p10 lab=sw_n}
+C {lab_wire.sym} 1160 -560 0 0 {name=p11 lab=sw_p}
