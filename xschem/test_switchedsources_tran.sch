@@ -70,7 +70,7 @@ op
 write test_switchedsources_tran.raw
 set appendwrite
 *dc Vout 0 1.6 10m VlogI -8 -6 0.5
-tran 100p 5u
+tran 10p 500n
 write test_switchedsources_tran.raw
 plot 2*(vout#branch-vprobe#branch)/(vprobe#branch+vout#branch)
 plot vdd vpbias vpcbias switch on_n off_n vpcasc vout xref.drain xsrc.drain
@@ -144,7 +144,7 @@ C {lab_wire.sym} 680 -700 0 0 {name=p1 lab=VDD}
 C {lab_wire.sym} 1420 -450 3 0 {name=p4 lab=Vout}
 C {cascodeswitch_pmos.sym} 1160 -460 0 0 {name=xsw}
 C {lab_wire.sym} 1340 -500 0 0 {name=p5 lab=Vpcasc}
-C {switch_logic_RS_dly3.sym} 920 -460 0 0 {name=xlogic}
+C {switch_logic_RS.sym} 920 -460 0 0 {name=xlogic lenp=\{lplogic\} wp=\{wplogic\} lenn=\{lnlogic\} wn=\{wnlogic\}}
 C {lab_wire.sym} 1000 -480 0 0 {name=p7 sig_type=std_logic lab=off_n}
 C {lab_wire.sym} 1000 -440 0 0 {name=p8 sig_type=std_logic lab=on_n}
 C {vsource.sym} 820 -250 0 0 {name=VSW value="DC \{vdd\} PULSE(0 \{vdd\} \{td\} \{tr\} \{tf\} \{ton\} \{tcyc\})" savecurrent=true}
@@ -152,27 +152,25 @@ C {lab_wire.sym} 820 -460 0 0 {name=p9 sig_type=std_logic lab=switch}
 C {devices/code_shown.sym} 60 -770 0 0 {name=params only_toplevel=false value="* device parameters
 .param l      = 2u
 .param w      = 0.55u
-.param nf     = 1
 .param lc     = 0.3u
 .param wc     = 0.3u
-.param nfc    = 1
-.param lb     = 16u
-.param wb     = 1u
-.param nfb    = 1
-.param lnmos  = 8u
-.param wnmos  = 2u
-.param nfn    = 1
+*.param lb     = 16u
+*.param wb     = 1u
+.param lplogic= 0.13u
+.param wplogic= 0.5u
+.param lnlogic= 0.13u
+.param wnlogic= 0.15u
 * instrumentation parameters
 .param logI=-7
 .param vdd=1.6
 .param vout=0.6
 * simulation parameters
 .param celsius = 25
-.param td     = 20n
+.param td     = 10p
 .param tr     = 10p
 .param tf     = 10p
-.param ton    = 400n
-.param tcyc   = 800n
+.param ton    = 50n
+.param tcyc   = 100n
 "}
 C {vsource.sym} 1160 -610 0 0 {name=Viswp value=0 savecurrent=true}
 C {vsource.sym} 1160 -350 0 0 {name=Viswn value=0 savecurrent=true}
