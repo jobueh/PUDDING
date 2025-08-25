@@ -1,0 +1,693 @@
+* NGSPICE file created from non_overlap.ext - technology: ihp-sg13g2
+
+* Black-box entry subcircuit for sg13g2_tielo abstract view
+.subckt sg13g2_tielo VDD VSS L_LO
+.ends
+
+* Black-box entry subcircuit for sg13g2_fill_1 abstract view
+.subckt sg13g2_fill_1 VDD VSS
+.ends
+
+* Black-box entry subcircuit for sg13g2_nand2_2 abstract view
+.subckt sg13g2_nand2_2 Y A B VDD VSS
+.ends
+
+* Black-box entry subcircuit for sg13g2_dlygate4sd1_1 abstract view
+.subckt sg13g2_dlygate4sd1_1 A X VDD VSS
+.ends
+
+* Black-box entry subcircuit for sg13g2_fill_2 abstract view
+.subckt sg13g2_fill_2 VDD VSS
+.ends
+
+* Black-box entry subcircuit for sg13g2_xnor2_1 abstract view
+.subckt sg13g2_xnor2_1 Y A B VDD VSS
+.ends
+
+* Black-box entry subcircuit for sg13g2_decap_8 abstract view
+.subckt sg13g2_decap_8 VDD VSS
+.ends
+
+* Black-box entry subcircuit for sg13g2_decap_4 abstract view
+.subckt sg13g2_decap_4 VDD VSS
+.ends
+
+.subckt non_overlap ON[0] ON[10] ON[11] ON[12] ON[13] ON[14] ON[15] ON[16] ON[17]
++ ON[18] ON[19] ON[1] ON[20] ON[21] ON[22] ON[23] ON[24] ON[25] ON[26] ON[27] ON[28]
++ ON[29] ON[2] ON[30] ON[31] ON[3] ON[4] ON[5] ON[6] ON[7] ON[8] ON[9] ON_N[0] ON_N[10]
++ ON_N[11] ON_N[12] ON_N[13] ON_N[14] ON_N[15] ON_N[16] ON_N[17] ON_N[18] ON_N[19]
++ ON_N[1] ON_N[20] ON_N[21] ON_N[22] ON_N[23] ON_N[24] ON_N[25] ON_N[26] ON_N[27]
++ ON_N[28] ON_N[29] ON_N[2] ON_N[30] ON_N[31] ON_N[3] ON_N[4] ON_N[5] ON_N[6] ON_N[7]
++ ON_N[8] ON_N[9] VGND VPWR thermo[0] thermo[10] thermo[11] thermo[12] thermo[13]
++ thermo[14] thermo[15] thermo[16] thermo[17] thermo[18] thermo[19] thermo[1] thermo[20]
++ thermo[21] thermo[22] thermo[23] thermo[24] thermo[25] thermo[26] thermo[27] thermo[28]
++ thermo[29] thermo[2] thermo[30] thermo[31] thermo[3] thermo[4] thermo[5] thermo[6]
++ thermo[7] thermo[8] thermo[9]
+X_294_ VPWR VGND _070_ sg13g2_tielo
+X_363_ VPWR VGND _139_ sg13g2_tielo
+X_432_ VPWR VGND ON_N[16] sg13g2_tielo
+X_415_ VPWR VGND ON[31] sg13g2_tielo
+X_346_ VPWR VGND _122_ sg13g2_tielo
+XFILLER_10_136 VPWR VGND sg13g2_fill_1
+Xcomb_logic\[25\].nand_on_I comb_logic\[25\].nand_on_I/Y _085_ _086_ VPWR VGND sg13g2_nand2_2
+Xcomb_logic\[25\].delay1_I thermo[25] comb_logic\[25\].delay1_I/X VPWR VGND sg13g2_dlygate4sd1_1
+X_277_ VPWR VGND _053_ sg13g2_tielo
+XFILLER_0_46 VPWR VGND sg13g2_fill_1
+X_329_ VPWR VGND _105_ sg13g2_tielo
+XFILLER_9_11 VPWR VGND sg13g2_fill_1
+XFILLER_6_45 VPWR VGND sg13g2_fill_1
+XFILLER_15_21 VPWR VGND sg13g2_fill_2
+Xcomb_logic\[2\].xor_pulse_I comb_logic\[2\].xor_pulse_I/Y _114_ thermo[2] VPWR VGND
++ sg13g2_xnor2_1
+Xcomb_logic\[24\].nand_on_I comb_logic\[24\].nand_on_I/Y _080_ _081_ VPWR VGND sg13g2_nand2_2
+XFILLER_13_134 VPWR VGND sg13g2_fill_1
+XFILLER_13_101 VPWR VGND sg13g2_fill_1
+XFILLER_9_127 VPWR VGND sg13g2_decap_8
+X_293_ VPWR VGND _069_ sg13g2_tielo
+X_362_ VPWR VGND _138_ sg13g2_tielo
+XFILLER_3_68 VPWR VGND sg13g2_fill_1
+XFILLER_3_79 VPWR VGND sg13g2_decap_8
+X_431_ VPWR VGND ON_N[15] sg13g2_tielo
+Xcomb_logic\[15\].delay1_I thermo[15] comb_logic\[15\].delay1_I/X VPWR VGND sg13g2_dlygate4sd1_1
+XFILLER_12_44 VPWR VGND sg13g2_fill_2
+X_414_ VPWR VGND ON[30] sg13g2_tielo
+X_345_ VPWR VGND _121_ sg13g2_tielo
+X_276_ VPWR VGND _052_ sg13g2_tielo
+X_328_ VPWR VGND _104_ sg13g2_tielo
+X_259_ VPWR VGND _035_ sg13g2_tielo
+XFILLER_0_69 VPWR VGND sg13g2_fill_2
+XFILLER_9_78 VPWR VGND sg13g2_fill_2
+Xcomb_logic\[23\].nand_on_n_I thermo[23] _077_ _078_ VPWR VGND sg13g2_nand2_2
+Xcomb_logic\[11\].nand_on_n_I thermo[11] _012_ _013_ VPWR VGND sg13g2_nand2_2
+XFILLER_6_13 VPWR VGND sg13g2_decap_4
+Xcomb_logic\[23\].nand_on_I comb_logic\[23\].nand_on_I/Y _075_ _076_ VPWR VGND sg13g2_nand2_2
+XFILLER_15_99 VPWR VGND sg13g2_fill_2
+XFILLER_15_88 VPWR VGND sg13g2_fill_2
+Xcomb_logic\[6\].delay1_I thermo[6] comb_logic\[6\].delay1_I/X VPWR VGND sg13g2_dlygate4sd1_1
+X_292_ VPWR VGND _068_ sg13g2_tielo
+XFILLER_9_117 VPWR VGND sg13g2_decap_4
+X_361_ VPWR VGND _137_ sg13g2_tielo
+X_430_ VPWR VGND ON_N[14] sg13g2_tielo
+XFILLER_12_56 VPWR VGND sg13g2_decap_8
+X_413_ VPWR VGND ON[29] sg13g2_tielo
+X_275_ VPWR VGND _051_ sg13g2_tielo
+XFILLER_5_153 VPWR VGND sg13g2_fill_1
+X_344_ VPWR VGND _120_ sg13g2_tielo
+XFILLER_9_24 VPWR VGND sg13g2_fill_2
+X_327_ VPWR VGND _103_ sg13g2_tielo
+X_258_ VPWR VGND _034_ sg13g2_tielo
+Xcomb_logic\[22\].nand_on_I comb_logic\[22\].nand_on_I/Y _070_ _071_ VPWR VGND sg13g2_nand2_2
+Xcomb_logic\[1\].nand_on_n_I thermo[1] _057_ _058_ VPWR VGND sg13g2_nand2_2
+X_291_ VPWR VGND _067_ sg13g2_tielo
+X_360_ VPWR VGND _136_ sg13g2_tielo
+XFILLER_12_79 VPWR VGND sg13g2_fill_2
+XFILLER_12_46 VPWR VGND sg13g2_fill_1
+X_412_ VPWR VGND ON[28] sg13g2_tielo
+X_274_ VPWR VGND _050_ sg13g2_tielo
+X_343_ VPWR VGND _119_ sg13g2_tielo
+Xcomb_logic\[19\].nand_on_n_I thermo[19] _052_ _053_ VPWR VGND sg13g2_nand2_2
+Xcomb_logic\[21\].xor_pulse_I comb_logic\[21\].xor_pulse_I/Y _069_ thermo[21] VPWR
++ VGND sg13g2_xnor2_1
+XFILLER_0_16 VPWR VGND sg13g2_fill_1
+XFILLER_2_113 VPWR VGND sg13g2_decap_4
+X_326_ VPWR VGND _102_ sg13g2_tielo
+Xcomb_logic\[21\].nand_on_I comb_logic\[21\].nand_on_I/Y _065_ _066_ VPWR VGND sg13g2_nand2_2
+X_257_ VPWR VGND _033_ sg13g2_tielo
+Xcomb_logic\[24\].delay1_I thermo[24] comb_logic\[24\].delay1_I/X VPWR VGND sg13g2_dlygate4sd1_1
+X_309_ VPWR VGND _085_ sg13g2_tielo
+XFILLER_1_92 VPWR VGND sg13g2_decap_8
+XFILLER_1_81 VPWR VGND sg13g2_fill_2
+XFILLER_15_68 VPWR VGND sg13g2_decap_4
+X_290_ VPWR VGND _066_ sg13g2_tielo
+XFILLER_3_38 VPWR VGND sg13g2_fill_2
+XFILLER_10_129 VPWR VGND sg13g2_decap_8
+X_342_ VPWR VGND _118_ sg13g2_tielo
+X_411_ VPWR VGND ON[27] sg13g2_tielo
+Xcomb_logic\[20\].nand_on_I comb_logic\[20\].nand_on_I/Y _060_ _061_ VPWR VGND sg13g2_nand2_2
+X_273_ VPWR VGND _049_ sg13g2_tielo
+XFILLER_4_81 VPWR VGND sg13g2_fill_2
+Xcomb_logic\[14\].delay1_I thermo[14] comb_logic\[14\].delay1_I/X VPWR VGND sg13g2_dlygate4sd1_1
+XFILLER_13_90 VPWR VGND sg13g2_fill_2
+X_325_ VPWR VGND _101_ sg13g2_tielo
+X_256_ VPWR VGND _032_ sg13g2_tielo
+XFILLER_9_26 VPWR VGND sg13g2_fill_1
+XFILLER_9_48 VPWR VGND sg13g2_decap_4
+Xcomb_logic\[9\].nand_on_n_I thermo[9] _157_ _158_ VPWR VGND sg13g2_nand2_2
+X_308_ VPWR VGND _084_ sg13g2_tielo
+X_239_ VPWR VGND _015_ sg13g2_tielo
+Xcomb_logic\[29\].xor_pulse_I comb_logic\[29\].xor_pulse_I/Y _109_ thermo[29] VPWR
++ VGND sg13g2_xnor2_1
+XFILLER_13_116 VPWR VGND sg13g2_fill_2
+Xcomb_logic\[17\].xor_pulse_I comb_logic\[17\].xor_pulse_I/Y _044_ thermo[17] VPWR
++ VGND sg13g2_xnor2_1
+XFILLER_8_120 VPWR VGND sg13g2_fill_1
+XFILLER_8_153 VPWR VGND sg13g2_fill_1
+X_341_ VPWR VGND _117_ sg13g2_tielo
+X_410_ VPWR VGND ON[26] sg13g2_tielo
+XFILLER_10_119 VPWR VGND sg13g2_fill_2
+X_272_ VPWR VGND _048_ sg13g2_tielo
+Xcomb_logic\[5\].delay1_I thermo[5] comb_logic\[5\].delay1_I/X VPWR VGND sg13g2_dlygate4sd1_1
+X_324_ VPWR VGND _100_ sg13g2_tielo
+XFILLER_0_29 VPWR VGND sg13g2_fill_1
+X_255_ VPWR VGND _031_ sg13g2_tielo
+Xcomb_logic\[20\].nand_on_n_I thermo[20] _062_ _063_ VPWR VGND sg13g2_nand2_2
+X_307_ VPWR VGND _083_ sg13g2_tielo
+XFILLER_1_83 VPWR VGND sg13g2_fill_1
+X_238_ VPWR VGND _014_ sg13g2_tielo
+XFILLER_3_18 VPWR VGND sg13g2_decap_4
+XFILLER_8_143 VPWR VGND sg13g2_fill_2
+X_340_ VPWR VGND _116_ sg13g2_tielo
+XFILLER_5_102 VPWR VGND sg13g2_decap_4
+XFILLER_5_135 VPWR VGND sg13g2_fill_2
+X_271_ VPWR VGND _047_ sg13g2_tielo
+X_469_ VPWR VGND _469_/L_LO sg13g2_tielo
+Xcomb_logic\[7\].xor_pulse_I comb_logic\[7\].xor_pulse_I/Y _149_ thermo[7] VPWR VGND
++ sg13g2_xnor2_1
+XFILLER_4_72 VPWR VGND sg13g2_fill_1
+XFILLER_4_83 VPWR VGND sg13g2_fill_1
+XFILLER_4_94 VPWR VGND sg13g2_fill_2
+XFILLER_13_92 VPWR VGND sg13g2_fill_1
+X_323_ VPWR VGND _099_ sg13g2_tielo
+X_254_ VPWR VGND _030_ sg13g2_tielo
+X_306_ VPWR VGND _082_ sg13g2_tielo
+X_237_ VPWR VGND _013_ sg13g2_tielo
+XFILLER_1_62 VPWR VGND sg13g2_fill_2
+Xcomb_logic\[23\].delay1_I thermo[23] comb_logic\[23\].delay1_I/X VPWR VGND sg13g2_dlygate4sd1_1
+Xcomb_logic\[28\].nand_on_n_I thermo[28] _102_ _103_ VPWR VGND sg13g2_nand2_2
+Xcomb_logic\[30\].xor_pulse_I comb_logic\[30\].xor_pulse_I/Y _119_ thermo[30] VPWR
++ VGND sg13g2_xnor2_1
+Xcomb_logic\[16\].nand_on_n_I thermo[16] _037_ _038_ VPWR VGND sg13g2_nand2_2
+X_270_ VPWR VGND _046_ sg13g2_tielo
+XFILLER_5_114 VPWR VGND sg13g2_decap_4
+X_468_ VPWR VGND _468_/L_LO sg13g2_tielo
+X_399_ VPWR VGND ON[15] sg13g2_tielo
+X_322_ VPWR VGND _098_ sg13g2_tielo
+XFILLER_2_117 VPWR VGND sg13g2_fill_1
+XFILLER_2_128 VPWR VGND sg13g2_decap_8
+X_253_ VPWR VGND _029_ sg13g2_tielo
+X_305_ VPWR VGND _081_ sg13g2_tielo
+X_236_ VPWR VGND _012_ sg13g2_tielo
+Xcomb_logic\[13\].delay1_I thermo[13] comb_logic\[13\].delay1_I/X VPWR VGND sg13g2_dlygate4sd1_1
+XFILLER_10_61 VPWR VGND sg13g2_fill_1
+XFILLER_10_72 VPWR VGND sg13g2_decap_4
+XFILLER_7_95 VPWR VGND sg13g2_fill_2
+XFILLER_4_30 VPWR VGND sg13g2_fill_2
+XFILLER_4_96 VPWR VGND sg13g2_fill_1
+X_398_ VPWR VGND ON[14] sg13g2_tielo
+X_467_ VPWR VGND _467_/L_LO sg13g2_tielo
+X_321_ VPWR VGND _097_ sg13g2_tielo
+Xcomb_logic\[6\].nand_on_n_I thermo[6] _142_ _143_ VPWR VGND sg13g2_nand2_2
+X_252_ VPWR VGND _028_ sg13g2_tielo
+Xcomb_logic\[4\].delay1_I thermo[4] comb_logic\[4\].delay1_I/X VPWR VGND sg13g2_dlygate4sd1_1
+X_304_ VPWR VGND _080_ sg13g2_tielo
+X_235_ VPWR VGND _011_ sg13g2_tielo
+XFILLER_1_75 VPWR VGND sg13g2_fill_2
+XFILLER_1_20 VPWR VGND sg13g2_fill_1
+Xcomb_logic\[26\].xor_pulse_I comb_logic\[26\].xor_pulse_I/Y _094_ thermo[26] VPWR
++ VGND sg13g2_xnor2_1
+Xcomb_logic\[14\].xor_pulse_I comb_logic\[14\].xor_pulse_I/Y _029_ thermo[14] VPWR
++ VGND sg13g2_xnor2_1
+XFILLER_12_153 VPWR VGND sg13g2_fill_1
+X_466_ VPWR VGND _466_/L_LO sg13g2_tielo
+X_397_ VPWR VGND ON[13] sg13g2_tielo
+X_320_ VPWR VGND _096_ sg13g2_tielo
+X_251_ VPWR VGND _027_ sg13g2_tielo
+X_449_ VPWR VGND _449_/L_LO sg13g2_tielo
+X_234_ VPWR VGND _010_ sg13g2_tielo
+X_303_ VPWR VGND _079_ sg13g2_tielo
+Xcomb_logic\[22\].delay1_I thermo[22] comb_logic\[22\].delay1_I/X VPWR VGND sg13g2_dlygate4sd1_1
+Xcomb_logic\[4\].xor_pulse_I comb_logic\[4\].xor_pulse_I/Y _134_ thermo[4] VPWR VGND
++ sg13g2_xnor2_1
+X_465_ VPWR VGND _465_/L_LO sg13g2_tielo
+XFILLER_5_128 VPWR VGND sg13g2_decap_8
+X_396_ VPWR VGND ON[12] sg13g2_tielo
+XFILLER_4_32 VPWR VGND sg13g2_fill_1
+X_250_ VPWR VGND _026_ sg13g2_tielo
+XFILLER_13_63 VPWR VGND sg13g2_decap_8
+X_379_ VPWR VGND _155_ sg13g2_tielo
+XFILLER_1_153 VPWR VGND sg13g2_fill_1
+X_448_ VPWR VGND _448_/L_LO sg13g2_tielo
+X_302_ VPWR VGND _078_ sg13g2_tielo
+XFILLER_1_99 VPWR VGND sg13g2_fill_1
+X_233_ VPWR VGND _009_ sg13g2_tielo
+Xcomb_logic\[31\].nand_on_I comb_logic\[31\].nand_on_I/Y _120_ _121_ VPWR VGND sg13g2_nand2_2
+XFILLER_10_42 VPWR VGND sg13g2_fill_2
+Xcomb_logic\[12\].delay1_I thermo[12] comb_logic\[12\].delay1_I/X VPWR VGND sg13g2_dlygate4sd1_1
+Xcomb_logic\[25\].nand_on_n_I thermo[25] _087_ _088_ VPWR VGND sg13g2_nand2_2
+Xcomb_logic\[13\].nand_on_n_I thermo[13] _022_ _023_ VPWR VGND sg13g2_nand2_2
+X_464_ VPWR VGND _464_/L_LO sg13g2_tielo
+XFILLER_5_118 VPWR VGND sg13g2_fill_2
+XFILLER_4_55 VPWR VGND sg13g2_decap_4
+X_395_ VPWR VGND ON[11] sg13g2_tielo
+X_447_ VPWR VGND ON_N[31] sg13g2_tielo
+X_378_ VPWR VGND _154_ sg13g2_tielo
+Xcomb_logic\[30\].nand_on_I comb_logic\[30\].nand_on_I/Y _115_ _116_ VPWR VGND sg13g2_nand2_2
+X_301_ VPWR VGND _077_ sg13g2_tielo
+X_232_ VPWR VGND _008_ sg13g2_tielo
+XFILLER_10_76 VPWR VGND sg13g2_fill_2
+Xcomb_logic\[3\].delay1_I thermo[3] comb_logic\[3\].delay1_I/X VPWR VGND sg13g2_dlygate4sd1_1
+XFILLER_15_153 VPWR VGND sg13g2_fill_1
+XFILLER_15_120 VPWR VGND sg13g2_fill_2
+XFILLER_7_22 VPWR VGND sg13g2_decap_8
+XFILLER_7_88 VPWR VGND sg13g2_decap_8
+X_463_ VPWR VGND _463_/L_LO sg13g2_tielo
+Xcomb_logic\[3\].nand_on_n_I thermo[3] _127_ _128_ VPWR VGND sg13g2_nand2_2
+XFILLER_4_45 VPWR VGND sg13g2_fill_2
+X_394_ VPWR VGND ON[10] sg13g2_tielo
+X_446_ VPWR VGND ON_N[30] sg13g2_tielo
+X_377_ VPWR VGND _153_ sg13g2_tielo
+Xcomb_logic\[31\].delay1_I thermo[31] comb_logic\[31\].delay1_I/X VPWR VGND sg13g2_dlygate4sd1_1
+XFILLER_6_0 VPWR VGND sg13g2_fill_2
+X_231_ VPWR VGND _007_ sg13g2_tielo
+X_300_ VPWR VGND _076_ sg13g2_tielo
+XFILLER_1_68 VPWR VGND sg13g2_fill_1
+XFILLER_1_35 VPWR VGND sg13g2_fill_2
+X_429_ VPWR VGND ON_N[13] sg13g2_tielo
+XFILLER_10_44 VPWR VGND sg13g2_fill_1
+Xcomb_logic\[23\].xor_pulse_I comb_logic\[23\].xor_pulse_I/Y _079_ thermo[23] VPWR
++ VGND sg13g2_xnor2_1
+XFILLER_15_110 VPWR VGND sg13g2_fill_2
+Xcomb_logic\[11\].xor_pulse_I comb_logic\[11\].xor_pulse_I/Y _014_ thermo[11] VPWR
++ VGND sg13g2_xnor2_1
+XFILLER_12_135 VPWR VGND sg13g2_fill_2
+X_462_ VPWR VGND _462_/L_LO sg13g2_tielo
+XFILLER_4_131 VPWR VGND sg13g2_decap_4
+X_393_ VPWR VGND ON[9] sg13g2_tielo
+XFILLER_4_153 VPWR VGND sg13g2_fill_1
+Xcomb_logic\[21\].delay1_I thermo[21] comb_logic\[21\].delay1_I/X VPWR VGND sg13g2_dlygate4sd1_1
+XFILLER_13_99 VPWR VGND sg13g2_fill_2
+XFILLER_13_11 VPWR VGND sg13g2_fill_2
+XFILLER_1_134 VPWR VGND sg13g2_fill_2
+X_445_ VPWR VGND ON_N[29] sg13g2_tielo
+X_376_ VPWR VGND _152_ sg13g2_tielo
+X_230_ VPWR VGND _006_ sg13g2_tielo
+X_359_ VPWR VGND _135_ sg13g2_tielo
+X_428_ VPWR VGND ON_N[12] sg13g2_tielo
+Xcomb_logic\[9\].nand_on_I comb_logic\[9\].nand_on_I/Y _155_ _156_ VPWR VGND sg13g2_nand2_2
+XFILLER_15_122 VPWR VGND sg13g2_fill_1
+XFILLER_7_79 VPWR VGND sg13g2_fill_1
+XFILLER_8_118 VPWR VGND sg13g2_fill_2
+Xcomb_logic\[1\].xor_pulse_I comb_logic\[1\].xor_pulse_I/Y _059_ thermo[1] VPWR VGND
++ sg13g2_xnor2_1
+XFILLER_7_140 VPWR VGND sg13g2_fill_1
+XFILLER_14_0 VPWR VGND sg13g2_fill_2
+Xcomb_logic\[11\].delay1_I thermo[11] comb_logic\[11\].delay1_I/X VPWR VGND sg13g2_dlygate4sd1_1
+X_461_ VPWR VGND _461_/L_LO sg13g2_tielo
+X_392_ VPWR VGND ON[8] sg13g2_tielo
+X_444_ VPWR VGND ON_N[28] sg13g2_tielo
+X_375_ VPWR VGND _151_ sg13g2_tielo
+Xcomb_logic\[19\].xor_pulse_I comb_logic\[19\].xor_pulse_I/Y _054_ thermo[19] VPWR
++ VGND sg13g2_xnor2_1
+Xcomb_logic\[8\].nand_on_I comb_logic\[8\].nand_on_I/Y _150_ _151_ VPWR VGND sg13g2_nand2_2
+XFILLER_1_37 VPWR VGND sg13g2_fill_1
+X_358_ VPWR VGND _134_ sg13g2_tielo
+X_427_ VPWR VGND ON_N[11] sg13g2_tielo
+XFILLER_6_2 VPWR VGND sg13g2_fill_1
+X_289_ VPWR VGND _065_ sg13g2_tielo
+XFILLER_10_13 VPWR VGND sg13g2_decap_4
+XFILLER_10_57 VPWR VGND sg13g2_decap_4
+Xcomb_logic\[22\].nand_on_n_I thermo[22] _072_ _073_ VPWR VGND sg13g2_nand2_2
+Xcomb_logic\[10\].nand_on_n_I thermo[10] _007_ _008_ VPWR VGND sg13g2_nand2_2
+XFILLER_7_36 VPWR VGND sg13g2_fill_2
+Xcomb_logic\[2\].delay1_I thermo[2] comb_logic\[2\].delay1_I/X VPWR VGND sg13g2_dlygate4sd1_1
+X_460_ VPWR VGND _460_/L_LO sg13g2_tielo
+X_391_ VPWR VGND ON[7] sg13g2_tielo
+XFILLER_4_59 VPWR VGND sg13g2_fill_1
+XFILLER_13_35 VPWR VGND sg13g2_fill_2
+XFILLER_1_136 VPWR VGND sg13g2_fill_1
+X_443_ VPWR VGND ON_N[27] sg13g2_tielo
+X_374_ VPWR VGND _150_ sg13g2_tielo
+Xcomb_logic\[7\].nand_on_I comb_logic\[7\].nand_on_I/Y _145_ _146_ VPWR VGND sg13g2_nand2_2
+X_357_ VPWR VGND _133_ sg13g2_tielo
+X_426_ VPWR VGND ON_N[10] sg13g2_tielo
+X_288_ VPWR VGND _064_ sg13g2_tielo
+Xcomb_logic\[9\].xor_pulse_I comb_logic\[9\].xor_pulse_I/Y _159_ thermo[9] VPWR VGND
++ sg13g2_xnor2_1
+X_409_ VPWR VGND ON[25] sg13g2_tielo
+XFILLER_4_0 VPWR VGND sg13g2_fill_2
+Xcomb_logic\[30\].delay1_I thermo[30] comb_logic\[30\].delay1_I/X VPWR VGND sg13g2_dlygate4sd1_1
+XFILLER_15_135 VPWR VGND sg13g2_fill_2
+XFILLER_7_59 VPWR VGND sg13g2_fill_2
+XFILLER_14_2 VPWR VGND sg13g2_fill_1
+XFILLER_7_131 VPWR VGND sg13g2_fill_1
+XFILLER_7_153 VPWR VGND sg13g2_fill_1
+Xcomb_logic\[0\].nand_on_n_I thermo[0] _002_ _003_ VPWR VGND sg13g2_nand2_2
+X_390_ VPWR VGND ON[6] sg13g2_tielo
+Xcomb_logic\[6\].nand_on_I comb_logic\[6\].nand_on_I/Y _140_ _141_ VPWR VGND sg13g2_nand2_2
+XFILLER_4_16 VPWR VGND sg13g2_fill_2
+X_442_ VPWR VGND ON_N[26] sg13g2_tielo
+X_373_ VPWR VGND _149_ sg13g2_tielo
+XFILLER_5_92 VPWR VGND sg13g2_decap_4
+Xcomb_logic\[18\].nand_on_n_I thermo[18] _047_ _048_ VPWR VGND sg13g2_nand2_2
+X_287_ VPWR VGND _063_ sg13g2_tielo
+X_356_ VPWR VGND _132_ sg13g2_tielo
+X_425_ VPWR VGND ON_N[9] sg13g2_tielo
+Xcomb_logic\[20\].xor_pulse_I comb_logic\[20\].xor_pulse_I/Y _064_ thermo[20] VPWR
++ VGND sg13g2_xnor2_1
+Xcomb_logic\[20\].delay1_I thermo[20] comb_logic\[20\].delay1_I/X VPWR VGND sg13g2_dlygate4sd1_1
+X_408_ VPWR VGND ON[24] sg13g2_tielo
+X_339_ VPWR VGND _115_ sg13g2_tielo
+XFILLER_2_82 VPWR VGND sg13g2_fill_1
+XFILLER_7_38 VPWR VGND sg13g2_fill_1
+Xcomb_logic\[5\].nand_on_I comb_logic\[5\].nand_on_I/Y _135_ _136_ VPWR VGND sg13g2_nand2_2
+XFILLER_4_113 VPWR VGND sg13g2_decap_4
+XFILLER_4_135 VPWR VGND sg13g2_fill_2
+XFILLER_12_0 VPWR VGND sg13g2_fill_2
+X_441_ VPWR VGND ON_N[25] sg13g2_tielo
+X_372_ VPWR VGND _148_ sg13g2_tielo
+Xcomb_logic\[10\].delay1_I thermo[10] comb_logic\[10\].delay1_I/X VPWR VGND sg13g2_dlygate4sd1_1
+XFILLER_5_60 VPWR VGND sg13g2_decap_8
+X_355_ VPWR VGND _131_ sg13g2_tielo
+XFILLER_1_18 VPWR VGND sg13g2_fill_2
+X_424_ VPWR VGND ON_N[8] sg13g2_tielo
+X_286_ VPWR VGND _062_ sg13g2_tielo
+Xcomb_logic\[8\].nand_on_n_I thermo[8] _152_ _153_ VPWR VGND sg13g2_nand2_2
+X_269_ VPWR VGND _045_ sg13g2_tielo
+X_407_ VPWR VGND ON[23] sg13g2_tielo
+Xcomb_logic\[4\].nand_on_I comb_logic\[4\].nand_on_I/Y _130_ _131_ VPWR VGND sg13g2_nand2_2
+X_338_ VPWR VGND _114_ sg13g2_tielo
+XFILLER_7_111 VPWR VGND sg13g2_decap_4
+Xcomb_logic\[28\].xor_pulse_I comb_logic\[28\].xor_pulse_I/Y _104_ thermo[28] VPWR
++ VGND sg13g2_xnor2_1
+Xcomb_logic\[1\].delay1_I thermo[1] comb_logic\[1\].delay1_I/X VPWR VGND sg13g2_dlygate4sd1_1
+X_440_ VPWR VGND ON_N[24] sg13g2_tielo
+X_371_ VPWR VGND _147_ sg13g2_tielo
+Xcomb_logic\[16\].xor_pulse_I comb_logic\[16\].xor_pulse_I/Y _039_ thermo[16] VPWR
++ VGND sg13g2_xnor2_1
+Xcomb_logic\[31\].nand_on_n_I thermo[31] _122_ _123_ VPWR VGND sg13g2_nand2_2
+X_354_ VPWR VGND _130_ sg13g2_tielo
+X_423_ VPWR VGND ON_N[7] sg13g2_tielo
+X_285_ VPWR VGND _061_ sg13g2_tielo
+Xcomb_logic\[3\].nand_on_I comb_logic\[3\].nand_on_I/Y _125_ _126_ VPWR VGND sg13g2_nand2_2
+X_406_ VPWR VGND ON[22] sg13g2_tielo
+XFILLER_2_40 VPWR VGND sg13g2_decap_4
+X_337_ VPWR VGND _113_ sg13g2_tielo
+X_268_ VPWR VGND _044_ sg13g2_tielo
+XFILLER_15_105 VPWR VGND sg13g2_fill_1
+XFILLER_7_29 VPWR VGND sg13g2_fill_1
+XFILLER_11_130 VPWR VGND sg13g2_fill_2
+XFILLER_8_61 VPWR VGND sg13g2_decap_4
+Xcomb_logic\[2\].nand_on_I comb_logic\[2\].nand_on_I/Y _110_ _111_ VPWR VGND sg13g2_nand2_2
+X_370_ VPWR VGND _146_ sg13g2_tielo
+XFILLER_14_60 VPWR VGND sg13g2_decap_4
+X_353_ VPWR VGND _129_ sg13g2_tielo
+Xcomb_logic\[6\].xor_pulse_I comb_logic\[6\].xor_pulse_I/Y _144_ thermo[6] VPWR VGND
++ sg13g2_xnor2_1
+X_422_ VPWR VGND ON_N[6] sg13g2_tielo
+X_284_ VPWR VGND _060_ sg13g2_tielo
+XFILLER_10_29 VPWR VGND sg13g2_fill_1
+X_405_ VPWR VGND ON[21] sg13g2_tielo
+X_336_ VPWR VGND _112_ sg13g2_tielo
+X_267_ VPWR VGND _043_ sg13g2_tielo
+XFILLER_11_94 VPWR VGND sg13g2_decap_8
+X_319_ VPWR VGND _095_ sg13g2_tielo
+XFILLER_11_153 VPWR VGND sg13g2_fill_1
+Xcomb_logic\[27\].nand_on_n_I thermo[27] _097_ _098_ VPWR VGND sg13g2_nand2_2
+Xcomb_logic\[1\].nand_on_I comb_logic\[1\].nand_on_I/Y _055_ _056_ VPWR VGND sg13g2_nand2_2
+XFILLER_5_85 VPWR VGND sg13g2_decap_8
+XFILLER_5_96 VPWR VGND sg13g2_fill_2
+Xcomb_logic\[15\].nand_on_n_I thermo[15] _032_ _033_ VPWR VGND sg13g2_nand2_2
+XFILLER_10_0 VPWR VGND sg13g2_fill_2
+X_421_ VPWR VGND ON_N[5] sg13g2_tielo
+X_283_ VPWR VGND _059_ sg13g2_tielo
+X_352_ VPWR VGND _128_ sg13g2_tielo
+X_404_ VPWR VGND ON[20] sg13g2_tielo
+X_266_ VPWR VGND _042_ sg13g2_tielo
+X_335_ VPWR VGND _111_ sg13g2_tielo
+XFILLER_2_31 VPWR VGND sg13g2_fill_1
+XFILLER_2_97 VPWR VGND sg13g2_fill_2
+X_318_ VPWR VGND _094_ sg13g2_tielo
+X_249_ VPWR VGND _025_ sg13g2_tielo
+Xcomb_logic\[0\].nand_on_I comb_logic\[0\].nand_on_I/Y _000_ _001_ VPWR VGND sg13g2_nand2_2
+XFILLER_11_132 VPWR VGND sg13g2_fill_1
+XFILLER_7_136 VPWR VGND sg13g2_decap_4
+XFILLER_0_153 VPWR VGND sg13g2_fill_1
+XFILLER_5_31 VPWR VGND sg13g2_fill_1
+XFILLER_5_42 VPWR VGND sg13g2_decap_4
+XFILLER_14_51 VPWR VGND sg13g2_fill_2
+X_282_ VPWR VGND _058_ sg13g2_tielo
+Xcomb_logic\[0\].delay1_I thermo[0] comb_logic\[0\].delay1_I/X VPWR VGND sg13g2_dlygate4sd1_1
+X_351_ VPWR VGND _127_ sg13g2_tielo
+X_420_ VPWR VGND ON_N[4] sg13g2_tielo
+Xcomb_logic\[5\].nand_on_n_I thermo[5] _137_ _138_ VPWR VGND sg13g2_nand2_2
+X_334_ VPWR VGND _110_ sg13g2_tielo
+X_403_ VPWR VGND ON[19] sg13g2_tielo
+X_265_ VPWR VGND _041_ sg13g2_tielo
+XFILLER_14_130 VPWR VGND sg13g2_fill_2
+X_317_ VPWR VGND _093_ sg13g2_tielo
+X_248_ VPWR VGND _024_ sg13g2_tielo
+Xcomb_logic\[25\].xor_pulse_I comb_logic\[25\].xor_pulse_I/Y _089_ thermo[25] VPWR
++ VGND sg13g2_xnor2_1
+XFILLER_8_31 VPWR VGND sg13g2_fill_1
+XFILLER_8_75 VPWR VGND sg13g2_fill_2
+Xcomb_logic\[13\].xor_pulse_I comb_logic\[13\].xor_pulse_I/Y _024_ thermo[13] VPWR
++ VGND sg13g2_xnor2_1
+XFILLER_0_143 VPWR VGND sg13g2_fill_2
+XFILLER_0_132 VPWR VGND sg13g2_fill_2
+XFILLER_0_110 VPWR VGND sg13g2_fill_1
+XFILLER_10_2 VPWR VGND sg13g2_fill_1
+XFILLER_14_85 VPWR VGND sg13g2_fill_2
+X_350_ VPWR VGND _126_ sg13g2_tielo
+X_281_ VPWR VGND _057_ sg13g2_tielo
+X_479_ VPWR VGND _479_/L_LO sg13g2_tielo
+X_333_ VPWR VGND _109_ sg13g2_tielo
+X_264_ VPWR VGND _040_ sg13g2_tielo
+X_402_ VPWR VGND ON[18] sg13g2_tielo
+XFILLER_14_153 VPWR VGND sg13g2_fill_1
+X_316_ VPWR VGND _092_ sg13g2_tielo
+X_247_ VPWR VGND _023_ sg13g2_tielo
+XFILLER_11_112 VPWR VGND sg13g2_decap_4
+XFILLER_11_101 VPWR VGND sg13g2_fill_2
+Xcomb_logic\[29\].delay1_I thermo[29] comb_logic\[29\].delay1_I/X VPWR VGND sg13g2_dlygate4sd1_1
+XFILLER_8_54 VPWR VGND sg13g2_decap_8
+XFILLER_8_98 VPWR VGND sg13g2_fill_2
+XFILLER_3_130 VPWR VGND sg13g2_fill_2
+Xcomb_logic\[3\].xor_pulse_I comb_logic\[3\].xor_pulse_I/Y _129_ thermo[3] VPWR VGND
++ sg13g2_xnor2_1
+XFILLER_5_11 VPWR VGND sg13g2_fill_1
+XFILLER_14_53 VPWR VGND sg13g2_fill_1
+XFILLER_14_20 VPWR VGND sg13g2_fill_2
+X_280_ VPWR VGND _056_ sg13g2_tielo
+X_478_ VPWR VGND _478_/L_LO sg13g2_tielo
+X_332_ VPWR VGND _108_ sg13g2_tielo
+X_401_ VPWR VGND ON[17] sg13g2_tielo
+X_263_ VPWR VGND _039_ sg13g2_tielo
+XFILLER_14_132 VPWR VGND sg13g2_fill_1
+XFILLER_11_76 VPWR VGND sg13g2_decap_4
+XFILLER_11_21 VPWR VGND sg13g2_decap_4
+Xcomb_logic\[19\].delay1_I thermo[19] comb_logic\[19\].delay1_I/X VPWR VGND sg13g2_dlygate4sd1_1
+X_315_ VPWR VGND _091_ sg13g2_tielo
+X_246_ VPWR VGND _022_ sg13g2_tielo
+X_229_ VPWR VGND _005_ sg13g2_tielo
+XFILLER_8_77 VPWR VGND sg13g2_fill_1
+Xcomb_logic\[24\].nand_on_n_I thermo[24] _082_ _083_ VPWR VGND sg13g2_nand2_2
+XFILLER_3_153 VPWR VGND sg13g2_fill_1
+Xcomb_logic\[12\].nand_on_n_I thermo[12] _017_ _018_ VPWR VGND sg13g2_nand2_2
+XFILLER_0_134 VPWR VGND sg13g2_fill_1
+XFILLER_0_123 VPWR VGND sg13g2_decap_4
+XFILLER_14_87 VPWR VGND sg13g2_fill_1
+X_477_ VPWR VGND _477_/L_LO sg13g2_tielo
+X_331_ VPWR VGND _107_ sg13g2_tielo
+X_400_ VPWR VGND ON[16] sg13g2_tielo
+X_262_ VPWR VGND _038_ sg13g2_tielo
+XFILLER_11_55 VPWR VGND sg13g2_fill_1
+XFILLER_14_111 VPWR VGND sg13g2_fill_2
+X_314_ VPWR VGND _090_ sg13g2_tielo
+X_245_ VPWR VGND _021_ sg13g2_tielo
+XFILLER_11_103 VPWR VGND sg13g2_fill_1
+XFILLER_7_129 VPWR VGND sg13g2_fill_2
+X_228_ VPWR VGND _004_ sg13g2_tielo
+XFILLER_3_121 VPWR VGND sg13g2_fill_1
+XFILLER_3_132 VPWR VGND sg13g2_fill_1
+XFILLER_5_24 VPWR VGND sg13g2_decap_8
+XFILLER_5_79 VPWR VGND sg13g2_fill_2
+X_476_ VPWR VGND _476_/L_LO sg13g2_tielo
+XFILLER_14_22 VPWR VGND sg13g2_fill_1
+XFILLER_14_11 VPWR VGND sg13g2_fill_1
+Xcomb_logic\[19\].nand_on_I comb_logic\[19\].nand_on_I/Y _050_ _051_ VPWR VGND sg13g2_nand2_2
+Xcomb_logic\[2\].nand_on_n_I thermo[2] _112_ _113_ VPWR VGND sg13g2_nand2_2
+X_330_ VPWR VGND _106_ sg13g2_tielo
+X_261_ VPWR VGND _037_ sg13g2_tielo
+X_459_ VPWR VGND _459_/L_LO sg13g2_tielo
+XFILLER_9_0 VPWR VGND sg13g2_fill_2
+XFILLER_11_12 VPWR VGND sg13g2_fill_1
+XFILLER_14_123 VPWR VGND sg13g2_fill_2
+X_313_ VPWR VGND _089_ sg13g2_tielo
+X_244_ VPWR VGND _020_ sg13g2_tielo
+Xcomb_logic\[22\].xor_pulse_I comb_logic\[22\].xor_pulse_I/Y _074_ thermo[22] VPWR
++ VGND sg13g2_xnor2_1
+X_227_ VPWR VGND _003_ sg13g2_tielo
+Xcomb_logic\[10\].xor_pulse_I comb_logic\[10\].xor_pulse_I/Y _009_ thermo[10] VPWR
++ VGND sg13g2_xnor2_1
+Xcomb_logic\[18\].nand_on_I comb_logic\[18\].nand_on_I/Y _045_ _046_ VPWR VGND sg13g2_nand2_2
+Xcomb_logic\[28\].delay1_I thermo[28] comb_logic\[28\].delay1_I/X VPWR VGND sg13g2_dlygate4sd1_1
+XFILLER_14_78 VPWR VGND sg13g2_decap_8
+X_475_ VPWR VGND _475_/L_LO sg13g2_tielo
+X_260_ VPWR VGND _036_ sg13g2_tielo
+X_389_ VPWR VGND ON[5] sg13g2_tielo
+X_458_ VPWR VGND _458_/L_LO sg13g2_tielo
+XFILLER_11_35 VPWR VGND sg13g2_fill_2
+XFILLER_14_102 VPWR VGND sg13g2_decap_4
+X_312_ VPWR VGND _088_ sg13g2_tielo
+X_243_ VPWR VGND _019_ sg13g2_tielo
+X_226_ VPWR VGND _002_ sg13g2_tielo
+XFILLER_6_131 VPWR VGND sg13g2_decap_4
+XFILLER_6_153 VPWR VGND sg13g2_fill_1
+XFILLER_8_14 VPWR VGND sg13g2_fill_2
+Xcomb_logic\[17\].nand_on_I comb_logic\[17\].nand_on_I/Y _040_ _041_ VPWR VGND sg13g2_nand2_2
+Xcomb_logic\[18\].delay1_I thermo[18] comb_logic\[18\].delay1_I/X VPWR VGND sg13g2_dlygate4sd1_1
+XFILLER_0_81 VPWR VGND sg13g2_fill_1
+XFILLER_0_115 VPWR VGND sg13g2_decap_4
+Xcomb_logic\[0\].xor_pulse_I comb_logic\[0\].xor_pulse_I/Y _004_ thermo[0] VPWR VGND
++ sg13g2_xnor2_1
+XFILLER_14_46 VPWR VGND sg13g2_fill_1
+X_474_ VPWR VGND _474_/L_LO sg13g2_tielo
+XFILLER_2_16 VPWR VGND sg13g2_fill_2
+XFILLER_9_2 VPWR VGND sg13g2_fill_1
+Xcomb_logic\[18\].xor_pulse_I comb_logic\[18\].xor_pulse_I/Y _049_ thermo[18] VPWR
++ VGND sg13g2_xnor2_1
+X_457_ VPWR VGND _457_/L_LO sg13g2_tielo
+X_388_ VPWR VGND ON[4] sg13g2_tielo
+XFILLER_14_125 VPWR VGND sg13g2_fill_1
+X_311_ VPWR VGND _087_ sg13g2_tielo
+X_242_ VPWR VGND _018_ sg13g2_tielo
+Xcomb_logic\[16\].nand_on_I comb_logic\[16\].nand_on_I/Y _035_ _036_ VPWR VGND sg13g2_nand2_2
+Xcomb_logic\[21\].nand_on_n_I thermo[21] _067_ _068_ VPWR VGND sg13g2_nand2_2
+X_225_ VPWR VGND _001_ sg13g2_tielo
+Xcomb_logic\[9\].delay1_I thermo[9] comb_logic\[9\].delay1_I/X VPWR VGND sg13g2_dlygate4sd1_1
+XFILLER_0_127 VPWR VGND sg13g2_fill_1
+X_473_ VPWR VGND _473_/L_LO sg13g2_tielo
+XFILLER_15_90 VPWR VGND sg13g2_fill_1
+X_387_ VPWR VGND ON[3] sg13g2_tielo
+X_456_ VPWR VGND _456_/L_LO sg13g2_tielo
+Xcomb_logic\[15\].nand_on_I comb_logic\[15\].nand_on_I/Y _030_ _031_ VPWR VGND sg13g2_nand2_2
+X_310_ VPWR VGND _086_ sg13g2_tielo
+X_439_ VPWR VGND ON_N[23] sg13g2_tielo
+Xcomb_logic\[8\].xor_pulse_I comb_logic\[8\].xor_pulse_I/Y _154_ thermo[8] VPWR VGND
++ sg13g2_xnor2_1
+X_241_ VPWR VGND _017_ sg13g2_tielo
+XFILLER_7_0 VPWR VGND sg13g2_fill_2
+X_224_ VPWR VGND _000_ sg13g2_tielo
+XFILLER_8_16 VPWR VGND sg13g2_fill_1
+XFILLER_3_114 VPWR VGND sg13g2_decap_8
+Xcomb_logic\[14\].nand_on_I comb_logic\[14\].nand_on_I/Y _025_ _026_ VPWR VGND sg13g2_nand2_2
+X_472_ VPWR VGND _472_/L_LO sg13g2_tielo
+Xcomb_logic\[27\].delay1_I thermo[27] comb_logic\[27\].delay1_I/X VPWR VGND sg13g2_dlygate4sd1_1
+Xcomb_logic\[29\].nand_on_n_I thermo[29] _107_ _108_ VPWR VGND sg13g2_nand2_2
+Xcomb_logic\[31\].xor_pulse_I comb_logic\[31\].xor_pulse_I/Y _124_ thermo[31] VPWR
++ VGND sg13g2_xnor2_1
+X_455_ VPWR VGND _455_/L_LO sg13g2_tielo
+Xcomb_logic\[17\].nand_on_n_I thermo[17] _042_ _043_ VPWR VGND sg13g2_nand2_2
+XFILLER_2_18 VPWR VGND sg13g2_fill_1
+X_386_ VPWR VGND ON[2] sg13g2_tielo
+X_240_ VPWR VGND _016_ sg13g2_tielo
+X_438_ VPWR VGND ON_N[22] sg13g2_tielo
+XFILLER_9_153 VPWR VGND sg13g2_fill_1
+XFILLER_3_61 VPWR VGND sg13g2_decap_8
+XFILLER_3_94 VPWR VGND sg13g2_fill_2
+X_369_ VPWR VGND _145_ sg13g2_tielo
+XFILLER_12_81 VPWR VGND sg13g2_fill_1
+Xcomb_logic\[13\].nand_on_I comb_logic\[13\].nand_on_I/Y _020_ _021_ VPWR VGND sg13g2_nand2_2
+Xcomb_logic\[17\].delay1_I thermo[17] comb_logic\[17\].delay1_I/X VPWR VGND sg13g2_dlygate4sd1_1
+XFILLER_15_0 VPWR VGND sg13g2_fill_2
+X_471_ VPWR VGND _471_/L_LO sg13g2_tielo
+XFILLER_6_94 VPWR VGND sg13g2_fill_2
+X_454_ VPWR VGND _454_/L_LO sg13g2_tielo
+X_385_ VPWR VGND ON[1] sg13g2_tielo
+XFILLER_14_106 VPWR VGND sg13g2_fill_1
+X_437_ VPWR VGND ON_N[21] sg13g2_tielo
+XFILLER_9_110 VPWR VGND sg13g2_decap_8
+XFILLER_3_40 VPWR VGND sg13g2_fill_1
+X_368_ VPWR VGND _144_ sg13g2_tielo
+X_299_ VPWR VGND _075_ sg13g2_tielo
+Xcomb_logic\[7\].nand_on_n_I thermo[7] _147_ _148_ VPWR VGND sg13g2_nand2_2
+XFILLER_10_153 VPWR VGND sg13g2_fill_1
+XFILLER_6_135 VPWR VGND sg13g2_fill_2
+XFILLER_8_29 VPWR VGND sg13g2_fill_2
+Xcomb_logic\[12\].nand_on_I comb_logic\[12\].nand_on_I/Y _015_ _016_ VPWR VGND sg13g2_nand2_2
+XFILLER_9_94 VPWR VGND sg13g2_decap_4
+Xcomb_logic\[8\].delay1_I thermo[8] comb_logic\[8\].delay1_I/X VPWR VGND sg13g2_dlygate4sd1_1
+Xcomb_logic\[27\].xor_pulse_I comb_logic\[27\].xor_pulse_I/Y _099_ thermo[27] VPWR
++ VGND sg13g2_xnor2_1
+XFILLER_14_39 VPWR VGND sg13g2_decap_8
+X_470_ VPWR VGND _470_/L_LO sg13g2_tielo
+Xcomb_logic\[15\].xor_pulse_I comb_logic\[15\].xor_pulse_I/Y _034_ thermo[15] VPWR
++ VGND sg13g2_xnor2_1
+X_384_ VPWR VGND ON[0] sg13g2_tielo
+X_453_ VPWR VGND _453_/L_LO sg13g2_tielo
+Xcomb_logic\[30\].nand_on_n_I thermo[30] _117_ _118_ VPWR VGND sg13g2_nand2_2
+XFILLER_13_151 VPWR VGND sg13g2_fill_2
+X_298_ VPWR VGND _074_ sg13g2_tielo
+X_436_ VPWR VGND ON_N[20] sg13g2_tielo
+Xcomb_logic\[11\].nand_on_I comb_logic\[11\].nand_on_I/Y _010_ _011_ VPWR VGND sg13g2_nand2_2
+X_367_ VPWR VGND _143_ sg13g2_tielo
+XFILLER_12_72 VPWR VGND sg13g2_decap_8
+XFILLER_5_0 VPWR VGND sg13g2_fill_2
+X_419_ VPWR VGND ON_N[3] sg13g2_tielo
+XFILLER_0_53 VPWR VGND sg13g2_fill_2
+XFILLER_15_2 VPWR VGND sg13g2_fill_1
+XFILLER_6_96 VPWR VGND sg13g2_fill_1
+X_452_ VPWR VGND _452_/L_LO sg13g2_tielo
+X_383_ VPWR VGND _159_ sg13g2_tielo
+Xcomb_logic\[10\].nand_on_I comb_logic\[10\].nand_on_I/Y _005_ _006_ VPWR VGND sg13g2_nand2_2
+Xcomb_logic\[5\].xor_pulse_I comb_logic\[5\].xor_pulse_I/Y _139_ thermo[5] VPWR VGND
++ sg13g2_xnor2_1
+Xcomb_logic\[29\].nand_on_I comb_logic\[29\].nand_on_I/Y _105_ _106_ VPWR VGND sg13g2_nand2_2
+Xcomb_logic\[26\].delay1_I thermo[26] comb_logic\[26\].delay1_I/X VPWR VGND sg13g2_dlygate4sd1_1
+X_297_ VPWR VGND _073_ sg13g2_tielo
+X_435_ VPWR VGND ON_N[19] sg13g2_tielo
+XFILLER_9_134 VPWR VGND sg13g2_decap_8
+X_366_ VPWR VGND _142_ sg13g2_tielo
+XFILLER_12_51 VPWR VGND sg13g2_fill_1
+XFILLER_6_115 VPWR VGND sg13g2_fill_2
+X_349_ VPWR VGND _125_ sg13g2_tielo
+X_418_ VPWR VGND ON_N[2] sg13g2_tielo
+XFILLER_2_151 VPWR VGND sg13g2_fill_2
+XFILLER_9_41 VPWR VGND sg13g2_decap_8
+XFILLER_9_52 VPWR VGND sg13g2_fill_2
+Xcomb_logic\[26\].nand_on_n_I thermo[26] _092_ _093_ VPWR VGND sg13g2_nand2_2
+Xcomb_logic\[28\].nand_on_I comb_logic\[28\].nand_on_I/Y _100_ _101_ VPWR VGND sg13g2_nand2_2
+XFILLER_6_75 VPWR VGND sg13g2_fill_1
+XFILLER_13_0 VPWR VGND sg13g2_fill_2
+Xcomb_logic\[14\].nand_on_n_I thermo[14] _027_ _028_ VPWR VGND sg13g2_nand2_2
+Xcomb_logic\[16\].delay1_I thermo[16] comb_logic\[16\].delay1_I/X VPWR VGND sg13g2_dlygate4sd1_1
+X_451_ VPWR VGND _451_/L_LO sg13g2_tielo
+XFILLER_15_51 VPWR VGND sg13g2_fill_1
+X_382_ VPWR VGND _158_ sg13g2_tielo
+XFILLER_13_153 VPWR VGND sg13g2_fill_1
+X_296_ VPWR VGND _072_ sg13g2_tielo
+X_434_ VPWR VGND ON_N[18] sg13g2_tielo
+X_365_ VPWR VGND _141_ sg13g2_tielo
+XFILLER_12_96 VPWR VGND sg13g2_fill_1
+XFILLER_12_63 VPWR VGND sg13g2_fill_1
+XFILLER_10_112 VPWR VGND sg13g2_decap_8
+X_348_ VPWR VGND _124_ sg13g2_tielo
+X_417_ VPWR VGND ON_N[1] sg13g2_tielo
+X_279_ VPWR VGND _055_ sg13g2_tielo
+XFILLER_5_2 VPWR VGND sg13g2_fill_1
+XFILLER_0_44 VPWR VGND sg13g2_fill_2
+Xcomb_logic\[27\].nand_on_I comb_logic\[27\].nand_on_I/Y _095_ _096_ VPWR VGND sg13g2_nand2_2
+Xcomb_logic\[7\].delay1_I thermo[7] comb_logic\[7\].delay1_I/X VPWR VGND sg13g2_dlygate4sd1_1
+X_450_ VPWR VGND _450_/L_LO sg13g2_tielo
+X_381_ VPWR VGND _157_ sg13g2_tielo
+X_433_ VPWR VGND ON_N[17] sg13g2_tielo
+Xcomb_logic\[4\].nand_on_n_I thermo[4] _132_ _133_ VPWR VGND sg13g2_nand2_2
+X_295_ VPWR VGND _071_ sg13g2_tielo
+XFILLER_13_132 VPWR VGND sg13g2_fill_2
+XFILLER_3_22 VPWR VGND sg13g2_fill_2
+X_364_ VPWR VGND _140_ sg13g2_tielo
+X_347_ VPWR VGND _123_ sg13g2_tielo
+X_416_ VPWR VGND ON_N[0] sg13g2_tielo
+X_278_ VPWR VGND _054_ sg13g2_tielo
+XFILLER_2_153 VPWR VGND sg13g2_fill_1
+Xcomb_logic\[26\].nand_on_I comb_logic\[26\].nand_on_I/Y _090_ _091_ VPWR VGND sg13g2_nand2_2
+Xcomb_logic\[24\].xor_pulse_I comb_logic\[24\].xor_pulse_I/Y _084_ thermo[24] VPWR
++ VGND sg13g2_xnor2_1
+XFILLER_9_98 VPWR VGND sg13g2_fill_2
+Xcomb_logic\[12\].xor_pulse_I comb_logic\[12\].xor_pulse_I/Y _019_ thermo[12] VPWR
++ VGND sg13g2_xnor2_1
+XFILLER_13_2 VPWR VGND sg13g2_fill_1
+XFILLER_6_66 VPWR VGND sg13g2_fill_1
+X_380_ VPWR VGND _156_ sg13g2_tielo
+.ends
+

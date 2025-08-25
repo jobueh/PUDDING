@@ -1,0 +1,5352 @@
+*SPEF "ieee 1481-1999"
+*DESIGN "non_overlap"
+*DATE "23:51:03 Monday August 25, 2025"
+*VENDOR "The OpenROAD Project"
+*PROGRAM "OpenROAD"
+*VERSION "341650e72dad0dc8571822ff8c5d9c5e365327f7"
+*DESIGN_FLOW "NAME_SCOPE LOCAL" "PIN_CAP NONE"
+*DIVIDER /
+*DELIMITER :
+*BUS_DELIMITER []
+*T_UNIT 1 NS
+*C_UNIT 1 PF
+*R_UNIT 1 OHM
+*L_UNIT 1 HENRY
+
+*NAME_MAP
+*1 ON[0]
+*2 ON[10]
+*3 ON[11]
+*4 ON[12]
+*5 ON[13]
+*6 ON[14]
+*7 ON[15]
+*8 ON[16]
+*9 ON[17]
+*10 ON[18]
+*11 ON[19]
+*12 ON[1]
+*13 ON[20]
+*14 ON[21]
+*15 ON[22]
+*16 ON[23]
+*17 ON[24]
+*18 ON[25]
+*19 ON[26]
+*20 ON[27]
+*21 ON[28]
+*22 ON[29]
+*23 ON[2]
+*24 ON[30]
+*25 ON[31]
+*26 ON[3]
+*27 ON[4]
+*28 ON[5]
+*29 ON[6]
+*30 ON[7]
+*31 ON[8]
+*32 ON[9]
+*33 ON_N[0]
+*34 ON_N[10]
+*35 ON_N[11]
+*36 ON_N[12]
+*37 ON_N[13]
+*38 ON_N[14]
+*39 ON_N[15]
+*40 ON_N[16]
+*41 ON_N[17]
+*42 ON_N[18]
+*43 ON_N[19]
+*44 ON_N[1]
+*45 ON_N[20]
+*46 ON_N[21]
+*47 ON_N[22]
+*48 ON_N[23]
+*49 ON_N[24]
+*50 ON_N[25]
+*51 ON_N[26]
+*52 ON_N[27]
+*53 ON_N[28]
+*54 ON_N[29]
+*55 ON_N[2]
+*56 ON_N[30]
+*57 ON_N[31]
+*58 ON_N[3]
+*59 ON_N[4]
+*60 ON_N[5]
+*61 ON_N[6]
+*62 ON_N[7]
+*63 ON_N[8]
+*64 ON_N[9]
+*67 thermo[0]
+*68 thermo[10]
+*69 thermo[11]
+*70 thermo[12]
+*71 thermo[13]
+*72 thermo[14]
+*73 thermo[15]
+*74 thermo[16]
+*75 thermo[17]
+*76 thermo[18]
+*77 thermo[19]
+*78 thermo[1]
+*79 thermo[20]
+*80 thermo[21]
+*81 thermo[22]
+*82 thermo[23]
+*83 thermo[24]
+*84 thermo[25]
+*85 thermo[26]
+*86 thermo[27]
+*87 thermo[28]
+*88 thermo[29]
+*89 thermo[2]
+*90 thermo[30]
+*91 thermo[31]
+*92 thermo[3]
+*93 thermo[4]
+*94 thermo[5]
+*95 thermo[6]
+*96 thermo[7]
+*97 thermo[8]
+*98 thermo[9]
+*99 _000_
+*100 _001_
+*101 _002_
+*102 _003_
+*103 _004_
+*104 _005_
+*105 _006_
+*106 _007_
+*107 _008_
+*108 _009_
+*109 _010_
+*110 _011_
+*111 _012_
+*112 _013_
+*113 _014_
+*114 _015_
+*115 _016_
+*116 _017_
+*117 _018_
+*118 _019_
+*119 _020_
+*120 _021_
+*121 _022_
+*122 _023_
+*123 _024_
+*124 _025_
+*125 _026_
+*126 _027_
+*127 _028_
+*128 _029_
+*129 _030_
+*130 _031_
+*131 _032_
+*132 _033_
+*133 _034_
+*134 _035_
+*135 _036_
+*136 _037_
+*137 _038_
+*138 _039_
+*139 _040_
+*140 _041_
+*141 _042_
+*142 _043_
+*143 _044_
+*144 _045_
+*145 _046_
+*146 _047_
+*147 _048_
+*148 _049_
+*149 _050_
+*150 _051_
+*151 _052_
+*152 _053_
+*153 _054_
+*154 _055_
+*155 _056_
+*156 _057_
+*157 _058_
+*158 _059_
+*159 _060_
+*160 _061_
+*161 _062_
+*162 _063_
+*163 _064_
+*164 _065_
+*165 _066_
+*166 _067_
+*167 _068_
+*168 _069_
+*169 _070_
+*170 _071_
+*171 _072_
+*172 _073_
+*173 _074_
+*174 _075_
+*175 _076_
+*176 _077_
+*177 _078_
+*178 _079_
+*179 _080_
+*180 _081_
+*181 _082_
+*182 _083_
+*183 _084_
+*184 _085_
+*185 _086_
+*186 _087_
+*187 _088_
+*188 _089_
+*189 _090_
+*190 _091_
+*191 _092_
+*192 _093_
+*193 _094_
+*194 _095_
+*195 _096_
+*196 _097_
+*197 _098_
+*198 _099_
+*199 _100_
+*200 _101_
+*201 _102_
+*202 _103_
+*203 _104_
+*204 _105_
+*205 _106_
+*206 _107_
+*207 _108_
+*208 _109_
+*209 _110_
+*210 _111_
+*211 _112_
+*212 _113_
+*213 _114_
+*214 _115_
+*215 _116_
+*216 _117_
+*217 _118_
+*218 _119_
+*219 _120_
+*220 _121_
+*221 _122_
+*222 _123_
+*223 _124_
+*224 _125_
+*225 _126_
+*226 _127_
+*227 _128_
+*228 _129_
+*229 _130_
+*230 _131_
+*231 _132_
+*232 _133_
+*233 _134_
+*234 _135_
+*235 _136_
+*236 _137_
+*237 _138_
+*238 _139_
+*239 _140_
+*240 _141_
+*241 _142_
+*242 _143_
+*243 _144_
+*244 _145_
+*245 _146_
+*246 _147_
+*247 _148_
+*248 _149_
+*249 _150_
+*250 _151_
+*251 _152_
+*252 _153_
+*253 _154_
+*254 _155_
+*255 _156_
+*256 _157_
+*257 _158_
+*258 _159_
+*259 _160_
+*260 _161_
+*261 _162_
+*262 _163_
+*263 _164_
+*264 _165_
+*265 _166_
+*266 _167_
+*267 _168_
+*268 _169_
+*269 _170_
+*270 _171_
+*271 _172_
+*272 _173_
+*273 _174_
+*274 _175_
+*275 _176_
+*276 _177_
+*277 _178_
+*278 _179_
+*279 _180_
+*280 _181_
+*281 _182_
+*282 _183_
+*283 _184_
+*284 _185_
+*285 _186_
+*286 _187_
+*287 _188_
+*288 _189_
+*289 _190_
+*290 _191_
+*291 _192_
+*292 _193_
+*293 _194_
+*294 _195_
+*295 _196_
+*296 _197_
+*297 _198_
+*298 _199_
+*299 _200_
+*300 _201_
+*301 _202_
+*302 _203_
+*303 _204_
+*304 _205_
+*305 _206_
+*306 _207_
+*307 _208_
+*308 _209_
+*309 _210_
+*310 _211_
+*311 _212_
+*312 _213_
+*313 _214_
+*314 _215_
+*315 _216_
+*316 _217_
+*317 _218_
+*318 _219_
+*319 _220_
+*320 _221_
+*321 _222_
+*322 _223_
+*323 comb_logic\[0\]\.delayed\[0\]
+*324 comb_logic\[0\]\.pulse_out_n
+*325 comb_logic\[10\]\.delayed\[0\]
+*326 comb_logic\[10\]\.pulse_out_n
+*327 comb_logic\[11\]\.delayed\[0\]
+*328 comb_logic\[11\]\.pulse_out_n
+*329 comb_logic\[12\]\.delayed\[0\]
+*330 comb_logic\[12\]\.pulse_out_n
+*331 comb_logic\[13\]\.delayed\[0\]
+*332 comb_logic\[13\]\.pulse_out_n
+*333 comb_logic\[14\]\.delayed\[0\]
+*334 comb_logic\[14\]\.pulse_out_n
+*335 comb_logic\[15\]\.delayed\[0\]
+*336 comb_logic\[15\]\.pulse_out_n
+*337 comb_logic\[16\]\.delayed\[0\]
+*338 comb_logic\[16\]\.pulse_out_n
+*339 comb_logic\[17\]\.delayed\[0\]
+*340 comb_logic\[17\]\.pulse_out_n
+*341 comb_logic\[18\]\.delayed\[0\]
+*342 comb_logic\[18\]\.pulse_out_n
+*343 comb_logic\[19\]\.delayed\[0\]
+*344 comb_logic\[19\]\.pulse_out_n
+*345 comb_logic\[1\]\.delayed\[0\]
+*346 comb_logic\[1\]\.pulse_out_n
+*347 comb_logic\[20\]\.delayed\[0\]
+*348 comb_logic\[20\]\.pulse_out_n
+*349 comb_logic\[21\]\.delayed\[0\]
+*350 comb_logic\[21\]\.pulse_out_n
+*351 comb_logic\[22\]\.delayed\[0\]
+*352 comb_logic\[22\]\.pulse_out_n
+*353 comb_logic\[23\]\.delayed\[0\]
+*354 comb_logic\[23\]\.pulse_out_n
+*355 comb_logic\[24\]\.delayed\[0\]
+*356 comb_logic\[24\]\.pulse_out_n
+*357 comb_logic\[25\]\.delayed\[0\]
+*358 comb_logic\[25\]\.pulse_out_n
+*359 comb_logic\[26\]\.delayed\[0\]
+*360 comb_logic\[26\]\.pulse_out_n
+*361 comb_logic\[27\]\.delayed\[0\]
+*362 comb_logic\[27\]\.pulse_out_n
+*363 comb_logic\[28\]\.delayed\[0\]
+*364 comb_logic\[28\]\.pulse_out_n
+*365 comb_logic\[29\]\.delayed\[0\]
+*366 comb_logic\[29\]\.pulse_out_n
+*367 comb_logic\[2\]\.delayed\[0\]
+*368 comb_logic\[2\]\.pulse_out_n
+*369 comb_logic\[30\]\.delayed\[0\]
+*370 comb_logic\[30\]\.pulse_out_n
+*371 comb_logic\[31\]\.delayed\[0\]
+*372 comb_logic\[31\]\.pulse_out_n
+*373 comb_logic\[3\]\.delayed\[0\]
+*374 comb_logic\[3\]\.pulse_out_n
+*375 comb_logic\[4\]\.delayed\[0\]
+*376 comb_logic\[4\]\.pulse_out_n
+*377 comb_logic\[5\]\.delayed\[0\]
+*378 comb_logic\[5\]\.pulse_out_n
+*379 comb_logic\[6\]\.delayed\[0\]
+*380 comb_logic\[6\]\.pulse_out_n
+*381 comb_logic\[7\]\.delayed\[0\]
+*382 comb_logic\[7\]\.pulse_out_n
+*383 comb_logic\[8\]\.delayed\[0\]
+*384 comb_logic\[8\]\.pulse_out_n
+*385 comb_logic\[9\]\.delayed\[0\]
+*386 comb_logic\[9\]\.pulse_out_n
+*387 FILLER_0_110
+*388 FILLER_0_115
+*389 FILLER_0_123
+*390 FILLER_0_127
+*391 FILLER_0_132
+*392 FILLER_0_134
+*393 FILLER_0_143
+*394 FILLER_0_153
+*395 FILLER_0_16
+*396 FILLER_0_29
+*397 FILLER_0_44
+*398 FILLER_0_46
+*399 FILLER_0_53
+*400 FILLER_0_69
+*401 FILLER_0_81
+*402 FILLER_10_0
+*403 FILLER_10_112
+*404 FILLER_10_119
+*405 FILLER_10_129
+*406 FILLER_10_13
+*407 FILLER_10_136
+*408 FILLER_10_153
+*409 FILLER_10_2
+*410 FILLER_10_29
+*411 FILLER_10_42
+*412 FILLER_10_44
+*413 FILLER_10_57
+*414 FILLER_10_61
+*415 FILLER_10_72
+*416 FILLER_10_76
+*417 FILLER_11_101
+*418 FILLER_11_103
+*419 FILLER_11_112
+*420 FILLER_11_12
+*421 FILLER_11_130
+*422 FILLER_11_132
+*423 FILLER_11_153
+*424 FILLER_11_21
+*425 FILLER_11_35
+*426 FILLER_11_55
+*427 FILLER_11_76
+*428 FILLER_11_94
+*429 FILLER_12_0
+*430 FILLER_12_135
+*431 FILLER_12_153
+*432 FILLER_12_44
+*433 FILLER_12_46
+*434 FILLER_12_51
+*435 FILLER_12_56
+*436 FILLER_12_63
+*437 FILLER_12_72
+*438 FILLER_12_79
+*439 FILLER_12_81
+*440 FILLER_12_96
+*441 FILLER_13_0
+*442 FILLER_13_101
+*443 FILLER_13_11
+*444 FILLER_13_116
+*445 FILLER_13_132
+*446 FILLER_13_134
+*447 FILLER_13_151
+*448 FILLER_13_153
+*449 FILLER_13_2
+*450 FILLER_13_35
+*451 FILLER_13_63
+*452 FILLER_13_90
+*453 FILLER_13_92
+*454 FILLER_13_99
+*455 FILLER_14_0
+*456 FILLER_14_102
+*457 FILLER_14_106
+*458 FILLER_14_11
+*459 FILLER_14_111
+*460 FILLER_14_123
+*461 FILLER_14_125
+*462 FILLER_14_130
+*463 FILLER_14_132
+*464 FILLER_14_153
+*465 FILLER_14_2
+*466 FILLER_14_20
+*467 FILLER_14_22
+*468 FILLER_14_39
+*469 FILLER_14_46
+*470 FILLER_14_51
+*471 FILLER_14_53
+*472 FILLER_14_60
+*473 FILLER_14_78
+*474 FILLER_14_85
+*475 FILLER_14_87
+*476 FILLER_15_0
+*477 FILLER_15_105
+*478 FILLER_15_110
+*479 FILLER_15_120
+*480 FILLER_15_122
+*481 FILLER_15_135
+*482 FILLER_15_153
+*483 FILLER_15_2
+*484 FILLER_15_21
+*485 FILLER_15_51
+*486 FILLER_15_68
+*487 FILLER_15_88
+*488 FILLER_15_90
+*489 FILLER_15_99
+*490 FILLER_1_134
+*491 FILLER_1_136
+*492 FILLER_1_153
+*493 FILLER_1_18
+*494 FILLER_1_20
+*495 FILLER_1_35
+*496 FILLER_1_37
+*497 FILLER_1_62
+*498 FILLER_1_68
+*499 FILLER_1_75
+*500 FILLER_1_81
+*501 FILLER_1_83
+*502 FILLER_1_92
+*503 FILLER_1_99
+*504 FILLER_2_113
+*505 FILLER_2_117
+*506 FILLER_2_128
+*507 FILLER_2_151
+*508 FILLER_2_153
+*509 FILLER_2_16
+*510 FILLER_2_18
+*511 FILLER_2_31
+*512 FILLER_2_40
+*513 FILLER_2_82
+*514 FILLER_2_97
+*515 FILLER_3_114
+*516 FILLER_3_121
+*517 FILLER_3_130
+*518 FILLER_3_132
+*519 FILLER_3_153
+*520 FILLER_3_18
+*521 FILLER_3_22
+*522 FILLER_3_38
+*523 FILLER_3_40
+*524 FILLER_3_61
+*525 FILLER_3_68
+*526 FILLER_3_79
+*527 FILLER_3_94
+*528 FILLER_4_0
+*529 FILLER_4_113
+*530 FILLER_4_131
+*531 FILLER_4_135
+*532 FILLER_4_153
+*533 FILLER_4_16
+*534 FILLER_4_30
+*535 FILLER_4_32
+*536 FILLER_4_45
+*537 FILLER_4_55
+*538 FILLER_4_59
+*539 FILLER_4_72
+*540 FILLER_4_81
+*541 FILLER_4_83
+*542 FILLER_4_94
+*543 FILLER_4_96
+*544 FILLER_5_0
+*545 FILLER_5_102
+*546 FILLER_5_11
+*547 FILLER_5_114
+*548 FILLER_5_118
+*549 FILLER_5_128
+*550 FILLER_5_135
+*551 FILLER_5_153
+*552 FILLER_5_2
+*553 FILLER_5_24
+*554 FILLER_5_31
+*555 FILLER_5_42
+*556 FILLER_5_60
+*557 FILLER_5_79
+*558 FILLER_5_85
+*559 FILLER_5_92
+*560 FILLER_5_96
+*561 FILLER_6_0
+*562 FILLER_6_115
+*563 FILLER_6_13
+*564 FILLER_6_131
+*565 FILLER_6_135
+*566 FILLER_6_153
+*567 FILLER_6_2
+*568 FILLER_6_45
+*569 FILLER_6_66
+*570 FILLER_6_75
+*571 FILLER_6_94
+*572 FILLER_6_96
+*573 FILLER_7_0
+*574 FILLER_7_111
+*575 FILLER_7_129
+*576 FILLER_7_131
+*577 FILLER_7_136
+*578 FILLER_7_140
+*579 FILLER_7_153
+*580 FILLER_7_22
+*581 FILLER_7_29
+*582 FILLER_7_36
+*583 FILLER_7_38
+*584 FILLER_7_59
+*585 FILLER_7_79
+*586 FILLER_7_88
+*587 FILLER_7_95
+*588 FILLER_8_118
+*589 FILLER_8_120
+*590 FILLER_8_14
+*591 FILLER_8_143
+*592 FILLER_8_153
+*593 FILLER_8_16
+*594 FILLER_8_29
+*595 FILLER_8_31
+*596 FILLER_8_54
+*597 FILLER_8_61
+*598 FILLER_8_75
+*599 FILLER_8_77
+*600 FILLER_8_98
+*601 FILLER_9_0
+*602 FILLER_9_11
+*603 FILLER_9_110
+*604 FILLER_9_117
+*605 FILLER_9_127
+*606 FILLER_9_134
+*607 FILLER_9_153
+*608 FILLER_9_2
+*609 FILLER_9_24
+*610 FILLER_9_26
+*611 FILLER_9_41
+*612 FILLER_9_48
+*613 FILLER_9_52
+*614 FILLER_9_78
+*615 FILLER_9_94
+*616 FILLER_9_98
+*617 _224_
+*618 _225_
+*619 _226_
+*620 _227_
+*621 _228_
+*622 _229_
+*623 _230_
+*624 _231_
+*625 _232_
+*626 _233_
+*627 _234_
+*628 _235_
+*629 _236_
+*630 _237_
+*631 _238_
+*632 _239_
+*633 _240_
+*634 _241_
+*635 _242_
+*636 _243_
+*637 _244_
+*638 _245_
+*639 _246_
+*640 _247_
+*641 _248_
+*642 _249_
+*643 _250_
+*644 _251_
+*645 _252_
+*646 _253_
+*647 _254_
+*648 _255_
+*649 _256_
+*650 _257_
+*651 _258_
+*652 _259_
+*653 _260_
+*654 _261_
+*655 _262_
+*656 _263_
+*657 _264_
+*658 _265_
+*659 _266_
+*660 _267_
+*661 _268_
+*662 _269_
+*663 _270_
+*664 _271_
+*665 _272_
+*666 _273_
+*667 _274_
+*668 _275_
+*669 _276_
+*670 _277_
+*671 _278_
+*672 _279_
+*673 _280_
+*674 _281_
+*675 _282_
+*676 _283_
+*677 _284_
+*678 _285_
+*679 _286_
+*680 _287_
+*681 _288_
+*682 _289_
+*683 _290_
+*684 _291_
+*685 _292_
+*686 _293_
+*687 _294_
+*688 _295_
+*689 _296_
+*690 _297_
+*691 _298_
+*692 _299_
+*693 _300_
+*694 _301_
+*695 _302_
+*696 _303_
+*697 _304_
+*698 _305_
+*699 _306_
+*700 _307_
+*701 _308_
+*702 _309_
+*703 _310_
+*704 _311_
+*705 _312_
+*706 _313_
+*707 _314_
+*708 _315_
+*709 _316_
+*710 _317_
+*711 _318_
+*712 _319_
+*713 _320_
+*714 _321_
+*715 _322_
+*716 _323_
+*717 _324_
+*718 _325_
+*719 _326_
+*720 _327_
+*721 _328_
+*722 _329_
+*723 _330_
+*724 _331_
+*725 _332_
+*726 _333_
+*727 _334_
+*728 _335_
+*729 _336_
+*730 _337_
+*731 _338_
+*732 _339_
+*733 _340_
+*734 _341_
+*735 _342_
+*736 _343_
+*737 _344_
+*738 _345_
+*739 _346_
+*740 _347_
+*741 _348_
+*742 _349_
+*743 _350_
+*744 _351_
+*745 _352_
+*746 _353_
+*747 _354_
+*748 _355_
+*749 _356_
+*750 _357_
+*751 _358_
+*752 _359_
+*753 _360_
+*754 _361_
+*755 _362_
+*756 _363_
+*757 _364_
+*758 _365_
+*759 _366_
+*760 _367_
+*761 _368_
+*762 _369_
+*763 _370_
+*764 _371_
+*765 _372_
+*766 _373_
+*767 _374_
+*768 _375_
+*769 _376_
+*770 _377_
+*771 _378_
+*772 _379_
+*773 _380_
+*774 _381_
+*775 _382_
+*776 _383_
+*777 _384_
+*778 _385_
+*779 _386_
+*780 _387_
+*781 _388_
+*782 _389_
+*783 _390_
+*784 _391_
+*785 _392_
+*786 _393_
+*787 _394_
+*788 _395_
+*789 _396_
+*790 _397_
+*791 _398_
+*792 _399_
+*793 _400_
+*794 _401_
+*795 _402_
+*796 _403_
+*797 _404_
+*798 _405_
+*799 _406_
+*800 _407_
+*801 _408_
+*802 _409_
+*803 _410_
+*804 _411_
+*805 _412_
+*806 _413_
+*807 _414_
+*808 _415_
+*809 _416_
+*810 _417_
+*811 _418_
+*812 _419_
+*813 _420_
+*814 _421_
+*815 _422_
+*816 _423_
+*817 _424_
+*818 _425_
+*819 _426_
+*820 _427_
+*821 _428_
+*822 _429_
+*823 _430_
+*824 _431_
+*825 _432_
+*826 _433_
+*827 _434_
+*828 _435_
+*829 _436_
+*830 _437_
+*831 _438_
+*832 _439_
+*833 _440_
+*834 _441_
+*835 _442_
+*836 _443_
+*837 _444_
+*838 _445_
+*839 _446_
+*840 _447_
+*841 _448_
+*842 _449_
+*843 _450_
+*844 _451_
+*845 _452_
+*846 _453_
+*847 _454_
+*848 _455_
+*849 _456_
+*850 _457_
+*851 _458_
+*852 _459_
+*853 _460_
+*854 _461_
+*855 _462_
+*856 _463_
+*857 _464_
+*858 _465_
+*859 _466_
+*860 _467_
+*861 _468_
+*862 _469_
+*863 _470_
+*864 _471_
+*865 _472_
+*866 _473_
+*867 _474_
+*868 _475_
+*869 _476_
+*870 _477_
+*871 _478_
+*872 _479_
+*873 comb_logic\[0\]\.delay1_I
+*874 comb_logic\[0\]\.nand_on_I
+*875 comb_logic\[0\]\.nand_on_n_I
+*876 comb_logic\[0\]\.xor_pulse_I
+*877 comb_logic\[10\]\.delay1_I
+*878 comb_logic\[10\]\.nand_on_I
+*879 comb_logic\[10\]\.nand_on_n_I
+*880 comb_logic\[10\]\.xor_pulse_I
+*881 comb_logic\[11\]\.delay1_I
+*882 comb_logic\[11\]\.nand_on_I
+*883 comb_logic\[11\]\.nand_on_n_I
+*884 comb_logic\[11\]\.xor_pulse_I
+*885 comb_logic\[12\]\.delay1_I
+*886 comb_logic\[12\]\.nand_on_I
+*887 comb_logic\[12\]\.nand_on_n_I
+*888 comb_logic\[12\]\.xor_pulse_I
+*889 comb_logic\[13\]\.delay1_I
+*890 comb_logic\[13\]\.nand_on_I
+*891 comb_logic\[13\]\.nand_on_n_I
+*892 comb_logic\[13\]\.xor_pulse_I
+*893 comb_logic\[14\]\.delay1_I
+*894 comb_logic\[14\]\.nand_on_I
+*895 comb_logic\[14\]\.nand_on_n_I
+*896 comb_logic\[14\]\.xor_pulse_I
+*897 comb_logic\[15\]\.delay1_I
+*898 comb_logic\[15\]\.nand_on_I
+*899 comb_logic\[15\]\.nand_on_n_I
+*900 comb_logic\[15\]\.xor_pulse_I
+*901 comb_logic\[16\]\.delay1_I
+*902 comb_logic\[16\]\.nand_on_I
+*903 comb_logic\[16\]\.nand_on_n_I
+*904 comb_logic\[16\]\.xor_pulse_I
+*905 comb_logic\[17\]\.delay1_I
+*906 comb_logic\[17\]\.nand_on_I
+*907 comb_logic\[17\]\.nand_on_n_I
+*908 comb_logic\[17\]\.xor_pulse_I
+*909 comb_logic\[18\]\.delay1_I
+*910 comb_logic\[18\]\.nand_on_I
+*911 comb_logic\[18\]\.nand_on_n_I
+*912 comb_logic\[18\]\.xor_pulse_I
+*913 comb_logic\[19\]\.delay1_I
+*914 comb_logic\[19\]\.nand_on_I
+*915 comb_logic\[19\]\.nand_on_n_I
+*916 comb_logic\[19\]\.xor_pulse_I
+*917 comb_logic\[1\]\.delay1_I
+*918 comb_logic\[1\]\.nand_on_I
+*919 comb_logic\[1\]\.nand_on_n_I
+*920 comb_logic\[1\]\.xor_pulse_I
+*921 comb_logic\[20\]\.delay1_I
+*922 comb_logic\[20\]\.nand_on_I
+*923 comb_logic\[20\]\.nand_on_n_I
+*924 comb_logic\[20\]\.xor_pulse_I
+*925 comb_logic\[21\]\.delay1_I
+*926 comb_logic\[21\]\.nand_on_I
+*927 comb_logic\[21\]\.nand_on_n_I
+*928 comb_logic\[21\]\.xor_pulse_I
+*929 comb_logic\[22\]\.delay1_I
+*930 comb_logic\[22\]\.nand_on_I
+*931 comb_logic\[22\]\.nand_on_n_I
+*932 comb_logic\[22\]\.xor_pulse_I
+*933 comb_logic\[23\]\.delay1_I
+*934 comb_logic\[23\]\.nand_on_I
+*935 comb_logic\[23\]\.nand_on_n_I
+*936 comb_logic\[23\]\.xor_pulse_I
+*937 comb_logic\[24\]\.delay1_I
+*938 comb_logic\[24\]\.nand_on_I
+*939 comb_logic\[24\]\.nand_on_n_I
+*940 comb_logic\[24\]\.xor_pulse_I
+*941 comb_logic\[25\]\.delay1_I
+*942 comb_logic\[25\]\.nand_on_I
+*943 comb_logic\[25\]\.nand_on_n_I
+*944 comb_logic\[25\]\.xor_pulse_I
+*945 comb_logic\[26\]\.delay1_I
+*946 comb_logic\[26\]\.nand_on_I
+*947 comb_logic\[26\]\.nand_on_n_I
+*948 comb_logic\[26\]\.xor_pulse_I
+*949 comb_logic\[27\]\.delay1_I
+*950 comb_logic\[27\]\.nand_on_I
+*951 comb_logic\[27\]\.nand_on_n_I
+*952 comb_logic\[27\]\.xor_pulse_I
+*953 comb_logic\[28\]\.delay1_I
+*954 comb_logic\[28\]\.nand_on_I
+*955 comb_logic\[28\]\.nand_on_n_I
+*956 comb_logic\[28\]\.xor_pulse_I
+*957 comb_logic\[29\]\.delay1_I
+*958 comb_logic\[29\]\.nand_on_I
+*959 comb_logic\[29\]\.nand_on_n_I
+*960 comb_logic\[29\]\.xor_pulse_I
+*961 comb_logic\[2\]\.delay1_I
+*962 comb_logic\[2\]\.nand_on_I
+*963 comb_logic\[2\]\.nand_on_n_I
+*964 comb_logic\[2\]\.xor_pulse_I
+*965 comb_logic\[30\]\.delay1_I
+*966 comb_logic\[30\]\.nand_on_I
+*967 comb_logic\[30\]\.nand_on_n_I
+*968 comb_logic\[30\]\.xor_pulse_I
+*969 comb_logic\[31\]\.delay1_I
+*970 comb_logic\[31\]\.nand_on_I
+*971 comb_logic\[31\]\.nand_on_n_I
+*972 comb_logic\[31\]\.xor_pulse_I
+*973 comb_logic\[3\]\.delay1_I
+*974 comb_logic\[3\]\.nand_on_I
+*975 comb_logic\[3\]\.nand_on_n_I
+*976 comb_logic\[3\]\.xor_pulse_I
+*977 comb_logic\[4\]\.delay1_I
+*978 comb_logic\[4\]\.nand_on_I
+*979 comb_logic\[4\]\.nand_on_n_I
+*980 comb_logic\[4\]\.xor_pulse_I
+*981 comb_logic\[5\]\.delay1_I
+*982 comb_logic\[5\]\.nand_on_I
+*983 comb_logic\[5\]\.nand_on_n_I
+*984 comb_logic\[5\]\.xor_pulse_I
+*985 comb_logic\[6\]\.delay1_I
+*986 comb_logic\[6\]\.nand_on_I
+*987 comb_logic\[6\]\.nand_on_n_I
+*988 comb_logic\[6\]\.xor_pulse_I
+*989 comb_logic\[7\]\.delay1_I
+*990 comb_logic\[7\]\.nand_on_I
+*991 comb_logic\[7\]\.nand_on_n_I
+*992 comb_logic\[7\]\.xor_pulse_I
+*993 comb_logic\[8\]\.delay1_I
+*994 comb_logic\[8\]\.nand_on_I
+*995 comb_logic\[8\]\.nand_on_n_I
+*996 comb_logic\[8\]\.xor_pulse_I
+*997 comb_logic\[9\]\.delay1_I
+*998 comb_logic\[9\]\.nand_on_I
+*999 comb_logic\[9\]\.nand_on_n_I
+*1000 comb_logic\[9\]\.xor_pulse_I
+
+*PORTS
+ON[0] O
+ON[10] O
+ON[11] O
+ON[12] O
+ON[13] O
+ON[14] O
+ON[15] O
+ON[16] O
+ON[17] O
+ON[18] O
+ON[19] O
+ON[1] O
+ON[20] O
+ON[21] O
+ON[22] O
+ON[23] O
+ON[24] O
+ON[25] O
+ON[26] O
+ON[27] O
+ON[28] O
+ON[29] O
+ON[2] O
+ON[30] O
+ON[31] O
+ON[3] O
+ON[4] O
+ON[5] O
+ON[6] O
+ON[7] O
+ON[8] O
+ON[9] O
+ON_N[0] O
+ON_N[10] O
+ON_N[11] O
+ON_N[12] O
+ON_N[13] O
+ON_N[14] O
+ON_N[15] O
+ON_N[16] O
+ON_N[17] O
+ON_N[18] O
+ON_N[19] O
+ON_N[1] O
+ON_N[20] O
+ON_N[21] O
+ON_N[22] O
+ON_N[23] O
+ON_N[24] O
+ON_N[25] O
+ON_N[26] O
+ON_N[27] O
+ON_N[28] O
+ON_N[29] O
+ON_N[2] O
+ON_N[30] O
+ON_N[31] O
+ON_N[3] O
+ON_N[4] O
+ON_N[5] O
+ON_N[6] O
+ON_N[7] O
+ON_N[8] O
+ON_N[9] O
+thermo[0] I
+thermo[10] I
+thermo[11] I
+thermo[12] I
+thermo[13] I
+thermo[14] I
+thermo[15] I
+thermo[16] I
+thermo[17] I
+thermo[18] I
+thermo[19] I
+thermo[1] I
+thermo[20] I
+thermo[21] I
+thermo[22] I
+thermo[23] I
+thermo[24] I
+thermo[25] I
+thermo[26] I
+thermo[27] I
+thermo[28] I
+thermo[29] I
+thermo[2] I
+thermo[30] I
+thermo[31] I
+thermo[3] I
+thermo[4] I
+thermo[5] I
+thermo[6] I
+thermo[7] I
+thermo[8] I
+thermo[9] I
+
+*D_NET *1 0.00077435
+*CONN
+*P ON[0] O
+*I *777:L_LO O *D sg13g2_tielo
+*CAP
+1 ON[0] 0.000387175
+2 *777:L_LO 0.000387175
+3 ON[0] ON[1] 0
+4 ON[0] ON_N[0] 0
+*RES
+1 *777:L_LO ON[0] 43.9243 
+*END
+
+*D_NET *2 0.00131485
+*CONN
+*P ON[10] O
+*I *787:L_LO O *D sg13g2_tielo
+*CAP
+1 ON[10] 0.000649697
+2 *787:L_LO 0.000649697
+3 ON[10] ON[8] 0
+4 ON[10] ON_N[10] 1.54556e-05
+5 ON[10] ON_N[9] 0
+*RES
+1 *787:L_LO ON[10] 45.5929 
+*END
+
+*D_NET *3 0.00113162
+*CONN
+*P ON[11] O
+*I *788:L_LO O *D sg13g2_tielo
+*CAP
+1 ON[11] 0.000565809
+2 *788:L_LO 0.000565809
+3 ON[11] ON_N[10] 0
+4 ON[11] ON_N[11] 0
+5 ON[11] ON_N[12] 0
+*RES
+1 *788:L_LO ON[11] 44.6041 
+*END
+
+*D_NET *4 0.000644298
+*CONN
+*P ON[12] O
+*I *789:L_LO O *D sg13g2_tielo
+*CAP
+1 ON[12] 0.000322149
+2 *789:L_LO 0.000322149
+3 ON[12] ON[13] 0
+4 ON[12] ON_N[11] 0
+5 ON[12] ON_N[12] 0
+*RES
+1 *789:L_LO ON[12] 42.6265 
+*END
+
+*D_NET *5 0.00105152
+*CONN
+*P ON[13] O
+*I *790:L_LO O *D sg13g2_tielo
+*CAP
+1 ON[13] 0.000518031
+2 *790:L_LO 0.000518031
+3 ON[13] ON[14] 0
+4 ON[13] ON_N[11] 1.54556e-05
+5 ON[13] ON_N[12] 0
+6 ON[13] ON_N[13] 0
+7 ON[12] ON[13] 0
+*RES
+1 *790:L_LO ON[13] 44.4805 
+*END
+
+*D_NET *6 0.0012728
+*CONN
+*P ON[14] O
+*I *791:L_LO O *D sg13g2_tielo
+*CAP
+1 ON[14] 0.000518281
+2 *791:L_LO 0.000518281
+3 ON[14] ON_N[12] 0
+4 ON[14] ON_N[13] 0.00023624
+5 ON[14] ON_N[14] 0
+6 ON[14] ON_N[15] 0
+7 ON[13] ON[14] 0
+*RES
+1 *791:L_LO ON[14] 45.7783 
+*END
+
+*D_NET *7 0.000788325
+*CONN
+*P ON[15] O
+*I *792:L_LO O *D sg13g2_tielo
+*CAP
+1 ON[15] 0.000386434
+2 *792:L_LO 0.000386434
+3 ON[15] ON_N[13] 1.54556e-05
+4 ON[15] ON_N[14] 0
+5 ON[15] ON_N[15] 0
+*RES
+1 *792:L_LO ON[15] 43.1621 
+*END
+
+*D_NET *8 0.00139109
+*CONN
+*P ON[16] O
+*I *793:L_LO O *D sg13g2_tielo
+*CAP
+1 ON[16] 0.000695545
+2 *793:L_LO 0.000695545
+3 ON[16] ON_N[15] 0
+4 ON[16] ON_N[16] 0
+*RES
+1 *793:L_LO ON[16] 45.5517 
+*END
+
+*D_NET *9 0.00171107
+*CONN
+*P ON[17] O
+*I *794:L_LO O *D sg13g2_tielo
+*CAP
+1 ON[17] 0.000718711
+2 *794:L_LO 0.000718711
+3 ON[17] ON[18] 0
+4 ON[17] ON[19] 0.000273651
+5 ON[17] ON_N[16] 0
+6 ON[17] ON_N[17] 0
+7 ON[17] ON_N[19] 0
+*RES
+1 *794:L_LO ON[17] 46.3139 
+*END
+
+*D_NET *10 0.00117835
+*CONN
+*P ON[18] O
+*I *795:L_LO O *D sg13g2_tielo
+*CAP
+1 ON[18] 0.000516832
+2 *795:L_LO 0.000516832
+3 ON[18] ON[19] 0.000144684
+4 ON[18] ON_N[16] 0
+5 ON[18] ON_N[17] 0
+6 ON[18] ON_N[18] 0
+7 ON[17] ON[18] 0
+*RES
+1 *795:L_LO ON[18] 44.4805 
+*END
+
+*D_NET *11 0.00167436
+*CONN
+*P ON[19] O
+*I *796:L_LO O *D sg13g2_tielo
+*CAP
+1 ON[19] 0.000628014
+2 *796:L_LO 0.000628014
+3 ON[19] ON_N[18] 0
+4 ON[19] ON_N[19] 0
+5 ON[17] ON[19] 0.000273651
+6 ON[18] ON[19] 0.000144684
+*RES
+1 *796:L_LO ON[19] 45.8813 
+*END
+
+*D_NET *12 0.00128919
+*CONN
+*P ON[1] O
+*I *778:L_LO O *D sg13g2_tielo
+*CAP
+1 ON[1] 0.000644596
+2 *778:L_LO 0.000644596
+3 ON[1] ON_N[0] 0
+4 ON[1] ON_N[1] 0
+5 ON[0] ON[1] 0
+*RES
+1 *778:L_LO ON[1] 45.7783 
+*END
+
+*D_NET *13 0.00112033
+*CONN
+*P ON[20] O
+*I *797:L_LO O *D sg13g2_tielo
+*CAP
+1 ON[20] 0.000560165
+2 *797:L_LO 0.000560165
+3 ON[20] ON_N[18] 0
+4 ON[20] ON_N[19] 0
+5 ON[20] ON_N[20] 0
+*RES
+1 *797:L_LO ON[20] 44.6041 
+*END
+
+*D_NET *14 0.00154067
+*CONN
+*P ON[21] O
+*I *798:L_LO O *D sg13g2_tielo
+*CAP
+1 ON[21] 0.000762608
+2 *798:L_LO 0.000762608
+3 ON[21] ON[23] 0
+4 ON[21] ON[24] 1.54556e-05
+5 ON[21] ON_N[20] 0
+6 ON[21] ON_N[21] 0
+*RES
+1 *798:L_LO ON[21] 46.0279 
+*END
+
+*D_NET *15 0.000954768
+*CONN
+*P ON[22] O
+*I *799:L_LO O *D sg13g2_tielo
+*CAP
+1 ON[22] 0.000477384
+2 *799:L_LO 0.000477384
+3 ON[22] ON_N[21] 0
+4 ON[22] ON_N[22] 0
+*RES
+1 *799:L_LO ON[22] 43.9243 
+*END
+
+*D_NET *16 0.00140605
+*CONN
+*P ON[23] O
+*I *800:L_LO O *D sg13g2_tielo
+*CAP
+1 ON[23] 0.000703027
+2 *800:L_LO 0.000703027
+3 ON[23] ON_N[20] 0
+4 ON[23] ON_N[22] 0
+5 ON[23] ON_N[23] 0
+6 ON[21] ON[23] 0
+*RES
+1 *800:L_LO ON[23] 45.5679 
+*END
+
+*D_NET *17 0.00129468
+*CONN
+*P ON[24] O
+*I *801:L_LO O *D sg13g2_tielo
+*CAP
+1 ON[24] 0.000639612
+2 *801:L_LO 0.000639612
+3 ON[24] ON_N[22] 0
+4 ON[24] ON_N[23] 0
+5 ON[24] ON_N[24] 0
+6 ON[21] ON[24] 1.54556e-05
+*RES
+1 *801:L_LO ON[24] 45.1397 
+*END
+
+*D_NET *18 0.000534535
+*CONN
+*P ON[25] O
+*I *802:L_LO O *D sg13g2_tielo
+*CAP
+1 ON[25] 0.000267267
+2 *802:L_LO 0.000267267
+3 ON[25] ON_N[24] 0
+4 ON[25] ON_N[25] 0
+*RES
+1 *802:L_LO ON[25] 42.0909 
+*END
+
+*D_NET *19 0.00119556
+*CONN
+*P ON[26] O
+*I *803:L_LO O *D sg13g2_tielo
+*CAP
+1 ON[26] 0.00059778
+2 *803:L_LO 0.00059778
+3 ON[26] ON[27] 0
+4 ON[26] ON_N[25] 0
+5 ON[26] ON_N[26] 0
+6 ON[26] ON_N[28] 0
+*RES
+1 *803:L_LO ON[26] 44.8513 
+*END
+
+*D_NET *20 0.00139641
+*CONN
+*P ON[27] O
+*I *804:L_LO O *D sg13g2_tielo
+*CAP
+1 ON[27] 0.000658186
+2 *804:L_LO 0.000658186
+3 ON[27] ON[28] 0
+4 ON[27] ON[29] 8.00425e-05
+5 ON[27] ON_N[25] 0
+6 ON[27] ON_N[26] 0
+7 ON[27] ON_N[27] 0
+8 ON[27] ON_N[28] 0
+9 ON[26] ON[27] 0
+*RES
+1 *804:L_LO ON[27] 45.3457 
+*END
+
+*D_NET *21 0.00129619
+*CONN
+*P ON[28] O
+*I *805:L_LO O *D sg13g2_tielo
+*CAP
+1 ON[28] 0.000648096
+2 *805:L_LO 0.000648096
+3 ON[28] ON[29] 0
+4 ON[28] ON_N[25] 0
+5 ON[28] ON_N[26] 0
+6 ON[28] ON_N[27] 0
+7 ON[28] ON_N[28] 0
+8 ON[28] ON_N[31] 0
+9 ON[27] ON[28] 0
+*RES
+1 *805:L_LO ON[28] 45.4693 
+*END
+
+*D_NET *22 0.00158231
+*CONN
+*P ON[29] O
+*I *806:L_LO O *D sg13g2_tielo
+*CAP
+1 ON[29] 0.000751136
+2 *806:L_LO 0.000751136
+3 ON[29] ON[30] 0
+4 ON[29] ON_N[28] 0
+5 ON[29] ON_N[29] 0
+6 ON[29] ON_N[30] 0
+7 ON[27] ON[29] 8.00425e-05
+8 ON[28] ON[29] 0
+*RES
+1 *806:L_LO ON[29] 46.7465 
+*END
+
+*D_NET *23 0.000666286
+*CONN
+*P ON[2] O
+*I *779:L_LO O *D sg13g2_tielo
+*CAP
+1 ON[2] 0.000333143
+2 *779:L_LO 0.000333143
+3 ON[2] ON[3] 0
+4 ON[2] ON_N[1] 0
+5 ON[2] ON_N[2] 0
+*RES
+1 *779:L_LO ON[2] 42.6265 
+*END
+
+*D_NET *24 0.00110762
+*CONN
+*P ON[30] O
+*I *807:L_LO O *D sg13g2_tielo
+*CAP
+1 ON[30] 0.00055381
+2 *807:L_LO 0.00055381
+3 ON[30] ON_N[29] 0
+4 ON[30] ON_N[30] 0
+5 ON[29] ON[30] 0
+*RES
+1 *807:L_LO ON[30] 44.7895 
+*END
+
+*D_NET *25 0.00162912
+*CONN
+*P ON[31] O
+*I *808:L_LO O *D sg13g2_tielo
+*CAP
+1 ON[31] 0.000814559
+2 *808:L_LO 0.000814559
+3 ON[31] ON_N[29] 0
+4 ON[31] ON_N[30] 0
+5 ON[31] ON_N[31] 0
+*RES
+1 *808:L_LO ON[31] 46.4331 
+*END
+
+*D_NET *26 0.00111956
+*CONN
+*P ON[3] O
+*I *780:L_LO O *D sg13g2_tielo
+*CAP
+1 ON[3] 0.000559779
+2 *780:L_LO 0.000559779
+3 ON[3] ON[5] 0
+4 ON[3] ON_N[0] 0
+5 ON[3] ON_N[2] 0
+6 ON[3] ON_N[3] 0
+7 ON[2] ON[3] 0
+*RES
+1 *780:L_LO ON[3] 44.4805 
+*END
+
+*D_NET *27 0.00168412
+*CONN
+*P ON[4] O
+*I *781:L_LO O *D sg13g2_tielo
+*CAP
+1 ON[4] 0.00084206
+2 *781:L_LO 0.00084206
+3 ON[4] ON[5] 0
+4 ON[4] ON_N[2] 0
+5 ON[4] ON_N[3] 0
+6 ON[4] ON_N[4] 0
+7 ON[4] ON_N[5] 0
+8 ON[4] *918:A 0
+*RES
+1 *781:L_LO ON[4] 47.8795 
+*END
+
+*D_NET *28 0.00137573
+*CONN
+*P ON[5] O
+*I *782:L_LO O *D sg13g2_tielo
+*CAP
+1 ON[5] 0.000687864
+2 *782:L_LO 0.000687864
+3 ON[5] ON_N[3] 0
+4 ON[5] ON_N[4] 0
+5 ON[5] ON_N[5] 0
+6 ON[3] ON[5] 0
+7 ON[4] ON[5] 0
+*RES
+1 *782:L_LO ON[5] 45.4705 
+*END
+
+*D_NET *29 0.00106653
+*CONN
+*P ON[6] O
+*I *783:L_LO O *D sg13g2_tielo
+*CAP
+1 ON[6] 0.000533264
+2 *783:L_LO 0.000533264
+3 ON[6] ON_N[5] 0
+4 ON[6] ON_N[6] 0
+*RES
+1 *783:L_LO ON[6] 44.0685 
+*END
+
+*D_NET *30 0.00078822
+*CONN
+*P ON[7] O
+*I *784:L_LO O *D sg13g2_tielo
+*CAP
+1 ON[7] 0.000386382
+2 *784:L_LO 0.000386382
+3 ON[7] ON_N[6] 0
+4 ON[7] ON_N[7] 0
+5 ON[7] ON_N[8] 1.54556e-05
+*RES
+1 *784:L_LO ON[7] 43.1621 
+*END
+
+*D_NET *31 0.00109929
+*CONN
+*P ON[8] O
+*I *785:L_LO O *D sg13g2_tielo
+*CAP
+1 ON[8] 0.000549646
+2 *785:L_LO 0.000549646
+3 ON[8] ON[9] 0
+4 ON[8] ON_N[6] 0
+5 ON[8] ON_N[7] 0
+6 ON[8] ON_N[8] 0
+7 ON[10] ON[8] 0
+*RES
+1 *785:L_LO ON[8] 44.9487 
+*END
+
+*D_NET *32 0.00118319
+*CONN
+*P ON[9] O
+*I *786:L_LO O *D sg13g2_tielo
+*CAP
+1 ON[9] 0.00055141
+2 *786:L_LO 0.00055141
+3 ON[9] ON_N[7] 8.03692e-05
+4 ON[9] ON_N[8] 0
+5 ON[9] ON_N[9] 0
+6 ON[8] ON[9] 0
+*RES
+1 *786:L_LO ON[9] 44.5435 
+*END
+
+*D_NET *33 0.00124399
+*CONN
+*P ON_N[0] O
+*I *809:L_LO O *D sg13g2_tielo
+*CAP
+1 ON_N[0] 0.000621995
+2 *809:L_LO 0.000621995
+3 ON_N[0] ON_N[1] 0
+4 ON_N[0] ON_N[2] 0
+5 ON[0] ON_N[0] 0
+6 ON[1] ON_N[0] 0
+7 ON[3] ON_N[0] 0
+*RES
+1 *809:L_LO ON_N[0] 46.0255 
+*END
+
+*D_NET *34 0.00149419
+*CONN
+*P ON_N[10] O
+*I *819:L_LO O *D sg13g2_tielo
+*CAP
+1 ON_N[10] 0.000739366
+2 *819:L_LO 0.000739366
+3 ON_N[10] ON_N[11] 0
+4 ON_N[10] ON_N[12] 0
+5 ON[10] ON_N[10] 1.54556e-05
+6 ON[11] ON_N[10] 0
+*RES
+1 *819:L_LO ON_N[10] 46.1285 
+*END
+
+*D_NET *35 0.00101116
+*CONN
+*P ON_N[11] O
+*I *820:L_LO O *D sg13g2_tielo
+*CAP
+1 ON_N[11] 0.000497852
+2 *820:L_LO 0.000497852
+3 ON_N[11] ON_N[12] 0
+4 ON[11] ON_N[11] 0
+5 ON[12] ON_N[11] 0
+6 ON[13] ON_N[11] 1.54556e-05
+7 ON_N[10] ON_N[11] 0
+*RES
+1 *820:L_LO ON_N[11] 44.1509 
+*END
+
+*D_NET *36 0.0011079
+*CONN
+*P ON_N[12] O
+*I *821:L_LO O *D sg13g2_tielo
+*CAP
+1 ON_N[12] 0.000553952
+2 *821:L_LO 0.000553952
+3 ON[11] ON_N[12] 0
+4 ON[12] ON_N[12] 0
+5 ON[13] ON_N[12] 0
+6 ON[14] ON_N[12] 0
+7 ON_N[10] ON_N[12] 0
+8 ON_N[11] ON_N[12] 0
+*RES
+1 *821:L_LO ON_N[12] 45.0367 
+*END
+
+*D_NET *37 0.000963151
+*CONN
+*P ON_N[13] O
+*I *822:L_LO O *D sg13g2_tielo
+*CAP
+1 ON_N[13] 0.000355727
+2 *822:L_LO 0.000355727
+3 ON_N[13] ON_N[14] 0
+4 ON[13] ON_N[13] 0
+5 ON[14] ON_N[13] 0.00023624
+6 ON[15] ON_N[13] 1.54556e-05
+*RES
+1 *822:L_LO ON_N[13] 43.4917 
+*END
+
+*D_NET *38 0.000793435
+*CONN
+*P ON_N[14] O
+*I *823:L_LO O *D sg13g2_tielo
+*CAP
+1 ON_N[14] 0.000396717
+2 *823:L_LO 0.000396717
+3 ON_N[14] ON_N[15] 0
+4 ON[14] ON_N[14] 0
+5 ON[15] ON_N[14] 0
+6 ON_N[13] ON_N[14] 0
+*RES
+1 *823:L_LO ON_N[14] 43.6153 
+*END
+
+*D_NET *39 0.00152295
+*CONN
+*P ON_N[15] O
+*I *824:L_LO O *D sg13g2_tielo
+*CAP
+1 ON_N[15] 0.000761474
+2 *824:L_LO 0.000761474
+3 ON[14] ON_N[15] 0
+4 ON[15] ON_N[15] 0
+5 ON[16] ON_N[15] 0
+6 ON_N[14] ON_N[15] 0
+*RES
+1 *824:L_LO ON_N[15] 46.8289 
+*END
+
+*D_NET *40 0.00118803
+*CONN
+*P ON_N[16] O
+*I *825:L_LO O *D sg13g2_tielo
+*CAP
+1 ON_N[16] 0.000594013
+2 *825:L_LO 0.000594013
+3 ON_N[16] ON_N[18] 0
+4 ON_N[16] *184:10 0
+5 ON[16] ON_N[16] 0
+6 ON[17] ON_N[16] 0
+7 ON[18] ON_N[16] 0
+*RES
+1 *825:L_LO ON_N[16] 45.0985 
+*END
+
+*D_NET *41 0.000998945
+*CONN
+*P ON_N[17] O
+*I *826:L_LO O *D sg13g2_tielo
+*CAP
+1 ON_N[17] 0.000491744
+2 *826:L_LO 0.000491744
+3 ON_N[17] ON_N[19] 1.54556e-05
+4 ON[17] ON_N[17] 0
+5 ON[18] ON_N[17] 0
+*RES
+1 *826:L_LO ON_N[17] 43.9243 
+*END
+
+*D_NET *42 0.00113002
+*CONN
+*P ON_N[18] O
+*I *827:L_LO O *D sg13g2_tielo
+*CAP
+1 ON_N[18] 0.000565008
+2 *827:L_LO 0.000565008
+3 ON[18] ON_N[18] 0
+4 ON[19] ON_N[18] 0
+5 ON[20] ON_N[18] 0
+6 ON_N[16] ON_N[18] 0
+*RES
+1 *827:L_LO ON_N[18] 45.0367 
+*END
+
+*D_NET *43 0.000784268
+*CONN
+*P ON_N[19] O
+*I *828:L_LO O *D sg13g2_tielo
+*CAP
+1 ON_N[19] 0.000384406
+2 *828:L_LO 0.000384406
+3 ON[17] ON_N[19] 0
+4 ON[19] ON_N[19] 0
+5 ON[20] ON_N[19] 0
+6 ON_N[17] ON_N[19] 1.54556e-05
+*RES
+1 *828:L_LO ON_N[19] 43.1621 
+*END
+
+*D_NET *44 0.000938989
+*CONN
+*P ON_N[1] O
+*I *810:L_LO O *D sg13g2_tielo
+*CAP
+1 ON_N[1] 0.000469495
+2 *810:L_LO 0.000469495
+3 ON_N[1] ON_N[2] 0
+4 ON[1] ON_N[1] 0
+5 ON[2] ON_N[1] 0
+6 ON_N[0] ON_N[1] 0
+*RES
+1 *810:L_LO ON_N[1] 44.0685 
+*END
+
+*D_NET *45 0.00121819
+*CONN
+*P ON_N[20] O
+*I *829:L_LO O *D sg13g2_tielo
+*CAP
+1 ON_N[20] 0.000609096
+2 *829:L_LO 0.000609096
+3 ON[20] ON_N[20] 0
+4 ON[21] ON_N[20] 0
+5 ON[23] ON_N[20] 0
+*RES
+1 *829:L_LO ON_N[20] 45.0573 
+*END
+
+*D_NET *46 0.00138498
+*CONN
+*P ON_N[21] O
+*I *830:L_LO O *D sg13g2_tielo
+*CAP
+1 ON_N[21] 0.000587713
+2 *830:L_LO 0.000587713
+3 ON_N[21] ON_N[22] 0.000209558
+4 ON[21] ON_N[21] 0
+5 ON[22] ON_N[21] 0
+*RES
+1 *830:L_LO ON_N[21] 45.3457 
+*END
+
+*D_NET *47 0.00144516
+*CONN
+*P ON_N[22] O
+*I *831:L_LO O *D sg13g2_tielo
+*CAP
+1 ON_N[22] 0.000617799
+2 *831:L_LO 0.000617799
+3 ON[22] ON_N[22] 0
+4 ON[23] ON_N[22] 0
+5 ON[24] ON_N[22] 0
+6 ON_N[21] ON_N[22] 0.000209558
+*RES
+1 *831:L_LO ON_N[22] 45.4487 
+*END
+
+*D_NET *48 0.00154746
+*CONN
+*P ON_N[23] O
+*I *832:L_LO O *D sg13g2_tielo
+*CAP
+1 ON_N[23] 0.000773732
+2 *832:L_LO 0.000773732
+3 ON_N[23] ON_N[24] 0
+4 ON[23] ON_N[23] 0
+5 ON[24] ON_N[23] 0
+*RES
+1 *832:L_LO ON_N[23] 46.5817 
+*END
+
+*D_NET *49 0.00128391
+*CONN
+*P ON_N[24] O
+*I *833:L_LO O *D sg13g2_tielo
+*CAP
+1 ON_N[24] 0.000641954
+2 *833:L_LO 0.000641954
+3 ON_N[24] ON_N[25] 0
+4 ON_N[24] ON_N[26] 0
+5 ON_N[24] *149:10 0
+6 ON[24] ON_N[24] 0
+7 ON[25] ON_N[24] 0
+8 ON_N[23] ON_N[24] 0
+*RES
+1 *833:L_LO ON_N[24] 45.5929 
+*END
+
+*D_NET *50 0.00142833
+*CONN
+*P ON_N[25] O
+*I *834:L_LO O *D sg13g2_tielo
+*CAP
+1 ON_N[25] 0.000714164
+2 *834:L_LO 0.000714164
+3 ON_N[25] ON_N[26] 0
+4 ON[25] ON_N[25] 0
+5 ON[26] ON_N[25] 0
+6 ON[27] ON_N[25] 0
+7 ON[28] ON_N[25] 0
+8 ON_N[24] ON_N[25] 0
+*RES
+1 *834:L_LO ON_N[25] 45.9031 
+*END
+
+*D_NET *51 0.00143638
+*CONN
+*P ON_N[26] O
+*I *835:L_LO O *D sg13g2_tielo
+*CAP
+1 ON_N[26] 0.000718191
+2 *835:L_LO 0.000718191
+3 ON_N[26] ON_N[27] 0
+4 ON[26] ON_N[26] 0
+5 ON[27] ON_N[26] 0
+6 ON[28] ON_N[26] 0
+7 ON_N[24] ON_N[26] 0
+8 ON_N[25] ON_N[26] 0
+*RES
+1 *835:L_LO ON_N[26] 46.0267 
+*END
+
+*D_NET *52 0.00145796
+*CONN
+*P ON_N[27] O
+*I *836:L_LO O *D sg13g2_tielo
+*CAP
+1 ON_N[27] 0.000728979
+2 *836:L_LO 0.000728979
+3 ON_N[27] ON_N[29] 0
+4 ON[27] ON_N[27] 0
+5 ON[28] ON_N[27] 0
+6 ON_N[26] ON_N[27] 0
+*RES
+1 *836:L_LO ON_N[27] 46.5199 
+*END
+
+*D_NET *53 0.000772825
+*CONN
+*P ON_N[28] O
+*I *837:L_LO O *D sg13g2_tielo
+*CAP
+1 ON_N[28] 0.000386412
+2 *837:L_LO 0.000386412
+3 ON[26] ON_N[28] 0
+4 ON[27] ON_N[28] 0
+5 ON[28] ON_N[28] 0
+6 ON[29] ON_N[28] 0
+*RES
+1 *837:L_LO ON_N[28] 43.0591 
+*END
+
+*D_NET *54 0.00111303
+*CONN
+*P ON_N[29] O
+*I *838:L_LO O *D sg13g2_tielo
+*CAP
+1 ON_N[29] 0.000556514
+2 *838:L_LO 0.000556514
+3 ON_N[29] ON_N[30] 0
+4 ON[29] ON_N[29] 0
+5 ON[30] ON_N[29] 0
+6 ON[31] ON_N[29] 0
+7 ON_N[27] ON_N[29] 0
+*RES
+1 *838:L_LO ON_N[29] 45.0573 
+*END
+
+*D_NET *55 0.00119702
+*CONN
+*P ON_N[2] O
+*I *811:L_LO O *D sg13g2_tielo
+*CAP
+1 ON_N[2] 0.000598512
+2 *811:L_LO 0.000598512
+3 ON_N[2] ON_N[3] 0
+4 ON[2] ON_N[2] 0
+5 ON[3] ON_N[2] 0
+6 ON[4] ON_N[2] 0
+7 ON_N[0] ON_N[2] 0
+8 ON_N[1] ON_N[2] 0
+*RES
+1 *811:L_LO ON_N[2] 45.5517 
+*END
+
+*D_NET *56 0.00144419
+*CONN
+*P ON_N[30] O
+*I *839:L_LO O *D sg13g2_tielo
+*CAP
+1 ON_N[30] 0.000722093
+2 *839:L_LO 0.000722093
+3 ON_N[30] ON_N[31] 0
+4 ON[29] ON_N[30] 0
+5 ON[30] ON_N[30] 0
+6 ON[31] ON_N[30] 0
+7 ON_N[29] ON_N[30] 0
+*RES
+1 *839:L_LO ON_N[30] 44.7681 
+*END
+
+*D_NET *57 0.00159332
+*CONN
+*P ON_N[31] O
+*I *840:L_LO O *D sg13g2_tielo
+*CAP
+1 ON_N[31] 0.000796659
+2 *840:L_LO 0.000796659
+3 ON[28] ON_N[31] 0
+4 ON[31] ON_N[31] 0
+5 ON_N[30] ON_N[31] 0
+*RES
+1 *840:L_LO ON_N[31] 47.8795 
+*END
+
+*D_NET *58 0.00132115
+*CONN
+*P ON_N[3] O
+*I *812:L_LO O *D sg13g2_tielo
+*CAP
+1 ON_N[3] 0.000660577
+2 *812:L_LO 0.000660577
+3 ON[3] ON_N[3] 0
+4 ON[4] ON_N[3] 0
+5 ON[5] ON_N[3] 0
+6 ON_N[2] ON_N[3] 0
+*RES
+1 *812:L_LO ON_N[3] 45.5311 
+*END
+
+*D_NET *59 0.00109387
+*CONN
+*P ON_N[4] O
+*I *813:L_LO O *D sg13g2_tielo
+*CAP
+1 ON_N[4] 0.000546936
+2 *813:L_LO 0.000546936
+3 ON[4] ON_N[4] 0
+4 ON[5] ON_N[4] 0
+*RES
+1 *813:L_LO ON_N[4] 44.4187 
+*END
+
+*D_NET *60 0.0013095
+*CONN
+*P ON_N[5] O
+*I *814:L_LO O *D sg13g2_tielo
+*CAP
+1 ON_N[5] 0.000654751
+2 *814:L_LO 0.000654751
+3 ON[4] ON_N[5] 0
+4 ON[5] ON_N[5] 0
+5 ON[6] ON_N[5] 0
+*RES
+1 *814:L_LO ON_N[5] 45.5929 
+*END
+
+*D_NET *61 0.00130419
+*CONN
+*P ON_N[6] O
+*I *815:L_LO O *D sg13g2_tielo
+*CAP
+1 ON_N[6] 0.000652095
+2 *815:L_LO 0.000652095
+3 ON_N[6] ON_N[7] 0
+4 ON[6] ON_N[6] 0
+5 ON[7] ON_N[6] 0
+6 ON[8] ON_N[6] 0
+*RES
+1 *815:L_LO ON_N[6] 45.5929 
+*END
+
+*D_NET *62 0.00115168
+*CONN
+*P ON_N[7] O
+*I *816:L_LO O *D sg13g2_tielo
+*CAP
+1 ON_N[7] 0.000535653
+2 *816:L_LO 0.000535653
+3 ON_N[7] ON_N[8] 0
+4 ON[7] ON_N[7] 0
+5 ON[8] ON_N[7] 0
+6 ON[9] ON_N[7] 8.03692e-05
+7 ON_N[6] ON_N[7] 0
+*RES
+1 *816:L_LO ON_N[7] 44.5835 
+*END
+
+*D_NET *63 0.000837531
+*CONN
+*P ON_N[8] O
+*I *817:L_LO O *D sg13g2_tielo
+*CAP
+1 ON_N[8] 0.000411038
+2 *817:L_LO 0.000411038
+3 ON[7] ON_N[8] 1.54556e-05
+4 ON[8] ON_N[8] 0
+5 ON[9] ON_N[8] 0
+6 ON_N[7] ON_N[8] 0
+*RES
+1 *817:L_LO ON_N[8] 43.4917 
+*END
+
+*D_NET *64 0.000752399
+*CONN
+*P ON_N[9] O
+*I *818:L_LO O *D sg13g2_tielo
+*CAP
+1 ON_N[9] 0.000376199
+2 *818:L_LO 0.000376199
+3 ON[10] ON_N[9] 0
+4 ON[9] ON_N[9] 0
+*RES
+1 *818:L_LO ON_N[9] 43.0591 
+*END
+
+*D_NET *67 0.00150616
+*CONN
+*P thermo[0] I
+*I *873:A I *D sg13g2_dlygate4sd1_1
+*I *876:B I *D sg13g2_xnor2_1
+*I *875:Y O *D sg13g2_nand2_2
+*CAP
+1 thermo[0] 0.000262733
+2 *873:A 0.000105185
+3 *876:B 0.000157627
+4 *875:Y 0
+5 *67:14 0.000312899
+6 *67:6 0.000312819
+7 thermo[0] thermo[1] 0
+8 thermo[0] *103:10 0
+9 *873:A *875:B 8.02269e-05
+10 *876:B *875:B 0.00027467
+11 *67:14 thermo[1] 0
+12 *67:14 *103:10 0
+*RES
+1 *875:Y *67:6 40 
+2 *67:6 thermo[0] 3.1621 
+3 *67:6 *67:14 0.5974 
+4 *67:14 *876:B 41.8334 
+5 *67:14 *873:A 41.133 
+*END
+
+*D_NET *68 0.00524813
+*CONN
+*P thermo[10] I
+*I *877:A I *D sg13g2_dlygate4sd1_1
+*I *880:B I *D sg13g2_xnor2_1
+*I *879:Y O *D sg13g2_nand2_2
+*CAP
+1 thermo[10] 0.00177355
+2 *877:A 0
+3 *880:B 8.13431e-05
+4 *879:Y 7.35434e-05
+5 *68:39 0.000116144
+6 *68:14 0.00214517
+7 *68:8 0.00047996
+8 thermo[10] thermo[11] 0
+9 thermo[10] thermo[8] 0
+10 thermo[10] thermo[9] 0
+11 thermo[10] *69:10 0
+12 thermo[10] *256:8 0.000395897
+13 *880:B *880:A 0
+14 *68:8 *879:B 0
+15 *68:8 *895:A 0
+16 *68:14 *879:B 0
+17 *68:14 *880:A 0
+18 *68:14 *895:A 0
+19 *68:39 *106:10 0.000182525
+*RES
+1 *879:Y *68:8 20.8858 
+2 *68:8 *68:14 23.0179 
+3 *68:14 thermo[10] 19.158 
+4 *68:14 *880:B 40.7519 
+5 *68:8 *68:39 41.5862 
+6 *68:39 *877:A 20 
+*END
+
+*D_NET *69 0.0042183
+*CONN
+*P thermo[11] I
+*I *881:A I *D sg13g2_dlygate4sd1_1
+*I *884:B I *D sg13g2_xnor2_1
+*I *883:Y O *D sg13g2_nand2_2
+*CAP
+1 thermo[11] 0.00151514
+2 *881:A 0.0001771
+3 *884:B 3.25456e-05
+4 *883:Y 0
+5 *69:10 0.00173935
+6 *69:4 0.000368764
+7 thermo[11] thermo[12] 0
+8 thermo[11] *883:B 0
+9 thermo[11] *884:A 0.000161056
+10 thermo[11] *70:19 0
+11 thermo[11] *118:10 0
+12 *881:A *883:A 0.000176511
+13 *881:A *895:A 0
+14 *884:B *883:B 0
+15 *884:B *884:A 4.78402e-05
+16 *69:10 thermo[8] 0
+17 thermo[10] thermo[11] 0
+18 thermo[10] *69:10 0
+*RES
+1 *883:Y *69:4 20 
+2 *69:4 *69:10 41.8334 
+3 *69:10 *884:B 20.3193 
+4 *69:10 thermo[11] 35.2234 
+5 *69:4 *881:A 21.9673 
+*END
+
+*D_NET *70 0.00261417
+*CONN
+*P thermo[12] I
+*I *888:B I *D sg13g2_xnor2_1
+*I *885:A I *D sg13g2_dlygate4sd1_1
+*I *887:Y O *D sg13g2_nand2_2
+*CAP
+1 thermo[12] 0.000667886
+2 *888:B 4.23287e-05
+3 *885:A 0
+4 *887:Y 0.000200843
+5 *70:19 0.00100179
+6 *70:8 0.000492424
+7 thermo[12] thermo[13] 0
+8 thermo[12] thermo[14] 0
+9 thermo[12] *889:A 0
+10 thermo[12] *71:10 0
+11 thermo[12] *118:10 0
+12 *888:B *891:A 0
+13 *70:8 *887:A 0.000208896
+14 *70:8 *887:B 0
+15 *70:8 *903:A 0
+16 *70:19 thermo[14] 0
+17 *70:19 *118:10 0
+18 thermo[11] thermo[12] 0
+19 thermo[11] *70:19 0
+*RES
+1 *887:Y *70:8 22.1836 
+2 *70:8 *885:A 20 
+3 *70:8 *70:19 23.1106 
+4 *70:19 thermo[12] 7.3645 
+5 *70:19 *888:B 40.4476 
+*END
+
+*D_NET *71 0.00124776
+*CONN
+*P thermo[13] I
+*I *889:A I *D sg13g2_dlygate4sd1_1
+*I *892:B I *D sg13g2_xnor2_1
+*I *891:Y O *D sg13g2_nand2_2
+*CAP
+1 thermo[13] 0.000240709
+2 *889:A 0.000117849
+3 *892:B 8.07076e-05
+4 *891:Y 7.94583e-05
+5 *71:10 0.000418873
+6 *71:8 0.000294763
+7 thermo[13] thermo[14] 0
+8 *889:A *891:A 0
+9 *892:B *892:A 1.54008e-05
+10 *71:8 *891:A 0
+11 *71:10 thermo[14] 0
+12 thermo[12] thermo[13] 0
+13 thermo[12] *889:A 0
+14 thermo[12] *71:10 0
+*RES
+1 *891:Y *71:8 40.7519 
+2 *71:8 *71:10 1.0918 
+3 *71:10 thermo[13] 2.6677 
+4 *71:10 *892:B 40.9682 
+5 *71:8 *889:A 41.5656 
+*END
+
+*D_NET *72 0.004734
+*CONN
+*P thermo[14] I
+*I *893:A I *D sg13g2_dlygate4sd1_1
+*I *896:B I *D sg13g2_xnor2_1
+*I *895:Y O *D sg13g2_nand2_2
+*CAP
+1 thermo[14] 0.00170234
+2 *893:A 0.000236871
+3 *896:B 3.30976e-05
+4 *895:Y 0
+5 *72:18 0.00037703
+6 *72:6 0.0018094
+7 thermo[14] thermo[15] 0
+8 thermo[14] *897:A 0
+9 thermo[14] *73:10 0
+10 thermo[14] *133:10 0.000286354
+11 *893:A *106:10 0
+12 *893:A *128:10 0.000288917
+13 *896:B *895:B 0
+14 *896:B *128:10 0
+15 thermo[12] thermo[14] 0
+16 thermo[13] thermo[14] 0
+17 *70:19 thermo[14] 0
+18 *71:10 thermo[14] 0
+*RES
+1 *895:Y *72:6 40 
+2 *72:6 thermo[14] 17.922 
+3 *72:6 *72:18 1.339 
+4 *72:18 *896:B 40.3193 
+5 *72:18 *893:A 43.1415 
+*END
+
+*D_NET *73 0.00352661
+*CONN
+*P thermo[15] I
+*I *897:A I *D sg13g2_dlygate4sd1_1
+*I *900:B I *D sg13g2_xnor2_1
+*I *899:Y O *D sg13g2_nand2_2
+*CAP
+1 thermo[15] 0.00139352
+2 *897:A 0.000125929
+3 *900:B 6.32729e-05
+4 *899:Y 0.000115374
+5 *73:10 0.001522
+6 *73:8 0.000306516
+7 thermo[15] thermo[16] 0
+8 thermo[15] thermo[17] 0
+9 thermo[15] *74:17 0
+10 thermo[15] *132:8 0
+11 *73:8 *899:A 0
+12 *73:8 *899:B 0
+13 thermo[14] thermo[15] 0
+14 thermo[14] *897:A 0
+15 thermo[14] *73:10 0
+*RES
+1 *899:Y *73:8 40.9682 
+2 *73:8 *73:10 0.5974 
+3 *73:10 thermo[15] 13.7196 
+4 *73:10 *900:B 40.7519 
+5 *73:8 *897:A 41.3493 
+*END
+
+*D_NET *74 0.00271771
+*CONN
+*P thermo[16] I
+*I *904:B I *D sg13g2_xnor2_1
+*I *901:A I *D sg13g2_dlygate4sd1_1
+*I *903:Y O *D sg13g2_nand2_2
+*CAP
+1 thermo[16] 0.000676912
+2 *904:B 3.43728e-05
+3 *901:A 0
+4 *903:Y 0.000222853
+5 *74:17 0.000991917
+6 *74:6 0.000503485
+7 thermo[16] thermo[17] 0
+8 thermo[16] *138:10 0.000235055
+9 *74:6 *903:A 0
+10 *74:6 *903:B 0
+11 *74:17 thermo[17] 0
+12 *74:17 *903:A 0
+13 *74:17 *138:10 5.31192e-05
+14 thermo[15] thermo[16] 0
+15 thermo[15] *74:17 0
+*RES
+1 *903:Y *74:6 21.8334 
+2 *74:6 *901:A 20 
+3 *74:6 *74:17 22.6471 
+4 *74:17 thermo[16] 7.7868 
+5 *74:17 *904:B 40.2313 
+*END
+
+*D_NET *75 0.00483239
+*CONN
+*P thermo[17] I
+*I *905:A I *D sg13g2_dlygate4sd1_1
+*I *908:B I *D sg13g2_xnor2_1
+*I *907:Y O *D sg13g2_nand2_2
+*CAP
+1 thermo[17] 0.00208758
+2 *905:A 0.00014795
+3 *908:B 8.2557e-05
+4 *907:Y 9.81129e-05
+5 *75:15 0.00223552
+6 *75:6 0.00018067
+7 thermo[17] thermo[18] 0
+8 thermo[17] *76:10 0
+9 thermo[17] *79:8 0
+10 thermo[17] *132:8 0
+11 thermo[17] *143:10 0
+12 thermo[17] *146:8 0
+13 thermo[15] thermo[17] 0
+14 thermo[16] thermo[17] 0
+15 *74:17 thermo[17] 0
+*RES
+1 *907:Y *75:6 20.9682 
+2 *75:6 *908:B 20.9682 
+3 *75:6 *75:15 20 
+4 *75:15 thermo[17] 22.9381 
+5 *75:15 *905:A 42.06 
+*END
+
+*D_NET *76 0.00436117
+*CONN
+*P thermo[18] I
+*I *909:A I *D sg13g2_dlygate4sd1_1
+*I *912:B I *D sg13g2_xnor2_1
+*I *911:Y O *D sg13g2_nand2_2
+*CAP
+1 thermo[18] 0.00158859
+2 *909:A 2.88573e-05
+3 *912:B 3.43364e-05
+4 *911:Y 0.000148192
+5 *76:10 0.0017173
+6 *76:6 0.000271426
+7 thermo[18] thermo[19] 0
+8 thermo[18] thermo[20] 0
+9 thermo[18] *913:A 0
+10 thermo[18] *921:A 0
+11 thermo[18] *77:12 0
+12 thermo[18] *79:8 0.000182023
+13 thermo[18] *79:18 0
+14 thermo[18] *148:10 0.000149119
+15 thermo[18] *151:8 0
+16 *909:A *911:A 0
+17 *909:A *911:B 3.23694e-05
+18 *912:B *911:B 0
+19 *76:6 *911:A 0
+20 *76:6 *911:B 0.000208968
+21 thermo[17] thermo[18] 0
+22 thermo[17] *76:10 0
+*RES
+1 *911:Y *76:6 21.4008 
+2 *76:6 *76:10 21.0918 
+3 *76:10 thermo[18] 17.4276 
+4 *76:10 *912:B 40.3193 
+5 *76:6 *909:A 20.3193 
+*END
+
+*D_NET *77 0.00152311
+*CONN
+*P thermo[19] I
+*I *913:A I *D sg13g2_dlygate4sd1_1
+*I *916:B I *D sg13g2_xnor2_1
+*I *915:Y O *D sg13g2_nand2_2
+*CAP
+1 thermo[19] 0.000310233
+2 *913:A 9.71982e-05
+3 *916:B 0
+4 *915:Y 0.000194729
+5 *77:12 0.000429585
+6 *77:8 0.00041128
+7 thermo[19] thermo[20] 0
+8 thermo[19] *916:A 8.00842e-05
+9 *913:A *151:8 0
+10 *77:8 *915:A 0
+11 *77:12 thermo[20] 0
+12 thermo[18] thermo[19] 0
+13 thermo[18] *913:A 0
+14 thermo[18] *77:12 0
+*RES
+1 *915:Y *77:8 41.6171 
+2 *77:8 *77:12 21.0918 
+3 *77:12 *916:B 20 
+4 *77:12 thermo[19] 23.4505 
+5 *77:8 *913:A 40.8446 
+*END
+
+*D_NET *78 0.00450881
+*CONN
+*P thermo[1] I
+*I *917:A I *D sg13g2_dlygate4sd1_1
+*I *920:B I *D sg13g2_xnor2_1
+*I *919:Y O *D sg13g2_nand2_2
+*CAP
+1 thermo[1] 0.000722378
+2 *917:A 5.65409e-05
+3 *920:B 8.32243e-05
+4 *919:Y 8.75625e-05
+5 *78:12 0.0010655
+6 *78:8 0.000404003
+7 thermo[1] thermo[2] 0.0012498
+8 thermo[1] *920:A 0.000339583
+9 thermo[1] *156:14 0
+10 *917:A *919:B 0
+11 *920:B *920:A 0
+12 *920:B *156:14 0
+13 *78:8 *156:14 0.000158579
+14 *78:12 *156:14 0.000341641
+15 *78:12 *157:8 0
+16 thermo[0] thermo[1] 0
+17 *67:14 thermo[1] 0
+*RES
+1 *919:Y *78:8 41.0918 
+2 *78:8 *78:12 23.0694 
+3 *78:12 thermo[1] 29.8777 
+4 *78:12 *920:B 20.8858 
+5 *78:8 *917:A 40.5356 
+*END
+
+*D_NET *79 0.00333011
+*CONN
+*P thermo[20] I
+*I *921:A I *D sg13g2_dlygate4sd1_1
+*I *924:B I *D sg13g2_xnor2_1
+*I *923:Y O *D sg13g2_nand2_2
+*CAP
+1 thermo[20] 0.0006895
+2 *921:A 0.000100851
+3 *924:B 4.82032e-05
+4 *923:Y 5.88281e-05
+5 *79:18 0.000973451
+6 *79:14 0.00053185
+7 *79:8 0.000254079
+8 thermo[20] thermo[21] 0
+9 thermo[20] *151:8 0
+10 thermo[20] *163:10 0
+11 thermo[20] *181:10 0
+12 *921:A thermo[21] 0
+13 *79:14 *903:B 0.000173809
+14 *79:14 *923:A 0.000242301
+15 *79:18 thermo[21] 0
+16 *79:18 *163:10 7.52158e-05
+17 thermo[17] *79:8 0
+18 thermo[18] thermo[20] 0
+19 thermo[18] *921:A 0
+20 thermo[18] *79:8 0.000182023
+21 thermo[18] *79:18 0
+22 thermo[19] thermo[20] 0
+23 *77:12 thermo[20] 0
+*RES
+1 *923:Y *79:8 40.8446 
+2 *79:8 *79:14 42.266 
+3 *79:14 *79:18 2.3999 
+4 *79:18 thermo[20] 7.3645 
+5 *79:18 *924:B 40.5356 
+6 *79:14 *921:A 41.1639 
+*END
+
+*D_NET *80 0.00510365
+*CONN
+*P thermo[21] I
+*I *925:A I *D sg13g2_dlygate4sd1_1
+*I *928:B I *D sg13g2_xnor2_1
+*I *927:Y O *D sg13g2_nand2_2
+*CAP
+1 thermo[21] 0.00207591
+2 *925:A 0.000128658
+3 *928:B 4.51247e-05
+4 *927:Y 0.000130902
+5 *80:15 0.00220457
+6 *80:6 0.000176027
+7 thermo[21] thermo[22] 0
+8 thermo[21] *81:12 0
+9 thermo[21] *146:8 0
+10 thermo[21] *148:10 0
+11 thermo[21] *163:10 0
+12 thermo[21] *168:10 0
+13 thermo[21] *181:10 0.00034245
+14 *925:A *982:B 0
+15 thermo[20] thermo[21] 0
+16 *921:A thermo[21] 0
+17 *79:18 thermo[21] 0
+*RES
+1 *927:Y *80:6 21.4008 
+2 *80:6 *928:B 20.5356 
+3 *80:6 *80:15 20 
+4 *80:15 thermo[21] 22.9381 
+5 *80:15 *925:A 41.6274 
+*END
+
+*D_NET *81 0.00451404
+*CONN
+*P thermo[22] I
+*I *929:A I *D sg13g2_dlygate4sd1_1
+*I *932:B I *D sg13g2_xnor2_1
+*I *931:Y O *D sg13g2_nand2_2
+*CAP
+1 thermo[22] 0.00178364
+2 *929:A 2.64741e-05
+3 *932:B 3.74563e-05
+4 *931:Y 0.000165209
+5 *81:12 0.00192041
+6 *81:6 0.000291003
+7 thermo[22] thermo[23] 0
+8 thermo[22] *931:B 0
+9 thermo[22] *82:20 0
+10 thermo[22] *173:10 0
+11 *929:A *931:A 4.77702e-05
+12 *929:A *931:B 0
+13 *932:B *931:B 0
+14 *81:6 *931:A 0.000242071
+15 *81:6 *931:B 0
+16 thermo[21] thermo[22] 0
+17 thermo[21] *81:12 0
+*RES
+1 *931:Y *81:6 21.6171 
+2 *81:6 *81:12 41.0918 
+3 *81:12 thermo[22] 38.2516 
+4 *81:12 *932:B 20.3193 
+5 *81:6 *929:A 20.3193 
+*END
+
+*D_NET *82 0.00341955
+*CONN
+*P thermo[23] I
+*I *933:A I *D sg13g2_dlygate4sd1_1
+*I *936:B I *D sg13g2_xnor2_1
+*I *935:Y O *D sg13g2_nand2_2
+*CAP
+1 thermo[23] 0.00121592
+2 *933:A 2.7967e-05
+3 *936:B 0.000212402
+4 *935:Y 0
+5 *82:20 0.000341993
+6 *82:6 0.00131755
+7 thermo[23] thermo[24] 0
+8 thermo[23] thermo[25] 0
+9 thermo[23] *83:19 0.00028826
+10 thermo[23] *162:8 0
+11 thermo[23] *187:8 0
+12 thermo[23] *192:10 0
+13 *933:A *935:A 0
+14 *936:B *936:A 1.54556e-05
+15 thermo[22] thermo[23] 0
+16 thermo[22] *82:20 0
+*RES
+1 *935:Y *82:6 40 
+2 *82:6 thermo[23] 12.7308 
+3 *82:6 *82:20 21.0918 
+4 *82:20 *936:B 22.0497 
+5 *82:20 *933:A 20.3193 
+*END
+
+*D_NET *83 0.00213079
+*CONN
+*P thermo[24] I
+*I *937:A I *D sg13g2_dlygate4sd1_1
+*I *940:B I *D sg13g2_xnor2_1
+*I *939:Y O *D sg13g2_nand2_2
+*CAP
+1 thermo[24] 0.00043453
+2 *937:A 0
+3 *940:B 0
+4 *939:Y 0.000195078
+5 *83:19 8.27373e-05
+6 *83:8 0.000712346
+7 thermo[24] thermo[25] 0
+8 thermo[24] *939:B 0
+9 thermo[24] *940:A 0.000144216
+10 *83:8 *939:B 0.000273624
+11 *83:8 *181:10 0
+12 *83:19 *192:10 0
+13 thermo[23] thermo[24] 0
+14 thermo[23] *83:19 0.00028826
+*RES
+1 *939:Y *83:8 22.1836 
+2 *83:8 *940:B 20 
+3 *83:8 *83:19 41.339 
+4 *83:19 *937:A 20 
+5 *83:8 thermo[24] 24.6247 
+*END
+
+*D_NET *84 0.00309102
+*CONN
+*P thermo[25] I
+*I *941:A I *D sg13g2_dlygate4sd1_1
+*I *944:B I *D sg13g2_xnor2_1
+*I *943:Y O *D sg13g2_nand2_2
+*CAP
+1 thermo[25] 0.000693122
+2 *941:A 8.33574e-05
+3 *944:B 2.68471e-05
+4 *943:Y 0.000169862
+5 *84:10 0.000848469
+6 *84:8 0.00038172
+7 thermo[25] thermo[26] 0
+8 thermo[25] thermo[27] 0
+9 thermo[25] *945:A 0
+10 thermo[25] *85:10 0
+11 thermo[25] *192:10 0.000555408
+12 *941:A *943:A 4.77699e-05
+13 *941:A *186:10 0
+14 *944:B *944:A 1.51771e-05
+15 *84:8 *943:A 0.00026929
+16 *84:8 *944:A 0
+17 *84:10 *162:8 0
+18 *84:10 *186:10 0
+19 thermo[23] thermo[25] 0
+20 thermo[24] thermo[25] 0
+*RES
+1 *943:Y *84:8 41.8334 
+2 *84:8 *84:10 1.0918 
+3 *84:10 thermo[25] 8.5284 
+4 *84:10 *944:B 40.3193 
+5 *84:8 *941:A 40.9167 
+*END
+
+*D_NET *85 0.0016191
+*CONN
+*P thermo[26] I
+*I *945:A I *D sg13g2_dlygate4sd1_1
+*I *948:B I *D sg13g2_xnor2_1
+*I *947:Y O *D sg13g2_nand2_2
+*CAP
+1 thermo[26] 0.000260435
+2 *945:A 0.00014472
+3 *948:B 0.000120859
+4 *947:Y 2.9413e-05
+5 *85:10 0.000523207
+6 *85:8 0.000316046
+7 thermo[26] thermo[27] 0
+8 *945:A *947:A 0.000208968
+9 *945:A *948:A 0
+10 *948:B *948:A 1.54556e-05
+11 *85:8 *947:A 0
+12 *85:10 thermo[27] 0
+13 thermo[25] thermo[26] 0
+14 thermo[25] *945:A 0
+15 thermo[25] *85:10 0
+*RES
+1 *947:Y *85:8 40.3193 
+2 *85:8 *85:10 1.5862 
+3 *85:10 thermo[26] 2.9149 
+4 *85:10 *948:B 41.4008 
+5 *85:8 *945:A 41.9982 
+*END
+
+*D_NET *86 0.00338597
+*CONN
+*P thermo[27] I
+*I *949:A I *D sg13g2_dlygate4sd1_1
+*I *952:B I *D sg13g2_xnor2_1
+*I *951:Y O *D sg13g2_nand2_2
+*CAP
+1 thermo[27] 0.00113273
+2 *949:A 0.000194411
+3 *952:B 4.65649e-05
+4 *951:Y 0
+5 *86:14 0.000404224
+6 *86:6 0.00129598
+7 thermo[27] thermo[28] 0
+8 thermo[27] *186:10 0.000231842
+9 thermo[27] *187:8 0
+10 *949:A thermo[28] 0
+11 *949:A *952:A 0
+12 *952:B *951:A 0
+13 *952:B *952:A 8.02269e-05
+14 *86:14 thermo[28] 0
+15 thermo[25] thermo[27] 0
+16 thermo[26] thermo[27] 0
+17 *85:10 thermo[27] 0
+*RES
+1 *951:Y *86:6 40 
+2 *86:6 thermo[27] 12.0613 
+3 *86:6 *86:14 1.8334 
+4 *86:14 *952:B 40.5356 
+5 *86:14 *949:A 42.1218 
+*END
+
+*D_NET *87 0.00455727
+*CONN
+*P thermo[28] I
+*I *953:A I *D sg13g2_dlygate4sd1_1
+*I *956:B I *D sg13g2_xnor2_1
+*I *955:Y O *D sg13g2_nand2_2
+*CAP
+1 thermo[28] 0.00175327
+2 *953:A 0.000125982
+3 *956:B 3.97251e-05
+4 *955:Y 0.00014607
+5 *87:16 0.000339179
+6 *87:8 0.00207282
+7 thermo[28] thermo[29] 0
+8 thermo[28] *88:10 0
+9 thermo[28] *222:10 0
+10 *953:A *910:B 0
+11 *956:B *956:A 8.02267e-05
+12 *87:8 *955:A 0
+13 *87:8 *955:B 0
+14 thermo[27] thermo[28] 0
+15 *949:A thermo[28] 0
+16 *86:14 thermo[28] 0
+*RES
+1 *955:Y *87:8 41.4008 
+2 *87:8 thermo[28] 18.9829 
+3 *87:8 *87:16 2.0806 
+4 *87:16 *956:B 40.5356 
+5 *87:16 *953:A 41.6274 
+*END
+
+*D_NET *88 0.00266603
+*CONN
+*P thermo[29] I
+*I *957:A I *D sg13g2_dlygate4sd1_1
+*I *960:B I *D sg13g2_xnor2_1
+*I *959:Y O *D sg13g2_nand2_2
+*CAP
+1 thermo[29] 0.000754864
+2 *957:A 5.0858e-05
+3 *960:B 4.99935e-05
+4 *959:Y 0.000148192
+5 *88:10 0.000991195
+6 *88:6 0.000385388
+7 thermo[29] thermo[30] 0
+8 thermo[29] thermo[31] 0
+9 thermo[29] *218:12 0
+10 *957:A *959:A 0
+11 *957:A *959:B 6.35071e-05
+12 *960:B *959:B 0
+13 *960:B *960:A 1.54556e-05
+14 *960:B *967:A 0
+15 *88:6 *959:A 0
+16 *88:6 *959:B 0.000206582
+17 *88:10 thermo[31] 0
+18 thermo[28] thermo[29] 0
+19 thermo[28] *88:10 0
+*RES
+1 *959:Y *88:6 21.4008 
+2 *88:6 *88:10 21.5862 
+3 *88:10 thermo[29] 7.8589 
+4 *88:10 *960:B 40.5356 
+5 *88:6 *957:A 20.5356 
+*END
+
+*D_NET *89 0.00446654
+*CONN
+*P thermo[2] I
+*I *964:B I *D sg13g2_xnor2_1
+*I *961:A I *D sg13g2_dlygate4sd1_1
+*I *963:Y O *D sg13g2_nand2_2
+*CAP
+1 thermo[2] 0.00101891
+2 *964:B 4.41109e-05
+3 *961:A 0
+4 *963:Y 7.64111e-05
+5 *89:23 0.00129578
+6 *89:12 0.000429484
+7 *89:8 0.000273134
+8 thermo[2] thermo[3] 0
+9 thermo[2] *232:8 0
+10 thermo[2] *237:10 0
+11 *964:B *964:A 7.89102e-05
+12 *964:B *979:B 0
+13 *89:12 *963:A 0
+14 *89:23 *963:A 0
+15 *89:23 *964:A 0
+16 *89:23 *241:10 0
+17 thermo[1] thermo[2] 0.0012498
+*RES
+1 *963:Y *89:8 40.8446 
+2 *89:8 *89:12 21.8334 
+3 *89:12 *961:A 20 
+4 *89:12 *89:23 22.1218 
+5 *89:23 *964:B 40.5356 
+6 *89:23 thermo[2] 12.7411 
+*END
+
+*D_NET *90 0.00134854
+*CONN
+*P thermo[30] I
+*I *965:A I *D sg13g2_dlygate4sd1_1
+*I *968:B I *D sg13g2_xnor2_1
+*I *967:Y O *D sg13g2_nand2_2
+*CAP
+1 thermo[30] 0.000265964
+2 *965:A 0.000111033
+3 *968:B 4.35508e-05
+4 *967:Y 0.00032464
+5 *90:10 0.000523122
+6 thermo[30] thermo[31] 0
+7 *965:A *948:A 0
+8 *965:A *967:A 0
+9 *968:B *948:A 8.02267e-05
+10 *968:B *218:12 0
+11 *90:10 thermo[31] 0
+12 *90:10 *948:A 0
+13 *90:10 *967:A 0
+14 *90:10 *218:12 0
+15 thermo[29] thermo[30] 0
+*RES
+1 *967:Y *90:10 41.7475 
+2 *90:10 thermo[30] 2.9149 
+3 *90:10 *968:B 40.5356 
+4 *967:Y *965:A 41.1639 
+*END
+
+*D_NET *91 0.00369529
+*CONN
+*P thermo[31] I
+*I *969:A I *D sg13g2_dlygate4sd1_1
+*I *972:B I *D sg13g2_xnor2_1
+*I *971:Y O *D sg13g2_nand2_2
+*CAP
+1 thermo[31] 0.00135648
+2 *969:A 0
+3 *972:B 0
+4 *971:Y 0.000156124
+5 *91:12 0.00154646
+6 *91:6 0.000346102
+7 thermo[31] *971:A 0
+8 thermo[31] *972:A 1.54556e-05
+9 thermo[31] *217:10 0
+10 thermo[31] *218:12 0
+11 thermo[31] *223:8 0
+12 *91:6 *971:A 0.00027467
+13 *91:6 *222:10 0
+14 thermo[29] thermo[31] 0
+15 thermo[30] thermo[31] 0
+16 *88:10 thermo[31] 0
+17 *90:10 thermo[31] 0
+*RES
+1 *971:Y *91:6 21.8334 
+2 *91:6 *91:12 42.3278 
+3 *91:12 thermo[31] 34.2655 
+4 *91:12 *972:B 20 
+5 *91:6 *969:A 20 
+*END
+
+*D_NET *92 0.00479204
+*CONN
+*P thermo[3] I
+*I *976:B I *D sg13g2_xnor2_1
+*I *973:A I *D sg13g2_dlygate4sd1_1
+*I *975:Y O *D sg13g2_nand2_2
+*CAP
+1 thermo[3] 0.0014333
+2 *976:B 4.08966e-05
+3 *973:A 0
+4 *975:Y 0.000178989
+5 *92:19 0.00172047
+6 *92:8 0.000425271
+7 thermo[3] thermo[4] 0.000179042
+8 thermo[3] *93:19 0.000262032
+9 thermo[3] *228:10 0
+10 thermo[3] *232:8 0
+11 thermo[3] *237:10 0
+12 thermo[3] *241:10 0.000342143
+13 *976:B *987:B 0
+14 *92:8 *975:A 0.000209899
+15 *92:8 *975:B 0
+16 *92:8 *995:B 0
+17 *92:19 *228:10 0
+18 thermo[2] thermo[3] 0
+*RES
+1 *975:Y *92:8 22.1836 
+2 *92:8 *973:A 20 
+3 *92:8 *92:19 23.1106 
+4 *92:19 thermo[3] 16.5109 
+5 *92:19 *976:B 40.4476 
+*END
+
+*D_NET *93 0.00343066
+*CONN
+*P thermo[4] I
+*I *980:B I *D sg13g2_xnor2_1
+*I *977:A I *D sg13g2_dlygate4sd1_1
+*I *979:Y O *D sg13g2_nand2_2
+*CAP
+1 thermo[4] 0.00080615
+2 *980:B 7.88786e-05
+3 *977:A 0
+4 *979:Y 0.000182796
+5 *93:19 0.00107287
+6 *93:8 0.000370643
+7 thermo[4] thermo[5] 0
+8 thermo[4] thermo[6] 0
+9 thermo[4] *981:A 0
+10 *980:B *979:A 0
+11 *980:B *980:A 0
+12 *93:8 *979:A 0.00026928
+13 *93:8 *979:B 0.000208968
+14 *93:19 *979:A 0
+15 thermo[3] thermo[4] 0.000179042
+16 thermo[3] *93:19 0.000262032
+*RES
+1 *979:Y *93:8 22.1836 
+2 *93:8 *977:A 20 
+3 *93:8 *93:19 22.0909 
+4 *93:19 thermo[4] 9.2082 
+5 *93:19 *980:B 40.7519 
+*END
+
+*D_NET *94 0.00137435
+*CONN
+*P thermo[5] I
+*I *981:A I *D sg13g2_dlygate4sd1_1
+*I *984:B I *D sg13g2_xnor2_1
+*I *983:Y O *D sg13g2_nand2_2
+*CAP
+1 thermo[5] 0.000294768
+2 *981:A 0.000106718
+3 *984:B 0.000254112
+4 *983:Y 0
+5 *94:13 0.000401486
+6 *94:4 0.000254112
+7 thermo[5] thermo[6] 0
+8 *984:B *983:A 4.76977e-05
+9 *984:B *983:B 0
+10 *984:B *984:A 1.54556e-05
+11 thermo[4] thermo[5] 0
+12 thermo[4] *981:A 0
+*RES
+1 *983:Y *94:4 20 
+2 *94:4 *984:B 22.266 
+3 *94:4 *94:13 20 
+4 *94:13 thermo[5] 3.1621 
+5 *94:13 *981:A 41.0918 
+*END
+
+*D_NET *95 0.00430367
+*CONN
+*P thermo[6] I
+*I *985:A I *D sg13g2_dlygate4sd1_1
+*I *988:B I *D sg13g2_xnor2_1
+*I *987:Y O *D sg13g2_nand2_2
+*CAP
+1 thermo[6] 0.00133534
+2 *985:A 0.000278558
+3 *988:B 0.00031353
+4 *987:Y 0.000196707
+5 *95:22 0.00173072
+6 thermo[6] thermo[7] 0
+7 thermo[6] thermo[8] 0
+8 thermo[6] *96:10 0
+9 *985:A thermo[8] 0
+10 *985:A *987:B 0
+11 *988:B *987:B 0.000273679
+12 *988:B *241:10 0
+13 *95:22 *988:A 0.000175138
+14 *95:22 *991:B 0
+15 thermo[4] thermo[6] 0
+16 thermo[5] thermo[6] 0
+*RES
+1 *987:Y *988:B 42.1836 
+2 *988:B *95:22 41.1845 
+3 *95:22 thermo[6] 13.7196 
+4 *95:22 *985:A 42.7707 
+*END
+
+*D_NET *96 0.00245028
+*CONN
+*P thermo[7] I
+*I *989:A I *D sg13g2_dlygate4sd1_1
+*I *992:B I *D sg13g2_xnor2_1
+*I *991:Y O *D sg13g2_nand2_2
+*CAP
+1 thermo[7] 0.000707899
+2 *989:A 0
+3 *992:B 0
+4 *991:Y 0.000155198
+5 *96:10 0.000949775
+6 *96:6 0.000397073
+7 thermo[7] thermo[8] 0
+8 *96:6 *991:A 0.000240334
+9 *96:6 *992:A 0
+10 *96:10 thermo[8] 0
+11 thermo[6] thermo[7] 0
+12 thermo[6] *96:10 0
+*RES
+1 *991:Y *96:6 21.6171 
+2 *96:6 *96:10 22.3278 
+3 *96:10 thermo[7] 7.6117 
+4 *96:10 *992:B 40 
+5 *96:6 *989:A 20 
+*END
+
+*D_NET *97 0.00423961
+*CONN
+*P thermo[8] I
+*I *993:A I *D sg13g2_dlygate4sd1_1
+*I *996:B I *D sg13g2_xnor2_1
+*I *995:Y O *D sg13g2_nand2_2
+*CAP
+1 thermo[8] 0.00171386
+2 *993:A 0
+3 *996:B 0
+4 *995:Y 0.000251327
+5 *97:14 0.00186078
+6 *97:10 0.000398247
+7 thermo[8] thermo[9] 0
+8 thermo[8] *996:A 1.54008e-05
+9 thermo[8] *98:10 0
+10 thermo[8] *256:8 0
+11 *97:10 *995:A 0
+12 *97:10 *996:A 0
+13 thermo[10] thermo[8] 0
+14 thermo[6] thermo[8] 0
+15 thermo[7] thermo[8] 0
+16 *985:A thermo[8] 0
+17 *69:10 thermo[8] 0
+18 *96:10 thermo[8] 0
+*RES
+1 *995:Y *97:10 42.4308 
+2 *97:10 *97:14 21.8334 
+3 *97:14 *996:B 20 
+4 *97:14 thermo[8] 38.9623 
+5 *97:10 *993:A 40 
+*END
+
+*D_NET *98 0.0016903
+*CONN
+*P thermo[9] I
+*I *997:A I *D sg13g2_dlygate4sd1_1
+*I *1000:B I *D sg13g2_xnor2_1
+*I *999:Y O *D sg13g2_nand2_2
+*CAP
+1 thermo[9] 0.000265262
+2 *997:A 4.14803e-05
+3 *1000:B 4.70611e-05
+4 *999:Y 0.000133021
+5 *98:10 0.000486705
+6 *98:6 0.000348883
+7 *997:A *999:A 7.99216e-05
+8 *997:A *1000:A 0
+9 *1000:B *1000:A 7.99216e-05
+10 *98:6 *999:A 0.000208049
+11 *98:6 *1000:A 0
+12 thermo[10] thermo[9] 0
+13 thermo[8] thermo[9] 0
+14 thermo[8] *98:10 0
+*RES
+1 *999:Y *98:6 21.4008 
+2 *98:6 *98:10 21.8334 
+3 *98:10 thermo[9] 2.9149 
+4 *98:10 *1000:B 40.5356 
+5 *98:6 *997:A 20.5356 
+*END
+
+*D_NET *99 0.000341711
+*CONN
+*I *874:A I *D sg13g2_nand2_2
+*I *617:L_LO O *D sg13g2_tielo
+*CAP
+1 *874:A 0.000170855
+2 *617:L_LO 0.000170855
+3 *874:A *874:B 0
+4 *874:A *970:A 0
+5 *874:A *982:B 0
+*RES
+1 *617:L_LO *874:A 41.9673 
+*END
+
+*D_NET *100 0.000218549
+*CONN
+*I *874:B I *D sg13g2_nand2_2
+*I *618:L_LO O *D sg13g2_tielo
+*CAP
+1 *874:B 0.000109274
+2 *618:L_LO 0.000109274
+3 *874:B *970:B 0
+4 *874:B *982:B 0
+5 *874:A *874:B 0
+*RES
+1 *618:L_LO *874:B 41.3802 
+*END
+
+*D_NET *101 0.000273089
+*CONN
+*I *875:A I *D sg13g2_nand2_2
+*I *619:L_LO O *D sg13g2_tielo
+*CAP
+1 *875:A 0.000136545
+2 *619:L_LO 0.000136545
+3 *875:A *875:B 0
+*RES
+1 *619:L_LO *875:A 41.5965 
+*END
+
+*D_NET *102 0.00104162
+*CONN
+*I *875:B I *D sg13g2_nand2_2
+*I *620:L_LO O *D sg13g2_tielo
+*CAP
+1 *875:B 0.00034336
+2 *620:L_LO 0.00034336
+3 *875:B *984:A 0
+4 *875:B *103:10 0
+5 *873:A *875:B 8.02269e-05
+6 *875:A *875:B 0
+7 *876:B *875:B 0.00027467
+*RES
+1 *620:L_LO *875:B 44.1406 
+*END
+
+*D_NET *103 0.000316477
+*CONN
+*I *876:A I *D sg13g2_xnor2_1
+*I *621:L_LO O *D sg13g2_tielo
+*CAP
+1 *876:A 0
+2 *621:L_LO 0.000158239
+3 *103:10 0.000158239
+4 thermo[0] *103:10 0
+5 *875:B *103:10 0
+6 *67:14 *103:10 0
+*RES
+1 *621:L_LO *103:10 41.8746 
+2 *103:10 *876:A 40 
+*END
+
+*D_NET *104 0.000253998
+*CONN
+*I *878:A I *D sg13g2_nand2_2
+*I *622:L_LO O *D sg13g2_tielo
+*CAP
+1 *878:A 0.000126999
+2 *622:L_LO 0.000126999
+3 *878:A *878:B 0
+*RES
+1 *622:L_LO *878:A 41.5965 
+*END
+
+*D_NET *105 0.000219747
+*CONN
+*I *878:B I *D sg13g2_nand2_2
+*I *623:L_LO O *D sg13g2_tielo
+*CAP
+1 *878:B 0.000109874
+2 *623:L_LO 0.000109874
+3 *878:B *886:A 0
+4 *878:B *914:B 0
+5 *878:A *878:B 0
+*RES
+1 *623:L_LO *878:B 41.3802 
+*END
+
+*D_NET *106 0.000723955
+*CONN
+*I *879:A I *D sg13g2_nand2_2
+*I *624:L_LO O *D sg13g2_tielo
+*CAP
+1 *879:A 0
+2 *624:L_LO 0.000270715
+3 *106:10 0.000270715
+4 *106:10 *934:B 0
+5 *893:A *106:10 0
+6 *68:39 *106:10 0.000182525
+*RES
+1 *624:L_LO *106:10 43.5741 
+2 *106:10 *879:A 40 
+*END
+
+*D_NET *107 0.000573191
+*CONN
+*I *879:B I *D sg13g2_nand2_2
+*I *625:L_LO O *D sg13g2_tielo
+*CAP
+1 *879:B 0.000286596
+2 *625:L_LO 0.000286596
+3 *879:B *995:A 0
+4 *68:8 *879:B 0
+5 *68:14 *879:B 0
+*RES
+1 *625:L_LO *879:B 42.6986 
+*END
+
+*D_NET *108 0.000363277
+*CONN
+*I *880:A I *D sg13g2_xnor2_1
+*I *626:L_LO O *D sg13g2_tielo
+*CAP
+1 *880:A 0.000181638
+2 *626:L_LO 0.000181638
+3 *880:A *895:A 0
+4 *880:A *995:A 0
+5 *880:B *880:A 0
+6 *68:14 *880:A 0
+*RES
+1 *626:L_LO *880:A 41.663 
+*END
+
+*D_NET *109 0.000266879
+*CONN
+*I *882:A I *D sg13g2_nand2_2
+*I *627:L_LO O *D sg13g2_tielo
+*CAP
+1 *882:A 0.000133439
+2 *627:L_LO 0.000133439
+*RES
+1 *627:L_LO *882:A 41.5965 
+*END
+
+*D_NET *110 0.000228465
+*CONN
+*I *882:B I *D sg13g2_nand2_2
+*I *628:L_LO O *D sg13g2_tielo
+*CAP
+1 *882:B 0.000114233
+2 *628:L_LO 0.000114233
+3 *882:B *950:B 0
+*RES
+1 *628:L_LO *882:B 41.3802 
+*END
+
+*D_NET *111 0.000542049
+*CONN
+*I *883:A I *D sg13g2_nand2_2
+*I *629:L_LO O *D sg13g2_tielo
+*CAP
+1 *883:A 0.000182769
+2 *629:L_LO 0.000182769
+3 *883:A *883:B 0
+4 *881:A *883:A 0.000176511
+*RES
+1 *629:L_LO *883:A 41.9673 
+*END
+
+*D_NET *112 0.000490142
+*CONN
+*I *883:B I *D sg13g2_nand2_2
+*I *630:L_LO O *D sg13g2_tielo
+*CAP
+1 *883:B 0.000245071
+2 *630:L_LO 0.000245071
+3 thermo[11] *883:B 0
+4 *883:A *883:B 0
+5 *884:B *883:B 0
+*RES
+1 *630:L_LO *883:B 42.2454 
+*END
+
+*D_NET *113 0.000528274
+*CONN
+*I *884:A I *D sg13g2_xnor2_1
+*I *631:L_LO O *D sg13g2_tielo
+*CAP
+1 *884:A 0.000159689
+2 *631:L_LO 0.000159689
+3 thermo[11] *884:A 0.000161056
+4 *884:B *884:A 4.78402e-05
+*RES
+1 *631:L_LO *884:A 41.751 
+*END
+
+*D_NET *114 0.000289845
+*CONN
+*I *886:A I *D sg13g2_nand2_2
+*I *632:L_LO O *D sg13g2_tielo
+*CAP
+1 *886:A 0.000144922
+2 *632:L_LO 0.000144922
+3 *886:A *886:B 0
+4 *886:A *906:A 0
+5 *886:A *906:B 0
+6 *886:A *982:A 0
+7 *878:B *886:A 0
+*RES
+1 *632:L_LO *886:A 41.6171 
+*END
+
+*D_NET *115 0.000219747
+*CONN
+*I *886:B I *D sg13g2_nand2_2
+*I *633:L_LO O *D sg13g2_tielo
+*CAP
+1 *886:B 0.000109874
+2 *633:L_LO 0.000109874
+3 *886:B *894:B 0
+4 *886:B *914:B 0
+5 *886:A *886:B 0
+*RES
+1 *633:L_LO *886:B 41.3802 
+*END
+
+*D_NET *116 0.000609056
+*CONN
+*I *887:A I *D sg13g2_nand2_2
+*I *634:L_LO O *D sg13g2_tielo
+*CAP
+1 *887:A 0.00020008
+2 *634:L_LO 0.00020008
+3 *70:8 *887:A 0.000208896
+*RES
+1 *634:L_LO *887:A 42.2145 
+*END
+
+*D_NET *117 0.000661709
+*CONN
+*I *887:B I *D sg13g2_nand2_2
+*I *635:L_LO O *D sg13g2_tielo
+*CAP
+1 *887:B 0.00029072
+2 *635:L_LO 0.00029072
+3 *887:B *991:A 8.02696e-05
+4 *70:8 *887:B 0
+*RES
+1 *635:L_LO *887:B 43.09 
+*END
+
+*D_NET *118 0.000465663
+*CONN
+*I *888:A I *D sg13g2_xnor2_1
+*I *636:L_LO O *D sg13g2_tielo
+*CAP
+1 *888:A 0
+2 *636:L_LO 0.000232832
+3 *118:10 0.000232832
+4 thermo[11] *118:10 0
+5 thermo[12] *118:10 0
+6 *70:19 *118:10 0
+*RES
+1 *636:L_LO *118:10 41.8746 
+2 *118:10 *888:A 40 
+*END
+
+*D_NET *119 0.000255654
+*CONN
+*I *890:A I *D sg13g2_nand2_2
+*I *637:L_LO O *D sg13g2_tielo
+*CAP
+1 *890:A 0.000127827
+2 *637:L_LO 0.000127827
+3 *890:A *890:B 0
+4 *890:A *970:A 0
+5 *890:A *970:B 0
+*RES
+1 *637:L_LO *890:A 41.5965 
+*END
+
+*D_NET *120 0.000219747
+*CONN
+*I *890:B I *D sg13g2_nand2_2
+*I *638:L_LO O *D sg13g2_tielo
+*CAP
+1 *890:B 0.000109874
+2 *638:L_LO 0.000109874
+3 *890:B *934:B 0
+4 *890:B *970:B 0
+5 *890:A *890:B 0
+*RES
+1 *638:L_LO *890:B 41.3802 
+*END
+
+*D_NET *121 0.000823721
+*CONN
+*I *891:A I *D sg13g2_nand2_2
+*I *639:L_LO O *D sg13g2_tielo
+*CAP
+1 *891:A 0.00041186
+2 *639:L_LO 0.00041186
+3 *888:B *891:A 0
+4 *889:A *891:A 0
+5 *71:8 *891:A 0
+*RES
+1 *639:L_LO *891:A 44.5629 
+*END
+
+*D_NET *122 0.000234154
+*CONN
+*I *891:B I *D sg13g2_nand2_2
+*I *640:L_LO O *D sg13g2_tielo
+*CAP
+1 *891:B 0.000117077
+2 *640:L_LO 0.000117077
+*RES
+1 *640:L_LO *891:B 41.3802 
+*END
+
+*D_NET *123 0.000462806
+*CONN
+*I *892:A I *D sg13g2_xnor2_1
+*I *641:L_LO O *D sg13g2_tielo
+*CAP
+1 *892:A 0.000215975
+2 *641:L_LO 0.000215975
+3 *892:A *915:B 1.54556e-05
+4 *892:B *892:A 1.54008e-05
+*RES
+1 *641:L_LO *892:A 42.2454 
+*END
+
+*D_NET *124 0.000299553
+*CONN
+*I *894:A I *D sg13g2_nand2_2
+*I *642:L_LO O *D sg13g2_tielo
+*CAP
+1 *894:A 0.000149777
+2 *642:L_LO 0.000149777
+3 *894:A *894:B 0
+4 *894:A *906:A 0
+*RES
+1 *642:L_LO *894:A 41.6171 
+*END
+
+*D_NET *125 0.000219747
+*CONN
+*I *894:B I *D sg13g2_nand2_2
+*I *643:L_LO O *D sg13g2_tielo
+*CAP
+1 *894:B 0.000109874
+2 *643:L_LO 0.000109874
+3 *894:B *966:B 0
+4 *886:B *894:B 0
+5 *894:A *894:B 0
+*RES
+1 *643:L_LO *894:B 41.3802 
+*END
+
+*D_NET *126 0.00056754
+*CONN
+*I *895:A I *D sg13g2_nand2_2
+*I *644:L_LO O *D sg13g2_tielo
+*CAP
+1 *895:A 0.00028377
+2 *644:L_LO 0.00028377
+3 *895:A *895:B 0
+4 *880:A *895:A 0
+5 *881:A *895:A 0
+6 *68:8 *895:A 0
+7 *68:14 *895:A 0
+*RES
+1 *644:L_LO *895:A 43.4299 
+*END
+
+*D_NET *127 0.000663397
+*CONN
+*I *895:B I *D sg13g2_nand2_2
+*I *645:L_LO O *D sg13g2_tielo
+*CAP
+1 *895:B 0.000331699
+2 *645:L_LO 0.000331699
+3 *895:B *911:B 0
+4 *895:A *895:B 0
+5 *896:B *895:B 0
+*RES
+1 *645:L_LO *895:B 43.7286 
+*END
+
+*D_NET *128 0.000559549
+*CONN
+*I *896:A I *D sg13g2_xnor2_1
+*I *646:L_LO O *D sg13g2_tielo
+*CAP
+1 *896:A 0
+2 *646:L_LO 0.000135316
+3 *128:10 0.000135316
+4 *893:A *128:10 0.000288917
+5 *896:B *128:10 0
+*RES
+1 *646:L_LO *128:10 41.8746 
+2 *128:10 *896:A 40 
+*END
+
+*D_NET *129 0.000344894
+*CONN
+*I *898:A I *D sg13g2_nand2_2
+*I *647:L_LO O *D sg13g2_tielo
+*CAP
+1 *898:A 0.000172447
+2 *647:L_LO 0.000172447
+3 *898:A *898:B 0
+4 *898:A *946:A 0
+*RES
+1 *647:L_LO *898:A 41.9673 
+*END
+
+*D_NET *130 0.000218549
+*CONN
+*I *898:B I *D sg13g2_nand2_2
+*I *648:L_LO O *D sg13g2_tielo
+*CAP
+1 *898:B 0.000109274
+2 *648:L_LO 0.000109274
+3 *898:B *995:A 0
+4 *898:A *898:B 0
+*RES
+1 *648:L_LO *898:B 41.3802 
+*END
+
+*D_NET *131 0.000287583
+*CONN
+*I *899:A I *D sg13g2_nand2_2
+*I *649:L_LO O *D sg13g2_tielo
+*CAP
+1 *899:A 0.000143791
+2 *649:L_LO 0.000143791
+3 *899:A *899:B 0
+4 *73:8 *899:A 0
+*RES
+1 *649:L_LO *899:A 41.6995 
+*END
+
+*D_NET *132 0.000595581
+*CONN
+*I *899:B I *D sg13g2_nand2_2
+*I *650:L_LO O *D sg13g2_tielo
+*CAP
+1 *899:B 5.45897e-05
+2 *650:L_LO 0.000243201
+3 *132:8 0.00029779
+4 thermo[15] *132:8 0
+5 thermo[17] *132:8 0
+6 *899:A *899:B 0
+7 *73:8 *899:B 0
+*RES
+1 *650:L_LO *132:8 42.3278 
+2 *132:8 *899:B 40.5356 
+*END
+
+*D_NET *133 0.000590388
+*CONN
+*I *900:A I *D sg13g2_xnor2_1
+*I *651:L_LO O *D sg13g2_tielo
+*CAP
+1 *900:A 0
+2 *651:L_LO 0.000152017
+3 *133:10 0.000152017
+4 *133:10 *903:A 0
+5 thermo[14] *133:10 0.000286354
+*RES
+1 *651:L_LO *133:10 41.8746 
+2 *133:10 *900:A 40 
+*END
+
+*D_NET *134 0.000500604
+*CONN
+*I *902:A I *D sg13g2_nand2_2
+*I *652:L_LO O *D sg13g2_tielo
+*CAP
+1 *902:A 0.000250302
+2 *652:L_LO 0.000250302
+3 *902:A *975:A 0
+4 *902:A *975:B 0
+5 *902:A *994:A 0
+*RES
+1 *652:L_LO *902:A 42.8325 
+*END
+
+*D_NET *135 0.000226351
+*CONN
+*I *902:B I *D sg13g2_nand2_2
+*I *653:L_LO O *D sg13g2_tielo
+*CAP
+1 *902:B 0.000113176
+2 *653:L_LO 0.000113176
+3 *902:B *938:B 0
+4 *902:B *975:B 0
+*RES
+1 *653:L_LO *902:B 41.3802 
+*END
+
+*D_NET *136 0.00122052
+*CONN
+*I *903:A I *D sg13g2_nand2_2
+*I *654:L_LO O *D sg13g2_tielo
+*CAP
+1 *903:A 0.000570075
+2 *654:L_LO 0.000570075
+3 *903:A *903:B 0
+4 *903:A *923:A 0
+5 *903:A *923:B 8.03692e-05
+6 *70:8 *903:A 0
+7 *74:6 *903:A 0
+8 *74:17 *903:A 0
+9 *133:10 *903:A 0
+*RES
+1 *654:L_LO *903:A 45.8401 
+*END
+
+*D_NET *137 0.00126204
+*CONN
+*I *903:B I *D sg13g2_nand2_2
+*I *655:L_LO O *D sg13g2_tielo
+*CAP
+1 *903:B 0.000544115
+2 *655:L_LO 0.000544115
+3 *903:A *903:B 0
+4 *74:6 *903:B 0
+5 *79:14 *903:B 0.000173809
+*RES
+1 *655:L_LO *903:B 45.1294 
+*END
+
+*D_NET *138 0.000566619
+*CONN
+*I *904:A I *D sg13g2_xnor2_1
+*I *656:L_LO O *D sg13g2_tielo
+*CAP
+1 *904:A 0
+2 *656:L_LO 0.000139223
+3 *138:10 0.000139223
+4 thermo[16] *138:10 0.000235055
+5 *74:17 *138:10 5.31192e-05
+*RES
+1 *656:L_LO *138:10 41.8746 
+2 *138:10 *904:A 40 
+*END
+
+*D_NET *139 0.000436086
+*CONN
+*I *906:A I *D sg13g2_nand2_2
+*I *657:L_LO O *D sg13g2_tielo
+*CAP
+1 *906:A 0.000218043
+2 *657:L_LO 0.000218043
+3 *906:A *910:A 0
+4 *886:A *906:A 0
+5 *894:A *906:A 0
+*RES
+1 *657:L_LO *906:A 42.4823 
+*END
+
+*D_NET *140 0.000218549
+*CONN
+*I *906:B I *D sg13g2_nand2_2
+*I *658:L_LO O *D sg13g2_tielo
+*CAP
+1 *906:B 0.000109274
+2 *658:L_LO 0.000109274
+3 *906:B *926:A 0
+4 *886:A *906:B 0
+*RES
+1 *658:L_LO *906:B 41.3802 
+*END
+
+*D_NET *141 0.000253998
+*CONN
+*I *907:A I *D sg13g2_nand2_2
+*I *659:L_LO O *D sg13g2_tielo
+*CAP
+1 *907:A 0.000126999
+2 *659:L_LO 0.000126999
+3 *907:A *907:B 0
+*RES
+1 *659:L_LO *907:A 41.5965 
+*END
+
+*D_NET *142 0.000219747
+*CONN
+*I *907:B I *D sg13g2_nand2_2
+*I *660:L_LO O *D sg13g2_tielo
+*CAP
+1 *907:B 0.000109874
+2 *660:L_LO 0.000109874
+3 *907:A *907:B 0
+*RES
+1 *660:L_LO *907:B 41.3802 
+*END
+
+*D_NET *143 0.000332015
+*CONN
+*I *908:A I *D sg13g2_xnor2_1
+*I *661:L_LO O *D sg13g2_tielo
+*CAP
+1 *908:A 0
+2 *661:L_LO 0.000166007
+3 *143:10 0.000166007
+4 thermo[17] *143:10 0
+*RES
+1 *661:L_LO *143:10 41.8746 
+2 *143:10 *908:A 40 
+*END
+
+*D_NET *144 0.000380854
+*CONN
+*I *910:A I *D sg13g2_nand2_2
+*I *662:L_LO O *D sg13g2_tielo
+*CAP
+1 *910:A 0.000190427
+2 *662:L_LO 0.000190427
+3 *910:A *910:B 0
+4 *906:A *910:A 0
+*RES
+1 *662:L_LO *910:A 42.2145 
+*END
+
+*D_NET *145 0.000432707
+*CONN
+*I *910:B I *D sg13g2_nand2_2
+*I *663:L_LO O *D sg13g2_tielo
+*CAP
+1 *910:B 0.000216354
+2 *663:L_LO 0.000216354
+3 *910:A *910:B 0
+4 *953:A *910:B 0
+*RES
+1 *663:L_LO *910:B 42.4926 
+*END
+
+*D_NET *146 0.000789743
+*CONN
+*I *911:A I *D sg13g2_nand2_2
+*I *664:L_LO O *D sg13g2_tielo
+*CAP
+1 *911:A 0.000269088
+2 *664:L_LO 0.000125784
+3 *146:8 0.000394872
+4 *911:A *911:B 0
+5 thermo[17] *146:8 0
+6 thermo[21] *146:8 0
+7 *909:A *911:A 0
+8 *76:6 *911:A 0
+*RES
+1 *664:L_LO *146:8 41.5862 
+2 *146:8 *911:A 42.4823 
+*END
+
+*D_NET *147 0.00103086
+*CONN
+*I *911:B I *D sg13g2_nand2_2
+*I *665:L_LO O *D sg13g2_tielo
+*CAP
+1 *911:B 0.000394761
+2 *665:L_LO 0.000394761
+3 *911:B *148:10 0
+4 *895:B *911:B 0
+5 *909:A *911:B 3.23694e-05
+6 *911:A *911:B 0
+7 *912:B *911:B 0
+8 *76:6 *911:B 0.000208968
+*RES
+1 *665:L_LO *911:B 44.2642 
+*END
+
+*D_NET *148 0.000466297
+*CONN
+*I *912:A I *D sg13g2_xnor2_1
+*I *666:L_LO O *D sg13g2_tielo
+*CAP
+1 *912:A 0
+2 *666:L_LO 0.000158589
+3 *148:10 0.000158589
+4 thermo[18] *148:10 0.000149119
+5 thermo[21] *148:10 0
+6 *911:B *148:10 0
+*RES
+1 *666:L_LO *148:10 41.8746 
+2 *148:10 *912:A 40 
+*END
+
+*D_NET *149 0.000423748
+*CONN
+*I *914:A I *D sg13g2_nand2_2
+*I *667:L_LO O *D sg13g2_tielo
+*CAP
+1 *914:A 0
+2 *667:L_LO 0.000211874
+3 *149:10 0.000211874
+4 ON_N[24] *149:10 0
+*RES
+1 *667:L_LO *149:10 42.5853 
+2 *149:10 *914:A 40 
+*END
+
+*D_NET *150 0.000218549
+*CONN
+*I *914:B I *D sg13g2_nand2_2
+*I *668:L_LO O *D sg13g2_tielo
+*CAP
+1 *914:B 0.000109274
+2 *668:L_LO 0.000109274
+3 *914:B *966:B 0
+4 *878:B *914:B 0
+5 *886:B *914:B 0
+*RES
+1 *668:L_LO *914:B 41.3802 
+*END
+
+*D_NET *151 0.000979835
+*CONN
+*I *915:A I *D sg13g2_nand2_2
+*I *669:L_LO O *D sg13g2_tielo
+*CAP
+1 *915:A 0.000273529
+2 *669:L_LO 0.000216388
+3 *151:8 0.000489917
+4 *915:A *916:A 0
+5 thermo[18] *151:8 0
+6 thermo[20] *151:8 0
+7 *913:A *151:8 0
+8 *77:8 *915:A 0
+*RES
+1 *669:L_LO *151:8 42.3278 
+2 *151:8 *915:A 42.4823 
+*END
+
+*D_NET *152 0.000249399
+*CONN
+*I *915:B I *D sg13g2_nand2_2
+*I *670:L_LO O *D sg13g2_tielo
+*CAP
+1 *915:B 0.000116972
+2 *670:L_LO 0.000116972
+3 *892:A *915:B 1.54556e-05
+*RES
+1 *670:L_LO *915:B 41.3802 
+*END
+
+*D_NET *153 0.000412602
+*CONN
+*I *916:A I *D sg13g2_xnor2_1
+*I *671:L_LO O *D sg13g2_tielo
+*CAP
+1 *916:A 0.000166259
+2 *671:L_LO 0.000166259
+3 thermo[19] *916:A 8.00842e-05
+4 *915:A *916:A 0
+*RES
+1 *671:L_LO *916:A 41.751 
+*END
+
+*D_NET *154 0.000527218
+*CONN
+*I *918:A I *D sg13g2_nand2_2
+*I *672:L_LO O *D sg13g2_tielo
+*CAP
+1 *918:A 0.000263609
+2 *672:L_LO 0.000263609
+3 *918:A *918:B 0
+4 ON[4] *918:A 0
+*RES
+1 *672:L_LO *918:A 42.8325 
+*END
+
+*D_NET *155 0.00055489
+*CONN
+*I *918:B I *D sg13g2_nand2_2
+*I *673:L_LO O *D sg13g2_tielo
+*CAP
+1 *918:B 0.000277445
+2 *673:L_LO 0.000277445
+3 *918:A *918:B 0
+*RES
+1 *673:L_LO *918:B 43.0488 
+*END
+
+*D_NET *156 0.00149274
+*CONN
+*I *919:A I *D sg13g2_nand2_2
+*I *674:L_LO O *D sg13g2_tielo
+*CAP
+1 *919:A 0
+2 *674:L_LO 0.00049626
+3 *156:14 0.00049626
+4 *156:14 *979:A 0
+5 *156:14 *157:8 0
+6 thermo[1] *156:14 0
+7 *920:B *156:14 0
+8 *78:8 *156:14 0.000158579
+9 *78:12 *156:14 0.000341641
+*RES
+1 *674:L_LO *156:14 45.7577 
+2 *156:14 *919:A 40 
+*END
+
+*D_NET *157 0.00116689
+*CONN
+*I *919:B I *D sg13g2_nand2_2
+*I *675:L_LO O *D sg13g2_tielo
+*CAP
+1 *919:B 5.27636e-05
+2 *675:L_LO 0.000530684
+3 *157:8 0.000583447
+4 *917:A *919:B 0
+5 *78:12 *157:8 0
+6 *156:14 *157:8 0
+*RES
+1 *675:L_LO *157:8 45.5414 
+2 *157:8 *919:B 40.5356 
+*END
+
+*D_NET *158 0.00086518
+*CONN
+*I *920:A I *D sg13g2_xnor2_1
+*I *676:L_LO O *D sg13g2_tielo
+*CAP
+1 *920:A 0.000262798
+2 *676:L_LO 0.000262798
+3 thermo[1] *920:A 0.000339583
+4 *920:B *920:A 0
+*RES
+1 *676:L_LO *920:A 43.0488 
+*END
+
+*D_NET *159 0.000516451
+*CONN
+*I *922:A I *D sg13g2_nand2_2
+*I *677:L_LO O *D sg13g2_tielo
+*CAP
+1 *922:A 0.000258225
+2 *677:L_LO 0.000258225
+3 *922:A *922:B 0
+*RES
+1 *677:L_LO *922:A 42.4823 
+*END
+
+*D_NET *160 0.000550931
+*CONN
+*I *922:B I *D sg13g2_nand2_2
+*I *678:L_LO O *D sg13g2_tielo
+*CAP
+1 *922:B 0.000275466
+2 *678:L_LO 0.000275466
+3 *922:B *946:A 0
+4 *922:B *946:B 0
+5 *922:A *922:B 0
+*RES
+1 *678:L_LO *922:B 42.6986 
+*END
+
+*D_NET *161 0.000572554
+*CONN
+*I *923:A I *D sg13g2_nand2_2
+*I *679:L_LO O *D sg13g2_tielo
+*CAP
+1 *923:A 0.000157412
+2 *679:L_LO 0.000157412
+3 *923:A *923:B 1.54282e-05
+4 *903:A *923:A 0
+5 *79:14 *923:A 0.000242301
+*RES
+1 *679:L_LO *923:A 41.6171 
+*END
+
+*D_NET *162 0.00151718
+*CONN
+*I *923:B I *D sg13g2_nand2_2
+*I *680:L_LO O *D sg13g2_tielo
+*CAP
+1 *923:B 0.000492461
+2 *680:L_LO 0.000178133
+3 *162:8 0.000670594
+4 *923:B *935:B 0
+5 *923:B *943:B 8.01995e-05
+6 thermo[23] *162:8 0
+7 *903:A *923:B 8.03692e-05
+8 *923:A *923:B 1.54282e-05
+9 *84:10 *162:8 0
+*RES
+1 *680:L_LO *162:8 41.5862 
+2 *162:8 *923:B 44.8822 
+*END
+
+*D_NET *163 0.00050742
+*CONN
+*I *924:A I *D sg13g2_xnor2_1
+*I *681:L_LO O *D sg13g2_tielo
+*CAP
+1 *924:A 0
+2 *681:L_LO 0.000216102
+3 *163:10 0.000216102
+4 *163:10 *939:B 0
+5 thermo[20] *163:10 0
+6 thermo[21] *163:10 0
+7 *79:18 *163:10 7.52158e-05
+*RES
+1 *681:L_LO *163:10 41.8746 
+2 *163:10 *924:A 40 
+*END
+
+*D_NET *164 0.000257965
+*CONN
+*I *926:A I *D sg13g2_nand2_2
+*I *682:L_LO O *D sg13g2_tielo
+*CAP
+1 *926:A 0.000128983
+2 *682:L_LO 0.000128983
+3 *926:A *926:B 0
+4 *926:A *927:A 0
+5 *906:B *926:A 0
+*RES
+1 *682:L_LO *926:A 41.5965 
+*END
+
+*D_NET *165 0.000219892
+*CONN
+*I *926:B I *D sg13g2_nand2_2
+*I *683:L_LO O *D sg13g2_tielo
+*CAP
+1 *926:B 0.000109946
+2 *683:L_LO 0.000109946
+3 *926:B *927:A 0
+4 *926:B *927:B 0
+5 *926:A *926:B 0
+*RES
+1 *683:L_LO *926:B 41.3802 
+*END
+
+*D_NET *166 0.000258109
+*CONN
+*I *927:A I *D sg13g2_nand2_2
+*I *684:L_LO O *D sg13g2_tielo
+*CAP
+1 *927:A 0.000129055
+2 *684:L_LO 0.000129055
+3 *927:A *927:B 0
+4 *926:A *927:A 0
+5 *926:B *927:A 0
+*RES
+1 *684:L_LO *927:A 41.5965 
+*END
+
+*D_NET *167 0.000219747
+*CONN
+*I *927:B I *D sg13g2_nand2_2
+*I *685:L_LO O *D sg13g2_tielo
+*CAP
+1 *927:B 0.000109874
+2 *685:L_LO 0.000109874
+3 *926:B *927:B 0
+4 *927:A *927:B 0
+*RES
+1 *685:L_LO *927:B 41.3802 
+*END
+
+*D_NET *168 0.000381911
+*CONN
+*I *928:A I *D sg13g2_xnor2_1
+*I *686:L_LO O *D sg13g2_tielo
+*CAP
+1 *928:A 0
+2 *686:L_LO 0.000190956
+3 *168:10 0.000190956
+4 thermo[21] *168:10 0
+*RES
+1 *686:L_LO *168:10 41.8746 
+2 *168:10 *928:A 40 
+*END
+
+*D_NET *169 0.00050984
+*CONN
+*I *930:A I *D sg13g2_nand2_2
+*I *687:L_LO O *D sg13g2_tielo
+*CAP
+1 *930:A 0.00025492
+2 *687:L_LO 0.00025492
+3 *930:A *930:B 0
+*RES
+1 *687:L_LO *930:A 42.4823 
+*END
+
+*D_NET *170 0.000544091
+*CONN
+*I *930:B I *D sg13g2_nand2_2
+*I *688:L_LO O *D sg13g2_tielo
+*CAP
+1 *930:B 0.000272045
+2 *688:L_LO 0.000272045
+3 *930:A *930:B 0
+*RES
+1 *688:L_LO *930:B 42.6986 
+*END
+
+*D_NET *171 0.00096332
+*CONN
+*I *931:A I *D sg13g2_nand2_2
+*I *689:L_LO O *D sg13g2_tielo
+*CAP
+1 *931:A 0.00033674
+2 *689:L_LO 0.00033674
+3 *931:A *931:B 0
+4 *929:A *931:A 4.77702e-05
+5 *81:6 *931:A 0.000242071
+*RES
+1 *689:L_LO *931:A 43.6977 
+*END
+
+*D_NET *172 0.000843929
+*CONN
+*I *931:B I *D sg13g2_nand2_2
+*I *690:L_LO O *D sg13g2_tielo
+*CAP
+1 *931:B 0.000421964
+2 *690:L_LO 0.000421964
+3 *931:B *173:10 0
+4 thermo[22] *931:B 0
+5 *929:A *931:B 0
+6 *931:A *931:B 0
+7 *932:B *931:B 0
+8 *81:6 *931:B 0
+*RES
+1 *690:L_LO *931:B 43.914 
+*END
+
+*D_NET *173 0.000333515
+*CONN
+*I *932:A I *D sg13g2_xnor2_1
+*I *691:L_LO O *D sg13g2_tielo
+*CAP
+1 *932:A 0
+2 *691:L_LO 0.000166757
+3 *173:10 0.000166757
+4 thermo[22] *173:10 0
+5 *931:B *173:10 0
+*RES
+1 *691:L_LO *173:10 41.8746 
+2 *173:10 *932:A 40 
+*END
+
+*D_NET *174 0.000253998
+*CONN
+*I *934:A I *D sg13g2_nand2_2
+*I *692:L_LO O *D sg13g2_tielo
+*CAP
+1 *934:A 0.000126999
+2 *692:L_LO 0.000126999
+3 *934:A *934:B 0
+*RES
+1 *692:L_LO *934:A 41.5965 
+*END
+
+*D_NET *175 0.000221251
+*CONN
+*I *934:B I *D sg13g2_nand2_2
+*I *693:L_LO O *D sg13g2_tielo
+*CAP
+1 *934:B 0.000110625
+2 *693:L_LO 0.000110625
+3 *890:B *934:B 0
+4 *934:A *934:B 0
+5 *106:10 *934:B 0
+*RES
+1 *693:L_LO *934:B 41.3802 
+*END
+
+*D_NET *176 0.000441123
+*CONN
+*I *935:A I *D sg13g2_nand2_2
+*I *694:L_LO O *D sg13g2_tielo
+*CAP
+1 *935:A 0.000220562
+2 *694:L_LO 0.000220562
+3 *935:A *935:B 0
+4 *935:A *952:A 0
+5 *933:A *935:A 0
+*RES
+1 *694:L_LO *935:A 42.4617 
+*END
+
+*D_NET *177 0.000247934
+*CONN
+*I *935:B I *D sg13g2_nand2_2
+*I *695:L_LO O *D sg13g2_tielo
+*CAP
+1 *935:B 0.000123967
+2 *695:L_LO 0.000123967
+3 *923:B *935:B 0
+4 *935:A *935:B 0
+*RES
+1 *695:L_LO *935:B 41.3802 
+*END
+
+*D_NET *178 0.00031205
+*CONN
+*I *936:A I *D sg13g2_xnor2_1
+*I *696:L_LO O *D sg13g2_tielo
+*CAP
+1 *936:A 0.000148297
+2 *696:L_LO 0.000148297
+3 *936:B *936:A 1.54556e-05
+*RES
+1 *696:L_LO *936:A 41.8746 
+*END
+
+*D_NET *179 0.000284003
+*CONN
+*I *938:A I *D sg13g2_nand2_2
+*I *697:L_LO O *D sg13g2_tielo
+*CAP
+1 *938:A 0.000142002
+2 *697:L_LO 0.000142002
+3 *938:A *938:B 0
+4 *938:A *963:B 0
+*RES
+1 *697:L_LO *938:A 41.5965 
+*END
+
+*D_NET *180 0.000498513
+*CONN
+*I *938:B I *D sg13g2_nand2_2
+*I *698:L_LO O *D sg13g2_tielo
+*CAP
+1 *938:B 5.80071e-05
+2 *698:L_LO 0.000191249
+3 *180:8 0.000249256
+4 *902:B *938:B 0
+5 *938:A *938:B 0
+*RES
+1 *698:L_LO *180:8 42.3278 
+2 *180:8 *938:B 40.5356 
+*END
+
+*D_NET *181 0.00107136
+*CONN
+*I *939:A I *D sg13g2_nand2_2
+*I *699:L_LO O *D sg13g2_tielo
+*CAP
+1 *939:A 0
+2 *699:L_LO 0.000364455
+3 *181:10 0.000364455
+4 *181:10 *940:A 0
+5 thermo[20] *181:10 0
+6 thermo[21] *181:10 0.00034245
+7 *83:8 *181:10 0
+*RES
+1 *699:L_LO *181:10 44.0685 
+2 *181:10 *939:A 40 
+*END
+
+*D_NET *182 0.00108277
+*CONN
+*I *939:B I *D sg13g2_nand2_2
+*I *700:L_LO O *D sg13g2_tielo
+*CAP
+1 *939:B 0.000404575
+2 *700:L_LO 0.000404575
+3 *939:B *940:A 0
+4 *939:B *218:12 0
+5 thermo[24] *939:B 0
+6 *83:8 *939:B 0.000273624
+7 *163:10 *939:B 0
+*RES
+1 *700:L_LO *939:B 44.1612 
+*END
+
+*D_NET *183 0.000559298
+*CONN
+*I *940:A I *D sg13g2_xnor2_1
+*I *701:L_LO O *D sg13g2_tielo
+*CAP
+1 *940:A 0.000207541
+2 *701:L_LO 0.000207541
+3 thermo[24] *940:A 0.000144216
+4 *939:B *940:A 0
+5 *181:10 *940:A 0
+*RES
+1 *701:L_LO *940:A 42.2454 
+*END
+
+*D_NET *184 0.000449243
+*CONN
+*I *942:A I *D sg13g2_nand2_2
+*I *702:L_LO O *D sg13g2_tielo
+*CAP
+1 *942:A 0
+2 *702:L_LO 0.000224622
+3 *184:10 0.000224622
+4 *184:10 *942:B 0
+5 *184:10 *185:8 0
+6 ON_N[16] *184:10 0
+*RES
+1 *702:L_LO *184:10 42.5853 
+2 *184:10 *942:A 40 
+*END
+
+*D_NET *185 0.000333714
+*CONN
+*I *942:B I *D sg13g2_nand2_2
+*I *703:L_LO O *D sg13g2_tielo
+*CAP
+1 *942:B 5.02077e-05
+2 *703:L_LO 0.000116649
+3 *185:8 0.000166857
+4 *184:10 *942:B 0
+5 *184:10 *185:8 0
+*RES
+1 *703:L_LO *185:8 41.339 
+2 *185:8 *942:B 40.5356 
+*END
+
+*D_NET *186 0.00187447
+*CONN
+*I *943:A I *D sg13g2_nand2_2
+*I *704:L_LO O *D sg13g2_tielo
+*CAP
+1 *943:A 0.000347538
+2 *704:L_LO 0.000210424
+3 *186:10 0.000557962
+4 *943:A *943:B 0.000209641
+5 *943:A *192:10 0
+6 *186:10 *959:A 0
+7 *186:10 *959:B 0
+8 *186:10 *192:10 0
+9 thermo[27] *186:10 0.000231842
+10 *941:A *943:A 4.77699e-05
+11 *941:A *186:10 0
+12 *84:8 *943:A 0.00026929
+13 *84:10 *186:10 0
+*RES
+1 *704:L_LO *186:10 42.2763 
+2 *186:10 *943:A 43.914 
+*END
+
+*D_NET *187 0.000931005
+*CONN
+*I *943:B I *D sg13g2_nand2_2
+*I *705:L_LO O *D sg13g2_tielo
+*CAP
+1 *943:B 0.000125425
+2 *705:L_LO 0.000195157
+3 *187:8 0.000320582
+4 thermo[23] *187:8 0
+5 thermo[27] *187:8 0
+6 *923:B *943:B 8.01995e-05
+7 *943:A *943:B 0.000209641
+*RES
+1 *705:L_LO *187:8 42.0806 
+2 *187:8 *943:B 41.4008 
+*END
+
+*D_NET *188 0.000336672
+*CONN
+*I *944:A I *D sg13g2_xnor2_1
+*I *706:L_LO O *D sg13g2_tielo
+*CAP
+1 *944:A 0.000160747
+2 *706:L_LO 0.000160747
+3 *944:B *944:A 1.51771e-05
+4 *84:8 *944:A 0
+*RES
+1 *706:L_LO *944:A 41.8746 
+*END
+
+*D_NET *189 0.00043245
+*CONN
+*I *946:A I *D sg13g2_nand2_2
+*I *707:L_LO O *D sg13g2_tielo
+*CAP
+1 *946:A 0.000216225
+2 *707:L_LO 0.000216225
+3 *898:A *946:A 0
+4 *922:B *946:A 0
+*RES
+1 *707:L_LO *946:A 42.4823 
+*END
+
+*D_NET *190 0.000220195
+*CONN
+*I *946:B I *D sg13g2_nand2_2
+*I *708:L_LO O *D sg13g2_tielo
+*CAP
+1 *946:B 0.000110097
+2 *708:L_LO 0.000110097
+3 *922:B *946:B 0
+*RES
+1 *708:L_LO *946:B 41.3802 
+*END
+
+*D_NET *191 0.00135159
+*CONN
+*I *947:A I *D sg13g2_nand2_2
+*I *709:L_LO O *D sg13g2_tielo
+*CAP
+1 *947:A 0.000320825
+2 *709:L_LO 0.000320825
+3 *947:A *948:A 0
+4 *947:A *218:12 0.000500967
+5 *945:A *947:A 0.000208968
+6 *85:8 *947:A 0
+*RES
+1 *709:L_LO *947:A 43.6977 
+*END
+
+*D_NET *192 0.00137751
+*CONN
+*I *947:B I *D sg13g2_nand2_2
+*I *710:L_LO O *D sg13g2_tielo
+*CAP
+1 *947:B 0
+2 *710:L_LO 0.000411052
+3 *192:10 0.000411052
+4 *192:10 *218:12 0
+5 thermo[23] *192:10 0
+6 thermo[25] *192:10 0.000555408
+7 *943:A *192:10 0
+8 *83:19 *192:10 0
+9 *186:10 *192:10 0
+*RES
+1 *710:L_LO *192:10 45.2736 
+2 *192:10 *947:B 40 
+*END
+
+*D_NET *193 0.00111561
+*CONN
+*I *948:A I *D sg13g2_xnor2_1
+*I *711:L_LO O *D sg13g2_tielo
+*CAP
+1 *948:A 0.000509963
+2 *711:L_LO 0.000509963
+3 *948:A *967:A 0
+4 *945:A *948:A 0
+5 *947:A *948:A 0
+6 *948:B *948:A 1.54556e-05
+7 *965:A *948:A 0
+8 *968:B *948:A 8.02267e-05
+9 *90:10 *948:A 0
+*RES
+1 *711:L_LO *948:A 45.4796 
+*END
+
+*D_NET *194 0.000291443
+*CONN
+*I *950:A I *D sg13g2_nand2_2
+*I *712:L_LO O *D sg13g2_tielo
+*CAP
+1 *950:A 0.000145721
+2 *712:L_LO 0.000145721
+3 *950:A *950:B 0
+4 *950:A *954:B 0
+*RES
+1 *712:L_LO *950:A 41.6171 
+*END
+
+*D_NET *195 0.000219747
+*CONN
+*I *950:B I *D sg13g2_nand2_2
+*I *713:L_LO O *D sg13g2_tielo
+*CAP
+1 *950:B 0.000109874
+2 *713:L_LO 0.000109874
+3 *882:B *950:B 0
+4 *950:A *950:B 0
+*RES
+1 *713:L_LO *950:B 41.3802 
+*END
+
+*D_NET *196 0.000450698
+*CONN
+*I *951:A I *D sg13g2_nand2_2
+*I *714:L_LO O *D sg13g2_tielo
+*CAP
+1 *951:A 0.000225349
+2 *714:L_LO 0.000225349
+3 *951:A *951:B 0
+4 *952:B *951:A 0
+*RES
+1 *714:L_LO *951:A 42.4617 
+*END
+
+*D_NET *197 0.000250246
+*CONN
+*I *951:B I *D sg13g2_nand2_2
+*I *715:L_LO O *D sg13g2_tielo
+*CAP
+1 *951:B 0.000125123
+2 *715:L_LO 0.000125123
+3 *951:B *959:A 0
+4 *951:A *951:B 0
+*RES
+1 *715:L_LO *951:B 41.3802 
+*END
+
+*D_NET *198 0.000649822
+*CONN
+*I *952:A I *D sg13g2_xnor2_1
+*I *716:L_LO O *D sg13g2_tielo
+*CAP
+1 *952:A 0.000284798
+2 *716:L_LO 0.000284798
+3 *935:A *952:A 0
+4 *949:A *952:A 0
+5 *952:B *952:A 8.02269e-05
+*RES
+1 *716:L_LO *952:A 43.296 
+*END
+
+*D_NET *199 0.0006556
+*CONN
+*I *954:A I *D sg13g2_nand2_2
+*I *717:L_LO O *D sg13g2_tielo
+*CAP
+1 *954:A 0
+2 *717:L_LO 0.0003278
+3 *199:10 0.0003278
+4 *199:10 *954:B 0
+*RES
+1 *717:L_LO *199:10 43.8213 
+2 *199:10 *954:A 40 
+*END
+
+*D_NET *200 0.000615462
+*CONN
+*I *954:B I *D sg13g2_nand2_2
+*I *718:L_LO O *D sg13g2_tielo
+*CAP
+1 *954:B 0.000307731
+2 *718:L_LO 0.000307731
+3 *950:A *954:B 0
+4 *199:10 *954:B 0
+*RES
+1 *718:L_LO *954:B 43.6462 
+*END
+
+*D_NET *201 0.000295503
+*CONN
+*I *955:A I *D sg13g2_nand2_2
+*I *719:L_LO O *D sg13g2_tielo
+*CAP
+1 *955:A 0.000147752
+2 *719:L_LO 0.000147752
+3 *955:A *956:A 0
+4 *955:A *222:10 0
+5 *87:8 *955:A 0
+*RES
+1 *719:L_LO *955:A 41.6995 
+*END
+
+*D_NET *202 0.000227367
+*CONN
+*I *955:B I *D sg13g2_nand2_2
+*I *720:L_LO O *D sg13g2_tielo
+*CAP
+1 *955:B 0.000113684
+2 *720:L_LO 0.000113684
+3 *87:8 *955:B 0
+*RES
+1 *720:L_LO *955:B 41.3802 
+*END
+
+*D_NET *203 0.000391673
+*CONN
+*I *956:A I *D sg13g2_xnor2_1
+*I *721:L_LO O *D sg13g2_tielo
+*CAP
+1 *956:A 0.000155723
+2 *721:L_LO 0.000155723
+3 *955:A *956:A 0
+4 *956:B *956:A 8.02267e-05
+*RES
+1 *721:L_LO *956:A 41.8746 
+*END
+
+*D_NET *204 0.000259161
+*CONN
+*I *958:A I *D sg13g2_nand2_2
+*I *722:L_LO O *D sg13g2_tielo
+*CAP
+1 *958:A 0.00012958
+2 *722:L_LO 0.00012958
+3 *958:A *958:B 0
+*RES
+1 *722:L_LO *958:A 41.5965 
+*END
+
+*D_NET *205 0.000219747
+*CONN
+*I *958:B I *D sg13g2_nand2_2
+*I *723:L_LO O *D sg13g2_tielo
+*CAP
+1 *958:B 0.000109874
+2 *723:L_LO 0.000109874
+3 *958:A *958:B 0
+*RES
+1 *723:L_LO *958:B 41.3802 
+*END
+
+*D_NET *206 0.00105463
+*CONN
+*I *959:A I *D sg13g2_nand2_2
+*I *724:L_LO O *D sg13g2_tielo
+*CAP
+1 *959:A 0.000527313
+2 *724:L_LO 0.000527313
+3 *959:A *959:B 0
+4 *959:A *217:10 0
+5 *951:B *959:A 0
+6 *957:A *959:A 0
+7 *88:6 *959:A 0
+8 *186:10 *959:A 0
+*RES
+1 *724:L_LO *959:A 44.9955 
+*END
+
+*D_NET *207 0.00163759
+*CONN
+*I *959:B I *D sg13g2_nand2_2
+*I *725:L_LO O *D sg13g2_tielo
+*CAP
+1 *959:B 0.00068375
+2 *725:L_LO 0.00068375
+3 *959:B *960:A 0
+4 *957:A *959:B 6.35071e-05
+5 *959:A *959:B 0
+6 *960:B *959:B 0
+7 *88:6 *959:B 0.000206582
+8 *186:10 *959:B 0
+*RES
+1 *725:L_LO *959:B 46.7362 
+*END
+
+*D_NET *208 0.000781507
+*CONN
+*I *960:A I *D sg13g2_xnor2_1
+*I *726:L_LO O *D sg13g2_tielo
+*CAP
+1 *960:A 0.000383026
+2 *726:L_LO 0.000383026
+3 *960:A *967:A 0
+4 *959:B *960:A 0
+5 *960:B *960:A 1.54556e-05
+*RES
+1 *726:L_LO *960:A 44.3466 
+*END
+
+*D_NET *209 0.000253998
+*CONN
+*I *962:A I *D sg13g2_nand2_2
+*I *727:L_LO O *D sg13g2_tielo
+*CAP
+1 *962:A 0.000126999
+2 *727:L_LO 0.000126999
+3 *962:A *962:B 0
+*RES
+1 *727:L_LO *962:A 41.5965 
+*END
+
+*D_NET *210 0.000219747
+*CONN
+*I *962:B I *D sg13g2_nand2_2
+*I *728:L_LO O *D sg13g2_tielo
+*CAP
+1 *962:B 0.000109874
+2 *728:L_LO 0.000109874
+3 *962:B *975:B 0
+4 *962:A *962:B 0
+*RES
+1 *728:L_LO *962:B 41.3802 
+*END
+
+*D_NET *211 0.00078756
+*CONN
+*I *963:A I *D sg13g2_nand2_2
+*I *729:L_LO O *D sg13g2_tielo
+*CAP
+1 *963:A 0.00039378
+2 *729:L_LO 0.00039378
+3 *963:A *963:B 0
+4 *89:12 *963:A 0
+5 *89:23 *963:A 0
+*RES
+1 *729:L_LO *963:A 44.0685 
+*END
+
+*D_NET *212 0.000815886
+*CONN
+*I *963:B I *D sg13g2_nand2_2
+*I *730:L_LO O *D sg13g2_tielo
+*CAP
+1 *963:B 0.000407943
+2 *730:L_LO 0.000407943
+3 *938:A *963:B 0
+4 *963:A *963:B 0
+*RES
+1 *730:L_LO *963:B 44.8822 
+*END
+
+*D_NET *213 0.000531449
+*CONN
+*I *964:A I *D sg13g2_xnor2_1
+*I *731:L_LO O *D sg13g2_tielo
+*CAP
+1 *964:A 0.000226269
+2 *731:L_LO 0.000226269
+3 *964:B *964:A 7.89102e-05
+4 *89:23 *964:A 0
+*RES
+1 *731:L_LO *964:A 42.4514 
+*END
+
+*D_NET *214 0.000253998
+*CONN
+*I *966:A I *D sg13g2_nand2_2
+*I *732:L_LO O *D sg13g2_tielo
+*CAP
+1 *966:A 0.000126999
+2 *732:L_LO 0.000126999
+3 *966:A *966:B 0
+*RES
+1 *732:L_LO *966:A 41.5965 
+*END
+
+*D_NET *215 0.000219747
+*CONN
+*I *966:B I *D sg13g2_nand2_2
+*I *733:L_LO O *D sg13g2_tielo
+*CAP
+1 *966:B 0.000109874
+2 *733:L_LO 0.000109874
+3 *894:B *966:B 0
+4 *914:B *966:B 0
+5 *966:A *966:B 0
+*RES
+1 *733:L_LO *966:B 41.3802 
+*END
+
+*D_NET *216 0.000848667
+*CONN
+*I *967:A I *D sg13g2_nand2_2
+*I *734:L_LO O *D sg13g2_tielo
+*CAP
+1 *967:A 0.000384292
+2 *734:L_LO 0.000384292
+3 *967:A *218:12 8.00842e-05
+4 *948:A *967:A 0
+5 *960:A *967:A 0
+6 *960:B *967:A 0
+7 *965:A *967:A 0
+8 *90:10 *967:A 0
+*RES
+1 *734:L_LO *967:A 44.2745 
+*END
+
+*D_NET *217 0.00141225
+*CONN
+*I *967:B I *D sg13g2_nand2_2
+*I *735:L_LO O *D sg13g2_tielo
+*CAP
+1 *967:B 0
+2 *735:L_LO 0.000706126
+3 *217:10 0.000706126
+4 thermo[31] *217:10 0
+5 *959:A *217:10 0
+*RES
+1 *735:L_LO *217:10 47.313 
+2 *217:10 *967:B 40 
+*END
+
+*D_NET *218 0.00196201
+*CONN
+*I *968:A I *D sg13g2_xnor2_1
+*I *736:L_LO O *D sg13g2_tielo
+*CAP
+1 *968:A 0
+2 *736:L_LO 0.000690477
+3 *218:12 0.000690477
+4 thermo[29] *218:12 0
+5 thermo[31] *218:12 0
+6 *939:B *218:12 0
+7 *947:A *218:12 0.000500967
+8 *967:A *218:12 8.00842e-05
+9 *968:B *218:12 0
+10 *90:10 *218:12 0
+11 *192:10 *218:12 0
+*RES
+1 *736:L_LO *218:12 47.107 
+2 *218:12 *968:A 40 
+*END
+
+*D_NET *219 0.000255165
+*CONN
+*I *970:A I *D sg13g2_nand2_2
+*I *737:L_LO O *D sg13g2_tielo
+*CAP
+1 *970:A 0.000127582
+2 *737:L_LO 0.000127582
+3 *970:A *970:B 0
+4 *874:A *970:A 0
+5 *890:A *970:A 0
+*RES
+1 *737:L_LO *970:A 41.5965 
+*END
+
+*D_NET *220 0.000220237
+*CONN
+*I *970:B I *D sg13g2_nand2_2
+*I *738:L_LO O *D sg13g2_tielo
+*CAP
+1 *970:B 0.000110119
+2 *738:L_LO 0.000110119
+3 *874:B *970:B 0
+4 *890:A *970:B 0
+5 *890:B *970:B 0
+6 *970:A *970:B 0
+*RES
+1 *738:L_LO *970:B 41.3802 
+*END
+
+*D_NET *221 0.000765988
+*CONN
+*I *971:A I *D sg13g2_nand2_2
+*I *739:L_LO O *D sg13g2_tielo
+*CAP
+1 *971:A 0.000245659
+2 *739:L_LO 0.000245659
+3 *971:A *972:A 0
+4 *971:A *222:10 0
+5 thermo[31] *971:A 0
+6 *91:6 *971:A 0.00027467
+*RES
+1 *739:L_LO *971:A 42.8325 
+*END
+
+*D_NET *222 0.000773267
+*CONN
+*I *971:B I *D sg13g2_nand2_2
+*I *740:L_LO O *D sg13g2_tielo
+*CAP
+1 *971:B 0
+2 *740:L_LO 0.000386633
+3 *222:10 0.000386633
+4 thermo[28] *222:10 0
+5 *955:A *222:10 0
+6 *971:A *222:10 0
+7 *91:6 *222:10 0
+*RES
+1 *740:L_LO *222:10 44.532 
+2 *222:10 *971:B 40 
+*END
+
+*D_NET *223 0.000369991
+*CONN
+*I *972:A I *D sg13g2_xnor2_1
+*I *741:L_LO O *D sg13g2_tielo
+*CAP
+1 *972:A 5.01023e-05
+2 *741:L_LO 0.000127165
+3 *223:8 0.000177268
+4 thermo[31] *972:A 1.54556e-05
+5 thermo[31] *223:8 0
+6 *971:A *972:A 0
+*RES
+1 *741:L_LO *223:8 41.339 
+2 *223:8 *972:A 40.5356 
+*END
+
+*D_NET *224 0.000276206
+*CONN
+*I *974:A I *D sg13g2_nand2_2
+*I *742:L_LO O *D sg13g2_tielo
+*CAP
+1 *974:A 0.000138103
+2 *742:L_LO 0.000138103
+3 *974:A *974:B 0
+*RES
+1 *742:L_LO *974:A 41.5965 
+*END
+
+*D_NET *225 0.000405087
+*CONN
+*I *974:B I *D sg13g2_nand2_2
+*I *743:L_LO O *D sg13g2_tielo
+*CAP
+1 *974:B 5.80172e-05
+2 *743:L_LO 0.000144526
+3 *225:8 0.000202543
+4 *974:A *974:B 0
+*RES
+1 *743:L_LO *225:8 41.8334 
+2 *225:8 *974:B 40.5356 
+*END
+
+*D_NET *226 0.000579574
+*CONN
+*I *975:A I *D sg13g2_nand2_2
+*I *744:L_LO O *D sg13g2_tielo
+*CAP
+1 *975:A 0.000184838
+2 *744:L_LO 0.000184838
+3 *902:A *975:A 0
+4 *92:8 *975:A 0.000209899
+*RES
+1 *744:L_LO *975:A 42.2145 
+*END
+
+*D_NET *227 0.000534716
+*CONN
+*I *975:B I *D sg13g2_nand2_2
+*I *745:L_LO O *D sg13g2_tielo
+*CAP
+1 *975:B 0.000267358
+2 *745:L_LO 0.000267358
+3 *975:B *995:A 0
+4 *902:A *975:B 0
+5 *902:B *975:B 0
+6 *962:B *975:B 0
+7 *92:8 *975:B 0
+*RES
+1 *745:L_LO *975:B 43.09 
+*END
+
+*D_NET *228 0.000390515
+*CONN
+*I *976:A I *D sg13g2_xnor2_1
+*I *746:L_LO O *D sg13g2_tielo
+*CAP
+1 *976:A 0
+2 *746:L_LO 0.000195257
+3 *228:10 0.000195257
+4 *228:10 *987:B 0
+5 thermo[3] *228:10 0
+6 *92:19 *228:10 0
+*RES
+1 *746:L_LO *228:10 41.8746 
+2 *228:10 *976:A 40 
+*END
+
+*D_NET *229 0.000347522
+*CONN
+*I *978:A I *D sg13g2_nand2_2
+*I *747:L_LO O *D sg13g2_tielo
+*CAP
+1 *978:A 0.000173761
+2 *747:L_LO 0.000173761
+3 *978:A *978:B 0
+*RES
+1 *747:L_LO *978:A 41.9673 
+*END
+
+*D_NET *230 0.000313272
+*CONN
+*I *978:B I *D sg13g2_nand2_2
+*I *748:L_LO O *D sg13g2_tielo
+*CAP
+1 *978:B 0.000156636
+2 *748:L_LO 0.000156636
+3 *978:A *978:B 0
+*RES
+1 *748:L_LO *978:B 41.751 
+*END
+
+*D_NET *231 0.00120968
+*CONN
+*I *979:A I *D sg13g2_nand2_2
+*I *749:L_LO O *D sg13g2_tielo
+*CAP
+1 *979:A 0.000470199
+2 *749:L_LO 0.000470199
+3 *979:A *980:A 0
+4 *980:B *979:A 0
+5 *93:8 *979:A 0.00026928
+6 *93:19 *979:A 0
+7 *156:14 *979:A 0
+*RES
+1 *749:L_LO *979:A 44.6453 
+*END
+
+*D_NET *232 0.00107736
+*CONN
+*I *979:B I *D sg13g2_nand2_2
+*I *750:L_LO O *D sg13g2_tielo
+*CAP
+1 *979:B 0.000131787
+2 *750:L_LO 0.00030241
+3 *232:8 0.000434198
+4 thermo[2] *232:8 0
+5 thermo[3] *232:8 0
+6 *964:B *979:B 0
+7 *93:8 *979:B 0.000208968
+*RES
+1 *750:L_LO *232:8 42.8222 
+2 *232:8 *979:B 41.4008 
+*END
+
+*D_NET *233 0.000743643
+*CONN
+*I *980:A I *D sg13g2_xnor2_1
+*I *751:L_LO O *D sg13g2_tielo
+*CAP
+1 *980:A 0.000371821
+2 *751:L_LO 0.000371821
+3 *980:A *992:A 0
+4 *979:A *980:A 0
+5 *980:B *980:A 0
+*RES
+1 *751:L_LO *980:A 43.8934 
+*END
+
+*D_NET *234 0.000480368
+*CONN
+*I *982:A I *D sg13g2_nand2_2
+*I *752:L_LO O *D sg13g2_tielo
+*CAP
+1 *982:A 0.000240184
+2 *752:L_LO 0.000240184
+3 *886:A *982:A 0
+*RES
+1 *752:L_LO *982:A 42.8325 
+*END
+
+*D_NET *235 0.000218549
+*CONN
+*I *982:B I *D sg13g2_nand2_2
+*I *753:L_LO O *D sg13g2_tielo
+*CAP
+1 *982:B 0.000109274
+2 *753:L_LO 0.000109274
+3 *874:A *982:B 0
+4 *874:B *982:B 0
+5 *925:A *982:B 0
+*RES
+1 *753:L_LO *982:B 41.3802 
+*END
+
+*D_NET *236 0.000331529
+*CONN
+*I *983:A I *D sg13g2_nand2_2
+*I *754:L_LO O *D sg13g2_tielo
+*CAP
+1 *983:A 0.000141916
+2 *754:L_LO 0.000141916
+3 *984:B *983:A 4.76977e-05
+*RES
+1 *754:L_LO *983:A 41.5965 
+*END
+
+*D_NET *237 0.000978434
+*CONN
+*I *983:B I *D sg13g2_nand2_2
+*I *755:L_LO O *D sg13g2_tielo
+*CAP
+1 *983:B 0.000286928
+2 *755:L_LO 0.000194562
+3 *237:10 0.000481489
+4 *983:B *984:A 1.54556e-05
+5 thermo[2] *237:10 0
+6 thermo[3] *237:10 0
+7 *984:B *983:B 0
+*RES
+1 *755:L_LO *237:10 42.1218 
+2 *237:10 *983:B 42.6162 
+*END
+
+*D_NET *238 0.000349704
+*CONN
+*I *984:A I *D sg13g2_xnor2_1
+*I *756:L_LO O *D sg13g2_tielo
+*CAP
+1 *984:A 0.000159396
+2 *756:L_LO 0.000159396
+3 *875:B *984:A 0
+4 *983:B *984:A 1.54556e-05
+5 *984:B *984:A 1.54556e-05
+*RES
+1 *756:L_LO *984:A 41.8746 
+*END
+
+*D_NET *239 0.000253998
+*CONN
+*I *986:A I *D sg13g2_nand2_2
+*I *757:L_LO O *D sg13g2_tielo
+*CAP
+1 *986:A 0.000126999
+2 *757:L_LO 0.000126999
+3 *986:A *986:B 0
+*RES
+1 *757:L_LO *986:A 41.5965 
+*END
+
+*D_NET *240 0.000219747
+*CONN
+*I *986:B I *D sg13g2_nand2_2
+*I *758:L_LO O *D sg13g2_tielo
+*CAP
+1 *986:B 0.000109874
+2 *758:L_LO 0.000109874
+3 *986:B *990:B 0
+4 *986:A *986:B 0
+*RES
+1 *758:L_LO *986:B 41.3802 
+*END
+
+*D_NET *241 0.00102352
+*CONN
+*I *987:A I *D sg13g2_nand2_2
+*I *759:L_LO O *D sg13g2_tielo
+*CAP
+1 *987:A 0
+2 *759:L_LO 0.000340687
+3 *241:10 0.000340687
+4 thermo[3] *241:10 0.000342143
+5 *988:B *241:10 0
+6 *89:23 *241:10 0
+*RES
+1 *759:L_LO *241:10 44.0685 
+2 *241:10 *987:A 40 
+*END
+
+*D_NET *242 0.00120566
+*CONN
+*I *987:B I *D sg13g2_nand2_2
+*I *760:L_LO O *D sg13g2_tielo
+*CAP
+1 *987:B 0.000418642
+2 *760:L_LO 0.000418642
+3 *987:B *988:A 9.46987e-05
+4 *976:B *987:B 0
+5 *985:A *987:B 0
+6 *988:B *987:B 0.000273679
+7 *228:10 *987:B 0
+*RES
+1 *760:L_LO *987:B 44.2642 
+*END
+
+*D_NET *243 0.000842988
+*CONN
+*I *988:A I *D sg13g2_xnor2_1
+*I *761:L_LO O *D sg13g2_tielo
+*CAP
+1 *988:A 0.000286576
+2 *761:L_LO 0.000286576
+3 *987:B *988:A 9.46987e-05
+4 *95:22 *988:A 0.000175138
+*RES
+1 *761:L_LO *988:A 43.3166 
+*END
+
+*D_NET *244 0.000253998
+*CONN
+*I *990:A I *D sg13g2_nand2_2
+*I *762:L_LO O *D sg13g2_tielo
+*CAP
+1 *990:A 0.000126999
+2 *762:L_LO 0.000126999
+3 *990:A *990:B 0
+*RES
+1 *762:L_LO *990:A 41.5965 
+*END
+
+*D_NET *245 0.000219747
+*CONN
+*I *990:B I *D sg13g2_nand2_2
+*I *763:L_LO O *D sg13g2_tielo
+*CAP
+1 *990:B 0.000109874
+2 *763:L_LO 0.000109874
+3 *986:B *990:B 0
+4 *990:A *990:B 0
+*RES
+1 *763:L_LO *990:B 41.3802 
+*END
+
+*D_NET *246 0.00146563
+*CONN
+*I *991:A I *D sg13g2_nand2_2
+*I *764:L_LO O *D sg13g2_tielo
+*CAP
+1 *991:A 0.000572513
+2 *764:L_LO 0.000572513
+3 *991:A *991:B 0
+4 *887:B *991:A 8.02696e-05
+5 *96:6 *991:A 0.000240334
+*RES
+1 *764:L_LO *991:A 46.1903 
+*END
+
+*D_NET *247 0.000610834
+*CONN
+*I *991:B I *D sg13g2_nand2_2
+*I *765:L_LO O *D sg13g2_tielo
+*CAP
+1 *991:B 0.000305417
+2 *765:L_LO 0.000305417
+3 *991:A *991:B 0
+4 *95:22 *991:B 0
+*RES
+1 *765:L_LO *991:B 43.09 
+*END
+
+*D_NET *248 0.000318154
+*CONN
+*I *992:A I *D sg13g2_xnor2_1
+*I *766:L_LO O *D sg13g2_tielo
+*CAP
+1 *992:A 0.000159077
+2 *766:L_LO 0.000159077
+3 *980:A *992:A 0
+4 *96:6 *992:A 0
+*RES
+1 *766:L_LO *992:A 41.8746 
+*END
+
+*D_NET *249 0.000478711
+*CONN
+*I *994:A I *D sg13g2_nand2_2
+*I *767:L_LO O *D sg13g2_tielo
+*CAP
+1 *994:A 0.000239356
+2 *767:L_LO 0.000239356
+3 *902:A *994:A 0
+*RES
+1 *767:L_LO *994:A 42.8325 
+*END
+
+*D_NET *250 0.000314537
+*CONN
+*I *994:B I *D sg13g2_nand2_2
+*I *768:L_LO O *D sg13g2_tielo
+*CAP
+1 *994:B 5.02077e-05
+2 *768:L_LO 0.000107061
+3 *250:8 0.000157269
+*RES
+1 *768:L_LO *250:8 41.339 
+2 *250:8 *994:B 40.5356 
+*END
+
+*D_NET *251 0.000934965
+*CONN
+*I *995:A I *D sg13g2_nand2_2
+*I *769:L_LO O *D sg13g2_tielo
+*CAP
+1 *995:A 0.000467483
+2 *769:L_LO 0.000467483
+3 *879:B *995:A 0
+4 *880:A *995:A 0
+5 *898:B *995:A 0
+6 *975:B *995:A 0
+7 *97:10 *995:A 0
+*RES
+1 *769:L_LO *995:A 44.9955 
+*END
+
+*D_NET *252 0.000232927
+*CONN
+*I *995:B I *D sg13g2_nand2_2
+*I *770:L_LO O *D sg13g2_tielo
+*CAP
+1 *995:B 0.000116463
+2 *770:L_LO 0.000116463
+3 *92:8 *995:B 0
+*RES
+1 *770:L_LO *995:B 41.3802 
+*END
+
+*D_NET *253 0.000325115
+*CONN
+*I *996:A I *D sg13g2_xnor2_1
+*I *771:L_LO O *D sg13g2_tielo
+*CAP
+1 *996:A 0.000154857
+2 *771:L_LO 0.000154857
+3 thermo[8] *996:A 1.54008e-05
+4 *97:10 *996:A 0
+*RES
+1 *771:L_LO *996:A 41.8746 
+*END
+
+*D_NET *254 0.00050984
+*CONN
+*I *998:A I *D sg13g2_nand2_2
+*I *772:L_LO O *D sg13g2_tielo
+*CAP
+1 *998:A 0.00025492
+2 *772:L_LO 0.00025492
+3 *998:A *998:B 0
+*RES
+1 *772:L_LO *998:A 42.4823 
+*END
+
+*D_NET *255 0.000544091
+*CONN
+*I *998:B I *D sg13g2_nand2_2
+*I *773:L_LO O *D sg13g2_tielo
+*CAP
+1 *998:B 0.000272045
+2 *773:L_LO 0.000272045
+3 *998:A *998:B 0
+*RES
+1 *773:L_LO *998:B 42.6986 
+*END
+
+*D_NET *256 0.00135787
+*CONN
+*I *999:A I *D sg13g2_nand2_2
+*I *774:L_LO O *D sg13g2_tielo
+*CAP
+1 *999:A 0.000229751
+2 *774:L_LO 0.000107249
+3 *256:8 0.000337
+4 *999:A *1000:A 0
+5 thermo[10] *256:8 0.000395897
+6 thermo[8] *256:8 0
+7 *997:A *999:A 7.99216e-05
+8 *98:6 *999:A 0.000208049
+*RES
+1 *774:L_LO *256:8 41.8334 
+2 *256:8 *999:A 42.4823 
+*END
+
+*D_NET *257 0.00025019
+*CONN
+*I *999:B I *D sg13g2_nand2_2
+*I *775:L_LO O *D sg13g2_tielo
+*CAP
+1 *999:B 0.000125095
+2 *775:L_LO 0.000125095
+3 *999:B *1000:A 0
+*RES
+1 *775:L_LO *999:B 41.3802 
+*END
+
+*D_NET *258 0.000729108
+*CONN
+*I *1000:A I *D sg13g2_xnor2_1
+*I *776:L_LO O *D sg13g2_tielo
+*CAP
+1 *1000:A 0.000324593
+2 *776:L_LO 0.000324593
+3 *997:A *1000:A 0
+4 *999:A *1000:A 0
+5 *999:B *1000:A 0
+6 *1000:B *1000:A 7.99216e-05
+7 *98:6 *1000:A 0
+*RES
+1 *776:L_LO *1000:A 43.296 
+*END

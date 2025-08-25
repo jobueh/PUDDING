@@ -1,0 +1,89 @@
+meta:
+  version: 2
+  flow: [
+        Verilator.Lint,
+        Checker.LintTimingConstructs,
+        Checker.LintErrors,
+        Checker.LintWarnings,
+        Yosys.JsonHeader,
+        Yosys.Synthesis,
+        OpenROAD.CheckSDCFiles,
+        OpenROAD.STAPrePNR,
+        OpenROAD.Floorplan,
+        Odb.CheckMacroAntennaProperties,
+        Odb.SetPowerConnections,
+        OpenROAD.CutRows,
+        OpenROAD.TapEndcapInsertion,
+        Odb.AddPDNObstructions,
+        OpenROAD.GeneratePDN,
+        Odb.RemovePDNObstructions,
+        Odb.AddRoutingObstructions,
+        OpenROAD.GlobalPlacementSkipIO,
+        OpenROAD.IOPlacement,
+        Odb.CustomIOPlacement,
+        Odb.ApplyDEFTemplate,
+        OpenROAD.GlobalPlacement,
+        Checker.PowerGridViolations,
+        OpenROAD.DetailedPlacement,
+        OpenROAD.GlobalRouting,
+        OpenROAD.CheckAntennas,
+        OpenROAD.RepairAntennas,
+        OpenROAD.DetailedRouting,
+        Odb.RemoveRoutingObstructions,
+        OpenROAD.CheckAntennas,
+        Checker.TrDRC,
+        Odb.ReportDisconnectedPins,
+        Checker.DisconnectedPins,
+        Odb.ReportWireLength,
+        Checker.WireLength,
+        OpenROAD.FillInsertion,
+        Odb.CellFrequencyTables,
+        OpenROAD.RCX,
+        OpenROAD.IRDropReport,
+        Magic.StreamOut,
+        KLayout.StreamOut,
+        Magic.WriteLEF,
+        Odb.CheckDesignAntennaProperties,
+        KLayout.XOR,
+        Checker.XOR,
+        Magic.DRC,
+        KLayout.DRC,
+        Checker.MagicDRC,
+        Checker.KLayoutDRC,
+        Magic.SpiceExtraction,
+        Checker.IllegalOverlap,
+        Netgen.LVS,
+        Checker.LVS,
+        Yosys.EQY,
+        Checker.SetupViolations,
+        Checker.HoldViolations,
+        Checker.MaxSlewViolations,
+        Checker.MaxCapViolations,
+        Misc.ReportManufacturability
+       	]
+         
+DESIGN_NAME: non_overlap
+VERILOG_FILES: 
+- dir::non_overlap.sv
+
+PNR_SDC_FILE: "dir::constraints.sdc"
+SIGNOFF_SDC_FILE: "dir::constraints.sdc"
+
+# Reduce wasted space
+TOP_MARGIN_MULT: 1
+BOTTOM_MARGIN_MULT: 1
+LEFT_MARGIN_MULT: 6
+RIGHT_MARGIN_MULT: 6
+
+# Absolute die size
+FP_SIZING: absolute
+DIE_AREA: [0, 0, 80, 70]
+PL_TARGET_DENSITY_PCT: 80
+
+FP_PIN_ORDER_CFG: dir::pins.cfg
+
+# Macro in a macro
+PDN_MULTILAYER: true
+RT_MAX_LAYER: Metal5
+FP_PDN_HORIZONTAL_LAYER: Metal5
+FP_PDN_VERTICAL_LAYER: Metal4

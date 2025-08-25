@@ -1,0 +1,1877 @@
+(DELAYFILE
+ (SDFVERSION "3.0")
+ (DESIGN "non_overlap")
+ (DATE "Mon Aug 25 23:50:53 2025")
+ (VENDOR "Parallax")
+ (PROGRAM "STA")
+ (VERSION "2.7.0")
+ (DIVIDER .)
+ (VOLTAGE 1.080::1.080)
+ (PROCESS "1.000::1.000")
+ (TEMPERATURE 125.000::125.000)
+ (TIMESCALE 1ns)
+ (CELL
+  (CELLTYPE "non_overlap")
+  (INSTANCE)
+  (DELAY
+   (ABSOLUTE
+    (INTERCONNECT thermo[31] comb_logic\[31\]\.delay1_I.A (0.000:0.000:0.000))
+    (INTERCONNECT thermo[31] comb_logic\[31\]\.xor_pulse_I.B (0.000:0.000:0.000))
+    (INTERCONNECT thermo[30] comb_logic\[30\]\.delay1_I.A (0.000:0.000:0.000))
+    (INTERCONNECT thermo[30] comb_logic\[30\]\.xor_pulse_I.B (0.000:0.000:0.000))
+    (INTERCONNECT thermo[29] comb_logic\[29\]\.delay1_I.A (0.000:0.000:0.000))
+    (INTERCONNECT thermo[29] comb_logic\[29\]\.xor_pulse_I.B (0.000:0.000:0.000))
+    (INTERCONNECT thermo[28] comb_logic\[28\]\.delay1_I.A (0.000:0.000:0.000))
+    (INTERCONNECT thermo[28] comb_logic\[28\]\.xor_pulse_I.B (0.000:0.000:0.000))
+    (INTERCONNECT thermo[27] comb_logic\[27\]\.delay1_I.A (0.000:0.000:0.000))
+    (INTERCONNECT thermo[27] comb_logic\[27\]\.xor_pulse_I.B (0.000:0.000:0.000))
+    (INTERCONNECT thermo[26] comb_logic\[26\]\.delay1_I.A (0.000:0.000:0.000))
+    (INTERCONNECT thermo[26] comb_logic\[26\]\.xor_pulse_I.B (0.000:0.000:0.000))
+    (INTERCONNECT thermo[25] comb_logic\[25\]\.delay1_I.A (0.000:0.000:0.000))
+    (INTERCONNECT thermo[25] comb_logic\[25\]\.xor_pulse_I.B (0.000:0.000:0.000))
+    (INTERCONNECT thermo[24] comb_logic\[24\]\.delay1_I.A (0.000:0.000:0.000))
+    (INTERCONNECT thermo[24] comb_logic\[24\]\.xor_pulse_I.B (0.000:0.000:0.000))
+    (INTERCONNECT thermo[23] comb_logic\[23\]\.delay1_I.A (0.000:0.000:0.000))
+    (INTERCONNECT thermo[23] comb_logic\[23\]\.xor_pulse_I.B (0.000:0.000:0.000))
+    (INTERCONNECT thermo[22] comb_logic\[22\]\.delay1_I.A (0.000:0.000:0.000))
+    (INTERCONNECT thermo[22] comb_logic\[22\]\.xor_pulse_I.B (0.000:0.000:0.000))
+    (INTERCONNECT thermo[21] comb_logic\[21\]\.delay1_I.A (0.000:0.000:0.000))
+    (INTERCONNECT thermo[21] comb_logic\[21\]\.xor_pulse_I.B (0.000:0.000:0.000))
+    (INTERCONNECT thermo[20] comb_logic\[20\]\.delay1_I.A (0.000:0.000:0.000))
+    (INTERCONNECT thermo[20] comb_logic\[20\]\.xor_pulse_I.B (0.000:0.000:0.000))
+    (INTERCONNECT thermo[19] comb_logic\[19\]\.delay1_I.A (0.000:0.000:0.000))
+    (INTERCONNECT thermo[19] comb_logic\[19\]\.xor_pulse_I.B (0.000:0.000:0.000))
+    (INTERCONNECT thermo[18] comb_logic\[18\]\.delay1_I.A (0.000:0.000:0.000))
+    (INTERCONNECT thermo[18] comb_logic\[18\]\.xor_pulse_I.B (0.000:0.000:0.000))
+    (INTERCONNECT thermo[17] comb_logic\[17\]\.delay1_I.A (0.000:0.000:0.000))
+    (INTERCONNECT thermo[17] comb_logic\[17\]\.xor_pulse_I.B (0.000:0.000:0.000))
+    (INTERCONNECT thermo[16] comb_logic\[16\]\.delay1_I.A (0.000:0.000:0.000))
+    (INTERCONNECT thermo[16] comb_logic\[16\]\.xor_pulse_I.B (0.000:0.000:0.000))
+    (INTERCONNECT thermo[15] comb_logic\[15\]\.delay1_I.A (0.000:0.000:0.000))
+    (INTERCONNECT thermo[15] comb_logic\[15\]\.xor_pulse_I.B (0.000:0.000:0.000))
+    (INTERCONNECT thermo[14] comb_logic\[14\]\.delay1_I.A (0.000:0.000:0.000))
+    (INTERCONNECT thermo[14] comb_logic\[14\]\.xor_pulse_I.B (0.000:0.000:0.000))
+    (INTERCONNECT thermo[13] comb_logic\[13\]\.delay1_I.A (0.000:0.000:0.000))
+    (INTERCONNECT thermo[13] comb_logic\[13\]\.xor_pulse_I.B (0.000:0.000:0.000))
+    (INTERCONNECT thermo[12] comb_logic\[12\]\.delay1_I.A (0.000:0.000:0.000))
+    (INTERCONNECT thermo[12] comb_logic\[12\]\.xor_pulse_I.B (0.000:0.000:0.000))
+    (INTERCONNECT thermo[11] comb_logic\[11\]\.delay1_I.A (0.000:0.000:0.000))
+    (INTERCONNECT thermo[11] comb_logic\[11\]\.xor_pulse_I.B (0.000:0.000:0.000))
+    (INTERCONNECT thermo[10] comb_logic\[10\]\.delay1_I.A (0.000:0.000:0.000))
+    (INTERCONNECT thermo[10] comb_logic\[10\]\.xor_pulse_I.B (0.000:0.000:0.000))
+    (INTERCONNECT thermo[9] comb_logic\[9\]\.delay1_I.A (0.000:0.000:0.000))
+    (INTERCONNECT thermo[9] comb_logic\[9\]\.xor_pulse_I.B (0.000:0.000:0.000))
+    (INTERCONNECT thermo[8] comb_logic\[8\]\.delay1_I.A (0.000:0.000:0.000))
+    (INTERCONNECT thermo[8] comb_logic\[8\]\.xor_pulse_I.B (0.000:0.000:0.000))
+    (INTERCONNECT thermo[7] comb_logic\[7\]\.delay1_I.A (0.000:0.000:0.000))
+    (INTERCONNECT thermo[7] comb_logic\[7\]\.xor_pulse_I.B (0.000:0.000:0.000))
+    (INTERCONNECT thermo[6] comb_logic\[6\]\.delay1_I.A (0.000:0.000:0.000))
+    (INTERCONNECT thermo[6] comb_logic\[6\]\.xor_pulse_I.B (0.000:0.000:0.000))
+    (INTERCONNECT thermo[5] comb_logic\[5\]\.delay1_I.A (0.000:0.000:0.000))
+    (INTERCONNECT thermo[5] comb_logic\[5\]\.xor_pulse_I.B (0.000:0.000:0.000))
+    (INTERCONNECT thermo[4] comb_logic\[4\]\.delay1_I.A (0.000:0.000:0.000))
+    (INTERCONNECT thermo[4] comb_logic\[4\]\.xor_pulse_I.B (0.000:0.000:0.000))
+    (INTERCONNECT thermo[3] comb_logic\[3\]\.delay1_I.A (0.000:0.000:0.000))
+    (INTERCONNECT thermo[3] comb_logic\[3\]\.xor_pulse_I.B (0.000:0.000:0.000))
+    (INTERCONNECT thermo[2] comb_logic\[2\]\.delay1_I.A (0.000:0.000:0.000))
+    (INTERCONNECT thermo[2] comb_logic\[2\]\.xor_pulse_I.B (0.000:0.000:0.000))
+    (INTERCONNECT thermo[1] comb_logic\[1\]\.delay1_I.A (0.000:0.000:0.000))
+    (INTERCONNECT thermo[1] comb_logic\[1\]\.xor_pulse_I.B (0.000:0.000:0.000))
+    (INTERCONNECT thermo[0] comb_logic\[0\]\.delay1_I.A (0.000:0.000:0.000))
+    (INTERCONNECT thermo[0] comb_logic\[0\]\.xor_pulse_I.B (0.000:0.000:0.000))
+    (INTERCONNECT _224_.L_LO comb_logic\[0\]\.nand_on_I.A (0.000:0.000:0.000))
+    (INTERCONNECT _225_.L_LO comb_logic\[0\]\.nand_on_I.B (0.000:0.000:0.000))
+    (INTERCONNECT _226_.L_LO comb_logic\[0\]\.nand_on_n_I.A (0.000:0.000:0.000))
+    (INTERCONNECT _227_.L_LO comb_logic\[0\]\.nand_on_n_I.B (0.000:0.000:0.000))
+    (INTERCONNECT _228_.L_LO comb_logic\[0\]\.xor_pulse_I.A (0.000:0.000:0.000))
+    (INTERCONNECT _229_.L_LO comb_logic\[10\]\.nand_on_I.A (0.000:0.000:0.000))
+    (INTERCONNECT _230_.L_LO comb_logic\[10\]\.nand_on_I.B (0.000:0.000:0.000))
+    (INTERCONNECT _231_.L_LO comb_logic\[10\]\.nand_on_n_I.A (0.000:0.000:0.000))
+    (INTERCONNECT _232_.L_LO comb_logic\[10\]\.nand_on_n_I.B (0.000:0.000:0.000))
+    (INTERCONNECT _233_.L_LO comb_logic\[10\]\.xor_pulse_I.A (0.000:0.000:0.000))
+    (INTERCONNECT _234_.L_LO comb_logic\[11\]\.nand_on_I.A (0.000:0.000:0.000))
+    (INTERCONNECT _235_.L_LO comb_logic\[11\]\.nand_on_I.B (0.000:0.000:0.000))
+    (INTERCONNECT _236_.L_LO comb_logic\[11\]\.nand_on_n_I.A (0.000:0.000:0.000))
+    (INTERCONNECT _237_.L_LO comb_logic\[11\]\.nand_on_n_I.B (0.000:0.000:0.000))
+    (INTERCONNECT _238_.L_LO comb_logic\[11\]\.xor_pulse_I.A (0.000:0.000:0.000))
+    (INTERCONNECT _239_.L_LO comb_logic\[12\]\.nand_on_I.A (0.000:0.000:0.000))
+    (INTERCONNECT _240_.L_LO comb_logic\[12\]\.nand_on_I.B (0.000:0.000:0.000))
+    (INTERCONNECT _241_.L_LO comb_logic\[12\]\.nand_on_n_I.A (0.000:0.000:0.000))
+    (INTERCONNECT _242_.L_LO comb_logic\[12\]\.nand_on_n_I.B (0.000:0.000:0.000))
+    (INTERCONNECT _243_.L_LO comb_logic\[12\]\.xor_pulse_I.A (0.000:0.000:0.000))
+    (INTERCONNECT _244_.L_LO comb_logic\[13\]\.nand_on_I.A (0.000:0.000:0.000))
+    (INTERCONNECT _245_.L_LO comb_logic\[13\]\.nand_on_I.B (0.000:0.000:0.000))
+    (INTERCONNECT _246_.L_LO comb_logic\[13\]\.nand_on_n_I.A (0.000:0.000:0.000))
+    (INTERCONNECT _247_.L_LO comb_logic\[13\]\.nand_on_n_I.B (0.000:0.000:0.000))
+    (INTERCONNECT _248_.L_LO comb_logic\[13\]\.xor_pulse_I.A (0.000:0.000:0.000))
+    (INTERCONNECT _249_.L_LO comb_logic\[14\]\.nand_on_I.A (0.000:0.000:0.000))
+    (INTERCONNECT _250_.L_LO comb_logic\[14\]\.nand_on_I.B (0.000:0.000:0.000))
+    (INTERCONNECT _251_.L_LO comb_logic\[14\]\.nand_on_n_I.A (0.000:0.000:0.000))
+    (INTERCONNECT _252_.L_LO comb_logic\[14\]\.nand_on_n_I.B (0.000:0.000:0.000))
+    (INTERCONNECT _253_.L_LO comb_logic\[14\]\.xor_pulse_I.A (0.000:0.000:0.000))
+    (INTERCONNECT _254_.L_LO comb_logic\[15\]\.nand_on_I.A (0.000:0.000:0.000))
+    (INTERCONNECT _255_.L_LO comb_logic\[15\]\.nand_on_I.B (0.000:0.000:0.000))
+    (INTERCONNECT _256_.L_LO comb_logic\[15\]\.nand_on_n_I.A (0.000:0.000:0.000))
+    (INTERCONNECT _257_.L_LO comb_logic\[15\]\.nand_on_n_I.B (0.000:0.000:0.000))
+    (INTERCONNECT _258_.L_LO comb_logic\[15\]\.xor_pulse_I.A (0.000:0.000:0.000))
+    (INTERCONNECT _259_.L_LO comb_logic\[16\]\.nand_on_I.A (0.000:0.000:0.000))
+    (INTERCONNECT _260_.L_LO comb_logic\[16\]\.nand_on_I.B (0.000:0.000:0.000))
+    (INTERCONNECT _261_.L_LO comb_logic\[16\]\.nand_on_n_I.A (0.000:0.000:0.000))
+    (INTERCONNECT _262_.L_LO comb_logic\[16\]\.nand_on_n_I.B (0.000:0.000:0.000))
+    (INTERCONNECT _263_.L_LO comb_logic\[16\]\.xor_pulse_I.A (0.000:0.000:0.000))
+    (INTERCONNECT _264_.L_LO comb_logic\[17\]\.nand_on_I.A (0.000:0.000:0.000))
+    (INTERCONNECT _265_.L_LO comb_logic\[17\]\.nand_on_I.B (0.000:0.000:0.000))
+    (INTERCONNECT _266_.L_LO comb_logic\[17\]\.nand_on_n_I.A (0.000:0.000:0.000))
+    (INTERCONNECT _267_.L_LO comb_logic\[17\]\.nand_on_n_I.B (0.000:0.000:0.000))
+    (INTERCONNECT _268_.L_LO comb_logic\[17\]\.xor_pulse_I.A (0.000:0.000:0.000))
+    (INTERCONNECT _269_.L_LO comb_logic\[18\]\.nand_on_I.A (0.000:0.000:0.000))
+    (INTERCONNECT _270_.L_LO comb_logic\[18\]\.nand_on_I.B (0.000:0.000:0.000))
+    (INTERCONNECT _271_.L_LO comb_logic\[18\]\.nand_on_n_I.A (0.000:0.000:0.000))
+    (INTERCONNECT _272_.L_LO comb_logic\[18\]\.nand_on_n_I.B (0.000:0.000:0.000))
+    (INTERCONNECT _273_.L_LO comb_logic\[18\]\.xor_pulse_I.A (0.000:0.000:0.000))
+    (INTERCONNECT _274_.L_LO comb_logic\[19\]\.nand_on_I.A (0.000:0.000:0.000))
+    (INTERCONNECT _275_.L_LO comb_logic\[19\]\.nand_on_I.B (0.000:0.000:0.000))
+    (INTERCONNECT _276_.L_LO comb_logic\[19\]\.nand_on_n_I.A (0.000:0.000:0.000))
+    (INTERCONNECT _277_.L_LO comb_logic\[19\]\.nand_on_n_I.B (0.000:0.000:0.000))
+    (INTERCONNECT _278_.L_LO comb_logic\[19\]\.xor_pulse_I.A (0.000:0.000:0.000))
+    (INTERCONNECT _279_.L_LO comb_logic\[1\]\.nand_on_I.A (0.000:0.000:0.000))
+    (INTERCONNECT _280_.L_LO comb_logic\[1\]\.nand_on_I.B (0.000:0.000:0.000))
+    (INTERCONNECT _281_.L_LO comb_logic\[1\]\.nand_on_n_I.A (0.000:0.000:0.000))
+    (INTERCONNECT _282_.L_LO comb_logic\[1\]\.nand_on_n_I.B (0.000:0.000:0.000))
+    (INTERCONNECT _283_.L_LO comb_logic\[1\]\.xor_pulse_I.A (0.000:0.000:0.000))
+    (INTERCONNECT _284_.L_LO comb_logic\[20\]\.nand_on_I.A (0.000:0.000:0.000))
+    (INTERCONNECT _285_.L_LO comb_logic\[20\]\.nand_on_I.B (0.000:0.000:0.000))
+    (INTERCONNECT _286_.L_LO comb_logic\[20\]\.nand_on_n_I.A (0.000:0.000:0.000))
+    (INTERCONNECT _287_.L_LO comb_logic\[20\]\.nand_on_n_I.B (0.000:0.000:0.000))
+    (INTERCONNECT _288_.L_LO comb_logic\[20\]\.xor_pulse_I.A (0.000:0.000:0.000))
+    (INTERCONNECT _289_.L_LO comb_logic\[21\]\.nand_on_I.A (0.000:0.000:0.000))
+    (INTERCONNECT _290_.L_LO comb_logic\[21\]\.nand_on_I.B (0.000:0.000:0.000))
+    (INTERCONNECT _291_.L_LO comb_logic\[21\]\.nand_on_n_I.A (0.000:0.000:0.000))
+    (INTERCONNECT _292_.L_LO comb_logic\[21\]\.nand_on_n_I.B (0.000:0.000:0.000))
+    (INTERCONNECT _293_.L_LO comb_logic\[21\]\.xor_pulse_I.A (0.000:0.000:0.000))
+    (INTERCONNECT _294_.L_LO comb_logic\[22\]\.nand_on_I.A (0.000:0.000:0.000))
+    (INTERCONNECT _295_.L_LO comb_logic\[22\]\.nand_on_I.B (0.000:0.000:0.000))
+    (INTERCONNECT _296_.L_LO comb_logic\[22\]\.nand_on_n_I.A (0.000:0.000:0.000))
+    (INTERCONNECT _297_.L_LO comb_logic\[22\]\.nand_on_n_I.B (0.000:0.000:0.000))
+    (INTERCONNECT _298_.L_LO comb_logic\[22\]\.xor_pulse_I.A (0.000:0.000:0.000))
+    (INTERCONNECT _299_.L_LO comb_logic\[23\]\.nand_on_I.A (0.000:0.000:0.000))
+    (INTERCONNECT _300_.L_LO comb_logic\[23\]\.nand_on_I.B (0.000:0.000:0.000))
+    (INTERCONNECT _301_.L_LO comb_logic\[23\]\.nand_on_n_I.A (0.000:0.000:0.000))
+    (INTERCONNECT _302_.L_LO comb_logic\[23\]\.nand_on_n_I.B (0.000:0.000:0.000))
+    (INTERCONNECT _303_.L_LO comb_logic\[23\]\.xor_pulse_I.A (0.000:0.000:0.000))
+    (INTERCONNECT _304_.L_LO comb_logic\[24\]\.nand_on_I.A (0.000:0.000:0.000))
+    (INTERCONNECT _305_.L_LO comb_logic\[24\]\.nand_on_I.B (0.000:0.000:0.000))
+    (INTERCONNECT _306_.L_LO comb_logic\[24\]\.nand_on_n_I.A (0.000:0.000:0.000))
+    (INTERCONNECT _307_.L_LO comb_logic\[24\]\.nand_on_n_I.B (0.000:0.000:0.000))
+    (INTERCONNECT _308_.L_LO comb_logic\[24\]\.xor_pulse_I.A (0.000:0.000:0.000))
+    (INTERCONNECT _309_.L_LO comb_logic\[25\]\.nand_on_I.A (0.000:0.000:0.000))
+    (INTERCONNECT _310_.L_LO comb_logic\[25\]\.nand_on_I.B (0.000:0.000:0.000))
+    (INTERCONNECT _311_.L_LO comb_logic\[25\]\.nand_on_n_I.A (0.000:0.000:0.000))
+    (INTERCONNECT _312_.L_LO comb_logic\[25\]\.nand_on_n_I.B (0.000:0.000:0.000))
+    (INTERCONNECT _313_.L_LO comb_logic\[25\]\.xor_pulse_I.A (0.000:0.000:0.000))
+    (INTERCONNECT _314_.L_LO comb_logic\[26\]\.nand_on_I.A (0.000:0.000:0.000))
+    (INTERCONNECT _315_.L_LO comb_logic\[26\]\.nand_on_I.B (0.000:0.000:0.000))
+    (INTERCONNECT _316_.L_LO comb_logic\[26\]\.nand_on_n_I.A (0.000:0.000:0.000))
+    (INTERCONNECT _317_.L_LO comb_logic\[26\]\.nand_on_n_I.B (0.000:0.000:0.000))
+    (INTERCONNECT _318_.L_LO comb_logic\[26\]\.xor_pulse_I.A (0.000:0.000:0.000))
+    (INTERCONNECT _319_.L_LO comb_logic\[27\]\.nand_on_I.A (0.000:0.000:0.000))
+    (INTERCONNECT _320_.L_LO comb_logic\[27\]\.nand_on_I.B (0.000:0.000:0.000))
+    (INTERCONNECT _321_.L_LO comb_logic\[27\]\.nand_on_n_I.A (0.000:0.000:0.000))
+    (INTERCONNECT _322_.L_LO comb_logic\[27\]\.nand_on_n_I.B (0.000:0.000:0.000))
+    (INTERCONNECT _323_.L_LO comb_logic\[27\]\.xor_pulse_I.A (0.000:0.000:0.000))
+    (INTERCONNECT _324_.L_LO comb_logic\[28\]\.nand_on_I.A (0.000:0.000:0.000))
+    (INTERCONNECT _325_.L_LO comb_logic\[28\]\.nand_on_I.B (0.000:0.000:0.000))
+    (INTERCONNECT _326_.L_LO comb_logic\[28\]\.nand_on_n_I.A (0.000:0.000:0.000))
+    (INTERCONNECT _327_.L_LO comb_logic\[28\]\.nand_on_n_I.B (0.000:0.000:0.000))
+    (INTERCONNECT _328_.L_LO comb_logic\[28\]\.xor_pulse_I.A (0.000:0.000:0.000))
+    (INTERCONNECT _329_.L_LO comb_logic\[29\]\.nand_on_I.A (0.000:0.000:0.000))
+    (INTERCONNECT _330_.L_LO comb_logic\[29\]\.nand_on_I.B (0.000:0.000:0.000))
+    (INTERCONNECT _331_.L_LO comb_logic\[29\]\.nand_on_n_I.A (0.000:0.000:0.000))
+    (INTERCONNECT _332_.L_LO comb_logic\[29\]\.nand_on_n_I.B (0.000:0.000:0.000))
+    (INTERCONNECT _333_.L_LO comb_logic\[29\]\.xor_pulse_I.A (0.000:0.000:0.000))
+    (INTERCONNECT _334_.L_LO comb_logic\[2\]\.nand_on_I.A (0.000:0.000:0.000))
+    (INTERCONNECT _335_.L_LO comb_logic\[2\]\.nand_on_I.B (0.000:0.000:0.000))
+    (INTERCONNECT _336_.L_LO comb_logic\[2\]\.nand_on_n_I.A (0.000:0.000:0.000))
+    (INTERCONNECT _337_.L_LO comb_logic\[2\]\.nand_on_n_I.B (0.000:0.000:0.000))
+    (INTERCONNECT _338_.L_LO comb_logic\[2\]\.xor_pulse_I.A (0.000:0.000:0.000))
+    (INTERCONNECT _339_.L_LO comb_logic\[30\]\.nand_on_I.A (0.000:0.000:0.000))
+    (INTERCONNECT _340_.L_LO comb_logic\[30\]\.nand_on_I.B (0.000:0.000:0.000))
+    (INTERCONNECT _341_.L_LO comb_logic\[30\]\.nand_on_n_I.A (0.000:0.000:0.000))
+    (INTERCONNECT _342_.L_LO comb_logic\[30\]\.nand_on_n_I.B (0.000:0.000:0.000))
+    (INTERCONNECT _343_.L_LO comb_logic\[30\]\.xor_pulse_I.A (0.000:0.000:0.000))
+    (INTERCONNECT _344_.L_LO comb_logic\[31\]\.nand_on_I.A (0.000:0.000:0.000))
+    (INTERCONNECT _345_.L_LO comb_logic\[31\]\.nand_on_I.B (0.000:0.000:0.000))
+    (INTERCONNECT _346_.L_LO comb_logic\[31\]\.nand_on_n_I.A (0.000:0.000:0.000))
+    (INTERCONNECT _347_.L_LO comb_logic\[31\]\.nand_on_n_I.B (0.000:0.000:0.000))
+    (INTERCONNECT _348_.L_LO comb_logic\[31\]\.xor_pulse_I.A (0.000:0.000:0.000))
+    (INTERCONNECT _349_.L_LO comb_logic\[3\]\.nand_on_I.A (0.000:0.000:0.000))
+    (INTERCONNECT _350_.L_LO comb_logic\[3\]\.nand_on_I.B (0.000:0.000:0.000))
+    (INTERCONNECT _351_.L_LO comb_logic\[3\]\.nand_on_n_I.A (0.000:0.000:0.000))
+    (INTERCONNECT _352_.L_LO comb_logic\[3\]\.nand_on_n_I.B (0.000:0.000:0.000))
+    (INTERCONNECT _353_.L_LO comb_logic\[3\]\.xor_pulse_I.A (0.000:0.000:0.000))
+    (INTERCONNECT _354_.L_LO comb_logic\[4\]\.nand_on_I.A (0.000:0.000:0.000))
+    (INTERCONNECT _355_.L_LO comb_logic\[4\]\.nand_on_I.B (0.000:0.000:0.000))
+    (INTERCONNECT _356_.L_LO comb_logic\[4\]\.nand_on_n_I.A (0.000:0.000:0.000))
+    (INTERCONNECT _357_.L_LO comb_logic\[4\]\.nand_on_n_I.B (0.000:0.000:0.000))
+    (INTERCONNECT _358_.L_LO comb_logic\[4\]\.xor_pulse_I.A (0.000:0.000:0.000))
+    (INTERCONNECT _359_.L_LO comb_logic\[5\]\.nand_on_I.A (0.000:0.000:0.000))
+    (INTERCONNECT _360_.L_LO comb_logic\[5\]\.nand_on_I.B (0.000:0.000:0.000))
+    (INTERCONNECT _361_.L_LO comb_logic\[5\]\.nand_on_n_I.A (0.000:0.000:0.000))
+    (INTERCONNECT _362_.L_LO comb_logic\[5\]\.nand_on_n_I.B (0.000:0.000:0.000))
+    (INTERCONNECT _363_.L_LO comb_logic\[5\]\.xor_pulse_I.A (0.000:0.000:0.000))
+    (INTERCONNECT _364_.L_LO comb_logic\[6\]\.nand_on_I.A (0.000:0.000:0.000))
+    (INTERCONNECT _365_.L_LO comb_logic\[6\]\.nand_on_I.B (0.000:0.000:0.000))
+    (INTERCONNECT _366_.L_LO comb_logic\[6\]\.nand_on_n_I.A (0.000:0.000:0.000))
+    (INTERCONNECT _367_.L_LO comb_logic\[6\]\.nand_on_n_I.B (0.000:0.000:0.000))
+    (INTERCONNECT _368_.L_LO comb_logic\[6\]\.xor_pulse_I.A (0.000:0.000:0.000))
+    (INTERCONNECT _369_.L_LO comb_logic\[7\]\.nand_on_I.A (0.000:0.000:0.000))
+    (INTERCONNECT _370_.L_LO comb_logic\[7\]\.nand_on_I.B (0.000:0.000:0.000))
+    (INTERCONNECT _371_.L_LO comb_logic\[7\]\.nand_on_n_I.A (0.000:0.000:0.000))
+    (INTERCONNECT _372_.L_LO comb_logic\[7\]\.nand_on_n_I.B (0.000:0.000:0.000))
+    (INTERCONNECT _373_.L_LO comb_logic\[7\]\.xor_pulse_I.A (0.000:0.000:0.000))
+    (INTERCONNECT _374_.L_LO comb_logic\[8\]\.nand_on_I.A (0.000:0.000:0.000))
+    (INTERCONNECT _375_.L_LO comb_logic\[8\]\.nand_on_I.B (0.000:0.000:0.000))
+    (INTERCONNECT _376_.L_LO comb_logic\[8\]\.nand_on_n_I.A (0.000:0.000:0.000))
+    (INTERCONNECT _377_.L_LO comb_logic\[8\]\.nand_on_n_I.B (0.000:0.000:0.000))
+    (INTERCONNECT _378_.L_LO comb_logic\[8\]\.xor_pulse_I.A (0.000:0.000:0.000))
+    (INTERCONNECT _379_.L_LO comb_logic\[9\]\.nand_on_I.A (0.000:0.000:0.000))
+    (INTERCONNECT _380_.L_LO comb_logic\[9\]\.nand_on_I.B (0.000:0.000:0.000))
+    (INTERCONNECT _381_.L_LO comb_logic\[9\]\.nand_on_n_I.A (0.000:0.000:0.000))
+    (INTERCONNECT _382_.L_LO comb_logic\[9\]\.nand_on_n_I.B (0.000:0.000:0.000))
+    (INTERCONNECT _383_.L_LO comb_logic\[9\]\.xor_pulse_I.A (0.000:0.000:0.000))
+    (INTERCONNECT _384_.L_LO ON[0] (0.000:0.000:0.000))
+    (INTERCONNECT _385_.L_LO ON[1] (0.000:0.000:0.000))
+    (INTERCONNECT _386_.L_LO ON[2] (0.000:0.000:0.000))
+    (INTERCONNECT _387_.L_LO ON[3] (0.000:0.000:0.000))
+    (INTERCONNECT _388_.L_LO ON[4] (0.000:0.000:0.000))
+    (INTERCONNECT _389_.L_LO ON[5] (0.000:0.000:0.000))
+    (INTERCONNECT _390_.L_LO ON[6] (0.000:0.000:0.000))
+    (INTERCONNECT _391_.L_LO ON[7] (0.000:0.000:0.000))
+    (INTERCONNECT _392_.L_LO ON[8] (0.000:0.000:0.000))
+    (INTERCONNECT _393_.L_LO ON[9] (0.000:0.000:0.000))
+    (INTERCONNECT _394_.L_LO ON[10] (0.000:0.000:0.000))
+    (INTERCONNECT _395_.L_LO ON[11] (0.000:0.000:0.000))
+    (INTERCONNECT _396_.L_LO ON[12] (0.000:0.000:0.000))
+    (INTERCONNECT _397_.L_LO ON[13] (0.000:0.000:0.000))
+    (INTERCONNECT _398_.L_LO ON[14] (0.000:0.000:0.000))
+    (INTERCONNECT _399_.L_LO ON[15] (0.000:0.000:0.000))
+    (INTERCONNECT _400_.L_LO ON[16] (0.000:0.000:0.000))
+    (INTERCONNECT _401_.L_LO ON[17] (0.000:0.000:0.000))
+    (INTERCONNECT _402_.L_LO ON[18] (0.000:0.000:0.000))
+    (INTERCONNECT _403_.L_LO ON[19] (0.000:0.000:0.000))
+    (INTERCONNECT _404_.L_LO ON[20] (0.000:0.000:0.000))
+    (INTERCONNECT _405_.L_LO ON[21] (0.000:0.000:0.000))
+    (INTERCONNECT _406_.L_LO ON[22] (0.000:0.000:0.000))
+    (INTERCONNECT _407_.L_LO ON[23] (0.000:0.000:0.000))
+    (INTERCONNECT _408_.L_LO ON[24] (0.000:0.000:0.000))
+    (INTERCONNECT _409_.L_LO ON[25] (0.000:0.000:0.000))
+    (INTERCONNECT _410_.L_LO ON[26] (0.000:0.000:0.000))
+    (INTERCONNECT _411_.L_LO ON[27] (0.000:0.000:0.000))
+    (INTERCONNECT _412_.L_LO ON[28] (0.000:0.000:0.000))
+    (INTERCONNECT _413_.L_LO ON[29] (0.000:0.000:0.000))
+    (INTERCONNECT _414_.L_LO ON[30] (0.000:0.000:0.000))
+    (INTERCONNECT _415_.L_LO ON[31] (0.000:0.000:0.000))
+    (INTERCONNECT _416_.L_LO ON_N[0] (0.000:0.000:0.000))
+    (INTERCONNECT _417_.L_LO ON_N[1] (0.000:0.000:0.000))
+    (INTERCONNECT _418_.L_LO ON_N[2] (0.000:0.000:0.000))
+    (INTERCONNECT _419_.L_LO ON_N[3] (0.000:0.000:0.000))
+    (INTERCONNECT _420_.L_LO ON_N[4] (0.000:0.000:0.000))
+    (INTERCONNECT _421_.L_LO ON_N[5] (0.000:0.000:0.000))
+    (INTERCONNECT _422_.L_LO ON_N[6] (0.000:0.000:0.000))
+    (INTERCONNECT _423_.L_LO ON_N[7] (0.000:0.000:0.000))
+    (INTERCONNECT _424_.L_LO ON_N[8] (0.000:0.000:0.000))
+    (INTERCONNECT _425_.L_LO ON_N[9] (0.000:0.000:0.000))
+    (INTERCONNECT _426_.L_LO ON_N[10] (0.000:0.000:0.000))
+    (INTERCONNECT _427_.L_LO ON_N[11] (0.000:0.000:0.000))
+    (INTERCONNECT _428_.L_LO ON_N[12] (0.000:0.000:0.000))
+    (INTERCONNECT _429_.L_LO ON_N[13] (0.000:0.000:0.000))
+    (INTERCONNECT _430_.L_LO ON_N[14] (0.000:0.000:0.000))
+    (INTERCONNECT _431_.L_LO ON_N[15] (0.000:0.000:0.000))
+    (INTERCONNECT _432_.L_LO ON_N[16] (0.000:0.000:0.000))
+    (INTERCONNECT _433_.L_LO ON_N[17] (0.000:0.000:0.000))
+    (INTERCONNECT _434_.L_LO ON_N[18] (0.000:0.000:0.000))
+    (INTERCONNECT _435_.L_LO ON_N[19] (0.000:0.000:0.000))
+    (INTERCONNECT _436_.L_LO ON_N[20] (0.000:0.000:0.000))
+    (INTERCONNECT _437_.L_LO ON_N[21] (0.000:0.000:0.000))
+    (INTERCONNECT _438_.L_LO ON_N[22] (0.000:0.000:0.000))
+    (INTERCONNECT _439_.L_LO ON_N[23] (0.000:0.000:0.000))
+    (INTERCONNECT _440_.L_LO ON_N[24] (0.000:0.000:0.000))
+    (INTERCONNECT _441_.L_LO ON_N[25] (0.000:0.000:0.000))
+    (INTERCONNECT _442_.L_LO ON_N[26] (0.000:0.000:0.000))
+    (INTERCONNECT _443_.L_LO ON_N[27] (0.000:0.000:0.000))
+    (INTERCONNECT _444_.L_LO ON_N[28] (0.000:0.000:0.000))
+    (INTERCONNECT _445_.L_LO ON_N[29] (0.000:0.000:0.000))
+    (INTERCONNECT _446_.L_LO ON_N[30] (0.000:0.000:0.000))
+    (INTERCONNECT _447_.L_LO ON_N[31] (0.000:0.000:0.000))
+    (INTERCONNECT comb_logic\[0\]\.nand_on_n_I.Y comb_logic\[0\]\.delay1_I.A (0.000:0.000:0.000))
+    (INTERCONNECT comb_logic\[0\]\.nand_on_n_I.Y comb_logic\[0\]\.xor_pulse_I.B (0.000:0.000:0.000))
+    (INTERCONNECT comb_logic\[10\]\.nand_on_n_I.Y comb_logic\[10\]\.delay1_I.A (0.000:0.000:0.000))
+    (INTERCONNECT comb_logic\[10\]\.nand_on_n_I.Y comb_logic\[10\]\.xor_pulse_I.B (0.000:0.000:0.000))
+    (INTERCONNECT comb_logic\[11\]\.nand_on_n_I.Y comb_logic\[11\]\.delay1_I.A (0.000:0.000:0.000))
+    (INTERCONNECT comb_logic\[11\]\.nand_on_n_I.Y comb_logic\[11\]\.xor_pulse_I.B (0.000:0.000:0.000))
+    (INTERCONNECT comb_logic\[12\]\.nand_on_n_I.Y comb_logic\[12\]\.delay1_I.A (0.000:0.000:0.000))
+    (INTERCONNECT comb_logic\[12\]\.nand_on_n_I.Y comb_logic\[12\]\.xor_pulse_I.B (0.000:0.000:0.000))
+    (INTERCONNECT comb_logic\[13\]\.nand_on_n_I.Y comb_logic\[13\]\.delay1_I.A (0.000:0.000:0.000))
+    (INTERCONNECT comb_logic\[13\]\.nand_on_n_I.Y comb_logic\[13\]\.xor_pulse_I.B (0.000:0.000:0.000))
+    (INTERCONNECT comb_logic\[14\]\.nand_on_n_I.Y comb_logic\[14\]\.delay1_I.A (0.000:0.000:0.000))
+    (INTERCONNECT comb_logic\[14\]\.nand_on_n_I.Y comb_logic\[14\]\.xor_pulse_I.B (0.000:0.000:0.000))
+    (INTERCONNECT comb_logic\[15\]\.nand_on_n_I.Y comb_logic\[15\]\.delay1_I.A (0.000:0.000:0.000))
+    (INTERCONNECT comb_logic\[15\]\.nand_on_n_I.Y comb_logic\[15\]\.xor_pulse_I.B (0.000:0.000:0.000))
+    (INTERCONNECT comb_logic\[16\]\.nand_on_n_I.Y comb_logic\[16\]\.delay1_I.A (0.000:0.000:0.000))
+    (INTERCONNECT comb_logic\[16\]\.nand_on_n_I.Y comb_logic\[16\]\.xor_pulse_I.B (0.000:0.000:0.000))
+    (INTERCONNECT comb_logic\[17\]\.nand_on_n_I.Y comb_logic\[17\]\.delay1_I.A (0.000:0.000:0.000))
+    (INTERCONNECT comb_logic\[17\]\.nand_on_n_I.Y comb_logic\[17\]\.xor_pulse_I.B (0.000:0.000:0.000))
+    (INTERCONNECT comb_logic\[18\]\.nand_on_n_I.Y comb_logic\[18\]\.delay1_I.A (0.000:0.000:0.000))
+    (INTERCONNECT comb_logic\[18\]\.nand_on_n_I.Y comb_logic\[18\]\.xor_pulse_I.B (0.000:0.000:0.000))
+    (INTERCONNECT comb_logic\[19\]\.nand_on_n_I.Y comb_logic\[19\]\.delay1_I.A (0.000:0.000:0.000))
+    (INTERCONNECT comb_logic\[19\]\.nand_on_n_I.Y comb_logic\[19\]\.xor_pulse_I.B (0.000:0.000:0.000))
+    (INTERCONNECT comb_logic\[1\]\.nand_on_n_I.Y comb_logic\[1\]\.delay1_I.A (0.000:0.000:0.000))
+    (INTERCONNECT comb_logic\[1\]\.nand_on_n_I.Y comb_logic\[1\]\.xor_pulse_I.B (0.000:0.000:0.000))
+    (INTERCONNECT comb_logic\[20\]\.nand_on_n_I.Y comb_logic\[20\]\.delay1_I.A (0.000:0.000:0.000))
+    (INTERCONNECT comb_logic\[20\]\.nand_on_n_I.Y comb_logic\[20\]\.xor_pulse_I.B (0.000:0.000:0.000))
+    (INTERCONNECT comb_logic\[21\]\.nand_on_n_I.Y comb_logic\[21\]\.delay1_I.A (0.000:0.000:0.000))
+    (INTERCONNECT comb_logic\[21\]\.nand_on_n_I.Y comb_logic\[21\]\.xor_pulse_I.B (0.000:0.000:0.000))
+    (INTERCONNECT comb_logic\[22\]\.nand_on_n_I.Y comb_logic\[22\]\.delay1_I.A (0.000:0.000:0.000))
+    (INTERCONNECT comb_logic\[22\]\.nand_on_n_I.Y comb_logic\[22\]\.xor_pulse_I.B (0.000:0.000:0.000))
+    (INTERCONNECT comb_logic\[23\]\.nand_on_n_I.Y comb_logic\[23\]\.delay1_I.A (0.000:0.000:0.000))
+    (INTERCONNECT comb_logic\[23\]\.nand_on_n_I.Y comb_logic\[23\]\.xor_pulse_I.B (0.000:0.000:0.000))
+    (INTERCONNECT comb_logic\[24\]\.nand_on_n_I.Y comb_logic\[24\]\.delay1_I.A (0.000:0.000:0.000))
+    (INTERCONNECT comb_logic\[24\]\.nand_on_n_I.Y comb_logic\[24\]\.xor_pulse_I.B (0.000:0.000:0.000))
+    (INTERCONNECT comb_logic\[25\]\.nand_on_n_I.Y comb_logic\[25\]\.delay1_I.A (0.000:0.000:0.000))
+    (INTERCONNECT comb_logic\[25\]\.nand_on_n_I.Y comb_logic\[25\]\.xor_pulse_I.B (0.000:0.000:0.000))
+    (INTERCONNECT comb_logic\[26\]\.nand_on_n_I.Y comb_logic\[26\]\.delay1_I.A (0.000:0.000:0.000))
+    (INTERCONNECT comb_logic\[26\]\.nand_on_n_I.Y comb_logic\[26\]\.xor_pulse_I.B (0.000:0.000:0.000))
+    (INTERCONNECT comb_logic\[27\]\.nand_on_n_I.Y comb_logic\[27\]\.delay1_I.A (0.000:0.000:0.000))
+    (INTERCONNECT comb_logic\[27\]\.nand_on_n_I.Y comb_logic\[27\]\.xor_pulse_I.B (0.000:0.000:0.000))
+    (INTERCONNECT comb_logic\[28\]\.nand_on_n_I.Y comb_logic\[28\]\.delay1_I.A (0.000:0.000:0.000))
+    (INTERCONNECT comb_logic\[28\]\.nand_on_n_I.Y comb_logic\[28\]\.xor_pulse_I.B (0.000:0.000:0.000))
+    (INTERCONNECT comb_logic\[29\]\.nand_on_n_I.Y comb_logic\[29\]\.delay1_I.A (0.000:0.000:0.000))
+    (INTERCONNECT comb_logic\[29\]\.nand_on_n_I.Y comb_logic\[29\]\.xor_pulse_I.B (0.000:0.000:0.000))
+    (INTERCONNECT comb_logic\[2\]\.nand_on_n_I.Y comb_logic\[2\]\.delay1_I.A (0.000:0.000:0.000))
+    (INTERCONNECT comb_logic\[2\]\.nand_on_n_I.Y comb_logic\[2\]\.xor_pulse_I.B (0.000:0.000:0.000))
+    (INTERCONNECT comb_logic\[30\]\.nand_on_n_I.Y comb_logic\[30\]\.delay1_I.A (0.000:0.000:0.000))
+    (INTERCONNECT comb_logic\[30\]\.nand_on_n_I.Y comb_logic\[30\]\.xor_pulse_I.B (0.000:0.000:0.000))
+    (INTERCONNECT comb_logic\[31\]\.nand_on_n_I.Y comb_logic\[31\]\.delay1_I.A (0.000:0.000:0.000))
+    (INTERCONNECT comb_logic\[31\]\.nand_on_n_I.Y comb_logic\[31\]\.xor_pulse_I.B (0.000:0.000:0.000))
+    (INTERCONNECT comb_logic\[3\]\.nand_on_n_I.Y comb_logic\[3\]\.delay1_I.A (0.000:0.000:0.000))
+    (INTERCONNECT comb_logic\[3\]\.nand_on_n_I.Y comb_logic\[3\]\.xor_pulse_I.B (0.000:0.000:0.000))
+    (INTERCONNECT comb_logic\[4\]\.nand_on_n_I.Y comb_logic\[4\]\.delay1_I.A (0.000:0.000:0.000))
+    (INTERCONNECT comb_logic\[4\]\.nand_on_n_I.Y comb_logic\[4\]\.xor_pulse_I.B (0.000:0.000:0.000))
+    (INTERCONNECT comb_logic\[5\]\.nand_on_n_I.Y comb_logic\[5\]\.delay1_I.A (0.000:0.000:0.000))
+    (INTERCONNECT comb_logic\[5\]\.nand_on_n_I.Y comb_logic\[5\]\.xor_pulse_I.B (0.000:0.000:0.000))
+    (INTERCONNECT comb_logic\[6\]\.nand_on_n_I.Y comb_logic\[6\]\.delay1_I.A (0.000:0.000:0.000))
+    (INTERCONNECT comb_logic\[6\]\.nand_on_n_I.Y comb_logic\[6\]\.xor_pulse_I.B (0.000:0.000:0.000))
+    (INTERCONNECT comb_logic\[7\]\.nand_on_n_I.Y comb_logic\[7\]\.delay1_I.A (0.000:0.000:0.000))
+    (INTERCONNECT comb_logic\[7\]\.nand_on_n_I.Y comb_logic\[7\]\.xor_pulse_I.B (0.000:0.000:0.000))
+    (INTERCONNECT comb_logic\[8\]\.nand_on_n_I.Y comb_logic\[8\]\.delay1_I.A (0.000:0.000:0.000))
+    (INTERCONNECT comb_logic\[8\]\.nand_on_n_I.Y comb_logic\[8\]\.xor_pulse_I.B (0.000:0.000:0.000))
+    (INTERCONNECT comb_logic\[9\]\.nand_on_n_I.Y comb_logic\[9\]\.delay1_I.A (0.000:0.000:0.000))
+    (INTERCONNECT comb_logic\[9\]\.nand_on_n_I.Y comb_logic\[9\]\.xor_pulse_I.B (0.000:0.000:0.000))
+   )
+  )
+ )
+ (CELL
+  (CELLTYPE "sg13g2_dlygate4sd1_1")
+  (INSTANCE comb_logic\[0\]\.delay1_I)
+  (DELAY
+   (ABSOLUTE
+    (IOPATH A X (0.000:0.000:0.000))
+   )
+  )
+ )
+ (CELL
+  (CELLTYPE "sg13g2_nand2_2")
+  (INSTANCE comb_logic\[0\]\.nand_on_I)
+  (DELAY
+   (ABSOLUTE
+    (IOPATH A Y (0.000:0.000:0.000))
+    (IOPATH B Y (0.000:0.000:0.000))
+   )
+  )
+ )
+ (CELL
+  (CELLTYPE "sg13g2_nand2_2")
+  (INSTANCE comb_logic\[0\]\.nand_on_n_I)
+  (DELAY
+   (ABSOLUTE
+    (IOPATH A Y (0.000:0.000:0.000))
+    (IOPATH B Y (0.000:0.000:0.000))
+   )
+  )
+ )
+ (CELL
+  (CELLTYPE "sg13g2_xnor2_1")
+  (INSTANCE comb_logic\[0\]\.xor_pulse_I)
+  (DELAY
+   (ABSOLUTE
+    (COND (B == 1'b0)
+     (IOPATH A Y (0.000:0.000:0.000)))
+    (IOPATH A Y (0.000:0.000:0.000))
+    (COND (B == 1'b1)
+     (IOPATH A Y (0.000:0.000:0.000)))
+    (COND (A == 1'b0)
+     (IOPATH B Y (0.000:0.000:0.000)))
+    (IOPATH B Y (0.000:0.000:0.000))
+    (COND (A == 1'b1)
+     (IOPATH B Y (0.000:0.000:0.000)))
+   )
+  )
+ )
+ (CELL
+  (CELLTYPE "sg13g2_dlygate4sd1_1")
+  (INSTANCE comb_logic\[10\]\.delay1_I)
+  (DELAY
+   (ABSOLUTE
+    (IOPATH A X (0.000:0.000:0.000))
+   )
+  )
+ )
+ (CELL
+  (CELLTYPE "sg13g2_nand2_2")
+  (INSTANCE comb_logic\[10\]\.nand_on_I)
+  (DELAY
+   (ABSOLUTE
+    (IOPATH A Y (0.000:0.000:0.000))
+    (IOPATH B Y (0.000:0.000:0.000))
+   )
+  )
+ )
+ (CELL
+  (CELLTYPE "sg13g2_nand2_2")
+  (INSTANCE comb_logic\[10\]\.nand_on_n_I)
+  (DELAY
+   (ABSOLUTE
+    (IOPATH A Y (0.000:0.000:0.000))
+    (IOPATH B Y (0.000:0.000:0.000))
+   )
+  )
+ )
+ (CELL
+  (CELLTYPE "sg13g2_xnor2_1")
+  (INSTANCE comb_logic\[10\]\.xor_pulse_I)
+  (DELAY
+   (ABSOLUTE
+    (COND (B == 1'b0)
+     (IOPATH A Y (0.000:0.000:0.000)))
+    (IOPATH A Y (0.000:0.000:0.000))
+    (COND (B == 1'b1)
+     (IOPATH A Y (0.000:0.000:0.000)))
+    (COND (A == 1'b0)
+     (IOPATH B Y (0.000:0.000:0.000)))
+    (IOPATH B Y (0.000:0.000:0.000))
+    (COND (A == 1'b1)
+     (IOPATH B Y (0.000:0.000:0.000)))
+   )
+  )
+ )
+ (CELL
+  (CELLTYPE "sg13g2_dlygate4sd1_1")
+  (INSTANCE comb_logic\[11\]\.delay1_I)
+  (DELAY
+   (ABSOLUTE
+    (IOPATH A X (0.000:0.000:0.000))
+   )
+  )
+ )
+ (CELL
+  (CELLTYPE "sg13g2_nand2_2")
+  (INSTANCE comb_logic\[11\]\.nand_on_I)
+  (DELAY
+   (ABSOLUTE
+    (IOPATH A Y (0.000:0.000:0.000))
+    (IOPATH B Y (0.000:0.000:0.000))
+   )
+  )
+ )
+ (CELL
+  (CELLTYPE "sg13g2_nand2_2")
+  (INSTANCE comb_logic\[11\]\.nand_on_n_I)
+  (DELAY
+   (ABSOLUTE
+    (IOPATH A Y (0.000:0.000:0.000))
+    (IOPATH B Y (0.000:0.000:0.000))
+   )
+  )
+ )
+ (CELL
+  (CELLTYPE "sg13g2_xnor2_1")
+  (INSTANCE comb_logic\[11\]\.xor_pulse_I)
+  (DELAY
+   (ABSOLUTE
+    (COND (B == 1'b0)
+     (IOPATH A Y (0.000:0.000:0.000)))
+    (IOPATH A Y (0.000:0.000:0.000))
+    (COND (B == 1'b1)
+     (IOPATH A Y (0.000:0.000:0.000)))
+    (COND (A == 1'b0)
+     (IOPATH B Y (0.000:0.000:0.000)))
+    (IOPATH B Y (0.000:0.000:0.000))
+    (COND (A == 1'b1)
+     (IOPATH B Y (0.000:0.000:0.000)))
+   )
+  )
+ )
+ (CELL
+  (CELLTYPE "sg13g2_dlygate4sd1_1")
+  (INSTANCE comb_logic\[12\]\.delay1_I)
+  (DELAY
+   (ABSOLUTE
+    (IOPATH A X (0.000:0.000:0.000))
+   )
+  )
+ )
+ (CELL
+  (CELLTYPE "sg13g2_nand2_2")
+  (INSTANCE comb_logic\[12\]\.nand_on_I)
+  (DELAY
+   (ABSOLUTE
+    (IOPATH A Y (0.000:0.000:0.000))
+    (IOPATH B Y (0.000:0.000:0.000))
+   )
+  )
+ )
+ (CELL
+  (CELLTYPE "sg13g2_nand2_2")
+  (INSTANCE comb_logic\[12\]\.nand_on_n_I)
+  (DELAY
+   (ABSOLUTE
+    (IOPATH A Y (0.000:0.000:0.000))
+    (IOPATH B Y (0.000:0.000:0.000))
+   )
+  )
+ )
+ (CELL
+  (CELLTYPE "sg13g2_xnor2_1")
+  (INSTANCE comb_logic\[12\]\.xor_pulse_I)
+  (DELAY
+   (ABSOLUTE
+    (COND (B == 1'b0)
+     (IOPATH A Y (0.000:0.000:0.000)))
+    (IOPATH A Y (0.000:0.000:0.000))
+    (COND (B == 1'b1)
+     (IOPATH A Y (0.000:0.000:0.000)))
+    (COND (A == 1'b0)
+     (IOPATH B Y (0.000:0.000:0.000)))
+    (IOPATH B Y (0.000:0.000:0.000))
+    (COND (A == 1'b1)
+     (IOPATH B Y (0.000:0.000:0.000)))
+   )
+  )
+ )
+ (CELL
+  (CELLTYPE "sg13g2_dlygate4sd1_1")
+  (INSTANCE comb_logic\[13\]\.delay1_I)
+  (DELAY
+   (ABSOLUTE
+    (IOPATH A X (0.000:0.000:0.000))
+   )
+  )
+ )
+ (CELL
+  (CELLTYPE "sg13g2_nand2_2")
+  (INSTANCE comb_logic\[13\]\.nand_on_I)
+  (DELAY
+   (ABSOLUTE
+    (IOPATH A Y (0.000:0.000:0.000))
+    (IOPATH B Y (0.000:0.000:0.000))
+   )
+  )
+ )
+ (CELL
+  (CELLTYPE "sg13g2_nand2_2")
+  (INSTANCE comb_logic\[13\]\.nand_on_n_I)
+  (DELAY
+   (ABSOLUTE
+    (IOPATH A Y (0.000:0.000:0.000))
+    (IOPATH B Y (0.000:0.000:0.000))
+   )
+  )
+ )
+ (CELL
+  (CELLTYPE "sg13g2_xnor2_1")
+  (INSTANCE comb_logic\[13\]\.xor_pulse_I)
+  (DELAY
+   (ABSOLUTE
+    (COND (B == 1'b0)
+     (IOPATH A Y (0.000:0.000:0.000)))
+    (IOPATH A Y (0.000:0.000:0.000))
+    (COND (B == 1'b1)
+     (IOPATH A Y (0.000:0.000:0.000)))
+    (COND (A == 1'b0)
+     (IOPATH B Y (0.000:0.000:0.000)))
+    (IOPATH B Y (0.000:0.000:0.000))
+    (COND (A == 1'b1)
+     (IOPATH B Y (0.000:0.000:0.000)))
+   )
+  )
+ )
+ (CELL
+  (CELLTYPE "sg13g2_dlygate4sd1_1")
+  (INSTANCE comb_logic\[14\]\.delay1_I)
+  (DELAY
+   (ABSOLUTE
+    (IOPATH A X (0.000:0.000:0.000))
+   )
+  )
+ )
+ (CELL
+  (CELLTYPE "sg13g2_nand2_2")
+  (INSTANCE comb_logic\[14\]\.nand_on_I)
+  (DELAY
+   (ABSOLUTE
+    (IOPATH A Y (0.000:0.000:0.000))
+    (IOPATH B Y (0.000:0.000:0.000))
+   )
+  )
+ )
+ (CELL
+  (CELLTYPE "sg13g2_nand2_2")
+  (INSTANCE comb_logic\[14\]\.nand_on_n_I)
+  (DELAY
+   (ABSOLUTE
+    (IOPATH A Y (0.000:0.000:0.000))
+    (IOPATH B Y (0.000:0.000:0.000))
+   )
+  )
+ )
+ (CELL
+  (CELLTYPE "sg13g2_xnor2_1")
+  (INSTANCE comb_logic\[14\]\.xor_pulse_I)
+  (DELAY
+   (ABSOLUTE
+    (COND (B == 1'b0)
+     (IOPATH A Y (0.000:0.000:0.000)))
+    (IOPATH A Y (0.000:0.000:0.000))
+    (COND (B == 1'b1)
+     (IOPATH A Y (0.000:0.000:0.000)))
+    (COND (A == 1'b0)
+     (IOPATH B Y (0.000:0.000:0.000)))
+    (IOPATH B Y (0.000:0.000:0.000))
+    (COND (A == 1'b1)
+     (IOPATH B Y (0.000:0.000:0.000)))
+   )
+  )
+ )
+ (CELL
+  (CELLTYPE "sg13g2_dlygate4sd1_1")
+  (INSTANCE comb_logic\[15\]\.delay1_I)
+  (DELAY
+   (ABSOLUTE
+    (IOPATH A X (0.000:0.000:0.000))
+   )
+  )
+ )
+ (CELL
+  (CELLTYPE "sg13g2_nand2_2")
+  (INSTANCE comb_logic\[15\]\.nand_on_I)
+  (DELAY
+   (ABSOLUTE
+    (IOPATH A Y (0.000:0.000:0.000))
+    (IOPATH B Y (0.000:0.000:0.000))
+   )
+  )
+ )
+ (CELL
+  (CELLTYPE "sg13g2_nand2_2")
+  (INSTANCE comb_logic\[15\]\.nand_on_n_I)
+  (DELAY
+   (ABSOLUTE
+    (IOPATH A Y (0.000:0.000:0.000))
+    (IOPATH B Y (0.000:0.000:0.000))
+   )
+  )
+ )
+ (CELL
+  (CELLTYPE "sg13g2_xnor2_1")
+  (INSTANCE comb_logic\[15\]\.xor_pulse_I)
+  (DELAY
+   (ABSOLUTE
+    (COND (B == 1'b0)
+     (IOPATH A Y (0.000:0.000:0.000)))
+    (IOPATH A Y (0.000:0.000:0.000))
+    (COND (B == 1'b1)
+     (IOPATH A Y (0.000:0.000:0.000)))
+    (COND (A == 1'b0)
+     (IOPATH B Y (0.000:0.000:0.000)))
+    (IOPATH B Y (0.000:0.000:0.000))
+    (COND (A == 1'b1)
+     (IOPATH B Y (0.000:0.000:0.000)))
+   )
+  )
+ )
+ (CELL
+  (CELLTYPE "sg13g2_dlygate4sd1_1")
+  (INSTANCE comb_logic\[16\]\.delay1_I)
+  (DELAY
+   (ABSOLUTE
+    (IOPATH A X (0.000:0.000:0.000))
+   )
+  )
+ )
+ (CELL
+  (CELLTYPE "sg13g2_nand2_2")
+  (INSTANCE comb_logic\[16\]\.nand_on_I)
+  (DELAY
+   (ABSOLUTE
+    (IOPATH A Y (0.000:0.000:0.000))
+    (IOPATH B Y (0.000:0.000:0.000))
+   )
+  )
+ )
+ (CELL
+  (CELLTYPE "sg13g2_nand2_2")
+  (INSTANCE comb_logic\[16\]\.nand_on_n_I)
+  (DELAY
+   (ABSOLUTE
+    (IOPATH A Y (0.000:0.000:0.000))
+    (IOPATH B Y (0.000:0.000:0.000))
+   )
+  )
+ )
+ (CELL
+  (CELLTYPE "sg13g2_xnor2_1")
+  (INSTANCE comb_logic\[16\]\.xor_pulse_I)
+  (DELAY
+   (ABSOLUTE
+    (COND (B == 1'b0)
+     (IOPATH A Y (0.000:0.000:0.000)))
+    (IOPATH A Y (0.000:0.000:0.000))
+    (COND (B == 1'b1)
+     (IOPATH A Y (0.000:0.000:0.000)))
+    (COND (A == 1'b0)
+     (IOPATH B Y (0.000:0.000:0.000)))
+    (IOPATH B Y (0.000:0.000:0.000))
+    (COND (A == 1'b1)
+     (IOPATH B Y (0.000:0.000:0.000)))
+   )
+  )
+ )
+ (CELL
+  (CELLTYPE "sg13g2_dlygate4sd1_1")
+  (INSTANCE comb_logic\[17\]\.delay1_I)
+  (DELAY
+   (ABSOLUTE
+    (IOPATH A X (0.000:0.000:0.000))
+   )
+  )
+ )
+ (CELL
+  (CELLTYPE "sg13g2_nand2_2")
+  (INSTANCE comb_logic\[17\]\.nand_on_I)
+  (DELAY
+   (ABSOLUTE
+    (IOPATH A Y (0.000:0.000:0.000))
+    (IOPATH B Y (0.000:0.000:0.000))
+   )
+  )
+ )
+ (CELL
+  (CELLTYPE "sg13g2_nand2_2")
+  (INSTANCE comb_logic\[17\]\.nand_on_n_I)
+  (DELAY
+   (ABSOLUTE
+    (IOPATH A Y (0.000:0.000:0.000))
+    (IOPATH B Y (0.000:0.000:0.000))
+   )
+  )
+ )
+ (CELL
+  (CELLTYPE "sg13g2_xnor2_1")
+  (INSTANCE comb_logic\[17\]\.xor_pulse_I)
+  (DELAY
+   (ABSOLUTE
+    (COND (B == 1'b0)
+     (IOPATH A Y (0.000:0.000:0.000)))
+    (IOPATH A Y (0.000:0.000:0.000))
+    (COND (B == 1'b1)
+     (IOPATH A Y (0.000:0.000:0.000)))
+    (COND (A == 1'b0)
+     (IOPATH B Y (0.000:0.000:0.000)))
+    (IOPATH B Y (0.000:0.000:0.000))
+    (COND (A == 1'b1)
+     (IOPATH B Y (0.000:0.000:0.000)))
+   )
+  )
+ )
+ (CELL
+  (CELLTYPE "sg13g2_dlygate4sd1_1")
+  (INSTANCE comb_logic\[18\]\.delay1_I)
+  (DELAY
+   (ABSOLUTE
+    (IOPATH A X (0.000:0.000:0.000))
+   )
+  )
+ )
+ (CELL
+  (CELLTYPE "sg13g2_nand2_2")
+  (INSTANCE comb_logic\[18\]\.nand_on_I)
+  (DELAY
+   (ABSOLUTE
+    (IOPATH A Y (0.000:0.000:0.000))
+    (IOPATH B Y (0.000:0.000:0.000))
+   )
+  )
+ )
+ (CELL
+  (CELLTYPE "sg13g2_nand2_2")
+  (INSTANCE comb_logic\[18\]\.nand_on_n_I)
+  (DELAY
+   (ABSOLUTE
+    (IOPATH A Y (0.000:0.000:0.000))
+    (IOPATH B Y (0.000:0.000:0.000))
+   )
+  )
+ )
+ (CELL
+  (CELLTYPE "sg13g2_xnor2_1")
+  (INSTANCE comb_logic\[18\]\.xor_pulse_I)
+  (DELAY
+   (ABSOLUTE
+    (COND (B == 1'b0)
+     (IOPATH A Y (0.000:0.000:0.000)))
+    (IOPATH A Y (0.000:0.000:0.000))
+    (COND (B == 1'b1)
+     (IOPATH A Y (0.000:0.000:0.000)))
+    (COND (A == 1'b0)
+     (IOPATH B Y (0.000:0.000:0.000)))
+    (IOPATH B Y (0.000:0.000:0.000))
+    (COND (A == 1'b1)
+     (IOPATH B Y (0.000:0.000:0.000)))
+   )
+  )
+ )
+ (CELL
+  (CELLTYPE "sg13g2_dlygate4sd1_1")
+  (INSTANCE comb_logic\[19\]\.delay1_I)
+  (DELAY
+   (ABSOLUTE
+    (IOPATH A X (0.000:0.000:0.000))
+   )
+  )
+ )
+ (CELL
+  (CELLTYPE "sg13g2_nand2_2")
+  (INSTANCE comb_logic\[19\]\.nand_on_I)
+  (DELAY
+   (ABSOLUTE
+    (IOPATH A Y (0.000:0.000:0.000))
+    (IOPATH B Y (0.000:0.000:0.000))
+   )
+  )
+ )
+ (CELL
+  (CELLTYPE "sg13g2_nand2_2")
+  (INSTANCE comb_logic\[19\]\.nand_on_n_I)
+  (DELAY
+   (ABSOLUTE
+    (IOPATH A Y (0.000:0.000:0.000))
+    (IOPATH B Y (0.000:0.000:0.000))
+   )
+  )
+ )
+ (CELL
+  (CELLTYPE "sg13g2_xnor2_1")
+  (INSTANCE comb_logic\[19\]\.xor_pulse_I)
+  (DELAY
+   (ABSOLUTE
+    (COND (B == 1'b0)
+     (IOPATH A Y (0.000:0.000:0.000)))
+    (IOPATH A Y (0.000:0.000:0.000))
+    (COND (B == 1'b1)
+     (IOPATH A Y (0.000:0.000:0.000)))
+    (COND (A == 1'b0)
+     (IOPATH B Y (0.000:0.000:0.000)))
+    (IOPATH B Y (0.000:0.000:0.000))
+    (COND (A == 1'b1)
+     (IOPATH B Y (0.000:0.000:0.000)))
+   )
+  )
+ )
+ (CELL
+  (CELLTYPE "sg13g2_dlygate4sd1_1")
+  (INSTANCE comb_logic\[1\]\.delay1_I)
+  (DELAY
+   (ABSOLUTE
+    (IOPATH A X (0.000:0.000:0.000))
+   )
+  )
+ )
+ (CELL
+  (CELLTYPE "sg13g2_nand2_2")
+  (INSTANCE comb_logic\[1\]\.nand_on_I)
+  (DELAY
+   (ABSOLUTE
+    (IOPATH A Y (0.000:0.000:0.000))
+    (IOPATH B Y (0.000:0.000:0.000))
+   )
+  )
+ )
+ (CELL
+  (CELLTYPE "sg13g2_nand2_2")
+  (INSTANCE comb_logic\[1\]\.nand_on_n_I)
+  (DELAY
+   (ABSOLUTE
+    (IOPATH A Y (0.000:0.000:0.000))
+    (IOPATH B Y (0.000:0.000:0.000))
+   )
+  )
+ )
+ (CELL
+  (CELLTYPE "sg13g2_xnor2_1")
+  (INSTANCE comb_logic\[1\]\.xor_pulse_I)
+  (DELAY
+   (ABSOLUTE
+    (COND (B == 1'b0)
+     (IOPATH A Y (0.000:0.000:0.000)))
+    (IOPATH A Y (0.000:0.000:0.000))
+    (COND (B == 1'b1)
+     (IOPATH A Y (0.000:0.000:0.000)))
+    (COND (A == 1'b0)
+     (IOPATH B Y (0.000:0.000:0.000)))
+    (IOPATH B Y (0.000:0.000:0.000))
+    (COND (A == 1'b1)
+     (IOPATH B Y (0.000:0.000:0.000)))
+   )
+  )
+ )
+ (CELL
+  (CELLTYPE "sg13g2_dlygate4sd1_1")
+  (INSTANCE comb_logic\[20\]\.delay1_I)
+  (DELAY
+   (ABSOLUTE
+    (IOPATH A X (0.000:0.000:0.000))
+   )
+  )
+ )
+ (CELL
+  (CELLTYPE "sg13g2_nand2_2")
+  (INSTANCE comb_logic\[20\]\.nand_on_I)
+  (DELAY
+   (ABSOLUTE
+    (IOPATH A Y (0.000:0.000:0.000))
+    (IOPATH B Y (0.000:0.000:0.000))
+   )
+  )
+ )
+ (CELL
+  (CELLTYPE "sg13g2_nand2_2")
+  (INSTANCE comb_logic\[20\]\.nand_on_n_I)
+  (DELAY
+   (ABSOLUTE
+    (IOPATH A Y (0.000:0.000:0.000))
+    (IOPATH B Y (0.000:0.000:0.000))
+   )
+  )
+ )
+ (CELL
+  (CELLTYPE "sg13g2_xnor2_1")
+  (INSTANCE comb_logic\[20\]\.xor_pulse_I)
+  (DELAY
+   (ABSOLUTE
+    (COND (B == 1'b0)
+     (IOPATH A Y (0.000:0.000:0.000)))
+    (IOPATH A Y (0.000:0.000:0.000))
+    (COND (B == 1'b1)
+     (IOPATH A Y (0.000:0.000:0.000)))
+    (COND (A == 1'b0)
+     (IOPATH B Y (0.000:0.000:0.000)))
+    (IOPATH B Y (0.000:0.000:0.000))
+    (COND (A == 1'b1)
+     (IOPATH B Y (0.000:0.000:0.000)))
+   )
+  )
+ )
+ (CELL
+  (CELLTYPE "sg13g2_dlygate4sd1_1")
+  (INSTANCE comb_logic\[21\]\.delay1_I)
+  (DELAY
+   (ABSOLUTE
+    (IOPATH A X (0.000:0.000:0.000))
+   )
+  )
+ )
+ (CELL
+  (CELLTYPE "sg13g2_nand2_2")
+  (INSTANCE comb_logic\[21\]\.nand_on_I)
+  (DELAY
+   (ABSOLUTE
+    (IOPATH A Y (0.000:0.000:0.000))
+    (IOPATH B Y (0.000:0.000:0.000))
+   )
+  )
+ )
+ (CELL
+  (CELLTYPE "sg13g2_nand2_2")
+  (INSTANCE comb_logic\[21\]\.nand_on_n_I)
+  (DELAY
+   (ABSOLUTE
+    (IOPATH A Y (0.000:0.000:0.000))
+    (IOPATH B Y (0.000:0.000:0.000))
+   )
+  )
+ )
+ (CELL
+  (CELLTYPE "sg13g2_xnor2_1")
+  (INSTANCE comb_logic\[21\]\.xor_pulse_I)
+  (DELAY
+   (ABSOLUTE
+    (COND (B == 1'b0)
+     (IOPATH A Y (0.000:0.000:0.000)))
+    (IOPATH A Y (0.000:0.000:0.000))
+    (COND (B == 1'b1)
+     (IOPATH A Y (0.000:0.000:0.000)))
+    (COND (A == 1'b0)
+     (IOPATH B Y (0.000:0.000:0.000)))
+    (IOPATH B Y (0.000:0.000:0.000))
+    (COND (A == 1'b1)
+     (IOPATH B Y (0.000:0.000:0.000)))
+   )
+  )
+ )
+ (CELL
+  (CELLTYPE "sg13g2_dlygate4sd1_1")
+  (INSTANCE comb_logic\[22\]\.delay1_I)
+  (DELAY
+   (ABSOLUTE
+    (IOPATH A X (0.000:0.000:0.000))
+   )
+  )
+ )
+ (CELL
+  (CELLTYPE "sg13g2_nand2_2")
+  (INSTANCE comb_logic\[22\]\.nand_on_I)
+  (DELAY
+   (ABSOLUTE
+    (IOPATH A Y (0.000:0.000:0.000))
+    (IOPATH B Y (0.000:0.000:0.000))
+   )
+  )
+ )
+ (CELL
+  (CELLTYPE "sg13g2_nand2_2")
+  (INSTANCE comb_logic\[22\]\.nand_on_n_I)
+  (DELAY
+   (ABSOLUTE
+    (IOPATH A Y (0.000:0.000:0.000))
+    (IOPATH B Y (0.000:0.000:0.000))
+   )
+  )
+ )
+ (CELL
+  (CELLTYPE "sg13g2_xnor2_1")
+  (INSTANCE comb_logic\[22\]\.xor_pulse_I)
+  (DELAY
+   (ABSOLUTE
+    (COND (B == 1'b0)
+     (IOPATH A Y (0.000:0.000:0.000)))
+    (IOPATH A Y (0.000:0.000:0.000))
+    (COND (B == 1'b1)
+     (IOPATH A Y (0.000:0.000:0.000)))
+    (COND (A == 1'b0)
+     (IOPATH B Y (0.000:0.000:0.000)))
+    (IOPATH B Y (0.000:0.000:0.000))
+    (COND (A == 1'b1)
+     (IOPATH B Y (0.000:0.000:0.000)))
+   )
+  )
+ )
+ (CELL
+  (CELLTYPE "sg13g2_dlygate4sd1_1")
+  (INSTANCE comb_logic\[23\]\.delay1_I)
+  (DELAY
+   (ABSOLUTE
+    (IOPATH A X (0.000:0.000:0.000))
+   )
+  )
+ )
+ (CELL
+  (CELLTYPE "sg13g2_nand2_2")
+  (INSTANCE comb_logic\[23\]\.nand_on_I)
+  (DELAY
+   (ABSOLUTE
+    (IOPATH A Y (0.000:0.000:0.000))
+    (IOPATH B Y (0.000:0.000:0.000))
+   )
+  )
+ )
+ (CELL
+  (CELLTYPE "sg13g2_nand2_2")
+  (INSTANCE comb_logic\[23\]\.nand_on_n_I)
+  (DELAY
+   (ABSOLUTE
+    (IOPATH A Y (0.000:0.000:0.000))
+    (IOPATH B Y (0.000:0.000:0.000))
+   )
+  )
+ )
+ (CELL
+  (CELLTYPE "sg13g2_xnor2_1")
+  (INSTANCE comb_logic\[23\]\.xor_pulse_I)
+  (DELAY
+   (ABSOLUTE
+    (COND (B == 1'b0)
+     (IOPATH A Y (0.000:0.000:0.000)))
+    (IOPATH A Y (0.000:0.000:0.000))
+    (COND (B == 1'b1)
+     (IOPATH A Y (0.000:0.000:0.000)))
+    (COND (A == 1'b0)
+     (IOPATH B Y (0.000:0.000:0.000)))
+    (IOPATH B Y (0.000:0.000:0.000))
+    (COND (A == 1'b1)
+     (IOPATH B Y (0.000:0.000:0.000)))
+   )
+  )
+ )
+ (CELL
+  (CELLTYPE "sg13g2_dlygate4sd1_1")
+  (INSTANCE comb_logic\[24\]\.delay1_I)
+  (DELAY
+   (ABSOLUTE
+    (IOPATH A X (0.000:0.000:0.000))
+   )
+  )
+ )
+ (CELL
+  (CELLTYPE "sg13g2_nand2_2")
+  (INSTANCE comb_logic\[24\]\.nand_on_I)
+  (DELAY
+   (ABSOLUTE
+    (IOPATH A Y (0.000:0.000:0.000))
+    (IOPATH B Y (0.000:0.000:0.000))
+   )
+  )
+ )
+ (CELL
+  (CELLTYPE "sg13g2_nand2_2")
+  (INSTANCE comb_logic\[24\]\.nand_on_n_I)
+  (DELAY
+   (ABSOLUTE
+    (IOPATH A Y (0.000:0.000:0.000))
+    (IOPATH B Y (0.000:0.000:0.000))
+   )
+  )
+ )
+ (CELL
+  (CELLTYPE "sg13g2_xnor2_1")
+  (INSTANCE comb_logic\[24\]\.xor_pulse_I)
+  (DELAY
+   (ABSOLUTE
+    (COND (B == 1'b0)
+     (IOPATH A Y (0.000:0.000:0.000)))
+    (IOPATH A Y (0.000:0.000:0.000))
+    (COND (B == 1'b1)
+     (IOPATH A Y (0.000:0.000:0.000)))
+    (COND (A == 1'b0)
+     (IOPATH B Y (0.000:0.000:0.000)))
+    (IOPATH B Y (0.000:0.000:0.000))
+    (COND (A == 1'b1)
+     (IOPATH B Y (0.000:0.000:0.000)))
+   )
+  )
+ )
+ (CELL
+  (CELLTYPE "sg13g2_dlygate4sd1_1")
+  (INSTANCE comb_logic\[25\]\.delay1_I)
+  (DELAY
+   (ABSOLUTE
+    (IOPATH A X (0.000:0.000:0.000))
+   )
+  )
+ )
+ (CELL
+  (CELLTYPE "sg13g2_nand2_2")
+  (INSTANCE comb_logic\[25\]\.nand_on_I)
+  (DELAY
+   (ABSOLUTE
+    (IOPATH A Y (0.000:0.000:0.000))
+    (IOPATH B Y (0.000:0.000:0.000))
+   )
+  )
+ )
+ (CELL
+  (CELLTYPE "sg13g2_nand2_2")
+  (INSTANCE comb_logic\[25\]\.nand_on_n_I)
+  (DELAY
+   (ABSOLUTE
+    (IOPATH A Y (0.000:0.000:0.000))
+    (IOPATH B Y (0.000:0.000:0.000))
+   )
+  )
+ )
+ (CELL
+  (CELLTYPE "sg13g2_xnor2_1")
+  (INSTANCE comb_logic\[25\]\.xor_pulse_I)
+  (DELAY
+   (ABSOLUTE
+    (COND (B == 1'b0)
+     (IOPATH A Y (0.000:0.000:0.000)))
+    (IOPATH A Y (0.000:0.000:0.000))
+    (COND (B == 1'b1)
+     (IOPATH A Y (0.000:0.000:0.000)))
+    (COND (A == 1'b0)
+     (IOPATH B Y (0.000:0.000:0.000)))
+    (IOPATH B Y (0.000:0.000:0.000))
+    (COND (A == 1'b1)
+     (IOPATH B Y (0.000:0.000:0.000)))
+   )
+  )
+ )
+ (CELL
+  (CELLTYPE "sg13g2_dlygate4sd1_1")
+  (INSTANCE comb_logic\[26\]\.delay1_I)
+  (DELAY
+   (ABSOLUTE
+    (IOPATH A X (0.000:0.000:0.000))
+   )
+  )
+ )
+ (CELL
+  (CELLTYPE "sg13g2_nand2_2")
+  (INSTANCE comb_logic\[26\]\.nand_on_I)
+  (DELAY
+   (ABSOLUTE
+    (IOPATH A Y (0.000:0.000:0.000))
+    (IOPATH B Y (0.000:0.000:0.000))
+   )
+  )
+ )
+ (CELL
+  (CELLTYPE "sg13g2_nand2_2")
+  (INSTANCE comb_logic\[26\]\.nand_on_n_I)
+  (DELAY
+   (ABSOLUTE
+    (IOPATH A Y (0.000:0.000:0.000))
+    (IOPATH B Y (0.000:0.000:0.000))
+   )
+  )
+ )
+ (CELL
+  (CELLTYPE "sg13g2_xnor2_1")
+  (INSTANCE comb_logic\[26\]\.xor_pulse_I)
+  (DELAY
+   (ABSOLUTE
+    (COND (B == 1'b0)
+     (IOPATH A Y (0.000:0.000:0.000)))
+    (IOPATH A Y (0.000:0.000:0.000))
+    (COND (B == 1'b1)
+     (IOPATH A Y (0.000:0.000:0.000)))
+    (COND (A == 1'b0)
+     (IOPATH B Y (0.000:0.000:0.000)))
+    (IOPATH B Y (0.000:0.000:0.000))
+    (COND (A == 1'b1)
+     (IOPATH B Y (0.000:0.000:0.000)))
+   )
+  )
+ )
+ (CELL
+  (CELLTYPE "sg13g2_dlygate4sd1_1")
+  (INSTANCE comb_logic\[27\]\.delay1_I)
+  (DELAY
+   (ABSOLUTE
+    (IOPATH A X (0.000:0.000:0.000))
+   )
+  )
+ )
+ (CELL
+  (CELLTYPE "sg13g2_nand2_2")
+  (INSTANCE comb_logic\[27\]\.nand_on_I)
+  (DELAY
+   (ABSOLUTE
+    (IOPATH A Y (0.000:0.000:0.000))
+    (IOPATH B Y (0.000:0.000:0.000))
+   )
+  )
+ )
+ (CELL
+  (CELLTYPE "sg13g2_nand2_2")
+  (INSTANCE comb_logic\[27\]\.nand_on_n_I)
+  (DELAY
+   (ABSOLUTE
+    (IOPATH A Y (0.000:0.000:0.000))
+    (IOPATH B Y (0.000:0.000:0.000))
+   )
+  )
+ )
+ (CELL
+  (CELLTYPE "sg13g2_xnor2_1")
+  (INSTANCE comb_logic\[27\]\.xor_pulse_I)
+  (DELAY
+   (ABSOLUTE
+    (COND (B == 1'b0)
+     (IOPATH A Y (0.000:0.000:0.000)))
+    (IOPATH A Y (0.000:0.000:0.000))
+    (COND (B == 1'b1)
+     (IOPATH A Y (0.000:0.000:0.000)))
+    (COND (A == 1'b0)
+     (IOPATH B Y (0.000:0.000:0.000)))
+    (IOPATH B Y (0.000:0.000:0.000))
+    (COND (A == 1'b1)
+     (IOPATH B Y (0.000:0.000:0.000)))
+   )
+  )
+ )
+ (CELL
+  (CELLTYPE "sg13g2_dlygate4sd1_1")
+  (INSTANCE comb_logic\[28\]\.delay1_I)
+  (DELAY
+   (ABSOLUTE
+    (IOPATH A X (0.000:0.000:0.000))
+   )
+  )
+ )
+ (CELL
+  (CELLTYPE "sg13g2_nand2_2")
+  (INSTANCE comb_logic\[28\]\.nand_on_I)
+  (DELAY
+   (ABSOLUTE
+    (IOPATH A Y (0.000:0.000:0.000))
+    (IOPATH B Y (0.000:0.000:0.000))
+   )
+  )
+ )
+ (CELL
+  (CELLTYPE "sg13g2_nand2_2")
+  (INSTANCE comb_logic\[28\]\.nand_on_n_I)
+  (DELAY
+   (ABSOLUTE
+    (IOPATH A Y (0.000:0.000:0.000))
+    (IOPATH B Y (0.000:0.000:0.000))
+   )
+  )
+ )
+ (CELL
+  (CELLTYPE "sg13g2_xnor2_1")
+  (INSTANCE comb_logic\[28\]\.xor_pulse_I)
+  (DELAY
+   (ABSOLUTE
+    (COND (B == 1'b0)
+     (IOPATH A Y (0.000:0.000:0.000)))
+    (IOPATH A Y (0.000:0.000:0.000))
+    (COND (B == 1'b1)
+     (IOPATH A Y (0.000:0.000:0.000)))
+    (COND (A == 1'b0)
+     (IOPATH B Y (0.000:0.000:0.000)))
+    (IOPATH B Y (0.000:0.000:0.000))
+    (COND (A == 1'b1)
+     (IOPATH B Y (0.000:0.000:0.000)))
+   )
+  )
+ )
+ (CELL
+  (CELLTYPE "sg13g2_dlygate4sd1_1")
+  (INSTANCE comb_logic\[29\]\.delay1_I)
+  (DELAY
+   (ABSOLUTE
+    (IOPATH A X (0.000:0.000:0.000))
+   )
+  )
+ )
+ (CELL
+  (CELLTYPE "sg13g2_nand2_2")
+  (INSTANCE comb_logic\[29\]\.nand_on_I)
+  (DELAY
+   (ABSOLUTE
+    (IOPATH A Y (0.000:0.000:0.000))
+    (IOPATH B Y (0.000:0.000:0.000))
+   )
+  )
+ )
+ (CELL
+  (CELLTYPE "sg13g2_nand2_2")
+  (INSTANCE comb_logic\[29\]\.nand_on_n_I)
+  (DELAY
+   (ABSOLUTE
+    (IOPATH A Y (0.000:0.000:0.000))
+    (IOPATH B Y (0.000:0.000:0.000))
+   )
+  )
+ )
+ (CELL
+  (CELLTYPE "sg13g2_xnor2_1")
+  (INSTANCE comb_logic\[29\]\.xor_pulse_I)
+  (DELAY
+   (ABSOLUTE
+    (COND (B == 1'b0)
+     (IOPATH A Y (0.000:0.000:0.000)))
+    (IOPATH A Y (0.000:0.000:0.000))
+    (COND (B == 1'b1)
+     (IOPATH A Y (0.000:0.000:0.000)))
+    (COND (A == 1'b0)
+     (IOPATH B Y (0.000:0.000:0.000)))
+    (IOPATH B Y (0.000:0.000:0.000))
+    (COND (A == 1'b1)
+     (IOPATH B Y (0.000:0.000:0.000)))
+   )
+  )
+ )
+ (CELL
+  (CELLTYPE "sg13g2_dlygate4sd1_1")
+  (INSTANCE comb_logic\[2\]\.delay1_I)
+  (DELAY
+   (ABSOLUTE
+    (IOPATH A X (0.000:0.000:0.000))
+   )
+  )
+ )
+ (CELL
+  (CELLTYPE "sg13g2_nand2_2")
+  (INSTANCE comb_logic\[2\]\.nand_on_I)
+  (DELAY
+   (ABSOLUTE
+    (IOPATH A Y (0.000:0.000:0.000))
+    (IOPATH B Y (0.000:0.000:0.000))
+   )
+  )
+ )
+ (CELL
+  (CELLTYPE "sg13g2_nand2_2")
+  (INSTANCE comb_logic\[2\]\.nand_on_n_I)
+  (DELAY
+   (ABSOLUTE
+    (IOPATH A Y (0.000:0.000:0.000))
+    (IOPATH B Y (0.000:0.000:0.000))
+   )
+  )
+ )
+ (CELL
+  (CELLTYPE "sg13g2_xnor2_1")
+  (INSTANCE comb_logic\[2\]\.xor_pulse_I)
+  (DELAY
+   (ABSOLUTE
+    (COND (B == 1'b0)
+     (IOPATH A Y (0.000:0.000:0.000)))
+    (IOPATH A Y (0.000:0.000:0.000))
+    (COND (B == 1'b1)
+     (IOPATH A Y (0.000:0.000:0.000)))
+    (COND (A == 1'b0)
+     (IOPATH B Y (0.000:0.000:0.000)))
+    (IOPATH B Y (0.000:0.000:0.000))
+    (COND (A == 1'b1)
+     (IOPATH B Y (0.000:0.000:0.000)))
+   )
+  )
+ )
+ (CELL
+  (CELLTYPE "sg13g2_dlygate4sd1_1")
+  (INSTANCE comb_logic\[30\]\.delay1_I)
+  (DELAY
+   (ABSOLUTE
+    (IOPATH A X (0.000:0.000:0.000))
+   )
+  )
+ )
+ (CELL
+  (CELLTYPE "sg13g2_nand2_2")
+  (INSTANCE comb_logic\[30\]\.nand_on_I)
+  (DELAY
+   (ABSOLUTE
+    (IOPATH A Y (0.000:0.000:0.000))
+    (IOPATH B Y (0.000:0.000:0.000))
+   )
+  )
+ )
+ (CELL
+  (CELLTYPE "sg13g2_nand2_2")
+  (INSTANCE comb_logic\[30\]\.nand_on_n_I)
+  (DELAY
+   (ABSOLUTE
+    (IOPATH A Y (0.000:0.000:0.000))
+    (IOPATH B Y (0.000:0.000:0.000))
+   )
+  )
+ )
+ (CELL
+  (CELLTYPE "sg13g2_xnor2_1")
+  (INSTANCE comb_logic\[30\]\.xor_pulse_I)
+  (DELAY
+   (ABSOLUTE
+    (COND (B == 1'b0)
+     (IOPATH A Y (0.000:0.000:0.000)))
+    (IOPATH A Y (0.000:0.000:0.000))
+    (COND (B == 1'b1)
+     (IOPATH A Y (0.000:0.000:0.000)))
+    (COND (A == 1'b0)
+     (IOPATH B Y (0.000:0.000:0.000)))
+    (IOPATH B Y (0.000:0.000:0.000))
+    (COND (A == 1'b1)
+     (IOPATH B Y (0.000:0.000:0.000)))
+   )
+  )
+ )
+ (CELL
+  (CELLTYPE "sg13g2_dlygate4sd1_1")
+  (INSTANCE comb_logic\[31\]\.delay1_I)
+  (DELAY
+   (ABSOLUTE
+    (IOPATH A X (0.000:0.000:0.000))
+   )
+  )
+ )
+ (CELL
+  (CELLTYPE "sg13g2_nand2_2")
+  (INSTANCE comb_logic\[31\]\.nand_on_I)
+  (DELAY
+   (ABSOLUTE
+    (IOPATH A Y (0.000:0.000:0.000))
+    (IOPATH B Y (0.000:0.000:0.000))
+   )
+  )
+ )
+ (CELL
+  (CELLTYPE "sg13g2_nand2_2")
+  (INSTANCE comb_logic\[31\]\.nand_on_n_I)
+  (DELAY
+   (ABSOLUTE
+    (IOPATH A Y (0.000:0.000:0.000))
+    (IOPATH B Y (0.000:0.000:0.000))
+   )
+  )
+ )
+ (CELL
+  (CELLTYPE "sg13g2_xnor2_1")
+  (INSTANCE comb_logic\[31\]\.xor_pulse_I)
+  (DELAY
+   (ABSOLUTE
+    (COND (B == 1'b0)
+     (IOPATH A Y (0.000:0.000:0.000)))
+    (IOPATH A Y (0.000:0.000:0.000))
+    (COND (B == 1'b1)
+     (IOPATH A Y (0.000:0.000:0.000)))
+    (COND (A == 1'b0)
+     (IOPATH B Y (0.000:0.000:0.000)))
+    (IOPATH B Y (0.000:0.000:0.000))
+    (COND (A == 1'b1)
+     (IOPATH B Y (0.000:0.000:0.000)))
+   )
+  )
+ )
+ (CELL
+  (CELLTYPE "sg13g2_dlygate4sd1_1")
+  (INSTANCE comb_logic\[3\]\.delay1_I)
+  (DELAY
+   (ABSOLUTE
+    (IOPATH A X (0.000:0.000:0.000))
+   )
+  )
+ )
+ (CELL
+  (CELLTYPE "sg13g2_nand2_2")
+  (INSTANCE comb_logic\[3\]\.nand_on_I)
+  (DELAY
+   (ABSOLUTE
+    (IOPATH A Y (0.000:0.000:0.000))
+    (IOPATH B Y (0.000:0.000:0.000))
+   )
+  )
+ )
+ (CELL
+  (CELLTYPE "sg13g2_nand2_2")
+  (INSTANCE comb_logic\[3\]\.nand_on_n_I)
+  (DELAY
+   (ABSOLUTE
+    (IOPATH A Y (0.000:0.000:0.000))
+    (IOPATH B Y (0.000:0.000:0.000))
+   )
+  )
+ )
+ (CELL
+  (CELLTYPE "sg13g2_xnor2_1")
+  (INSTANCE comb_logic\[3\]\.xor_pulse_I)
+  (DELAY
+   (ABSOLUTE
+    (COND (B == 1'b0)
+     (IOPATH A Y (0.000:0.000:0.000)))
+    (IOPATH A Y (0.000:0.000:0.000))
+    (COND (B == 1'b1)
+     (IOPATH A Y (0.000:0.000:0.000)))
+    (COND (A == 1'b0)
+     (IOPATH B Y (0.000:0.000:0.000)))
+    (IOPATH B Y (0.000:0.000:0.000))
+    (COND (A == 1'b1)
+     (IOPATH B Y (0.000:0.000:0.000)))
+   )
+  )
+ )
+ (CELL
+  (CELLTYPE "sg13g2_dlygate4sd1_1")
+  (INSTANCE comb_logic\[4\]\.delay1_I)
+  (DELAY
+   (ABSOLUTE
+    (IOPATH A X (0.000:0.000:0.000))
+   )
+  )
+ )
+ (CELL
+  (CELLTYPE "sg13g2_nand2_2")
+  (INSTANCE comb_logic\[4\]\.nand_on_I)
+  (DELAY
+   (ABSOLUTE
+    (IOPATH A Y (0.000:0.000:0.000))
+    (IOPATH B Y (0.000:0.000:0.000))
+   )
+  )
+ )
+ (CELL
+  (CELLTYPE "sg13g2_nand2_2")
+  (INSTANCE comb_logic\[4\]\.nand_on_n_I)
+  (DELAY
+   (ABSOLUTE
+    (IOPATH A Y (0.000:0.000:0.000))
+    (IOPATH B Y (0.000:0.000:0.000))
+   )
+  )
+ )
+ (CELL
+  (CELLTYPE "sg13g2_xnor2_1")
+  (INSTANCE comb_logic\[4\]\.xor_pulse_I)
+  (DELAY
+   (ABSOLUTE
+    (COND (B == 1'b0)
+     (IOPATH A Y (0.000:0.000:0.000)))
+    (IOPATH A Y (0.000:0.000:0.000))
+    (COND (B == 1'b1)
+     (IOPATH A Y (0.000:0.000:0.000)))
+    (COND (A == 1'b0)
+     (IOPATH B Y (0.000:0.000:0.000)))
+    (IOPATH B Y (0.000:0.000:0.000))
+    (COND (A == 1'b1)
+     (IOPATH B Y (0.000:0.000:0.000)))
+   )
+  )
+ )
+ (CELL
+  (CELLTYPE "sg13g2_dlygate4sd1_1")
+  (INSTANCE comb_logic\[5\]\.delay1_I)
+  (DELAY
+   (ABSOLUTE
+    (IOPATH A X (0.000:0.000:0.000))
+   )
+  )
+ )
+ (CELL
+  (CELLTYPE "sg13g2_nand2_2")
+  (INSTANCE comb_logic\[5\]\.nand_on_I)
+  (DELAY
+   (ABSOLUTE
+    (IOPATH A Y (0.000:0.000:0.000))
+    (IOPATH B Y (0.000:0.000:0.000))
+   )
+  )
+ )
+ (CELL
+  (CELLTYPE "sg13g2_nand2_2")
+  (INSTANCE comb_logic\[5\]\.nand_on_n_I)
+  (DELAY
+   (ABSOLUTE
+    (IOPATH A Y (0.000:0.000:0.000))
+    (IOPATH B Y (0.000:0.000:0.000))
+   )
+  )
+ )
+ (CELL
+  (CELLTYPE "sg13g2_xnor2_1")
+  (INSTANCE comb_logic\[5\]\.xor_pulse_I)
+  (DELAY
+   (ABSOLUTE
+    (COND (B == 1'b0)
+     (IOPATH A Y (0.000:0.000:0.000)))
+    (IOPATH A Y (0.000:0.000:0.000))
+    (COND (B == 1'b1)
+     (IOPATH A Y (0.000:0.000:0.000)))
+    (COND (A == 1'b0)
+     (IOPATH B Y (0.000:0.000:0.000)))
+    (IOPATH B Y (0.000:0.000:0.000))
+    (COND (A == 1'b1)
+     (IOPATH B Y (0.000:0.000:0.000)))
+   )
+  )
+ )
+ (CELL
+  (CELLTYPE "sg13g2_dlygate4sd1_1")
+  (INSTANCE comb_logic\[6\]\.delay1_I)
+  (DELAY
+   (ABSOLUTE
+    (IOPATH A X (0.000:0.000:0.000))
+   )
+  )
+ )
+ (CELL
+  (CELLTYPE "sg13g2_nand2_2")
+  (INSTANCE comb_logic\[6\]\.nand_on_I)
+  (DELAY
+   (ABSOLUTE
+    (IOPATH A Y (0.000:0.000:0.000))
+    (IOPATH B Y (0.000:0.000:0.000))
+   )
+  )
+ )
+ (CELL
+  (CELLTYPE "sg13g2_nand2_2")
+  (INSTANCE comb_logic\[6\]\.nand_on_n_I)
+  (DELAY
+   (ABSOLUTE
+    (IOPATH A Y (0.000:0.000:0.000))
+    (IOPATH B Y (0.000:0.000:0.000))
+   )
+  )
+ )
+ (CELL
+  (CELLTYPE "sg13g2_xnor2_1")
+  (INSTANCE comb_logic\[6\]\.xor_pulse_I)
+  (DELAY
+   (ABSOLUTE
+    (COND (B == 1'b0)
+     (IOPATH A Y (0.000:0.000:0.000)))
+    (IOPATH A Y (0.000:0.000:0.000))
+    (COND (B == 1'b1)
+     (IOPATH A Y (0.000:0.000:0.000)))
+    (COND (A == 1'b0)
+     (IOPATH B Y (0.000:0.000:0.000)))
+    (IOPATH B Y (0.000:0.000:0.000))
+    (COND (A == 1'b1)
+     (IOPATH B Y (0.000:0.000:0.000)))
+   )
+  )
+ )
+ (CELL
+  (CELLTYPE "sg13g2_dlygate4sd1_1")
+  (INSTANCE comb_logic\[7\]\.delay1_I)
+  (DELAY
+   (ABSOLUTE
+    (IOPATH A X (0.000:0.000:0.000))
+   )
+  )
+ )
+ (CELL
+  (CELLTYPE "sg13g2_nand2_2")
+  (INSTANCE comb_logic\[7\]\.nand_on_I)
+  (DELAY
+   (ABSOLUTE
+    (IOPATH A Y (0.000:0.000:0.000))
+    (IOPATH B Y (0.000:0.000:0.000))
+   )
+  )
+ )
+ (CELL
+  (CELLTYPE "sg13g2_nand2_2")
+  (INSTANCE comb_logic\[7\]\.nand_on_n_I)
+  (DELAY
+   (ABSOLUTE
+    (IOPATH A Y (0.000:0.000:0.000))
+    (IOPATH B Y (0.000:0.000:0.000))
+   )
+  )
+ )
+ (CELL
+  (CELLTYPE "sg13g2_xnor2_1")
+  (INSTANCE comb_logic\[7\]\.xor_pulse_I)
+  (DELAY
+   (ABSOLUTE
+    (COND (B == 1'b0)
+     (IOPATH A Y (0.000:0.000:0.000)))
+    (IOPATH A Y (0.000:0.000:0.000))
+    (COND (B == 1'b1)
+     (IOPATH A Y (0.000:0.000:0.000)))
+    (COND (A == 1'b0)
+     (IOPATH B Y (0.000:0.000:0.000)))
+    (IOPATH B Y (0.000:0.000:0.000))
+    (COND (A == 1'b1)
+     (IOPATH B Y (0.000:0.000:0.000)))
+   )
+  )
+ )
+ (CELL
+  (CELLTYPE "sg13g2_dlygate4sd1_1")
+  (INSTANCE comb_logic\[8\]\.delay1_I)
+  (DELAY
+   (ABSOLUTE
+    (IOPATH A X (0.000:0.000:0.000))
+   )
+  )
+ )
+ (CELL
+  (CELLTYPE "sg13g2_nand2_2")
+  (INSTANCE comb_logic\[8\]\.nand_on_I)
+  (DELAY
+   (ABSOLUTE
+    (IOPATH A Y (0.000:0.000:0.000))
+    (IOPATH B Y (0.000:0.000:0.000))
+   )
+  )
+ )
+ (CELL
+  (CELLTYPE "sg13g2_nand2_2")
+  (INSTANCE comb_logic\[8\]\.nand_on_n_I)
+  (DELAY
+   (ABSOLUTE
+    (IOPATH A Y (0.000:0.000:0.000))
+    (IOPATH B Y (0.000:0.000:0.000))
+   )
+  )
+ )
+ (CELL
+  (CELLTYPE "sg13g2_xnor2_1")
+  (INSTANCE comb_logic\[8\]\.xor_pulse_I)
+  (DELAY
+   (ABSOLUTE
+    (COND (B == 1'b0)
+     (IOPATH A Y (0.000:0.000:0.000)))
+    (IOPATH A Y (0.000:0.000:0.000))
+    (COND (B == 1'b1)
+     (IOPATH A Y (0.000:0.000:0.000)))
+    (COND (A == 1'b0)
+     (IOPATH B Y (0.000:0.000:0.000)))
+    (IOPATH B Y (0.000:0.000:0.000))
+    (COND (A == 1'b1)
+     (IOPATH B Y (0.000:0.000:0.000)))
+   )
+  )
+ )
+ (CELL
+  (CELLTYPE "sg13g2_dlygate4sd1_1")
+  (INSTANCE comb_logic\[9\]\.delay1_I)
+  (DELAY
+   (ABSOLUTE
+    (IOPATH A X (0.000:0.000:0.000))
+   )
+  )
+ )
+ (CELL
+  (CELLTYPE "sg13g2_nand2_2")
+  (INSTANCE comb_logic\[9\]\.nand_on_I)
+  (DELAY
+   (ABSOLUTE
+    (IOPATH A Y (0.000:0.000:0.000))
+    (IOPATH B Y (0.000:0.000:0.000))
+   )
+  )
+ )
+ (CELL
+  (CELLTYPE "sg13g2_nand2_2")
+  (INSTANCE comb_logic\[9\]\.nand_on_n_I)
+  (DELAY
+   (ABSOLUTE
+    (IOPATH A Y (0.000:0.000:0.000))
+    (IOPATH B Y (0.000:0.000:0.000))
+   )
+  )
+ )
+ (CELL
+  (CELLTYPE "sg13g2_xnor2_1")
+  (INSTANCE comb_logic\[9\]\.xor_pulse_I)
+  (DELAY
+   (ABSOLUTE
+    (COND (B == 1'b0)
+     (IOPATH A Y (0.000:0.000:0.000)))
+    (IOPATH A Y (0.000:0.000:0.000))
+    (COND (B == 1'b1)
+     (IOPATH A Y (0.000:0.000:0.000)))
+    (COND (A == 1'b0)
+     (IOPATH B Y (0.000:0.000:0.000)))
+    (IOPATH B Y (0.000:0.000:0.000))
+    (COND (A == 1'b1)
+     (IOPATH B Y (0.000:0.000:0.000)))
+   )
+  )
+ )
+)
