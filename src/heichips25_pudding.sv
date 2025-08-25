@@ -11,8 +11,6 @@ module heichips25_pudding (
     input  wire [7:0] uio_in,   // IOs: Input path
     output wire [7:0] uio_out,  // IOs: Output path
     output wire [7:0] uio_oe,   // IOs: Enable path (active high: 0=input, 1=output)
-    output wire [255:0] on_out,
-    output wire [255:0] on_n_out,
     input  wire       ena,      // always 1 when the design is powered, so you can ignore it
     input  wire       clk,      // clock
     input  wire       rst_n     // reset_n - low to reset
@@ -29,10 +27,12 @@ module heichips25_pudding (
     wire thermo_switch;
     assign thermo_switch = uio_in[1];
     
-	reg [255:0] thermo;
-	reg [255:0] thermo_shift;
-	reg [255:0] thermo_out;
-	
+	reg [15:0] thermo;
+	reg [15:0] thermo_shift;
+	reg [15:0] thermo_out;
+
+    (*keep*) wire [15:0] on_out;
+	(*keep*) wire [15:0] on_n_out;
 
     always_ff @(posedge clk) begin
         if (!rst_n) begin
@@ -41,7 +41,7 @@ module heichips25_pudding (
             if (ui_in[0]) begin
                 if (dir_up) begin 
                 	count <= count + 1;
-                	if (count == 254) begin
+                	if (count == 15) begin
                 		dir_up <= 0;
                 	end
                 end else begin
@@ -55,8 +55,8 @@ module heichips25_pudding (
     end
     
 	thermometer_encoder #(
-		.IN_WIDTH (8),
-		.OUT_WIDTH (256))
+		.IN_WIDTH (4),
+		.OUT_WIDTH (16))
 	te_inst(
 		.din (count),
 		.thermo (thermo)
@@ -67,7 +67,7 @@ module heichips25_pudding (
         if (!rst_n) begin
             thermo_shift <= '0;
         end else if (shift_en) begin
-        	thermo_shift <= {thermo_shift[255-8:0], ui_in}; 
+        	thermo_shift <= {thermo_shift[8:0], ui_in}; 
         end
     end
     
@@ -83,7 +83,7 @@ module heichips25_pudding (
     end
 
     non_overlap #(
-    	.IN_WIDTH(256),
+    	.IN_WIDTH(16),
 	    .NUMBER_OF_DELAYS(5)
     ) non_overlap_I (
 	    .thermo(thermo_out),
