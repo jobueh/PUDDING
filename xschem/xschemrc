@@ -21,10 +21,17 @@ if {![info exists PDK]} {
 }
 
 # Add current directory to xschem library path
-append XSCHEM_LIBRARY_PATH :[file dirname [info script]]
+set XSCHEM_LIBRARY_PATH "[file dirname [info script]]:$XSCHEM_LIBRARY_PATH"
+# append XSCHEM_LIBRARY_PATH :[file dirname [info script]]
 
 # Source the dependencies xschemrc files
 foreach rcfile [glob -nocomplain [file dirname [info script]]/../ip/*/xschem/xschemrc] {
   puts "sourcing $rcfile"
   source $rcfile
 }
+
+# now force your editor (last-wins)
+set editor {pluma}
+# optionally also the terminal used for logs
+# set terminal 
+
