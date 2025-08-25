@@ -1,8 +1,8 @@
 # LibreLane configuration file
 
-DESIGN_NAME: heichips25_template
+DESIGN_NAME: heichips25_pudding
 VERILOG_FILES: 
-- dir::../src/heichips25_template.sv
+- dir::../src/heichips25_pudding.sv
 - dir::../src/thermometer_encoder.sv
 
 CLOCK_PORT: clk

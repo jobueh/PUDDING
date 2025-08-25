@@ -35,6 +35,9 @@ sim-gl:
 	cd tb; GL=1 python3 testbench.py
 .PHONY: sim-gl
 
+gtkwave:
+	gtkwave tb/sim_build/heichips25_pudding.fst &
+
 # FPGA Emulation
 
 ## iCE40HX8K
