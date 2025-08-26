@@ -29,6 +29,8 @@ FP_DEF_TEMPLATE: dir::def/heichips25_template_small.def
 # Don't use power rings or TopMetal2 layer
 PDN_MULTILAYER: true
 RT_MAX_LAYER: TopMetal1
+FP_PDN_VPITCH: 20
+FP_PDN_HPITCH: 20
 
 # Enable for better SystemVerilog support
 #USE_SLANG: true
@@ -50,28 +52,28 @@ MACROS:
         - dir::../src/non_overlap/macro/spef/nom/non_overlap.nom.spef
     instances:
       non_overlap_x32_0:
-        location: [100, 20]
+        location: [90, 20]
         orientation: N
       non_overlap_x32_1:
-        location: [100, 120]
+        location: [90, 110]
         orientation: N
       non_overlap_x32_2:
-        location: [200, 20]
+        location: [190, 20]
         orientation: N
       non_overlap_x32_3:
-        location: [200, 120]
+        location: [190, 110]
         orientation: N
       non_overlap_x32_4:
-        location: [300, 20]
+        location: [290, 20]
         orientation: N
       non_overlap_x32_5:
-        location: [300, 120]
+        location: [290, 110]
         orientation: N
       non_overlap_x32_6:
-        location: [400, 20]
+        location: [390, 20]
         orientation: N
       non_overlap_x32_7:
-        location: [400, 120]
+        location: [390, 110]
         orientation: N
 
 PDN_MACRO_CONNECTIONS:
