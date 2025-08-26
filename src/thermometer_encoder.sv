@@ -1,4 +1,4 @@
-// File: termometer_encoder.sv
+// File: thermometer_encoder.sv
 // SystemVerilog: 8 bit to thermometer code encoder 
 // Default: OUT_WIDTH = (2^IN_WIDTH) = 256 bit for IN_WIDTH = 8
 
