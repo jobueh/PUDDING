@@ -144,7 +144,7 @@ C {lab_wire.sym} 680 -700 0 0 {name=p1 lab=VDD}
 C {lab_wire.sym} 1420 -450 3 0 {name=p4 lab=Vout}
 C {cascodeswitch_pmos.sym} 1160 -460 0 0 {name=xsw}
 C {lab_wire.sym} 1340 -500 0 0 {name=p5 lab=Vpcasc}
-C {switch_logic_RS.sym} 920 -460 0 0 {name=xlogic lenp=\{lplogic\} wp=\{wplogic\} lenn=\{lnlogic\} wn=\{wnlogic\}}
+C {switch_logic_nonoverlap.sym} 920 -460 0 0 {name=xlogic}
 C {lab_wire.sym} 1000 -480 0 0 {name=p7 sig_type=std_logic lab=off_n}
 C {lab_wire.sym} 1000 -440 0 0 {name=p8 sig_type=std_logic lab=on_n}
 C {vsource.sym} 820 -250 0 0 {name=VSW value="DC \{vdd\} PULSE(0 \{vdd\} \{td\} \{tr\} \{tf\} \{ton\} \{tcyc\})" savecurrent=true}
