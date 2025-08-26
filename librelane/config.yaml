@@ -2,8 +2,8 @@
 
 DESIGN_NAME: heichips25_pudding
 VERILOG_FILES: 
-- dir::../src/heichips25_pudding.sv
-- dir::../src/thermometer_encoder.sv
+  - dir::../src/heichips25_pudding.sv
+  - dir::../src/thermometer_encoder.sv
 
 CLOCK_PORT: clk
 CLOCK_PERIOD: 10 # 10ns = 100MHz
@@ -27,12 +27,60 @@ FP_DEF_TEMPLATE: dir::def/heichips25_template_small.def
 #FP_DEF_TEMPLATE: dir::def/heichips25_template_large.def
 
 # Don't use power rings or TopMetal2 layer
-PDN_MULTILAYER: false
+PDN_MULTILAYER: true
 RT_MAX_LAYER: TopMetal1
 
 # Enable for better SystemVerilog support
 #USE_SLANG: true
 
 # reserve space for the logo
-FP_OBSTRUCTIONS: 
-- [100, 0, 500, 200]
+#FP_OBSTRUCTIONS: 
+#- [100, 0, 500, 200]
+
+MACROS:
+  non_overlap:
+    gds:
+      - dir::../src/non_overlap/macro/gds/non_overlap.gds
+    lef:
+      - dir::../src/non_overlap/macro/lef/non_overlap.lef
+    nl:
+      - dir::../src/non_overlap/macro/nl/non_overlap.nl.v
+    spef:
+      nom:
+        - dir::../src/non_overlap/macro/spef/nom/non_overlap.nom.spef
+    instances:
+      non_overlap_x32_0:
+        location: [100, 20]
+        orientation: N
+      non_overlap_x32_1:
+        location: [100, 120]
+        orientation: N
+      non_overlap_x32_2:
+        location: [200, 20]
+        orientation: N
+      non_overlap_x32_3:
+        location: [200, 120]
+        orientation: N
+      non_overlap_x32_4:
+        location: [300, 20]
+        orientation: N
+      non_overlap_x32_5:
+        location: [300, 120]
+        orientation: N
+      non_overlap_x32_6:
+        location: [400, 20]
+        orientation: N
+      non_overlap_x32_7:
+        location: [400, 120]
+        orientation: N
+
+PDN_MACRO_CONNECTIONS:
+  - "non_overlap_x32_0 VPWR VGND VPWR VGND"
+  - "non_overlap_x32_1 VPWR VGND VPWR VGND"
+  - "non_overlap_x32_2 VPWR VGND VPWR VGND"
+  - "non_overlap_x32_3 VPWR VGND VPWR VGND"
+  - "non_overlap_x32_4 VPWR VGND VPWR VGND"
+  - "non_overlap_x32_5 VPWR VGND VPWR VGND"
+  - "non_overlap_x32_6 VPWR VGND VPWR VGND"
+  - "non_overlap_x32_7 VPWR VGND VPWR VGND"
+  

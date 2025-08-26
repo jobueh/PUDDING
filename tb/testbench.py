@@ -80,6 +80,7 @@ if __name__ == "__main__":
     defines = {}
 
     MACRO_NL = testbench_path / '../macro/nl/heichips25_pudding.nl.v'
+    MACRO_NON_OVERLAP = testbench_path / '../src/non_overlap/macro/nl/non_overlap.nl.v'
 
     if gl:
         if not MACRO_NL.exists():
@@ -90,8 +91,11 @@ if __name__ == "__main__":
         sources.append(MACRO_NL)
         defines = {'FUNCTIONAL': True, 'UNIT_DELAY': '#0'}
     else:
-        sources.extend(list(testbench_path.glob('../src/*')))
+        sources.extend(list(testbench_path.glob('../src/*.sv')))
         defines = {'RTL': True}
+        sources.append(Path(pdk_root).expanduser() / pdk / "libs.ref" / scl / "verilog" / f"{scl}.v" )
+        sources.append(MACRO_NON_OVERLAP)
+        defines = {'FUNCTIONAL': True, 'UNIT_DELAY': '#0'}
 
     hdl_toplevel = "heichips25_pudding"
 
