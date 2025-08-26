@@ -19,12 +19,12 @@ FP_SIZING: absolute
 PL_TARGET_DENSITY_PCT: 80
 
 # Small DEF template
-DIE_AREA: [0, 0, 500, 200]
-FP_DEF_TEMPLATE: dir::def/heichips25_template_small.def
+#DIE_AREA: [0, 0, 500, 200]
+#FP_DEF_TEMPLATE: dir::def/heichips25_template_small.def
 
 # Large DEF template
-#DIE_AREA: [0, 0, 500, 415]
-#FP_DEF_TEMPLATE: dir::def/heichips25_template_large.def
+DIE_AREA: [0, 0, 500, 415]
+FP_DEF_TEMPLATE: dir::def/heichips25_template_large.def
 
 # Don't use power rings or TopMetal2 layer
 PDN_MULTILAYER: true
@@ -53,28 +53,28 @@ MACROS:
     instances:
       non_overlap_x32_0:
         location: [90, 20]
-        orientation: N
+        orientation: FN
       non_overlap_x32_1:
-        location: [90, 110]
-        orientation: N
+        location: [90, 300]
+        orientation: FS
       non_overlap_x32_2:
         location: [190, 20]
-        orientation: N
+        orientation: FN
       non_overlap_x32_3:
-        location: [190, 110]
-        orientation: N
+        location: [190, 300]
+        orientation: FS
       non_overlap_x32_4:
         location: [290, 20]
-        orientation: N
+        orientation: FN
       non_overlap_x32_5:
-        location: [290, 110]
-        orientation: N
+        location: [290, 300]
+        orientation: FS
       non_overlap_x32_6:
         location: [390, 20]
-        orientation: N
+        orientation: FN
       non_overlap_x32_7:
-        location: [390, 110]
-        orientation: N
+        location: [390, 300]
+        orientation: FS
 
 PDN_MACRO_CONNECTIONS:
   - "non_overlap_x32_0 VPWR VGND VPWR VGND"
