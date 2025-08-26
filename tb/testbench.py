@@ -89,13 +89,14 @@ if __name__ == "__main__":
     
         sources.append(Path(pdk_root).expanduser() / pdk / "libs.ref" / scl / "verilog" / f"{scl}.v" )
         sources.append(MACRO_NL)
+        sources.append(MACRO_NON_OVERLAP)
         defines = {'FUNCTIONAL': True, 'UNIT_DELAY': '#0'}
     else:
         sources.extend(list(testbench_path.glob('../src/*.sv')))
-        defines = {'RTL': True}
+        sources.extend(list(testbench_path.glob('../src/non_overlap/*.sv')))
         sources.append(Path(pdk_root).expanduser() / pdk / "libs.ref" / scl / "verilog" / f"{scl}.v" )
-        sources.append(MACRO_NON_OVERLAP)
-        defines = {'FUNCTIONAL': True, 'UNIT_DELAY': '#0'}
+        defines = {'RTL': True}
+        
 
     hdl_toplevel = "heichips25_pudding"
 
