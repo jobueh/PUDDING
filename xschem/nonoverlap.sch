@@ -66,7 +66,7 @@ model=sg13_lv_pmos
 spiceprefix=X
 }
 C {sg13g2_pr/sg13_lv_nmos.sym} 440 -180 0 1 {name=M3
-l=0.5u
+l=0.52u
 w=0.15u
 ng=1
 m=1
@@ -74,7 +74,7 @@ model=sg13_lv_nmos
 spiceprefix=X
 }
 C {sg13g2_pr/sg13_lv_nmos.sym} 600 -180 0 0 {name=M4
-l=0.5u
+l=0.52u
 w=0.15u
 ng=1
 m=1
