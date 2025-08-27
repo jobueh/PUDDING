@@ -105,8 +105,8 @@ C {vsource.sym} 620 -450 0 1 {name=Vprobe value=0 savecurrent=true}
 C {isource_arith.sym} 620 -550 0 0 {name=G1 CUR=10**V(logI)}
 C {vsource.sym} 540 -350 0 1 {name=VlogI value=-7 savecurrent=true}
 C {lab_pin.sym} 540 -400 0 0 {name=p6 lab=logI}
-C {pcascsrc.sym} 620 -820 0 1 {name=xref[1:0]}
-C {pcascsrc16.sym} 920 -820 0 0 {name=xsrc}
+C {pcascsrc.sym} 620 -820 0 1 {name=xref[1:0]  l=\{l\} w=\{w\} lc=\{lc\} wc=\{wc\}}
+C {pcascsrc16.sym} 920 -820 0 0 {name=xsrc l=\{l\} w=\{w\} lc=\{lc\} wc=\{wc\}}
 C {vsource.sym} 680 -350 0 1 {name=VDDA value=1.8 savecurrent=true}
 C {lab_pin.sym} 540 -1000 0 0 {name=p1 lab=VDDA}
 C {lab_pin.sym} 620 -740 0 0 {name=p2 lab=Vpbias}
@@ -114,10 +114,35 @@ C {lab_pin.sym} 620 -600 0 0 {name=p3 lab=Vpcbias
 value=0.4}
 C {lab_pin.sym} 920 -720 0 0 {name=p4 lab=Vout}
 C {sg13g2_pr/sg13_lv_pmos.sym} 640 -660 0 1 {name=Mcbias
-l=0.15u
-w=6u
+l=\{lb\}
+w=\{wb\}
 ng=1
 m=2
 model=sg13_lv_pmos
 spiceprefix=X
 }
+C {devices/code_shown.sym} 1100 -950 0 0 {name=params only_toplevel=false value="* device parameters
+.param l      = 5u
+.param w      = 1.45u
+.param nf     = 1
+.param lc     = 0.6u
+.param wc     = 1.2u
+.param nfc    = 1
+.param lb     = 0.15u
+.param wb     = 6u
+.param nfb    = 1
+.param lnmos  = 8u
+.param wnmos  = 2u
+.param nfn    = 1
+* instrumentation parameters
+.param logI=-7
+.param vdd=1.6
+.param vout=0.6
+* simulation parameters
+.param celsius = 25
+.param td     = 20n
+.param tr     = 10p
+.param tf     = 10p
+.param ton    = 400n
+.param tcyc   = 800n
+"}

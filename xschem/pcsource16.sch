@@ -10,7 +10,7 @@ N 380 -280 460 -280 {lab=Vbp}
 N 380 -240 460 -240 {lab=Vcp[15:0]}
 N 520 -200 520 -140 {lab=Iout}
 C {title.sym} 160 0 0 0 {name=l1 author="Christoph Maier"}
-C {pcsource.sym} 520 -260 0 0 {name=xsrc[15:0]}
+C {pcsource2u.sym} 520 -260 0 0 {name=xsrc[15:0]}
 C {ipin.sym} 380 -240 0 0 {name=p1 lab=Vcp[15:0]}
 C {ipin.sym} 380 -280 0 0 {name=p4 lab=Vbp}
 C {opin.sym} 520 -140 1 0 {name=p2 lab=Iout}

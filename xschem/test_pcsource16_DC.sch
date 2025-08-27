@@ -105,7 +105,7 @@ C {vsource.sym} 620 -450 0 1 {name=Vprobe value=0 savecurrent=true}
 C {isource_arith.sym} 620 -550 0 0 {name=G1 CUR=10**V(logI)}
 C {vsource.sym} 540 -350 0 1 {name=VlogI value=-7 savecurrent=true}
 C {lab_pin.sym} 540 -400 0 0 {name=p6 lab=logI}
-C {pcsource.sym} 620 -820 0 1 {name=xref[1:0]}
+C {pcsource2u.sym} 620 -820 0 1 {name=xref[1:0]}
 C {pcsource16.sym} 920 -820 0 0 {name=xsrc}
 C {vsource.sym} 680 -350 0 1 {name=VDDA value=1.8 savecurrent=true}
 C {lab_pin.sym} 540 -1000 0 0 {name=p1 lab=VDDA}

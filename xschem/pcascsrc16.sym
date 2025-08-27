@@ -1,8 +1,9 @@
 v {xschem version=3.4.7 file_version=1.2}
 G {}
 K {type=subcircuit
-format="@name @pinlist @symname"
-template="name=x1"
+format="@name @pinlist @symname l=@l w=@w lc=@lc wc=@wc"
+template="name=x1 l=2u w=.74u lc=.3u wc=.3u"
+
 }
 V {}
 S {}

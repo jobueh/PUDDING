@@ -18,20 +18,20 @@ N 620 -220 620 -180 {lab=#net1}
 N 620 -120 620 -100 {lab=GND}
 N 540 -120 540 -100 {lab=GND}
 N 540 -200 540 -180 {lab=logI}
-N 700 -540 1360 -540 {lab=Vpbias}
+N 840 -540 1360 -540 {lab=Vpbias}
 N 620 -440 620 -390 {lab=Vpbias}
 N 620 -300 620 -280 {lab=Vpcbias}
-N 620 -300 720 -300 {lab=Vpcbias}
+N 620 -300 740 -300 {lab=Vpcbias}
 N 620 -330 620 -300 {lab=Vpcbias}
-N 720 -360 720 -300 {lab=Vpcbias}
-N 660 -360 720 -360 {lab=Vpcbias}
+N 740 -360 740 -300 {lab=Vpcbias}
+N 660 -360 740 -360 {lab=Vpcbias}
 N 540 -700 620 -700 {lab=VDD}
 N 540 -700 540 -360 {lab=VDD}
 N 540 -360 620 -360 {lab=VDD}
-N 720 -500 720 -360 {lab=Vpcbias}
-N 680 -500 720 -500 {lab=Vpcbias}
+N 740 -500 740 -360 {lab=Vpcbias}
+N 680 -500 740 -500 {lab=Vpcbias}
 N 1340 -500 1360 -500 {lab=Vpcasc}
-N 720 -300 1160 -300 {lab=Vpcbias}
+N 740 -300 1160 -300 {lab=Vpcbias}
 N 1220 -460 1340 -460 {lab=Vpcasc}
 N 1340 -500 1340 -460 {lab=Vpcasc}
 N 1160 -700 1420 -700 {lab=VDD}
@@ -54,7 +54,26 @@ N 1160 -400 1160 -380 {lab=sw_n}
 N 1160 -320 1160 -300 {lab=Vpcbias}
 N 1160 -700 1160 -640 {lab=VDD}
 N 920 -700 920 -520 {lab=VDD}
-N 620 -700 920 -700 {lab=VDD}
+N 880 -700 920 -700 {lab=VDD}
+N 740 -620 740 -500 {lab=Vpcbias}
+N 740 -700 740 -660 {lab=VDD}
+N 700 -700 740 -700 {lab=VDD}
+N 770 -660 780 -660 {lab=VDD}
+N 780 -700 780 -660 {lab=VDD}
+N 740 -700 780 -700 {lab=VDD}
+N 700 -660 710 -660 {lab=VDD}
+N 700 -700 700 -660 {lab=VDD}
+N 620 -700 700 -700 {lab=VDD}
+N 840 -700 840 -660 {lab=VDD}
+N 800 -700 840 -700 {lab=VDD}
+N 870 -660 880 -660 {lab=VDD}
+N 880 -700 880 -660 {lab=VDD}
+N 840 -700 880 -700 {lab=VDD}
+N 800 -660 810 -660 {lab=VDD}
+N 800 -700 800 -660 {lab=VDD}
+N 780 -700 800 -700 {lab=VDD}
+N 840 -620 840 -540 {lab=Vpbias}
+N 700 -540 840 -540 {lab=Vpbias}
 C {title.sym} 160 0 0 0 {name=l1 author="Christoph Maier"}
 C {vsource.sym} 1420 -250 0 0 {name=Vout value=\{vdd-vout\} savecurrent=true}
 C {gnd.sym} 460 -80 0 0 {name=l2 lab=GND}
@@ -130,16 +149,16 @@ C {lab_pin.sym} 540 -200 0 0 {name=p6 lab=logI}
 C {pcascsrc.sym} 620 -520 0 1 {name=xref w=\{w\} l=\{l\} wc=\{wc\} lc=\{lc\}}
 C {pcascsrc.sym} 1420 -520 0 0 {name=xsrc w=\{w\} l=\{l\} wc=\{wc\} lc=\{lc\}}
 C {vsource.sym} 460 -250 0 1 {name=VDDA value=\{vdd\} savecurrent=true}
-C {lab_wire.sym} 760 -540 0 0 {name=p2 lab=Vpbias}
+C {lab_wire.sym} 720 -540 0 0 {name=p2 lab=Vpbias}
 C {sg13g2_pr/sg13_lv_pmos.sym} 640 -360 0 1 {name=Mcbias
-l=0.15u
-w=6u
+l=\{lb\}
+w=\{wb\}
 ng=1
 m=1
 model=sg13_lv_pmos
 spiceprefix=X
 }
-C {lab_wire.sym} 690 -300 0 0 {name=p3 lab=Vpcbias}
+C {lab_wire.sym} 710 -300 0 0 {name=p3 lab=Vpcbias}
 C {lab_wire.sym} 680 -700 0 0 {name=p1 lab=VDD}
 C {lab_wire.sym} 1420 -450 3 0 {name=p4 lab=Vout}
 C {cascodeswitch_pmos.sym} 1160 -460 0 0 {name=xsw}
@@ -150,12 +169,12 @@ C {lab_wire.sym} 1000 -440 0 0 {name=p8 sig_type=std_logic lab=on_n}
 C {vsource.sym} 820 -250 0 0 {name=VSW value="DC \{vdd\} PULSE(0 \{vdd\} \{td\} \{tr\} \{tf\} \{ton\} \{tcyc\})" savecurrent=true}
 C {lab_wire.sym} 820 -460 0 0 {name=p9 sig_type=std_logic lab=switch}
 C {devices/code_shown.sym} 60 -770 0 0 {name=params only_toplevel=false value="* device parameters
-.param l      = 2u
-.param w      = 0.55u
-.param lc     = 0.3u
-.param wc     = 0.3u
-*.param lb     = 16u
-*.param wb     = 1u
+.param l      = 5u
+.param w      = 1.45u
+.param lc     = 0.6u
+.param wc     = 1.2u
+.param lb     = 0.15u
+.param wb     = 6u
 .param lplogic= 0.13u
 .param wplogic= 0.5u
 .param lnlogic= 0.13u
@@ -176,3 +195,19 @@ C {vsource.sym} 1160 -610 0 0 {name=Viswp value=0 savecurrent=true}
 C {vsource.sym} 1160 -350 0 0 {name=Viswn value=0 savecurrent=true}
 C {lab_wire.sym} 1160 -380 0 0 {name=p10 lab=sw_n}
 C {lab_wire.sym} 1160 -560 0 0 {name=p11 lab=sw_p}
+C {sg13g2_pr/sg13_lv_pmos.sym} 740 -640 1 1 {name=Mcbuffer
+l=6u
+w=6u
+ng=1
+m=32
+model=sg13_lv_pmos
+spiceprefix=X
+}
+C {sg13g2_pr/sg13_lv_pmos.sym} 840 -640 1 1 {name=Mbbuffer
+l=6u
+w=6u
+ng=1
+m=32
+model=sg13_lv_pmos
+spiceprefix=X
+}

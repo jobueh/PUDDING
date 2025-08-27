@@ -117,22 +117,22 @@ C {lab_pin.sym} 620 -600 0 0 {name=p3 lab=Vpcbias
 value=0.4}
 C {lab_pin.sym} 920 -720 0 0 {name=p4 lab=Vout}
 C {sg13g2_pr/sg13_lv_pmos.sym} 640 -660 0 1 {name=Mcbias
-l=0.15u
-w=6u
+l=\{lb\}
+w=\{wb\}
 ng=1
 m=1
 model=sg13_lv_pmos
 spiceprefix=X
 }
 C {devices/code_shown.sym} 1140 -990 0 0 {name=params only_toplevel=false value="* device parameters
-.param l      = 2u
-.param w      = 0.55u
+.param l      = 5u
+.param w      = 1.45u
 .param nf     = 1
-.param lc     = 0.3u
-.param wc     = 0.3u
+.param lc     = 0.6u
+.param wc     = 1.2u
 .param nfc    = 1
-.param lb     = 16u
-.param wb     = 1u
+.param lb     = 0.15u
+.param wb     = 12u
 .param nfb    = 1
 .param lnmos  = 8u
 .param wnmos  = 2u
