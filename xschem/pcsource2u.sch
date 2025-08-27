@@ -25,7 +25,7 @@ model=sg13_lv_pmos
 spiceprefix=X
 }
 C {sg13g2_pr/sg13_lv_pmos.sym} 480 -240 0 0 {name=Mcasc
-l=0.3u
+l=0.6u
 w=1.2u
 ng=1
 m=1
