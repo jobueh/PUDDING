@@ -54,11 +54,11 @@ write test_pcascsrc_DC.raw
 set appendwrite
 dc Vout 0 -1.8 -10m VlogI -8 -6 0.5
 write test_pcascsrc_DC.raw
-plot 2*(vout#branch-vprobe#branch)/(vprobe#branch+vout#branch)
-plot vdda vpbias vpcbias vout xref.drain xsrc.drain
-plot @n.xref.xmsrc.nsg13_lv_pmos[gm]/vprobe#branch @n.xref.xmcasc.nsg13_lv_pmos[gm]/vprobe#branch @n.xsrc.xmsrc.nsg13_lv_pmos[gm]/vout#branch @n.xsrc.xmcasc.nsg13_lv_pmos[gm]/vout#branch
-plot @n.xref.xmsrc.nsg13_lv_pmos[gm]/@n.xref.xmsrc.nsg13_lv_pmos[gds] @n.xref.xmcasc.nsg13_lv_pmos[gm]/@n.xref.xmcasc.nsg13_lv_pmos[gds] @n.xsrc.xmsrc.nsg13_lv_pmos[gm]/@n.xsrc.xmsrc.nsg13_lv_pmos[gds] @n.xsrc.xmcasc.nsg13_lv_pmos[gm]/@n.xsrc.xmcasc.nsg13_lv_pmos[gds]
-plot @n.xref.xmsrc.nsg13_lv_pmos[vth] @n.xref.xmcasc.nsg13_lv_pmos[vth] @n.xsrc.xmsrc.nsg13_lv_pmos[vth] @n.xsrc.xmcasc.nsg13_lv_pmos[vth]
+plot title 'voltages' vdda vpbias vpcbias vout xref.drain xsrc.drain
+plot title 'gm/Id' @n.xref.xmsrc.nsg13_lv_pmos[gm]/vprobe#branch @n.xref.xmcasc.nsg13_lv_pmos[gm]/vprobe#branch @n.xsrc.xmsrc.nsg13_lv_pmos[gm]/vout#branch @n.xsrc.xmcasc.nsg13_lv_pmos[gm]/vout#branch
+plot title 'gm/gds' @n.xref.xmsrc.nsg13_lv_pmos[gm]/@n.xref.xmsrc.nsg13_lv_pmos[gds] @n.xref.xmcasc.nsg13_lv_pmos[gm]/@n.xref.xmcasc.nsg13_lv_pmos[gds] @n.xsrc.xmsrc.nsg13_lv_pmos[gm]/@n.xsrc.xmsrc.nsg13_lv_pmos[gds] @n.xsrc.xmcasc.nsg13_lv_pmos[gm]/@n.xsrc.xmcasc.nsg13_lv_pmos[gds]
+plot title 'Vth' @n.xref.xmsrc.nsg13_lv_pmos[vth] @n.xref.xmcasc.nsg13_lv_pmos[vth] @n.xsrc.xmsrc.nsg13_lv_pmos[vth] @n.xsrc.xmcasc.nsg13_lv_pmos[vth]
+plot title 'output/reference current asymmetry' ylimit -2m 2m 2*(vout#branch-vprobe#branch)/(vprobe#branch+vout#branch)
 .endc
 "}
 C {simulator_commands_shown.sym} 40 -690 0 0 {
@@ -66,7 +66,7 @@ name=Libs_Ngspice
 simulator=ngspice
 only_toplevel=false
 value="
-.lib cornerMOSlv.lib mos_tt
+.lib cornerMOSlv.lib mos_ff
 "
       }
 C {launcher.sym} 160 -820 0 0 {name=h3
@@ -132,7 +132,7 @@ C {devices/code_shown.sym} 1140 -990 0 0 {name=params only_toplevel=false value=
 .param wc     = 1.2u
 .param nfc    = 1
 .param lb     = 0.15u
-.param wb     = 12u
+.param wb     = 6u
 .param nfb    = 1
 .param lnmos  = 8u
 .param wnmos  = 2u
@@ -140,7 +140,7 @@ C {devices/code_shown.sym} 1140 -990 0 0 {name=params only_toplevel=false value=
 * instrumentation parameters
 .param logI=-7
 .param vdd=1.6
-.param vout=0.6
+.param vout=0.8
 * simulation parameters
 .param celsius = 25
 .param td     = 20n
