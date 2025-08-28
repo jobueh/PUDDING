@@ -89,20 +89,22 @@ N 540 -580 540 -440 {lab=Vpbias}
 N 420 -360 540 -360 {lab=VDD}
 N 420 -780 420 -360 {lab=VDD}
 C {title.sym} 160 0 0 0 {name=l1 author="Christoph Maier"}
+C {vsource.sym} 1340 -250 0 0 {name=Vout value=\{vdd-vout\} savecurrent=true}
+C {gnd.sym} 1160 -140 0 0 {name=l2 lab=GND}
 C {devices/code_shown.sym} 1380 -730 0 0 {name=NGSPICE only_toplevel=true 
 value="
-.include test_unitsource2u_DC.save
-.temp=\{celsius\}
+.include test_unitsource2u_tran.save
+.temp=27
 .options gmin=1e-15 abstol=1p method=gear
 .options savecurrents
 .control
 save all 
 op
-write test_unitsource2u_DC.raw
+write test_unitsource2u_tran.raw
 set appendwrite
-dc Vout 0 1.6 10m VlogI -8 -6 0.5
-*tran 10p 500n
-write test_unitsource2u_DC.raw
+*dc Vout 0 1.6 10m VlogI -8 -6 0.5
+tran 10p 500n
+write test_switchedsources_tran.raw
 plot title \\"voltages\\" vdd vpbias vpcbias switch on_n on vout 
 plot title \\"switch voltages\\" switch on on_n xsrc.on_n xsrc.off_n xsrc.vcasc xref.drain xsrc.xsrc.drain
 *plot @n.xsw.xmbias.nsg13_lv_pmos[ids] @n.xsw.xmpullup.nsg13_lv_pmos[ids]
@@ -110,7 +112,7 @@ plot viswp#branch-vout#branch viswn#branch
 plot title \\"switch cross and difference currents\\" 0.5*(viswp#branch+viswn#branch-vout#branch) viswp#branch-viswn#branch-vout#branch
 plot title \\"output and reference currents\\" vout#branch vprobe#branch
 plot title \\"output current accuracy\\" 2*(vout#branch-vprobe#branch)/(vprobe#branch+vout#branch)
-plot title \\"output current accuracy\\" ylimit -2m 2m 2*(vout#branch-vprobe#branch)/(vprobe#branch+vout#branch)
+plot title \\"output current accuracy\\" ylimit -20m 20m 2*(vout#branch-vprobe#branch)/(vprobe#branch+vout#branch)
 .endc
 "}
 C {simulator_commands_shown.sym} 60 -230 0 0 {
@@ -156,31 +158,6 @@ xschem raw_read $netlist_dir/[file rootname [file tail [xschem get current_name]
 xschem setprop rect 2 0 fullxzoom
 "
 }
-C {devices/code_shown.sym} 60 -770 0 0 {name=params only_toplevel=false value="* device parameters
-.param l      = 5u
-.param w      = 1.45u
-.param lc     = 0.6u
-.param wc     = 1.2u
-.param lb     = 0.15u
-.param wb     = 6u
-.param lplogic= 0.13u
-.param wplogic= 0.5u
-.param lnlogic= 0.13u
-.param wnlogic= 0.15u
-* instrumentation parameters
-.param logI=-7
-.param vdd=1.6
-.param vout=1
-* simulation parameters
-.param celsius = 27
-.param td     = 10p
-.param tr     = 10p
-.param tf     = 10p
-.param ton    = 50n
-.param tcyc   = 100n
-"}
-C {vsource.sym} 1340 -250 0 0 {name=Vout value=\{vdd-vout\} savecurrent=true}
-C {gnd.sym} 1160 -140 0 0 {name=l2 lab=GND}
 C {vsource.sym} 540 -150 0 1 {name=Vprobe value=0 savecurrent=true}
 C {isource_arith.sym} 540 -250 0 0 {name=G1 CUR=10**V(logI)}
 C {vsource.sym} 980 -150 0 1 {name=VlogI value=\{logI\} savecurrent=true}
@@ -201,6 +178,29 @@ C {lab_wire.sym} 1320 -580 0 0 {name=p4 lab=Vout}
 C {lab_wire.sym} 1100 -560 0 0 {name=p7 sig_type=std_logic lab=on}
 C {lab_wire.sym} 960 -540 0 0 {name=p8 sig_type=std_logic lab=on_n}
 C {vsource.sym} 820 -250 0 0 {name=VSW value="DC \{vdd\} PULSE(0 \{vdd\} \{td\} \{tr\} \{tf\} \{ton\} \{tcyc\})" savecurrent=true}
+C {devices/code_shown.sym} 60 -770 0 0 {name=params only_toplevel=false value="* device parameters
+.param l      = 5u
+.param w      = 1.45u
+.param lc     = 0.6u
+.param wc     = 1.2u
+.param lb     = 0.15u
+.param wb     = 6u
+.param lplogic= 0.13u
+.param wplogic= 0.5u
+.param lnlogic= 0.13u
+.param wnlogic= 0.15u
+* instrumentation parameters
+.param logI=-7
+.param vdd=1.6
+.param vout=1
+* simulation parameters
+.param celsius = 25
+.param td     = 10p
+.param tr     = 10p
+.param tf     = 10p
+.param ton    = 50n
+.param tcyc   = 100n
+"}
 C {sg13g2_pr/sg13_hv_pmos.sym} 940 -720 1 1 {name=Mcbuffer
 l=6u
 w=6u
