@@ -45,7 +45,7 @@ C {gnd.sym} 680 -280 0 0 {name=l2 lab=GND}
 C {devices/code_shown.sym} 40 -390 0 0 {name=NGSPICE only_toplevel=true 
 value="
 .include test_pcascsrc_DC.save
-.param temp=27
+.temp=27
 .options savecurrents
 .control
 save all 
