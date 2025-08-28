@@ -18,7 +18,6 @@ N 620 -220 620 -180 {lab=#net1}
 N 620 -120 620 -100 {lab=GND}
 N 540 -120 540 -100 {lab=GND}
 N 540 -200 540 -180 {lab=logI}
-N 840 -540 1360 -540 {lab=Vpbias}
 N 620 -440 620 -390 {lab=Vpbias}
 N 620 -300 620 -280 {lab=Vpcbias}
 N 620 -300 740 -300 {lab=Vpcbias}
@@ -46,7 +45,7 @@ N 920 -400 920 -100 {lab=GND}
 N 820 -100 920 -100 {lab=GND}
 N 920 -700 1160 -700 {lab=VDD}
 N 820 -220 820 -100 {lab=GND}
-N 620 -100 820 -100 {lab=GND}
+N 780 -100 820 -100 {lab=GND}
 N 820 -460 820 -280 {lab=switch}
 N 820 -460 860 -460 {lab=switch}
 N 1160 -580 1160 -520 {lab=sw_p}
@@ -55,7 +54,6 @@ N 1160 -320 1160 -300 {lab=Vpcbias}
 N 1160 -700 1160 -640 {lab=VDD}
 N 920 -700 920 -520 {lab=VDD}
 N 880 -700 920 -700 {lab=VDD}
-N 740 -620 740 -500 {lab=Vpcbias}
 N 740 -700 740 -660 {lab=VDD}
 N 700 -700 740 -700 {lab=VDD}
 N 770 -660 780 -660 {lab=VDD}
@@ -72,8 +70,14 @@ N 840 -700 880 -700 {lab=VDD}
 N 800 -660 810 -660 {lab=VDD}
 N 800 -700 800 -660 {lab=VDD}
 N 780 -700 800 -700 {lab=VDD}
-N 840 -620 840 -540 {lab=Vpbias}
-N 700 -540 840 -540 {lab=Vpbias}
+N 700 -540 1360 -540 {lab=Vpbias}
+N 740 -620 740 -600 {lab=leak}
+N 780 -600 840 -600 {lab=leak}
+N 840 -620 840 -600 {lab=leak}
+N 780 -120 780 -100 {lab=GND}
+N 620 -100 780 -100 {lab=GND}
+N 780 -600 780 -180 {lab=leak}
+N 740 -600 780 -600 {lab=leak}
 C {title.sym} 160 0 0 0 {name=l1 author="Christoph Maier"}
 C {vsource.sym} 1420 -250 0 0 {name=Vout value=\{vdd-vout\} savecurrent=true}
 C {gnd.sym} 460 -80 0 0 {name=l2 lab=GND}
@@ -89,7 +93,7 @@ op
 write test_switchedsources_tran.raw
 set appendwrite
 *dc Vout 0 1.6 10m VlogI -8 -6 0.5
-tran 10p 500n
+tran 1n 5u
 write test_switchedsources_tran.raw
 plot 2*(vout#branch-vprobe#branch)/(vprobe#branch+vout#branch)
 plot vdd vpbias vpcbias switch on_n off_n vpcasc vout xref.drain xsrc.drain
@@ -166,12 +170,12 @@ C {lab_wire.sym} 1340 -500 0 0 {name=p5 lab=Vpcasc}
 C {switch_logic_nonoverlap.sym} 920 -460 0 0 {name=xlogic}
 C {lab_wire.sym} 1000 -480 0 0 {name=p7 sig_type=std_logic lab=off_n}
 C {lab_wire.sym} 1000 -440 0 0 {name=p8 sig_type=std_logic lab=on_n}
-C {vsource.sym} 820 -250 0 0 {name=VSW value="DC \{vdd\} PULSE(0 \{vdd\} \{td\} \{tr\} \{tf\} \{ton\} \{tcyc\})" savecurrent=true}
+C {vsource.sym} 820 -250 0 0 {name=VSW value="DC \{vdd\} PULSE(\{vdd\} \{vdd\} \{td\} \{tr\} \{tf\} \{ton\} \{tcyc\})" savecurrent=true}
 C {lab_wire.sym} 820 -460 0 0 {name=p9 sig_type=std_logic lab=switch}
 C {devices/code_shown.sym} 60 -770 0 0 {name=params only_toplevel=false value="* device parameters
 .param l      = 5u
 .param w      = 1.45u
-.param lc     = 0.6u
+.param lc     = 0.3u
 .param wc     = 1.2u
 .param lb     = 0.15u
 .param wb     = 6u
@@ -182,14 +186,14 @@ C {devices/code_shown.sym} 60 -770 0 0 {name=params only_toplevel=false value="*
 * instrumentation parameters
 .param logI=-7
 .param vdd=1.6
-.param vout=0.6
+.param vout=0.8
 * simulation parameters
 .param celsius = 25
-.param td     = 10p
+.param td     = 250n
 .param tr     = 10p
 .param tf     = 10p
-.param ton    = 50n
-.param tcyc   = 100n
+.param ton    = 500n
+.param tcyc   = 1u
 "}
 C {vsource.sym} 1160 -610 0 0 {name=Viswp value=0 savecurrent=true}
 C {vsource.sym} 1160 -350 0 0 {name=Viswn value=0 savecurrent=true}
@@ -211,3 +215,5 @@ m=32
 model=sg13_lv_pmos
 spiceprefix=X
 }
+C {vsource.sym} 780 -150 0 1 {name=Vleak value=0 savecurrent=true}
+C {lab_wire.sym} 740 -600 0 0 {name=p12 lab=leak}
