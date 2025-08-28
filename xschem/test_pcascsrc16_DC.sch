@@ -40,7 +40,7 @@ N 720 -800 720 -660 {lab=Vpcbias}
 N 680 -800 720 -800 {lab=Vpcbias}
 N 540 -1000 620 -1000 {lab=VDDA}
 C {title.sym} 160 0 0 0 {name=l1 author="Christoph Maier"}
-C {vsource.sym} 920 -550 0 0 {name=Vout value=-0.6 savecurrent=true}
+C {vsource.sym} 920 -550 0 0 {name=Vout value=\{-vout\} savecurrent=true}
 C {gnd.sym} 680 -280 0 0 {name=l2 lab=GND}
 C {devices/code_shown.sym} 40 -390 0 0 {name=NGSPICE only_toplevel=true 
 value="
@@ -54,8 +54,8 @@ write test_pcascsrc16_DC.raw
 set appendwrite
 dc Vout 0 -1.8 -10m VlogI -8 -6 0.5
 write test_pcascsrc16_DC.raw
-plot 2*(vout#branch/8-vprobe#branch)/(vprobe#branch+vout#branch/8)
-plot vdda vpbias vpcbias vout
+plot title \\"voltages\\" vdda vpbias vpcbias vout
+plot ylimit -2m 2m title \\"output/reference current asymmetry\\" 2*(vout#branch/8-vprobe#branch)/(vprobe#branch+vout#branch/8)
 .endc
 "}
 C {simulator_commands_shown.sym} 40 -690 0 0 {
@@ -106,7 +106,7 @@ C {isource_arith.sym} 620 -550 0 0 {name=G1 CUR=10**V(logI)}
 C {vsource.sym} 540 -350 0 1 {name=VlogI value=-7 savecurrent=true}
 C {lab_pin.sym} 540 -400 0 0 {name=p6 lab=logI}
 C {pcascsrc.sym} 620 -820 0 1 {name=xref[1:0]  l=\{l\} w=\{w\} lc=\{lc\} wc=\{wc\}}
-C {pcascsrc16.sym} 920 -820 0 0 {name=xsrc l=\{l\} w=\{w\} lc=\{lc\} wc=\{wc\}}
+C {pcascsrc.sym} 920 -820 0 0 {name=xsrc[15:0] l=\{l\} w=\{w\} lc=\{lc\} wc=\{wc\}}
 C {vsource.sym} 680 -350 0 1 {name=VDDA value=1.8 savecurrent=true}
 C {lab_pin.sym} 540 -1000 0 0 {name=p1 lab=VDDA}
 C {lab_pin.sym} 620 -740 0 0 {name=p2 lab=Vpbias}
@@ -129,7 +129,7 @@ C {devices/code_shown.sym} 1100 -950 0 0 {name=params only_toplevel=false value=
 .param wc     = 1.2u
 .param nfc    = 1
 .param lb     = 0.15u
-.param wb     = 6u
+.param wb     = 12u
 .param nfb    = 1
 .param lnmos  = 8u
 .param wnmos  = 2u
