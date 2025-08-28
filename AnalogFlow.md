@@ -42,6 +42,9 @@ width: 1.1&mu;m, height 3.9&mu;m
 ![draft: 2 rows of 64 switched cascoded pmos current sources with 2x2 diode connected reference transistors at the ends of the rows](pix/dac128out4in_draft.jpg)  
 
 * [DRC clean 2x64 unit current sources analog-only layout](https://github.com/jobueh/PUDDING/blob/tatzelbranch/gds/dac128out4in.gds)
+  
+![draft: row of 64 switched cascoded pmos current sources with switching logic, with 2 reference transistors at the ends of the rows](pix/unitsource2u66.unwired.jpg)  
+  
 
 * **Design cascode bias generator**  
     * **Create test schematics to characterize g<sub>m</sub>/I<sub>d</sub> and g<sub>m</sub>/g<sub>o</sub> of transistors**  
