@@ -54,11 +54,11 @@ write test_pcsource_DC.raw
 set appendwrite
 dc Vout 0 -1.8 -10m VlogI -8 -6 0.5
 write test_pcsource_DC.raw
-plot 2*(vout#branch-vprobe#branch)/(vprobe#branch+vout#branch)
-plot vdda vpbias vpcbias vout xref.drain xsrc.drain
-plot @n.xref.xmsrc.nsg13_lv_pmos[gm]/vprobe#branch @n.xref.xmcasc.nsg13_lv_pmos[gm]/vprobe#branch @n.xsrc.xmsrc.nsg13_lv_pmos[gm]/vout#branch @n.xsrc.xmcasc.nsg13_lv_pmos[gm]/vout#branch
-plot @n.xref.xmsrc.nsg13_lv_pmos[gm]/@n.xref.xmsrc.nsg13_lv_pmos[gds] @n.xref.xmcasc.nsg13_lv_pmos[gm]/@n.xref.xmcasc.nsg13_lv_pmos[gds] @n.xsrc.xmsrc.nsg13_lv_pmos[gm]/@n.xsrc.xmsrc.nsg13_lv_pmos[gds] @n.xsrc.xmcasc.nsg13_lv_pmos[gm]/@n.xsrc.xmcasc.nsg13_lv_pmos[gds]
-plot @n.xref.xmsrc.nsg13_lv_pmos[vth] @n.xref.xmcasc.nsg13_lv_pmos[vth] @n.xsrc.xmsrc.nsg13_lv_pmos[vth] @n.xsrc.xmcasc.nsg13_lv_pmos[vth]
+plot title ylimit -5m 5m 'output/reference current asymmetry' 2*(vout#branch-vprobe#branch)/(vprobe#branch+vout#branch)
+plot title 'voltages' vdda vpbias vpcbias vout xref.drain xsrc.drain
+plot title 'gm/Id' @n.xref.xmsrc.nsg13_lv_pmos[gm]/vprobe#branch @n.xref.xmcasc.nsg13_lv_pmos[gm]/vprobe#branch @n.xsrc.xmsrc.nsg13_lv_pmos[gm]/vout#branch @n.xsrc.xmcasc.nsg13_lv_pmos[gm]/vout#branch
+plot title 'gm/gds' @n.xref.xmsrc.nsg13_lv_pmos[gm]/@n.xref.xmsrc.nsg13_lv_pmos[gds] @n.xref.xmcasc.nsg13_lv_pmos[gm]/@n.xref.xmcasc.nsg13_lv_pmos[gds] @n.xsrc.xmsrc.nsg13_lv_pmos[gm]/@n.xsrc.xmsrc.nsg13_lv_pmos[gds] @n.xsrc.xmcasc.nsg13_lv_pmos[gm]/@n.xsrc.xmcasc.nsg13_lv_pmos[gds]
+plot title 'Vth' @n.xref.xmsrc.nsg13_lv_pmos[vth] @n.xref.xmcasc.nsg13_lv_pmos[vth] @n.xsrc.xmsrc.nsg13_lv_pmos[vth] @n.xsrc.xmcasc.nsg13_lv_pmos[vth]
 .endc
 "}
 C {simulator_commands_shown.sym} 40 -690 0 0 {

@@ -20,7 +20,7 @@ N 160 -400 260 -400 {lab=off_n}
 N 160 -280 260 -280 {lab=on_n}
 C {sg13g2_pr/sg13_lv_pmos.sym} 280 -400 0 0 {name=Mpullup
 l=0.13u
-w=0.3u
+w=0.5u
 ng=1
 m=1
 model=sg13_lv_pmos
@@ -28,7 +28,7 @@ spiceprefix=X
 }
 C {sg13g2_pr/sg13_lv_pmos.sym} 280 -280 0 0 {name=Mbias
 l=0.13u
-w=0.3u
+w=0.5u
 ng=1
 m=1
 model=sg13_lv_pmos
