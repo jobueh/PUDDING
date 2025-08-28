@@ -116,8 +116,8 @@ I need to get an overview which simulation environment and device dimensions wor
         * cascode 1.2&mu;m/0.6&mu;m  
         * bias transistor 6&mu;m/0.15&mu;m    
         works when not using *leaky* `lvpmos` as bypass capacitors for the bias lines  
-* [test_unitsource2u_DC.sch](https://github.com/jobueh/PUDDING/blob/tatzelbranch/xschem/test_unitsource2u.sch)    
-    with adjustable parameters and number of input and output currents  
+* [test_unitsource2u_DC.sch](https://github.com/jobueh/PUDDING/blob/tatzelbranch/xschem/test_unitsource2u_DC.sch)    
+    with adjustable number of input and output currents  
     * Dimensions as drawn in [pcsource2u.gds](https://github.com/jobueh/PUDDING/blob/tatzelbranch/gds/pcsource2u.gds):  
         * source 1.45&mu;m/5&mu;m  
         * cascode 1.2&mu;m/0.6&mu;m  
@@ -127,6 +127,17 @@ I need to get an overview which simulation environment and device dimensions wor
             *  1 out, 1 in  
             *  64 out, 2 in  
                 With 66 current sources, gate leakage becomes a factor.  
+* [test_unitsource2u_DC.tran](https://github.com/jobueh/PUDDING/blob/tatzelbranch/xschem/test_unitsource2u_tran.sch)    
+    with adjustable number of input and output currents  
+    * Dimensions as drawn in [pcsource2u.gds](https://github.com/jobueh/PUDDING/blob/tatzelbranch/gds/pcsource2u.gds):  
+        * source 1.45&mu;m/5&mu;m  
+        * cascode 1.2&mu;m/0.6&mu;m  
+        * bias transistor 6&mu;m/0.15&mu;m  
+        works for  
+            * 1 out, 1 in  
+                 HVPMOS bypass varactors really make a difference
+            * 64 out, 2 in  
+                 The simulation takes forever  
 
 ## To do  
 

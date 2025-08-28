@@ -23,8 +23,7 @@ N 680 -600 720 -600 {lab=Vpcbias}
 N 420 -220 420 -100 {lab=VSS}
 N 420 -360 420 -280 {lab=VDD}
 N 900 -220 900 -100 {lab=VSS}
-N 900 -500 900 -280 {lab=switch}
-N 900 -500 940 -500 {lab=switch}
+N 900 -300 900 -280 {lab=switch}
 N 1000 -780 1200 -780 {lab=VDD}
 N 720 -600 720 -360 {lab=Vpcbias}
 N 920 -780 920 -740 {lab=VDD}
@@ -77,12 +76,12 @@ N 540 -440 700 -440 {lab=Vpbias}
 N 540 -580 540 -440 {lab=Vpbias}
 N 420 -360 540 -360 {lab=VDD}
 N 420 -780 420 -360 {lab=VDD}
-N 1100 -560 1140 -560 {lab=on}
-N 1100 -560 1100 -520 {lab=on}
-N 1120 -540 1140 -540 {lab=on_n}
-N 1120 -540 1120 -480 {lab=on_n}
-N 1060 -480 1120 -480 {lab=on_n}
-N 1060 -520 1100 -520 {lab=on}
+N 1100 -560 1140 -560 {lab=on[63:0]}
+N 1100 -560 1100 -520 {lab=on[63:0]}
+N 1120 -540 1140 -540 {lab=on_n[63:0]}
+N 1120 -540 1120 -480 {lab=on_n[63:0]}
+N 1060 -480 1120 -480 {lab=on_n[63:0]}
+N 1060 -520 1100 -520 {lab=on[63:0]}
 N 1000 -780 1000 -560 {lab=VDD}
 N 960 -780 1000 -780 {lab=VDD}
 N 420 -100 460 -100 {lab=VSS}
@@ -94,6 +93,7 @@ N 820 -700 820 -680 {lab=GND}
 N 740 -100 900 -100 {lab=VSS}
 N 870 -680 870 -660 {lab=GND}
 N 820 -680 870 -680 {lab=GND}
+N 780 -500 940 -500 {lab=(63*VDD,switch)}
 C {title.sym} 160 0 0 0 {name=l1 author="Christoph Maier"}
 C {vsource.sym} 1340 -250 0 0 {name=Vout value=\{vdd-vout\} savecurrent=true}
 C {gnd.sym} 1160 -140 0 0 {name=l2 lab=GND}
@@ -118,8 +118,8 @@ plot title \\"analog switch currents\\" viswp#branch-vout#branch viswn#branch
 plot title \\"switch cross and difference currents\\" 0.5*(viswp#branch+viswn#branch-vout#branch) viswp#branch-viswn#branch-vout#branch
 plot title \\"gate leakage currents\\" vpbleak#branch vpcleak#branch
 plot title \\"output and reference currents\\" vout#branch vprobe#branch
-plot title \\"output current accuracy\\" 2*(vout#branch-vprobe#branch)/(vprobe#branch+vout#branch)
-plot title \\"output current accuracy\\" ylimit -20m 20m 2*(vout#branch-vprobe#branch)/(vprobe#branch+vout#branch)
+plot title \\"output current accuracy\\" 2*(vout#branch/32-vprobe#branch)/(vprobe#branch+vout#branch/32)
+plot title \\"output current accuracy\\" ylimit -20m 20m 2*(vout#branch/32-vprobe#branch)/(vprobe#branch+vout#branch/32)
 .endc
 "}
 C {simulator_commands_shown.sym} 60 -230 0 0 {
@@ -175,7 +175,7 @@ C {sg13g2_pr/sg13_lv_pmos.sym} 560 -360 0 1 {name=Mcbias
 l=\{lb\}
 w=\{wb\}
 ng=1
-m=1
+m=2
 model=sg13_lv_pmos
 spiceprefix=X
 }
@@ -199,8 +199,7 @@ C {devices/code_shown.sym} 60 -770 0 0 {name=params only_toplevel=false value="*
 .param vdd=1.6
 .param vout=1
 * simulation parameters
-.param celsius = 25
-.param td     = 10p
+.param td     = 25n
 .param tr     = 10p
 .param tf     = 10p
 .param ton    = 50n
@@ -222,9 +221,9 @@ m=32
 model=sg13_hv_pmos
 spiceprefix=X
 }
-C {unitsource2u.sym} 620 -580 0 1 {name=xref}
-C {unitsource2u.sym} 1200 -580 0 0 {name=xsrc}
-C {lab_wire.sym} 900 -500 0 0 {name=p5 sig_type=std_logic lab=switch}
+C {unitsource2u.sym} 620 -580 0 1 {name=xref[1:0]}
+C {unitsource2u.sym} 1200 -580 0 0 {name=xsrc[63:0]}
+C {lab_wire.sym} 900 -300 0 0 {name=p5 sig_type=std_logic lab=switch}
 C {vsource.sym} 1200 -710 0 0 {name=Viswp value=0 savecurrent=true}
 C {vsource.sym} 1200 -450 0 0 {name=Viswn value=0 savecurrent=true}
 C {lab_wire.sym} 1200 -480 0 0 {name=p10 lab=sw_n}
@@ -234,11 +233,12 @@ m=1
 value=1a}
 C {lab_wire.sym} 680 -100 0 0 {name=p9 lab=VSS}
 C {vsource.sym} 1160 -190 0 0 {name=Vgnd value=0 savecurrent=true}
-C {lab_wire.sym} 1100 -560 0 0 {name=p7 sig_type=std_logic lab=on}
-C {lab_wire.sym} 1120 -480 0 0 {name=p8 sig_type=std_logic lab=on_n}
-C {complementary_driver.sym} 1000 -500 0 0 {name=xdigital}
+C {lab_wire.sym} 1100 -560 0 0 {name=p7 sig_type=std_logic lab=on[63:0]}
+C {lab_wire.sym} 1120 -480 0 0 {name=p8 sig_type=std_logic lab=on_n[63:0]}
+C {complementary_driver.sym} 1000 -500 0 0 {name=xdigital[63:0]}
 C {vsource.sym} 1070 -620 1 1 {name=Vpbleak value=0 savecurrent=true}
 C {vsource.sym} 1050 -600 1 0 {name=Vpcleak value=0 savecurrent=true}
 C {lab_wire.sym} 1130 -600 0 0 {name=p12 lab=Vpcleak}
 C {lab_wire.sym} 1130 -620 0 0 {name=p13 lab=Vpbleak}
 C {gnd.sym} 870 -660 0 0 {name=l3 lab=GND}
+C {lab_wire.sym} 920 -500 0 0 {name=p14 sig_type=std_logic lab=(63*VDD,switch)}
