@@ -5,7 +5,6 @@ V {}
 S {}
 E {}
 N 1160 -160 1160 -140 {lab=GND}
-N 740 -100 900 -100 {lab=VSS}
 N 620 -780 620 -660 {lab=VDD}
 N 700 -620 700 -440 {lab=Vpbias}
 N 680 -620 700 -620 {lab=Vpbias}
@@ -43,15 +42,13 @@ N 860 -780 860 -740 {lab=VDD}
 N 820 -780 860 -780 {lab=VDD}
 N 780 -740 790 -740 {lab=VDD}
 N 780 -780 780 -740 {lab=VDD}
-N 820 -700 820 -620 {lab=Vpbias}
-N 700 -620 820 -620 {lab=Vpbias}
+N 700 -620 1040 -620 {lab=Vpbias}
 N 420 -780 620 -780 {lab=VDD}
 N 540 -580 560 -580 {lab=Vpbias}
 N 540 -440 540 -390 {lab=Vpbias}
 N 740 -780 780 -780 {lab=VDD}
 N 1080 -600 1140 -600 {lab=Vpcleak}
-N 920 -700 920 -600 {lab=Vpcbias}
-N 720 -600 920 -600 {lab=Vpcbias}
+N 720 -600 1020 -600 {lab=Vpcbias}
 N 1300 -580 1340 -580 {lab=Vout}
 N 1340 -580 1340 -280 {lab=Vout}
 N 1300 -100 1340 -100 {lab=VSS}
@@ -91,8 +88,12 @@ N 960 -780 1000 -780 {lab=VDD}
 N 420 -100 460 -100 {lab=VSS}
 N 1000 -440 1000 -100 {lab=VSS}
 N 900 -100 1000 -100 {lab=VSS}
-N 920 -600 1020 -600 {lab=Vpcbias}
-N 820 -620 1040 -620 {lab=Vpbias}
+N 920 -700 920 -680 {lab=GND}
+N 870 -680 920 -680 {lab=GND}
+N 820 -700 820 -680 {lab=GND}
+N 740 -100 900 -100 {lab=VSS}
+N 870 -680 870 -660 {lab=GND}
+N 820 -680 870 -680 {lab=GND}
 C {title.sym} 160 0 0 0 {name=l1 author="Christoph Maier"}
 C {vsource.sym} 1340 -250 0 0 {name=Vout value=\{vdd-vout\} savecurrent=true}
 C {gnd.sym} 1160 -140 0 0 {name=l2 lab=GND}
@@ -240,3 +241,4 @@ C {vsource.sym} 1070 -620 1 1 {name=Vpbleak value=0 savecurrent=true}
 C {vsource.sym} 1050 -600 1 0 {name=Vpcleak value=0 savecurrent=true}
 C {lab_wire.sym} 1130 -600 0 0 {name=p12 lab=Vpcleak}
 C {lab_wire.sym} 1130 -620 0 0 {name=p13 lab=Vpbleak}
+C {gnd.sym} 870 -660 0 0 {name=l3 lab=GND}
