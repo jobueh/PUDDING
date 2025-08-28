@@ -54,8 +54,9 @@ write test_pcascsrc_mult_DC.raw
 set appendwrite
 dc Vout 0 -1.8 -10m VlogI -7.5 -5 0.5
 write test_pcascsrc_mult_DC.raw
-plot title \\"voltages\\" vdda vpbias vpcbias vout
-plot ylimit -2m 2m title \\"output/reference current asymmetry\\" 2*(vout#branch/32-vprobe#branch)/(vprobe#branch+vout#branch/32)
+plot title \\"voltages\\" vdda vpbias vpcbias \\"xsrc[0].drain\\" \\"xref[0].drain\\" vout
+plot title \\"output/reference current asymmetry\\" 2*(vout#branch/16-vprobe#branch)/(vprobe#branch+vout#branch/16)
+plot ylimit -4m 4m title \\"output/reference current asymmetry\\" 2*(vout#branch/16-vprobe#branch)/(vprobe#branch+vout#branch/16)
 .endc
 "}
 C {simulator_commands_shown.sym} 40 -690 0 0 {
@@ -105,8 +106,8 @@ C {vsource.sym} 620 -450 0 1 {name=Vprobe value=0 savecurrent=true}
 C {isource_arith.sym} 620 -550 0 0 {name=G1 CUR=10**V(logI)}
 C {vsource.sym} 540 -350 0 1 {name=VlogI value=-7 savecurrent=true}
 C {lab_pin.sym} 540 -400 0 0 {name=p6 lab=logI}
-C {pcascsrc.sym} 620 -820 0 1 {name=xref[7:0]  l=\{l\} w=\{w\} lc=\{lc\} wc=\{wc\}}
-C {pcascsrc.sym} 920 -820 0 0 {name=xsrc[255:0] l=\{l\} w=\{w\} lc=\{lc\} wc=\{wc\}}
+C {pcascsrc.sym} 620 -820 0 1 {name=xref[1:0]  l=\{l\} w=\{w\} lc=\{lc\} wc=\{wc\}}
+C {pcascsrc.sym} 920 -820 0 0 {name=xsrc[31:0] l=\{l\} w=\{w\} lc=\{lc\} wc=\{wc\}}
 C {vsource.sym} 680 -350 0 1 {name=VDDA value=1.8 savecurrent=true}
 C {lab_pin.sym} 540 -1000 0 0 {name=p1 lab=VDDA}
 C {lab_pin.sym} 620 -740 0 0 {name=p2 lab=Vpbias}
@@ -117,7 +118,7 @@ C {sg13g2_pr/sg13_lv_pmos.sym} 640 -660 0 1 {name=Mcbias
 l=\{lb\}
 w=\{wb\}
 ng=1
-m=8
+m=2
 model=sg13_lv_pmos
 spiceprefix=X
 }
