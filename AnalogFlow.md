@@ -79,6 +79,37 @@ width: 1.1&mu;m, height 3.9&mu;m
     * so the connections to the switch/cascode transistors can be routed on top of the current sources without adverse effects on matching.  
     * `metal1` density rules are met without random `metal1` fill on the most mismatch sensitive analog transistors.  
 
+#### The current mirror design isn't as robust to size variations as expected  
+
+I need to get an overview which simulation environment and device dimensions work and which don't.  
+
+* [test_pcsource_DC.sch](https://github.com/jobueh/PUDDING/blob/tatzelbranch/xschem/test_pcsource_DC.sch)    
+    * Original dimensions:  
+        * source 0.55&mu;m/2&mu;m  
+        * cascode 0.3&mu;m/0.3&mu;m  
+        * bias transistor 6&mu;m/0.15&mu;m  
+    look sane at `tt` corner, 27&deg;C.  
+* [test_pcascsrc_DC.sch](https://github.com/jobueh/PUDDING/blob/tatzelbranch/xschem/test_pcascsrc_DC.sch)    
+    with adjustable parameters  
+    * Dimensions as drawn in [pcsource2u.gds](https://github.com/jobueh/PUDDING/blob/tatzelbranch/gds/pcsource2u.gds):  
+        * source 1.45&mu;m/5&mu;m  
+        * cascode 1.2&mu;m/0.6&mu;m  
+        * bias transistor 3&mu;m/0.15&mu;m, 6&mu;m/0.15&mu;m 12&mu;m/0.15&mu;m  
+    look sane at `tt`, `ss`, `ff` corners at -55&deg;C, 27&deg;C, 150&deg;C.  
+    Something sligthly weird happens at `ff` corner for large output voltage drops and I<sub>ref</sub>=10nA.  
+* [test_pcascsrc_mult_DC.sch](https://github.com/jobueh/PUDDING/blob/tatzelbranch/xschem/test_pcascsrc_mult_DC.sch)    
+    with adjustable parameters and number of input and output currents  
+    * Dimensions as drawn in [pcsource2u.gds](https://github.com/jobueh/PUDDING/blob/tatzelbranch/gds/pcsource2u.gds):  
+        * source 1.45&mu;m/5&mu;m  
+        * cascode 1.2&mu;m/0.6&mu;m  
+        * bias transistor 6&mu;m/0.15&mu;m  
+        works for  
+            *  32 out, 2 in  
+            *  64 out, 2 in  
+            * 128 out, 4 in  
+        DC OP convergence problems for  
+            * 256 out, 8 in  
+
 ## To do  
 
 * Extract post-layout netlist with parasitics  
