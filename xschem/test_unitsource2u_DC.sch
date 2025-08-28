@@ -5,15 +5,15 @@ V {}
 S {}
 E {}
 N 1160 -160 1160 -140 {lab=GND}
-N 820 -100 980 -100 {lab=VSS}
+N 740 -100 900 -100 {lab=VSS}
 N 620 -780 620 -660 {lab=VDD}
 N 700 -620 700 -440 {lab=Vpbias}
 N 680 -620 700 -620 {lab=Vpbias}
 N 1340 -220 1340 -100 {lab=VSS}
 N 540 -220 540 -180 {lab=#net1}
 N 540 -120 540 -100 {lab=VSS}
-N 980 -120 980 -100 {lab=VSS}
-N 980 -200 980 -180 {lab=logI}
+N 460 -120 460 -100 {lab=VSS}
+N 460 -200 460 -180 {lab=logI}
 N 1080 -620 1140 -620 {lab=leak}
 N 540 -300 540 -280 {lab=Vpcbias}
 N 540 -300 720 -300 {lab=Vpcbias}
@@ -23,11 +23,10 @@ N 580 -360 720 -360 {lab=Vpcbias}
 N 680 -600 720 -600 {lab=Vpcbias}
 N 420 -220 420 -100 {lab=VSS}
 N 420 -360 420 -280 {lab=VDD}
-N 820 -220 820 -100 {lab=VSS}
-N 740 -100 820 -100 {lab=VSS}
-N 820 -460 820 -280 {lab=switch}
-N 820 -460 860 -460 {lab=switch}
-N 980 -780 1200 -780 {lab=VDD}
+N 900 -220 900 -100 {lab=VSS}
+N 900 -500 900 -280 {lab=switch}
+N 900 -500 940 -500 {lab=switch}
+N 1000 -780 1200 -780 {lab=VDD}
 N 720 -600 720 -360 {lab=Vpcbias}
 N 940 -780 940 -740 {lab=VDD}
 N 900 -780 940 -780 {lab=VDD}
@@ -46,11 +45,6 @@ N 800 -740 810 -740 {lab=VDD}
 N 800 -780 800 -740 {lab=VDD}
 N 840 -700 840 -620 {lab=Vpbias}
 N 700 -620 840 -620 {lab=Vpbias}
-N 960 -460 980 -460 {lab=on_n}
-N 960 -540 960 -460 {lab=on_n}
-N 960 -540 1140 -540 {lab=on_n}
-N 1060 -460 1100 -460 {lab=on}
-N 940 -460 960 -460 {lab=on_n}
 N 420 -780 620 -780 {lab=VDD}
 N 540 -580 560 -580 {lab=Vpbias}
 N 540 -440 540 -390 {lab=Vpbias}
@@ -62,7 +56,7 @@ N 1300 -580 1340 -580 {lab=Vout}
 N 1340 -580 1340 -280 {lab=Vout}
 N 1300 -100 1340 -100 {lab=VSS}
 N 1100 -560 1140 -560 {lab=on}
-N 1100 -560 1100 -460 {lab=on}
+N 1100 -560 1100 -520 {lab=on}
 N 680 -560 740 -560 {lab=VDD}
 N 740 -780 740 -560 {lab=VDD}
 N 620 -780 740 -780 {lab=VDD}
@@ -73,7 +67,7 @@ N 1200 -680 1200 -660 {lab=sw_p}
 N 1200 -780 1200 -740 {lab=VDD}
 N 1200 -500 1200 -480 {lab=sw_n}
 N 1200 -240 1200 -100 {lab=VSS}
-N 980 -100 1200 -100 {lab=VSS}
+N 1000 -100 1200 -100 {lab=VSS}
 N 1300 -580 1300 -280 {lab=Vout}
 N 1260 -580 1300 -580 {lab=Vout}
 N 1300 -220 1300 -100 {lab=VSS}
@@ -81,7 +75,7 @@ N 1200 -100 1300 -100 {lab=VSS}
 N 1160 -240 1160 -220 {lab=VSS}
 N 1160 -240 1200 -240 {lab=VSS}
 N 1200 -420 1200 -240 {lab=VSS}
-N 420 -100 540 -100 {lab=VSS}
+N 460 -100 540 -100 {lab=VSS}
 N 620 -500 620 -100 {lab=VSS}
 N 540 -100 620 -100 {lab=VSS}
 N 540 -440 700 -440 {lab=Vpbias}
@@ -89,6 +83,15 @@ N 540 -580 540 -440 {lab=Vpbias}
 N 420 -360 540 -360 {lab=VDD}
 N 420 -780 420 -360 {lab=VDD}
 N 840 -620 1020 -620 {lab=Vpbias}
+N 420 -100 460 -100 {lab=VSS}
+N 1120 -540 1140 -540 {lab=on_n}
+N 1120 -540 1120 -480 {lab=on_n}
+N 1060 -480 1120 -480 {lab=on_n}
+N 1000 -780 1000 -560 {lab=VDD}
+N 980 -780 1000 -780 {lab=VDD}
+N 1000 -440 1000 -100 {lab=VSS}
+N 900 -100 1000 -100 {lab=VSS}
+N 1060 -520 1100 -520 {lab=on}
 C {title.sym} 160 0 0 0 {name=l1 author="Christoph Maier"}
 C {devices/code_shown.sym} 1380 -730 0 0 {name=NGSPICE only_toplevel=true 
 value="
@@ -185,8 +188,8 @@ C {vsource.sym} 1340 -250 0 0 {name=Vout value=\{vdd-vout\} savecurrent=true}
 C {gnd.sym} 1160 -140 0 0 {name=l2 lab=GND}
 C {vsource.sym} 540 -150 0 1 {name=Vprobe value=0 savecurrent=true}
 C {isource_arith.sym} 540 -250 0 0 {name=G1 CUR=10**V(logI)}
-C {vsource.sym} 980 -150 0 1 {name=VlogI value=\{logI\} savecurrent=true}
-C {lab_pin.sym} 980 -200 0 0 {name=p6 lab=logI}
+C {vsource.sym} 460 -150 0 1 {name=VlogI value=\{logI\} savecurrent=true}
+C {lab_pin.sym} 460 -200 0 0 {name=p6 lab=logI}
 C {vsource.sym} 420 -250 0 1 {name=VDDA value=\{vdd\} savecurrent=true}
 C {lab_wire.sym} 820 -620 0 0 {name=p2 lab=Vpbias}
 C {sg13g2_pr/sg13_lv_pmos.sym} 560 -360 0 1 {name=Mcbias
@@ -201,8 +204,8 @@ C {lab_wire.sym} 920 -600 0 0 {name=p3 lab=Vpcbias}
 C {lab_wire.sym} 680 -780 0 0 {name=p1 lab=VDD}
 C {lab_wire.sym} 1320 -580 0 0 {name=p4 lab=Vout}
 C {lab_wire.sym} 1100 -560 0 0 {name=p7 sig_type=std_logic lab=on}
-C {lab_wire.sym} 960 -540 0 0 {name=p8 sig_type=std_logic lab=on_n}
-C {vsource.sym} 820 -250 0 0 {name=VSW value="DC \{vdd\} PULSE(0 \{vdd\} \{td\} \{tr\} \{tf\} \{ton\} \{tcyc\})" savecurrent=true}
+C {lab_wire.sym} 1120 -480 0 0 {name=p8 sig_type=std_logic lab=on_n}
+C {vsource.sym} 900 -250 0 0 {name=VSW value="DC \{vdd\} PULSE(0 \{vdd\} \{td\} \{tr\} \{tf\} \{ton\} \{tcyc\})" savecurrent=true}
 C {sg13g2_pr/sg13_hv_pmos.sym} 940 -720 1 1 {name=Mcbuffer
 l=6u
 w=6u
@@ -219,11 +222,9 @@ m=32
 model=sg13_hv_pmos
 spiceprefix=X
 }
-C {sg13g2_stdcells/sg13g2_inv_1.sym} 900 -460 2 1 {name=x0 VDD=VDD VSS=VSS prefix=sg13g2_ }
-C {sg13g2_stdcells/sg13g2_inv_1.sym} 1020 -460 2 1 {name=x1 VDD=VDD VSS=VSS prefix=sg13g2_ }
 C {unitsource2u.sym} 620 -580 0 1 {name=xref[1:0]}
 C {unitsource2u.sym} 1200 -580 0 0 {name=xsrc[63:0]}
-C {lab_wire.sym} 820 -460 0 0 {name=p5 sig_type=std_logic lab=switch}
+C {lab_wire.sym} 900 -500 0 0 {name=p5 sig_type=std_logic lab=switch}
 C {vsource.sym} 1200 -710 0 0 {name=Viswp value=0 savecurrent=true}
 C {vsource.sym} 1200 -450 0 0 {name=Viswn value=0 savecurrent=true}
 C {lab_wire.sym} 1200 -480 0 0 {name=p10 lab=sw_n}
@@ -235,3 +236,4 @@ C {lab_wire.sym} 680 -100 0 0 {name=p9 lab=VSS}
 C {vsource.sym} 1160 -190 0 0 {name=Vgnd value=0 savecurrent=true}
 C {vsource.sym} 1050 -620 1 1 {name=Vleak value=0 savecurrent=true}
 C {lab_wire.sym} 1120 -620 0 0 {name=p12 lab=leak}
+C {complementary_driver.sym} 1000 -500 0 0 {name=xdigital}
