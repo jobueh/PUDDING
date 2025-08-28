@@ -14,7 +14,7 @@ N 540 -220 540 -180 {lab=#net1}
 N 540 -120 540 -100 {lab=VSS}
 N 980 -120 980 -100 {lab=VSS}
 N 980 -200 980 -180 {lab=logI}
-N 840 -620 1140 -620 {lab=Vpbias}
+N 1080 -620 1140 -620 {lab=leak}
 N 540 -300 540 -280 {lab=Vpcbias}
 N 540 -300 720 -300 {lab=Vpcbias}
 N 540 -330 540 -300 {lab=Vpcbias}
@@ -88,6 +88,7 @@ N 540 -440 700 -440 {lab=Vpbias}
 N 540 -580 540 -440 {lab=Vpbias}
 N 420 -360 540 -360 {lab=VDD}
 N 420 -780 420 -360 {lab=VDD}
+N 840 -620 1020 -620 {lab=Vpbias}
 C {title.sym} 160 0 0 0 {name=l1 author="Christoph Maier"}
 C {devices/code_shown.sym} 1380 -730 0 0 {name=NGSPICE only_toplevel=true 
 value="
@@ -100,17 +101,18 @@ save all
 op
 write test_unitsource2u_DC.raw
 set appendwrite
-dc Vout 0 1.6 10m VlogI -8 -6 0.5
+dc Vout 0 1.6 10m VlogI -8 -5 0.5
 *tran 10p 500n
 write test_unitsource2u_DC.raw
 plot title \\"voltages\\" vdd vpbias vpcbias switch on_n on vout 
 plot title \\"switch voltages\\" switch on on_n xsrc.on_n xsrc.off_n xsrc.vcasc xref.drain xsrc.xsrc.drain
 *plot @n.xsw.xmbias.nsg13_lv_pmos[ids] @n.xsw.xmpullup.nsg13_lv_pmos[ids]
-plot viswp#branch-vout#branch viswn#branch
+plot title \\"digital switch block currents\\" viswp#branch-vout#branch viswn#branch
 plot title \\"switch cross and difference currents\\" 0.5*(viswp#branch+viswn#branch-vout#branch) viswp#branch-viswn#branch-vout#branch
+plot title \\"Vpbias leakage\\" vleak#branch
 plot title \\"output and reference currents\\" vout#branch vprobe#branch
-plot title \\"output current accuracy\\" 2*(vout#branch-vprobe#branch)/(vprobe#branch+vout#branch)
-plot title \\"output current accuracy\\" ylimit -2m 2m 2*(vout#branch-vprobe#branch)/(vprobe#branch+vout#branch)
+plot title \\"output current accuracy\\" 2*(vout#branch/32-vprobe#branch)/(vprobe#branch+vout#branch/32)
+plot title \\"output current accuracy\\" ylimit -40m 40m 2*(vout#branch/32-vprobe#branch)/(vprobe#branch+vout#branch/32)
 .endc
 "}
 C {simulator_commands_shown.sym} 60 -230 0 0 {
@@ -191,7 +193,7 @@ C {sg13g2_pr/sg13_lv_pmos.sym} 560 -360 0 1 {name=Mcbias
 l=\{lb\}
 w=\{wb\}
 ng=1
-m=1
+m=2
 model=sg13_lv_pmos
 spiceprefix=X
 }
@@ -219,8 +221,8 @@ spiceprefix=X
 }
 C {sg13g2_stdcells/sg13g2_inv_1.sym} 900 -460 2 1 {name=x0 VDD=VDD VSS=VSS prefix=sg13g2_ }
 C {sg13g2_stdcells/sg13g2_inv_1.sym} 1020 -460 2 1 {name=x1 VDD=VDD VSS=VSS prefix=sg13g2_ }
-C {unitsource2u.sym} 620 -580 0 1 {name=xref}
-C {unitsource2u.sym} 1200 -580 0 0 {name=xsrc}
+C {unitsource2u.sym} 620 -580 0 1 {name=xref[1:0]}
+C {unitsource2u.sym} 1200 -580 0 0 {name=xsrc[63:0]}
 C {lab_wire.sym} 820 -460 0 0 {name=p5 sig_type=std_logic lab=switch}
 C {vsource.sym} 1200 -710 0 0 {name=Viswp value=0 savecurrent=true}
 C {vsource.sym} 1200 -450 0 0 {name=Viswn value=0 savecurrent=true}
@@ -231,3 +233,5 @@ m=1
 value=1a}
 C {lab_wire.sym} 680 -100 0 0 {name=p9 lab=VSS}
 C {vsource.sym} 1160 -190 0 0 {name=Vgnd value=0 savecurrent=true}
+C {vsource.sym} 1050 -620 1 1 {name=Vleak value=0 savecurrent=true}
+C {lab_wire.sym} 1120 -620 0 0 {name=p12 lab=leak}
