@@ -96,7 +96,7 @@ I need to get an overview which simulation environment and device dimensions wor
         * cascode 1.2&mu;m/0.6&mu;m  
         * bias transistor 3&mu;m/0.15&mu;m, 6&mu;m/0.15&mu;m 12&mu;m/0.15&mu;m  
     look sane at `tt`, `ss`, `ff` corners at -55&deg;C, 27&deg;C, 150&deg;C.  
-    Something sligthly weird happens at `ff` corner for large output voltage drops and I<sub>ref</sub>=10nA.  
+    ***Gate leakage*** becomes a factor, especially at `ff` corner for large output voltage drops and I<sub>ref</sub>=10nA.  
 * [test_pcascsrc_mult_DC.sch](https://github.com/jobueh/PUDDING/blob/tatzelbranch/xschem/test_pcascsrc_mult_DC.sch)    
     with adjustable parameters and number of input and output currents  
     * Dimensions as drawn in [pcsource2u.gds](https://github.com/jobueh/PUDDING/blob/tatzelbranch/gds/pcsource2u.gds):  
@@ -109,6 +109,24 @@ I need to get an overview which simulation environment and device dimensions wor
             * 128 out, 4 in  
         DC OP convergence problems for  
             * 256 out, 8 in  
+* [test_switchedsources_tran.sch](https://github.com/jobueh/PUDDING/blob/tatzelbranch/xschem/test_switchedsources_tran.sch)    
+    with adjustable parameters and number of input and output currents  
+    * Dimensions as drawn in [pcsource2u.gds](https://github.com/jobueh/PUDDING/blob/tatzelbranch/gds/pcsource2u.gds):  
+        * source 1.45&mu;m/5&mu;m  
+        * cascode 1.2&mu;m/0.6&mu;m  
+        * bias transistor 6&mu;m/0.15&mu;m    
+        works when not using *leaky* `lvpmos` as bypass capacitors for the bias lines  
+* [test_unitsource2u_DC.sch](https://github.com/jobueh/PUDDING/blob/tatzelbranch/xschem/test_unitsource2u.sch)    
+    with adjustable parameters and number of input and output currents  
+    * Dimensions as drawn in [pcsource2u.gds](https://github.com/jobueh/PUDDING/blob/tatzelbranch/gds/pcsource2u.gds):  
+        * source 1.45&mu;m/5&mu;m  
+        * cascode 1.2&mu;m/0.6&mu;m  
+        * bias transistor 6&mu;m/0.15&mu;m    
+        works when not using *leaky* `lvpmos` as bypass capacitors for the bias lines  
+        works for  
+            *  1 out, 1 in  
+            *  64 out, 2 in  
+                With 66 current sources, gate leakage becomes a factor.  
 
 ## To do  
 
