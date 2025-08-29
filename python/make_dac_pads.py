@@ -29,13 +29,28 @@ for n, origin, offset, label in zip(columns, origins, offsets, labels):
         for coordinate, suffix in zip(coordinates, suffixes):
             # element-wise addition: coordinate + source*offset
             x, y = (c + source * m + o for c, m, o in zip(coordinate, offset, origin))
-
             top.shapes(l_m2pin).insert(pya.Box(x - half, y - half, x + half, y + half))
 
             text = pya.Text(label + suffix + f"[{source}]", x, y)
             text.halign = pya.Text.HAlignCenter
             text.valign = pya.Text.VAlignCenter
             top.shapes(l_m2pin).insert(text)
+
+# Draw shapes of upside down row
+toprow=(130000, 16370)
+for n, origin, offset, label, in zip(columns, origins, offsets, labels):
+    for source in range(n):
+        for coordinate, suffix in zip(coordinates, suffixes):
+            # element-wise addition: coordinate + source*offset
+            x, y = (t - (c + source * m + o) for t, c, m, o in zip(toprow, coordinate, offset, origin))
+            top.shapes(l_m2pin).insert(pya.Box(x - half, y - half, x + half, y + half))
+
+            index= source + n
+            text = pya.Text(label + suffix + f"[{index}]", x, y)
+            text.halign = pya.Text.HAlignCenter
+            text.valign = pya.Text.VAlignCenter
+            top.shapes(l_m2pin).insert(text)
+
 # Save GDS
 layout.write("dac_pads.gds")
 print("Wrote dac_pads.gds")
