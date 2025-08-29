@@ -132,7 +132,7 @@ C {devices/code_shown.sym} 1140 -990 0 0 {name=params only_toplevel=false value=
 .param wc     = 1.2u
 .param nfc    = 1
 .param lb     = 0.15u
-.param wb     = 6u
+.param wb     = 5.85u
 .param nfb    = 1
 .param lnmos  = 8u
 .param wnmos  = 2u

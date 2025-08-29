@@ -176,7 +176,7 @@ C {devices/code_shown.sym} 60 -770 0 0 {name=params only_toplevel=false value="*
 .param lc     = 0.6u
 .param wc     = 1.2u
 .param lb     = 0.15u
-.param wb     = 6u
+.param wb     = 5.85u
 .param lplogic= 0.13u
 .param wplogic= 0.5u
 .param lnlogic= 0.13u
