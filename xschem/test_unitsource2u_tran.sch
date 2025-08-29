@@ -103,22 +103,22 @@ value="
 .options gmin=1e-15 abstol=1p method=gear
 *.options savecurrents
 .control
-*save all 
+save all 
 op
 write test_unitsource2u_tran.raw
 set appendwrite
 *dc Vout 0 1.6 10m VlogI -8 -6 0.5
-tran 10p 400n
+tran 10p 200n
 write test_switchedsources_tran.raw
-plot title \\"voltages\\" vdd vpbias vpcbias switch on_n on vout 
-plot title \\"switch voltages\\" switch on on_n xsrc.on_n xsrc.off_n xsrc.vcasc xref.xsrc.drain xsrc.xsrc.drain
+plot title \\"voltages\\" vdd vpbias vpcbias switch \\"on_n[0]\\" \\"on[0]\\" vout 
+plot title \\"switch voltages\\" switch \\"on[0]\\" \\"on_n[0]\\" \\"xsrc.on_n[0]\\" \\"xsrc.off_n[0]\\" \\"xsrc[0].vcasc\\" \\"xref[0].xsrc.drain\\" \\"xsrc[0].xsrc.drain\\"
 *plot @n.xsw.xmbias.nsg13_lv_pmos[ids] @n.xsw.xmpullup.nsg13_lv_pmos[ids]
 plot title \\"analog switch currents\\" viswp#branch-vout#branch viswn#branch
 plot title \\"switch cross and difference currents\\" 0.5*(viswp#branch+viswn#branch-vout#branch) viswp#branch-viswn#branch-vout#branch
 plot title \\"gate leakage currents\\" vpbleak#branch vpcleak#branch
 plot title \\"output and reference currents\\" vout#branch vprobe#branch
 plot title \\"output current accuracy\\" 2*(vout#branch/32-vprobe#branch)/(vprobe#branch+vout#branch/32)
-plot title \\"output current accuracy\\" ylimit -20m 20m 2*(vout#branch/32-vprobe#branch)/(vprobe#branch+vout#branch/32)
+plot title \\"output current accuracy\\" ylimit -50m 50m 2*(vout#branch/32-vprobe#branch)/(vprobe#branch+vout#branch/32)
 .endc
 "}
 C {simulator_commands_shown.sym} 60 -230 0 0 {
