@@ -4,3 +4,9 @@ cd mag
 gds read ../gds/dac2u128out4in.gds
 load DAC2U128OUT4IN
 lef write dac2u128out4in.lef
+
+lef write dac2u128out4in.lef -pinonly
+doesn't make that much of a difference
+
+lef write dac2u128out4in.lef -hide
+produces a much less cluttered .lef file
