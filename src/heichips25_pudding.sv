@@ -21,8 +21,8 @@ module heichips25_pudding(
 
     logic datum, shift, transfer, dir;
 
-    logic[255:0] daisychain;
-    logic[255:0] state;
+    logic[127:0] daisychain;
+    logic[127:0] state;
 
     assign datum    = ui_in[0];
     assign shift    = ui_in[1];
@@ -47,14 +47,14 @@ begin
         end
         else if (shift)
         begin
-            daisychain <= {daisychain[255:0],datum};
+            daisychain <= {daisychain[126:0],datum};
         end
     end
 end
 
     
-assign uo_out  = daisychain[255:248];
-assign uio_out = state[255:248];
+assign uo_out  = daisychain[127:120];
+assign uio_out = state[127:120];
 assign uio_oe  = 8'hFF;
 
 endmodule
