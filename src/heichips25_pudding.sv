@@ -17,72 +17,44 @@ module heichips25_pudding(
 );
 
     // List all unused inputs to prevent warnings
-    wire _unused = &{ena, uio_in[7:0]};
-	
-    logic [7:0] count;
-    logic dir_up = 1;
-    wire shift_en;
-    assign shift_en = uio_in[0];
-    
-    wire thermo_switch;
-    assign thermo_switch = uio_in[1];
-    
-	reg [255:0] thermo;
-	reg [255:0] thermo_shift;
-	reg [255:0] thermo_out;
-	
+    wire _unused = &{ena, uio_in[7:0], ui_in[7:4]};
 
-    always_ff @(posedge clk) begin
-        if (!rst_n) begin
-            count <= '0;
-        end else begin
-            if (ui_in[0]) begin
-                if (dir_up) begin 
-                	count <= count + 1;
-                	if (count == 254) begin
-                		dir_up <= 0;
-                	end
-                end else begin
-                	count <= count - 1;
-                	if (count == 1) begin
-                		dir_up <= 1;
-                	end
-                end                
-            end
+    logic datum, shift, transfer, dir;
+
+    logic[127:0] daisychain;
+    logic[127:0] state;
+
+    assign datum    = ui_in[0];
+    assign shift    = ui_in[1];
+    assign transfer = ui_in[2];
+    assign dir      = ui_in[3];
+
+always_ff @(posedge clk) 
+begin
+    if (!rst_n) 
+    begin
+        daisychain <= '0;
+        state <= '0;
+    end 
+    else 
+    begin
+        if (transfer) 
+        begin
+            if (dir)
+                state <= daisychain;
+            else
+                daisychain <= state;
+        end
+        else if (shift)
+        begin
+            daisychain <= {daisychain[126:0],datum};
         end
     end
+end
+
     
-	thermometer_encoder #(
-		.IN_WIDTH (8),
-		.OUT_WIDTH (256))
-	te_inst(
-		.din (count),
-		.thermo (thermo)
-	);
-	
-	// shift register takes 8 bits at a time
-	always_ff @(posedge clk) begin
-        if (!rst_n) begin
-            thermo_shift <= '0;
-        end else if (shift_en) begin
-        	thermo_shift <= {thermo_shift[255-8:0], ui_in}; 
-        end
-    end
-    
-    // switch to choose between standard thermo encoder (thermo_switch = 0) or shift register (thermo_switch = 1)
-    always_ff @(posedge clk) begin
-        if (!rst_n) begin
-            thermo_out <= '0;
-        end else if (thermo_switch) begin
-        	thermo_out <= thermo_shift;
-        end else begin
-        	thermo_out <= thermo;
-        end
-    end
-    
-    
-    assign uo_out  = thermo_out[7:0];
-    assign uio_out = thermo_out[15:8];
-    assign uio_oe  = thermo_out[23:16];
+assign uo_out  = daisychain[127:120];
+assign uio_out = state[127:120];
+assign uio_oe  = 8'hFF;
 
 endmodule

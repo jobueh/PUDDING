@@ -3,7 +3,6 @@
 DESIGN_NAME: heichips25_pudding
 VERILOG_FILES: 
 - dir::../src/heichips25_pudding.sv
-- dir::../src/thermometer_encoder.sv
 
 CLOCK_PORT: clk
 CLOCK_PERIOD: 10 # 10ns = 100MHz
@@ -35,4 +34,4 @@ RT_MAX_LAYER: TopMetal1
 
 # reserve space for the logo
 FP_OBSTRUCTIONS: 
-- [100, 0, 500, 200]
+- [300, 0, 500, 200]
