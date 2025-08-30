@@ -18,12 +18,12 @@ FP_SIZING: absolute
 PL_TARGET_DENSITY_PCT: 80
 
 # Small DEF template
-DIE_AREA: [0, 0, 500, 200]
-FP_DEF_TEMPLATE: dir::def/heichips25_template_small.def
+#DIE_AREA: [0, 0, 500, 200]
+#FP_DEF_TEMPLATE: dir::def/heichips25_template_small.def
 
 # Large DEF template
-#DIE_AREA: [0, 0, 500, 415]
-#FP_DEF_TEMPLATE: dir::def/heichips25_template_large.def
+DIE_AREA: [0, 0, 500, 415]
+FP_DEF_TEMPLATE: dir::def/heichips25_template_large.def
 
 # Don't use power rings or TopMetal2 layer
 PDN_MULTILAYER: false
@@ -34,4 +34,4 @@ RT_MAX_LAYER: TopMetal1
 
 # reserve space for the logo
 FP_OBSTRUCTIONS: 
-- [300, 0, 500, 200]
+- [350, 168, 500, 247]
