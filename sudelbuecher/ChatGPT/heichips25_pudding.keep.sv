@@ -59,16 +59,16 @@ assign uio_oe  = 8'hFF;
 
 (* keep_hierarchy = "yes", keep = "yes" *) dac2u128out4in dacL (
     .ON(state[127:0]),
-    .ONB(~state[127:0]),
+    .ON_N(~state[127:0]),
     .EN(ena),
-    .ENB(~ena)
+    .EN_N(~ena)
 );
 
 (* keep_hierarchy = "yes", keep = "yes" *) dac2u128out4in dacH (
     .ON(daisychain[127:0]),
-    .ONB(~daisychain[127:0]),
+    .ON_N(~daisychain[127:0]),
     .EN(ena),
-    .ENB(~ena)
+    .EN_N(~ena)
 );
 
 endmodule
