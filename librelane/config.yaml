@@ -34,4 +34,5 @@ RT_MAX_LAYER: TopMetal1
 
 # reserve space for the logo
 FP_OBSTRUCTIONS: 
-- [350, 50, 500, 150]
+- [350, 30, 500, 80]
+- [350, 120, 500, 170]
