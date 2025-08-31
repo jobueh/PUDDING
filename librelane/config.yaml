@@ -54,11 +54,27 @@ MACROS:
 #     - dir::../src/dac2u128out4in.sv
     instances:
       dacL:
-        location: [360, 40]
+        location: [360, 47]
         orientation: N
       dacH:
-        location: [360, 130]
+        location: [360, 124]
         orientation: N
 
 # Connect macro power pins to the PDN
-PDN_CONNECT_MACROS_TO_GRID: false
+PDN_CONNECT_MACROS_TO_GRID: true
+
+# Denser grid so a strap is always near the pins
+PDN_HPITCH: 20
+PDN_VPITCH: 20
+
+# Nudge straps so they actually cross the pin rectangles
+PDN_HOFFSET: 10
+PDN_VOFFSET: 10
+
+PDN_HWIDTH: 2
+PDN_VWIDTH: 2
+
+PDN_MACRO_CONNECTIONS:
+  - "dacL VPWR VGND VDD VSS"
+  - "dacL VPWR VGND VDD VSS"
+
