@@ -40,9 +40,9 @@ SIGNOFF_SDC_FILE: dir::constraints/pudding_min.sdc
 #USE_SLANG: true
 
 # reserve space for the logo
-FP_OBSTRUCTIONS: 
-- [350, 30, 500, 80]
-- [350, 120, 500, 170]
+#FP_OBSTRUCTIONS: 
+#- [350, 30, 500, 80]
+#- [350, 120, 500, 170]
 
 MACROS:
   dac2u128out4in:
@@ -54,10 +54,10 @@ MACROS:
 #     - dir::../src/dac2u128out4in.sv
     instances:
       dacL:
-        location: [360, 47]
+        location: [360, 37]
         orientation: N
       dacH:
-        location: [360, 124]
+        location: [360, 130]
         orientation: N
 
 # Connect macro power pins to the PDN
