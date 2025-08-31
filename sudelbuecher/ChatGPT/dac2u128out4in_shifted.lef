@@ -11,7 +11,7 @@ MACRO dac2u128out4in
     USE GROUND ;
     PORT
       LAYER Metal5 ;
-        RECT 73.8 0 133.8 26.19 ;
+        RECT 73 0 133.8 26.19 ;
     END
   END VSS
   PIN VDD
