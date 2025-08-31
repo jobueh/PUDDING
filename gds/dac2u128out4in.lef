@@ -10,11 +10,11 @@ MACRO dac2u128out4in
   PIN VSS
     USE GROUND ;
     PORT
-      LAYER Metal1 ;
+      LAYER Metal5 ;
         RECT -1.900 20.780 131.900 21.280 ;
     END
     PORT
-      LAYER Metal1 ;
+      LAYER Metal5 ;
         RECT -1.900 -4.910 131.900 -4.410 ;
     END
   END VSS
@@ -1623,19 +1623,19 @@ MACRO dac2u128out4in
   PIN VDD
     USE POWER ;
     PORT
-      LAYER Metal3 ;
+      LAYER Metal5 ;
         RECT -1.900 -2.480 131.900 -0.750 ;
     END
     PORT
-      LAYER Metal3 ;
+      LAYER Metal5 ;
         RECT -1.900 0.750 131.900 2.480 ;
     END
     PORT
-      LAYER Metal3 ;
+      LAYER Metal5 ;
         RECT -1.900 17.120 131.900 18.850 ;
     END
     PORT
-      LAYER Metal3 ;
+      LAYER Metal5 ;
         RECT -1.900 13.890 131.900 15.620 ;
     END
   END VDD
