@@ -37,24 +37,24 @@ MACRO dac2u128out4in
         RECT -1.900 -4.910 131.900 -4.410 ;
     END
   END VSS
-  PIN VbiasP[1]
-    PORT
-      LAYER Metal1 ;
-        RECT -1.000 10.040 131.000 14.970 ;
-    END
-  END VbiasP[1]
-  PIN Iout
-    PORT
-      LAYER Metal1 ;
-        RECT -1.900 7.835 131.900 8.535 ;
-    END
-  END Iout
-  PIN VbiasP[0]
-    PORT
-      LAYER Metal1 ;
-        RECT -1.000 1.400 131.000 6.330 ;
-    END
-  END VbiasP[0]
+#  PIN VbiasP[1]
+#    PORT
+#      LAYER Metal1 ;
+#        RECT -1.000 10.040 131.000 14.970 ;
+#    END
+#  END VbiasP[1]
+#  PIN Iout
+#    PORT
+#      LAYER Metal1 ;
+#        RECT -1.900 7.835 131.900 8.535 ;
+#    END
+#  END Iout
+#  PIN VbiasP[0]
+#    PORT
+#      LAYER Metal1 ;
+#        RECT -1.000 1.400 131.000 6.330 ;
+#    END
+#  END VbiasP[0]
   PIN ON[64]
     PORT
       LAYER Metal2 ;
@@ -1639,18 +1639,18 @@ MACRO dac2u128out4in
         RECT 130.130 -4.910 130.420 -4.620 ;
     END
   END ENB[1]
-  PIN VcascP[1]
-    PORT
-      LAYER Metal3 ;
-        RECT -1.900 16.020 131.900 16.720 ;
-    END
-  END VcascP[1]
-  PIN VcascP[0]
-    PORT
-      LAYER Metal3 ;
-        RECT -1.900 -0.350 131.900 0.350 ;
-    END
-  END VcascP[0]
+#  PIN VcascP[1]
+#    PORT
+#      LAYER Metal3 ;
+#        RECT -1.900 16.020 131.900 16.720 ;
+#    END
+#  END VcascP[1]
+#  PIN VcascP[0]
+#    PORT
+#      LAYER Metal3 ;
+#        RECT -1.900 -0.350 131.900 0.350 ;
+#    END
+#  END VcascP[0]
 END dac2u128out4in
 END LIBRARY
 
