@@ -6,14 +6,6 @@ module dac2u128out4in (
     input [127:0] ON,
     input [127:0] ONB,
     input [3:0] EN,
-    input [3:0] ENB,
-    inout [1:0] VpcascP,
-    inout [1:0] VbiasP,
-    output Iout
+    input [3:0] ENB
 );
-
-// List all unused inputs to prevent warnings
-wire _unused = &{VbiasP[1:0],VpcascP[1:0],Iout};
-
-
 endmodule
