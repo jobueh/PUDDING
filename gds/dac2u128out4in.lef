@@ -5,27 +5,8 @@ VERSION 5.7 ;
 MACRO dac2u128out4in
   CLASS BLOCK ;
   FOREIGN dac2u128out4in ;
-  ORIGIN 2.210 5.110 ;
-  SIZE 134.420 BY 26.590 ;
-  PIN VDD
-    USE POWER ;
-    PORT
-      LAYER Metal1 ;
-        RECT -1.900 15.150 131.900 15.820 ;
-    END
-    PORT
-      LAYER Metal1 ;
-        RECT -1.900 17.200 131.900 17.700 ;
-    END
-    PORT
-      LAYER Metal1 ;
-        RECT -1.900 0.550 131.900 1.220 ;
-    END
-    PORT
-      LAYER Metal1 ;
-        RECT -1.900 -1.330 131.900 -0.830 ;
-    END
-  END VDD
+  ORIGIN 1.900 4.910 ;
+  SIZE 133.800 BY 26.190 ;
   PIN VSS
     USE GROUND ;
     PORT
@@ -37,24 +18,24 @@ MACRO dac2u128out4in
         RECT -1.900 -4.910 131.900 -4.410 ;
     END
   END VSS
-#  PIN VbiasP[1]
-#    PORT
-#      LAYER Metal1 ;
-#        RECT -1.000 10.040 131.000 14.970 ;
-#    END
-#  END VbiasP[1]
-#  PIN Iout
-#    PORT
-#      LAYER Metal1 ;
-#        RECT -1.900 7.835 131.900 8.535 ;
-#    END
-#  END Iout
-#  PIN VbiasP[0]
-#    PORT
-#      LAYER Metal1 ;
-#        RECT -1.000 1.400 131.000 6.330 ;
-#    END
-#  END VbiasP[0]
+  PIN VbiasP[1]
+    PORT
+      LAYER Metal1 ;
+        RECT -1.000 10.040 131.000 14.970 ;
+    END
+  END VbiasP[1]
+  PIN Iout
+    PORT
+      LAYER Metal1 ;
+        RECT -1.900 7.835 131.900 8.535 ;
+    END
+  END Iout
+  PIN VbiasP[0]
+    PORT
+      LAYER Metal1 ;
+        RECT -1.000 1.400 131.000 6.330 ;
+    END
+  END VbiasP[0]
   PIN ON[64]
     PORT
       LAYER Metal2 ;
@@ -1639,18 +1620,37 @@ MACRO dac2u128out4in
         RECT 130.130 -4.910 130.420 -4.620 ;
     END
   END ENB[1]
-#  PIN VcascP[1]
-#    PORT
-#      LAYER Metal3 ;
-#        RECT -1.900 16.020 131.900 16.720 ;
-#    END
-#  END VcascP[1]
-#  PIN VcascP[0]
-#    PORT
-#      LAYER Metal3 ;
-#        RECT -1.900 -0.350 131.900 0.350 ;
-#    END
-#  END VcascP[0]
+  PIN VDD
+    USE POWER ;
+    PORT
+      LAYER Metal3 ;
+        RECT -1.900 -2.480 131.900 -0.750 ;
+    END
+    PORT
+      LAYER Metal3 ;
+        RECT -1.900 0.750 131.900 2.480 ;
+    END
+    PORT
+      LAYER Metal3 ;
+        RECT -1.900 17.120 131.900 18.850 ;
+    END
+    PORT
+      LAYER Metal3 ;
+        RECT -1.900 13.890 131.900 15.620 ;
+    END
+  END VDD
+  PIN VcascP[1]
+    PORT
+      LAYER Metal3 ;
+        RECT -1.900 16.020 131.900 16.720 ;
+    END
+  END VcascP[1]
+  PIN VcascP[0]
+    PORT
+      LAYER Metal3 ;
+        RECT -1.900 -0.350 131.900 0.350 ;
+    END
+  END VcascP[0]
 END dac2u128out4in
 END LIBRARY
 
