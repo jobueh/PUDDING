@@ -27,19 +27,22 @@ FP_DEF_TEMPLATE: dir::def/heichips25_template_small.def
 #FP_DEF_TEMPLATE: dir::def/heichips25_template_large.def
 
 # Don't use power rings or TopMetal2 layer
-PDN_MULTILAYER: false
-#PDN_MULTILAYER: true
+#PDN_MULTILAYER: false
+PDN_MULTILAYER: true
 RT_MAX_LAYER: TopMetal1
-#FP_PDN_VPITCH: 20
-#FP_PDN_HPITCH: 20
+PDN_VPITCH: 20
+PDN_HPITCH: 20
+
+PNR_SDC_FILE: dir::constraints/pudding_min.sdc
+SIGNOFF_SDC_FILE: dir::constraints/pudding_min.sdc
 
 # Enable for better SystemVerilog support
 #USE_SLANG: true
 
 # reserve space for the logo
-#FP_OBSTRUCTIONS: 
-#- [350, 30, 500, 80]
-#- [350, 120, 500, 170]
+FP_OBSTRUCTIONS: 
+- [350, 30, 500, 80]
+- [350, 120, 500, 170]
 
 MACROS:
   dac2u128out4in:
@@ -56,3 +59,6 @@ MACROS:
       dacH:
         location: [360, 130]
         orientation: N
+
+# Connect macro power pins to the PDN
+PDN_CONNECT_MACROS_TO_GRID: false
