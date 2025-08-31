@@ -3,7 +3,7 @@
 DESIGN_NAME: heichips25_pudding
 VERILOG_FILES: 
 - dir::../src/heichips25_pudding.sv
-- dir::../src/dac2u128out4in.sv
+- dir::../src/dac2u128out4in.v
 
 CLOCK_PORT: clk
 CLOCK_PERIOD: 10 # 10ns = 100MHz
