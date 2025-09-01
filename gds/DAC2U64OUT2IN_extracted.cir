@@ -1,4 +1,4 @@
-* Extracted by KLayout with SG13G2 LVS runset on : 31/08/2025 07:53
+* Extracted by KLayout with SG13G2 LVS runset on : 01/09/2025 01:58
 
 .SUBCKT DAC2U64OUT2IN
 M$1 \$2 \$3 \$1 \$1 sg13_lv_nmos L=0.52u W=0.15u AS=0.162p AD=0.0855p PS=2.16u
@@ -799,9 +799,9 @@ M$398 \$266 \$334 \$346 \$266 sg13_lv_pmos L=5u W=1.45u AS=0.493p AD=0.20875p
 + PS=3.58u PD=1.75u
 M$399 \$346 \$268 \$334 \$266 sg13_lv_pmos L=0.6u W=1.2u AS=0.20875p AD=0.516p
 + PS=1.75u PD=3.26u
-M$400 \$266 \$334 \$338 \$266 sg13_lv_pmos L=5u W=1.45u AS=0.493p AD=0.20875p
+M$400 \$266 \$334 \$339 \$266 sg13_lv_pmos L=5u W=1.45u AS=0.493p AD=0.20875p
 + PS=3.58u PD=1.75u
-M$401 \$338 \$269 \$401 \$266 sg13_lv_pmos L=0.6u W=1.2u AS=0.20875p AD=0.516p
+M$401 \$339 \$269 \$401 \$266 sg13_lv_pmos L=0.6u W=1.2u AS=0.20875p AD=0.516p
 + PS=1.75u PD=3.26u
 M$402 \$266 \$334 \$349 \$266 sg13_lv_pmos L=5u W=1.45u AS=0.493p AD=0.20875p
 + PS=3.58u PD=1.75u
@@ -1043,9 +1043,9 @@ M$520 \$266 \$334 \$340 \$266 sg13_lv_pmos L=5u W=1.45u AS=0.493p AD=0.20875p
 + PS=3.58u PD=1.75u
 M$521 \$340 \$329 \$401 \$266 sg13_lv_pmos L=0.6u W=1.2u AS=0.20875p AD=0.516p
 + PS=1.75u PD=3.26u
-M$522 \$266 \$334 \$339 \$266 sg13_lv_pmos L=5u W=1.45u AS=0.493p AD=0.20875p
+M$522 \$266 \$334 \$338 \$266 sg13_lv_pmos L=5u W=1.45u AS=0.493p AD=0.20875p
 + PS=3.58u PD=1.75u
-M$523 \$339 \$330 \$401 \$266 sg13_lv_pmos L=0.6u W=1.2u AS=0.20875p AD=0.516p
+M$523 \$338 \$330 \$401 \$266 sg13_lv_pmos L=0.6u W=1.2u AS=0.20875p AD=0.516p
 + PS=1.75u PD=3.26u
 M$524 \$266 \$334 \$337 \$266 sg13_lv_pmos L=5u W=1.45u AS=0.493p AD=0.20875p
 + PS=3.58u PD=1.75u
