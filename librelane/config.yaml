@@ -30,8 +30,10 @@ FP_DEF_TEMPLATE: dir::def/heichips25_template_small.def
 #PDN_MULTILAYER: false
 PDN_MULTILAYER: true
 RT_MAX_LAYER: TopMetal1
-PDN_VPITCH: 20
-PDN_HPITCH: 20
+PDN_HORIZONTAL_LAYER: Metal5
+PDN_VERTICAL_LAYER: Metal4
+#PDN_HORIZONTAL_LAYER: Metal3
+
 
 PNR_SDC_FILE: dir::constraints/pudding_min.sdc
 SIGNOFF_SDC_FILE: dir::constraints/pudding_min.sdc
@@ -59,9 +61,23 @@ MACROS:
       dacH:
         location: [360, 130]
         orientation: N
+        
+ROUTING_OBSTRUCTIONS: 
+- [Metal1, 360, 38, 493, 62]
+- [Metal1, 360, 38, 493, 62]
+- [Metal2, 360, 38, 493, 62]
+- [Metal2, 360, 38, 493, 62]
+- [Metal1, 360, 131, 493, 155]
+- [Metal1, 360, 131, 493, 155]
+- [Metal2, 360, 131, 493, 155]
+- [Metal2, 360, 131, 493, 155]
+- [Metal3, 360, 131, 493, 155]
+- [Metal3, 360, 131, 493, 155]
+- [Metal3, 360, 131, 493, 155]
+- [Metal3, 360, 131, 493, 155]
 
 # Connect macro power pins to the PDN
-PDN_CONNECT_MACROS_TO_GRID: true
+#PDN_CONNECT_MACROS_TO_GRID: true
 
 # Denser grid so a strap is always near the pins
 PDN_HPITCH: 20
@@ -74,7 +90,8 @@ PDN_VOFFSET: 10
 PDN_HWIDTH: 2
 PDN_VWIDTH: 2
 
+
 PDN_MACRO_CONNECTIONS:
   - "dacL VPWR VGND VDD VSS"
-  - "dacL VPWR VGND VDD VSS"
+  - "dacH VPWR VGND VDD VSS"
 
