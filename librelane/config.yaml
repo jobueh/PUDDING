@@ -54,7 +54,7 @@ MACROS:
 #     - dir::../src/dac2u128out4in.sv
     instances:
       dacL:
-        location: [360, 37]
+        location: [360, 40]
         orientation: N
       dacH:
         location: [360, 130]

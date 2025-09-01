@@ -13,9 +13,14 @@ module heichips25_pudding(
     output wire [7:0] uio_oe,   // IOs: Enable path (active high: 0=input, 1=output)
     input  wire       ena,      // always 1 when the design is powered, so you can ignore it
     input  wire       clk,      // clock
-    input  wire       rst_n     // reset_n - low to reset
+    input  wire       rst_n,    // reset_n - low to reset
+    inout VPWR,
+    inout VGND
 );
 
+//(* keep = "yes" *) wire VPWR;
+//(* keep = "yes" *) wire VGND;
+   
     // List all unused inputs to prevent warnings
     wire _unused = &{ena, uio_in[7:0], ui_in[7:4]};
 
@@ -61,14 +66,18 @@ assign uio_oe  = 8'hFF;
     .ON(state[127:0]),
     .ONB(~state[127:0]),
     .EN(ena),
-    .ENB(~ena)
+    .ENB(~ena),
+    .VDD(VPWR),
+    .VSS(VGND)
 );
 
 (* keep_hierarchy = "yes", keep = "yes" *) dac2u128out4in dacH (
     .ON(daisychain[127:0]),
     .ONB(~daisychain[127:0]),
     .EN(ena),
-    .ENB(~ena)
+    .ENB(~ena),
+    .VDD(VPWR),
+    .VSS(VGND)
 );
 
 endmodule

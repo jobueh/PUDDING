@@ -6,6 +6,8 @@ module dac2u128out4in (
     input [127:0] ON,
     input [127:0] ONB,
     input [3:0] EN,
-    input [3:0] ENB
+    input [3:0] ENB,
+    inout VDD,
+    inout VSS
 );
 endmodule
