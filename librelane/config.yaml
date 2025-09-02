@@ -40,9 +40,9 @@ SIGNOFF_SDC_FILE: dir::constraints/pudding_min.sdc
 #USE_SLANG: true
 
 # reserve space for the logo
-#FP_OBSTRUCTIONS: 
-#- [350, 30, 500, 80]
-#- [350, 120, 500, 170]
+FP_OBSTRUCTIONS: 
+- [350, 30, 500, 80]
+- [350, 120, 500, 170]
 
 MACROS:
   dac2u128out4in:
@@ -64,15 +64,15 @@ MACROS:
 PDN_CONNECT_MACROS_TO_GRID: true
 
 # Denser grid so a strap is always near the pins
-PDN_HPITCH: 20
-PDN_VPITCH: 20
+#PDN_HPITCH: 20
+#PDN_VPITCH: 20
 
 # Nudge straps so they actually cross the pin rectangles
-PDN_HOFFSET: 10
-PDN_VOFFSET: 10
+#PDN_HOFFSET: 10
+#PDN_VOFFSET: 10
 
-PDN_HWIDTH: 2
-PDN_VWIDTH: 2
+#PDN_HWIDTH: 2
+#PDN_VWIDTH: 2
 
 PDN_MACRO_CONNECTIONS:
   - "dacL VPWR VGND VDD VSS"
