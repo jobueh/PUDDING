@@ -6,6 +6,6 @@ module inverterpair (
     output logic OUTN,
     output logic OUTP
 );
-(* keep *) sg13g2_inv_1 inv1 (.Y(OUTN), .A(IN));
-(* keep *) sg13g2_inv_1 inv2 (.Y(OUTP), .A(OUTN));
+(* keep *) sg13g2_inv_1 inv (.Y(OUTN), .A(IN));
+(* keep *) sg13g2_buf_1 buff (.X(OUTP), .A(IN));
 endmodule
