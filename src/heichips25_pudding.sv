@@ -24,9 +24,6 @@ module heichips25_pudding(
     // List all unused inputs to prevent warnings
     wire _unused = &{ena, uio_in[7:0], ui_in[7:4]};
 
-
-    logic datum, shift, transfer, dir;
-
     logic[127:0] daisychain, daisychainp, daisychainn;
     logic[3:0] daisyen, daisyenp, daisyenn;
     logic[127:0] state, statep, staten;
@@ -37,6 +34,8 @@ module heichips25_pudding(
     assign stateen = {4{ui_in[2]}};
     assign daisyen = {4{ui_in[3]}};
 /*
+    logic datum, shift, transfer, dir;
+
     assign datum    = ui_in[0];
     assign shift    = ui_in[1];
     assign transfer = ui_in[2];
@@ -145,14 +144,3 @@ module digital4(
   end
 endmodule
 
-// File: inverterpair.sv
-// SystemVerilog: simple ON - ON_N logic for the current mirrors
-
-module inverterpair (
-    input logic IN,
-    output logic OUTN,
-    output logic OUTP
-);
-(* keep *) sg13g2_inv_1 inv1 (.Y(OUTN), .A(IN));
-(* keep *) sg13g2_inv_1 inv2 (.Y(OUTP), .A(OUTN));
-endmodule

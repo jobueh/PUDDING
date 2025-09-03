@@ -3,6 +3,7 @@
 DESIGN_NAME: heichips25_pudding
 VERILOG_FILES: 
 - dir::../src/heichips25_pudding.sv
+- dir::../src/inverterpair.sv
 - dir::../src/dac2u128out4in.v
 
 CLOCK_PORT: clk
@@ -37,12 +38,12 @@ PNR_SDC_FILE: dir::constraints/pudding_min.sdc
 SIGNOFF_SDC_FILE: dir::constraints/pudding_min.sdc
 
 # Enable for better SystemVerilog support
-#USE_SLANG: true
+USE_SLANG: true
 
 # reserve space for the logo
 FP_OBSTRUCTIONS: 
-- [350, 30, 500, 80]
-- [350, 120, 500, 170]
+- [355, 48, 500, 77]
+- [355, 128, 500, 157]
 
 MACROS:
   dac2u128out4in:
@@ -54,7 +55,7 @@ MACROS:
 #     - dir::../src/dac2u128out4in.sv
     instances:
       dacL:
-        location: [360, 40]
+        location: [360, 50]
         orientation: N
       dacH:
         location: [360, 130]
