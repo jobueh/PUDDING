@@ -1,0 +1,6 @@
+
+>> Cell: UNITSOURCE2U_DIGITALPADS
+Layer 10, DType 2, Box #0: 4 points → [(-420, -4910), (-130, -4910), (-130, -4620), (-420, -4620)]
+Layer 10, DType 2, Box #1: 4 points → [(130, -4910), (420, -4910), (420, -4620), (130, -4620)]
+Layer 10, DType 2, Text #2: Text = 'ON', at (-275, -4765)
+Layer 10, DType 2, Text #3: Text = 'ONB', at (275, -4765)
