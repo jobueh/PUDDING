@@ -2,7 +2,7 @@ import klayout.db as pya
 
 # 1) Read the GDS
 layout = pya.Layout()
-layout.read("pcsource66x2.gds")
+layout.read("dac2u128out4in.gds")
 
 # 2) Get top cell
 top_cell = layout.top_cell()
