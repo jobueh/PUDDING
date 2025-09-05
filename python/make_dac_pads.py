@@ -19,8 +19,8 @@ offsets = ((2000, 0),(65*2000,0))
 labels = ("ON","EN")
 
 # Layers
-l_m2    = layout.layer(pya.LayerInfo(10, 0))
 l_m2pin = layout.layer(pya.LayerInfo(10, 2))
+l_m2text= layout.layer(pya.LayerInfo(10,25))
 
 # Draw shapes
 half = size // 2
@@ -34,7 +34,7 @@ for n, origin, offset, label in zip(columns, origins, offsets, labels):
             text = pya.Text(label + suffix + f"[{source}]", x, y)
             text.halign = pya.Text.HAlignCenter
             text.valign = pya.Text.VAlignCenter
-            top.shapes(l_m2pin).insert(text)
+            top.shapes(l_m2text).insert(text)
 
 # Draw shapes of upside down row
 toprow=(130000, 16370)
@@ -49,7 +49,7 @@ for n, origin, offset, label, in zip(columns, origins, offsets, labels):
             text = pya.Text(label + suffix + f"[{index}]", x, y)
             text.halign = pya.Text.HAlignCenter
             text.valign = pya.Text.VAlignCenter
-            top.shapes(l_m2pin).insert(text)
+            top.shapes(l_m2text).insert(text)
 
 # Save GDS
 layout.write("dac_pads.gds")
