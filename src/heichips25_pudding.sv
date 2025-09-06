@@ -24,6 +24,9 @@ module heichips25_pudding(
     // List all unused inputs to prevent warnings
     wire _unused = &{ena, uio_in[7:0], ui_in[7:4]};
 
+    logic[3:0] daisyen, daisyenp, daisyenn;
+    logic[3:0] stateen, stateenp, stateenn;
+
     logic datum, shift, transfer, dir;
 
     logic[127:0] daisychain;
@@ -33,6 +36,9 @@ module heichips25_pudding(
     assign shift    = ui_in[1];
     assign transfer = ui_in[2];
     assign dir      = ui_in[3];
+
+    assign stateen = {4{ui_in[4]}};
+    assign daisyen = {4{ui_in[5]}};
 
     always_ff @(posedge clk) 
     begin
@@ -62,22 +68,61 @@ assign uo_out  = daisychain[127:120];
 assign uio_out = state[127:120];
 assign uio_oe  = 8'hFF;
 
-(* keep_hierarchy = "yes", keep = "yes" *) dac2u128out4in dacL (
+    digital4 digitalenL (
+    .in(stateen[3:0]),
+    .outp(stateenp[3:0]),
+    .outn(stateenn[3:0])
+);
+
+    digital4 digitalenH (
+    .in(daisyen[3:0]),
+    .outp(daisyenp[3:0]),
+    .outn(daisyenn[3:0])
+);
+
+(* keep_hierarchy = "yes", keep = "yes" *) dac128module dacL (
     .ON(state[127:0]),
     .ONB(~state[127:0]),
-    .EN(ena),
-    .ENB(~ena),
+    .EN(stateenp[3:0]),
+    .ENB(stateenn[3:0]),
     .VDD(VPWR),
     .VSS(VGND)
 );
 
-(* keep_hierarchy = "yes", keep = "yes" *) dac2u128out4in dacH (
+(* keep_hierarchy = "yes", keep = "yes" *) dac128module dacH (
     .ON(daisychain[127:0]),
     .ONB(~daisychain[127:0]),
-    .EN(ena),
-    .ENB(~ena),
+    .EN(daisyenp[3:0]),
+    .ENB(daisyenn[3:0]),
     .VDD(VPWR),
     .VSS(VGND)
 );
+endmodule
 
+module digital4(
+    input  logic [3:0] in,
+    output logic [3:0] outn,
+    output logic [3:0] outp
+);
+    // 4 instances, each bit wired to one instance
+  genvar i;
+      for (i = 0; i < 4; i++) begin : g
+          inverterpair u (
+              .IN   (in[i]),
+              .OUTN (outn[i]),
+              .OUTP (outp[i])
+          );
+  end
+endmodule
+
+// File: inverterpair.sv
+// SystemVerilog: simple ON - ON_N logic for the current mirrors
+
+module inverterpair (
+    input logic IN,
+    output logic OUTN,
+    output logic OUTP
+);
+(* keep *) sg13g2_inv_1 inv1 (.Y(OUTN), .A(IN));
+(* keep *) sg13g2_inv_1 inv2 (.Y(OUTP), .A(OUTN));
 endmodule
