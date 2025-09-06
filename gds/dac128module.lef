@@ -1895,6 +1895,7 @@ MACRO dac128module
 #    END
 #  END VcascP[0]
   PIN VSS
+    DIRECTION INOUT ;
     USE GROUND ;
     PORT
       LAYER Metal5 ;
@@ -1902,6 +1903,7 @@ MACRO dac128module
     END
   END VSS
   PIN VDD
+    DIRECTION INOUT ;
     USE POWER ;
     PORT
       LAYER Metal5 ;
