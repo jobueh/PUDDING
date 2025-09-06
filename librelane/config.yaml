@@ -3,8 +3,8 @@
 DESIGN_NAME: heichips25_pudding
 VERILOG_FILES: 
 - dir::../src/heichips25_pudding.sv
+- dir::../src/dac128module.v
 - dir::../src/inverterpair.sv
-- dir::../src/dac2u128out4in.v
 
 CLOCK_PORT: clk
 CLOCK_PERIOD: 10 # 10ns = 100MHz
@@ -17,7 +17,7 @@ RIGHT_MARGIN_MULT: 6
 
 # Absolute die size
 FP_SIZING: absolute
-PL_TARGET_DENSITY_PCT: 80
+PL_TARGET_DENSITY_PCT: 70
 
 # Small DEF template
 DIE_AREA: [0, 0, 500, 200]
@@ -26,6 +26,9 @@ FP_DEF_TEMPLATE: dir::def/heichips25_template_small.def
 # Large DEF template
 #DIE_AREA: [0, 0, 500, 415]
 #FP_DEF_TEMPLATE: dir::def/heichips25_template_large.def
+
+# Use Leo's special PDN configuration file
+PDN_CFG: dir::pdn_cfg.tcl
 
 # Don't use power rings or TopMetal2 layer
 #PDN_MULTILAYER: false
@@ -46,13 +49,13 @@ FP_OBSTRUCTIONS:
 - [355, 128, 500, 157]
 
 MACROS:
-  dac2u128out4in:
+  dac128module:
     gds:
-      - dir::../gds/dac2u128out4in.gds
+      - dir::../gds/dac128module.gds
     lef:
-      - dir::../gds/dac2u128out4in.lef
+      - dir::../gds/dac128module.lef
 #   nl:
-#     - dir::../src/dac2u128out4in.sv
+#     - dir::../src/dac128module.sv
     instances:
       dacL:
         location: [360, 50]

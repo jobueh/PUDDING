@@ -93,7 +93,7 @@ assign uio_oe  = 8'hFF;
     .outn(daisyenn[3:0])
 );
 
-(* keep_hierarchy = "yes", keep = "yes" *) dac2u128out4in dacL (
+(* keep_hierarchy = "yes", keep = "yes" *) dac128module dacL (
     .ON(statep[127:0]),
     .ONB(staten[127:0]),
     .EN(stateenp[3:0]),
@@ -102,7 +102,7 @@ assign uio_oe  = 8'hFF;
     .VSS(VGND)
 );
 
-(* keep_hierarchy = "yes", keep = "yes" *) dac2u128out4in dacH (
+(* keep_hierarchy = "yes", keep = "yes" *) dac128module dacH (
     .ON(daisychainp[127:0]),
     .ONB(daisychainn[127:0]),
     .EN(daisyenp[3:0]),
