@@ -45,8 +45,8 @@ USE_SLANG: true
 
 # reserve space for the logo
 FP_OBSTRUCTIONS: 
-- [355, 48, 500, 77]
-- [355, 128, 500, 157]
+- [358, 38, 500, 68.33]
+- [358, 131.67, 500, 162]
 
 MACROS:
   dac128module:
@@ -58,10 +58,10 @@ MACROS:
 #     - dir::../src/dac128module.sv
     instances:
       dacL:
-        location: [360, 50]
+        location: [360, 40]
         orientation: N
       dacH:
-        location: [360, 130]
+        location: [360, 133.67]
         orientation: N
 
 # Connect macro power pins to the PDN
@@ -77,6 +77,9 @@ PDN_CONNECT_MACROS_TO_GRID: true
 
 #PDN_HWIDTH: 2
 #PDN_VWIDTH: 2
+
+FP_MACRO_HORIZONTAL_HALO: 2
+FP_MACRO_VERTICAL_HALO: 2
 
 PDN_MACRO_CONNECTIONS:
   - "dacL VPWR VGND VDD VSS"
