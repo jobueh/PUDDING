@@ -1,0 +1,42 @@
+=== Summary ===
+Total lines: 4162
+Total problem hits (warnings/errors/etc.): 103
+
+--- First indication something is wrong ---
+Line 8: %Warning-UNUSEDSIGNAL: /home/cmaier/EDA/PUDDING/src/heichips25_pudding.sv:15:23: Signal is not used: 'clk'
+Context:
+     4: [13:36:49] INFO     Starting…                                                                                      sequential.py:339
+     5: ────────────────────────────────────────────────────────── Verilator Lint ──────────────────────────────────────────────────────────
+     6: [13:36:49] VERBOSE  Running 'Verilator.Lint' at 'runs/RUN_2025-10-28_13-36-49/01-verilator-lint'…                       step.py:1140
+     7: [13:36:50] VERBOSE  Logging subprocess to 'runs/RUN_2025-10-28_13-36-49/01-verilator-lint/verilator-lint.log'…          step.py:1340
+     8: %Warning-UNUSEDSIGNAL: /home/cmaier/EDA/PUDDING/src/heichips25_pudding.sv:15:23: Signal is not used: 'clk'                          
+     9: : ... note: In instance 'heichips25_pudding'                                                                                        
+    10: 15 |     input  wire       clk,                                                                                                     
+    11: |                       ^~~                                                                                                         
+    12: ... For warning description see https://verilator.org/warn/UNUSEDSIGNAL?v=5.038                                                     
+
+--- Eventual failure (most severe last event) ---
+Line 2817: [13:37:43] INFO     Check for critical disconnected pins clear.                                                       checker.py:132
+Context:
+  2809: ───────────────────────────────────────────────────── Report Disconnected Pins ─────────────────────────────────────────────────────
+  2810: [13:37:42] VERBOSE  Running 'Odb.ReportDisconnectedPins' at                                                             step.py:1140
+  2811:                     'runs/RUN_2025-10-28_13-36-49/48-odb-reportdisconnectedpins'…                                                   
+  2812: [13:37:42] VERBOSE  Logging subprocess to                                                                               step.py:1340
+  2813:                     'runs/RUN_2025-10-28_13-36-49/48-odb-reportdisconnectedpins/odb-reportdisconnectedpins.log'…                    
+  2814: Found 15 disconnected pin(s), of which 0 are critical.                                                                              
+  2815: ──────────────────────────────────────────────────── Disconnected Pins Checker ─────────────────────────────────────────────────────
+  2816: [13:37:43] VERBOSE  Running 'Checker.DisconnectedPins' at 'runs/RUN_2025-10-28_13-36-49/49-checker-disconnectedpins'…   step.py:1140
+  2817: [13:37:43] INFO     Check for critical disconnected pins clear.                                                       checker.py:132
+  2818: ──────────────────────────────────────────────────────── Report Wire Length ────────────────────────────────────────────────────────
+  2819: [13:37:43] VERBOSE  Running 'Odb.ReportWireLength' at 'runs/RUN_2025-10-28_13-36-49/50-odb-reportwirelength'…           step.py:1140
+  2820: [13:37:43] VERBOSE  Logging subprocess to                                                                               step.py:1340
+  2821:                     'runs/RUN_2025-10-28_13-36-49/50-odb-reportwirelength/odb-reportwirelength.log'…                                
+  2822: ────────────────────────────────────────────────── Wire Length Threshold Checker ───────────────────────────────────────────────────
+  2823: [13:37:44] VERBOSE  Running 'Checker.WireLength' at 'runs/RUN_2025-10-28_13-36-49/51-checker-wirelength'…               step.py:1140
+  2824: [13:37:44] WARNING  Threshold for Threshold-surpassing long wires is not set. The checker will be skipped.            checker.py:109
+  2825: ────────────────────────────────────────────────────────── Fill Insertion ──────────────────────────────────────────────────────────
+
+=== Next steps ===
+1) Fix unused or misnamed signals (see first warning).
+2) Investigate the critical disconnection reported near the end; search for 'disconnected' nets or ports and confirm top-level pin hookups and power nets.
+3) Re-run the flow with higher verbosity to see exact checker output around the CRITICAL line.
