@@ -1,0 +1,6 @@
+DRC: batch mode
+ERROR: In /home/cmaier/.ciel/ciel/ihp-sg13g2/versions/cb7daaa8901016cf7c5d272dfa322c41f024931f/ihp-sg13g2/libs.tech/klayout/tech/drc/sg13g2_maximal.lydrc: 'source': The layout has multiple top cells in Layout::top_cell
+ERROR: RuntimeError: 'source': The layout has multiple top cells in Layout::top_cell in Executable::execute
+  /home/cmaier/.ciel/ciel/ihp-sg13g2/versions/cb7daaa8901016cf7c5d272dfa322c41f024931f/ihp-sg13g2/libs.tech/klayout/tech/drc/sg13g2_maximal.lydrc:43:in `execute'
+  :/built-in-macros/drc_interpreters.lym:31:in `instance_eval'
+  :/built-in-macros/drc_interpreters.lym:31:in `execute'
