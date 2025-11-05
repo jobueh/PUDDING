@@ -1,0 +1,53 @@
+
+Magic 8.3 revision 528 - Compiled on Sat Jun 21 19:19:56 UTC 2025.
+Starting magic under Tcl interpreter
+Using the terminal as the console.
+Using NULL graphics device.
+Processing system .magicrc file
+Sourcing design .magicrc for technology ihp-sg13g2 ...
+2 Magic internal units = 1 Lambda
+Input style sg13g2(): scaleFactor=2, multiplier=2
+The following types are not handled by extraction and will be treated as non-electrical types:
+    fillfet sealcont difffill nemitter hvnemitter hvisodiffres sealvia1 sealvia2 sealvia3 sealvia4 sealvia5 sealvia6 pad seal thruvia 
+Scaled tech values by 2 / 1 to match internal grid scaling
+Loading "/nix/store/3x0iz65q90laa2wjrvxaqx13fnzp1abs-python3-3.12.10-env/lib/python3.12/site-packages/librelane/scripts/magic/wrapper.tcl" from command line.
+Warning: Calma reading is not undoable!  I hope that's OK.
+Library written using GDS-II Release 6.0
+Library name: LIB
+Reading "$$$CONTEXT_INFO$$$".
+Reading "FEOL$contacts$1$1$1".
+Reading "FEOL$contacts$3$2$1".
+Reading "via_stack$1$1$1".
+Reading "FEOL$contacts$9$1".
+Reading "via_stack$3".
+Reading "via_stack$2$1".
+Reading "NONOVERLAP".
+Reading "DAC_SW".
+Reading "FEOL$contacts$6$1".
+Reading "FEOL$contacts$7$1".
+Reading "FEOL$contacts$5$1".
+Reading "FEOL$contacts$4$1".
+Reading "FEOL$contacts$1$2".
+Reading "FEOL$contacts$3$1".
+Reading "FEOL$contacts$8".
+Reading "via_stack$5".
+Reading "via_stack$6".
+Reading "via_stack$9$1".
+Reading "CASCODEDRIVE".
+Reading "PCSOURCE2U".
+Reading "via_stack$4$1".
+Reading "via_stack$7$1$1".
+Reading "via_stack$6$2$1".
+Reading "CASCODEBIAS".
+Reading "UNITSOURCE2U".
+Reading "via_stack".
+Reading "DAC2U64OUT2IN".
+Reading "via_stack$4".
+Reading "dac128module_vdd_strap".
+Reading "dac128module_vss_strap".
+Reading "dac2u128out4in".
+Reading "dac128module".
+%OL_METRIC_I llx 0
+%OL_METRIC_I lly -14
+%OL_METRIC_I urx 26760
+%OL_METRIC_I ury 5252
