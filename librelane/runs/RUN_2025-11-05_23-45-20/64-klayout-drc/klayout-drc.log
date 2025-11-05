@@ -1,0 +1,54 @@
+DRC: batch mode
+addr2line: 'klayout': No such file
+ERROR: Signal number: 11
+Address: 0x7267ae08b1c8
+Program Version: KLayout 0.30.2 (2025-06-23 rLatestSourcePackage)
+
+Backtrace:
+/nix/store/v5yg41abkm2wphqgn9i9h1xvcj9rzzwa-klayout-0.30.2/lib/libklayout_lay.so.0 +0x3051b9 lay::signal_handler(int, siginfo_t*, void*) [??:?]
+/nix/store/cg9s562sa33k78m63njfn1rw47dp9z0i-glibc-2.40-66/lib/libc.so.6 +0x41470 __restore_rt [??:?]
+/nix/store/cg9s562sa33k78m63njfn1rw47dp9z0i-glibc-2.40-66/lib/libc.so.6 +0xa913e __free [??:?]
+/nix/store/v5yg41abkm2wphqgn9i9h1xvcj9rzzwa-klayout-0.30.2/lib/libklayout_db.so.0 +0x88b08e std::_Rb_tree<db::polygon<int>, db::polygon<int>, std::_Identity<db::polygon<int> >, std::less<db::polygon<int> >, std::allocator<db::polygon<int> > >::_M_erase(std::_Rb_tree_node<db::polygon<int> >*) [??:?]
+/nix/store/v5yg41abkm2wphqgn9i9h1xvcj9rzzwa-klayout-0.30.2/lib/libklayout_db.so.0 +0x88b04c std::_Rb_tree<db::polygon<int>, db::polygon<int>, std::_Identity<db::polygon<int> >, std::less<db::polygon<int> >, std::allocator<db::polygon<int> > >::_M_erase(std::_Rb_tree_node<db::polygon<int> >*) [??:?]
+/nix/store/v5yg41abkm2wphqgn9i9h1xvcj9rzzwa-klayout-0.30.2/lib/libklayout_db.so.0 +0x88b04c std::_Rb_tree<db::polygon<int>, db::polygon<int>, std::_Identity<db::polygon<int> >, std::less<db::polygon<int> >, std::allocator<db::polygon<int> > >::_M_erase(std::_Rb_tree_node<db::polygon<int> >*) [??:?]
+/nix/store/v5yg41abkm2wphqgn9i9h1xvcj9rzzwa-klayout-0.30.2/lib/libklayout_db.so.0 +0x88b04c std::_Rb_tree<db::polygon<int>, db::polygon<int>, std::_Identity<db::polygon<int> >, std::less<db::polygon<int> >, std::allocator<db::polygon<int> > >::_M_erase(std::_Rb_tree_node<db::polygon<int> >*) [??:?]
+/nix/store/v5yg41abkm2wphqgn9i9h1xvcj9rzzwa-klayout-0.30.2/lib/libklayout_db.so.0 +0x88b04c std::_Rb_tree<db::polygon<int>, db::polygon<int>, std::_Identity<db::polygon<int> >, std::less<db::polygon<int> >, std::allocator<db::polygon<int> > >::_M_erase(std::_Rb_tree_node<db::polygon<int> >*) [??:?]
+/nix/store/v5yg41abkm2wphqgn9i9h1xvcj9rzzwa-klayout-0.30.2/lib/libklayout_db.so.0 +0x88b04c std::_Rb_tree<db::polygon<int>, db::polygon<int>, std::_Identity<db::polygon<int> >, std::less<db::polygon<int> >, std::allocator<db::polygon<int> > >::_M_erase(std::_Rb_tree_node<db::polygon<int> >*) [??:?]
+/nix/store/v5yg41abkm2wphqgn9i9h1xvcj9rzzwa-klayout-0.30.2/lib/libklayout_db.so.0 +0x88b04c std::_Rb_tree<db::polygon<int>, db::polygon<int>, std::_Identity<db::polygon<int> >, std::less<db::polygon<int> >, std::allocator<db::polygon<int> > >::_M_erase(std::_Rb_tree_node<db::polygon<int> >*) [??:?]
+/nix/store/v5yg41abkm2wphqgn9i9h1xvcj9rzzwa-klayout-0.30.2/lib/libklayout_db.so.0 +0x88b04c std::_Rb_tree<db::polygon<int>, db::polygon<int>, std::_Identity<db::polygon<int> >, std::less<db::polygon<int> >, std::allocator<db::polygon<int> > >::_M_erase(std::_Rb_tree_node<db::polygon<int> >*) [??:?]
+/nix/store/v5yg41abkm2wphqgn9i9h1xvcj9rzzwa-klayout-0.30.2/lib/libklayout_db.so.0 +0x88b04c std::_Rb_tree<db::polygon<int>, db::polygon<int>, std::_Identity<db::polygon<int> >, std::less<db::polygon<int> >, std::allocator<db::polygon<int> > >::_M_erase(std::_Rb_tree_node<db::polygon<int> >*) [??:?]
+/nix/store/v5yg41abkm2wphqgn9i9h1xvcj9rzzwa-klayout-0.30.2/lib/libklayout_db.so.0 +0x88b04c std::_Rb_tree<db::polygon<int>, db::polygon<int>, std::_Identity<db::polygon<int> >, std::less<db::polygon<int> >, std::allocator<db::polygon<int> > >::_M_erase(std::_Rb_tree_node<db::polygon<int> >*) [??:?]
+/nix/store/v5yg41abkm2wphqgn9i9h1xvcj9rzzwa-klayout-0.30.2/lib/libklayout_db.so.0 +0x98f8b3 db::generic_repository<int>::operator=(db::generic_repository<int>&&) [??:?]
+/nix/store/v5yg41abkm2wphqgn9i9h1xvcj9rzzwa-klayout-0.30.2/lib/libklayout_db.so.0 +0x97ddd7 db::Layout::clear() [??:?]
+/nix/store/v5yg41abkm2wphqgn9i9h1xvcj9rzzwa-klayout-0.30.2/lib/libklayout_db.so.0 +0x97d800 db::Layout::~Layout() [??:?]
+/nix/store/v5yg41abkm2wphqgn9i9h1xvcj9rzzwa-klayout-0.30.2/lib/libklayout_db.so.0 +0x161ce28 db::DeepShapeStore::~DeepShapeStore() [??:?]
+/nix/store/v5yg41abkm2wphqgn9i9h1xvcj9rzzwa-klayout-0.30.2/lib/libklayout_db.so.0 +0x161cf89 db::DeepShapeStore::~DeepShapeStore() [??:?]
+/nix/store/v5yg41abkm2wphqgn9i9h1xvcj9rzzwa-klayout-0.30.2/lib/libklayout_rba.so.0 +0x229bb rba::method_adaptor(int, int, unsigned long*, unsigned long, bool) [??:?]
+/nix/store/9jslgkvdkn42hlc52mr25f37jsa5rxga-ruby-3.3.8/lib/libruby-3.3.8.so.3.3 +0x311b2b vm_call_cfunc_with_frame [??:?]
+/nix/store/9jslgkvdkn42hlc52mr25f37jsa5rxga-ruby-3.3.8/lib/libruby-3.3.8.so.3.3 +0x3244a0 vm_exec_core [??:?]
+/nix/store/9jslgkvdkn42hlc52mr25f37jsa5rxga-ruby-3.3.8/lib/libruby-3.3.8.so.3.3 +0x32a749 rb_vm_exec [??:?]
+/nix/store/9jslgkvdkn42hlc52mr25f37jsa5rxga-ruby-3.3.8/lib/libruby-3.3.8.so.3.3 +0x336499 rb_funcallv [??:?]
+/nix/store/9jslgkvdkn42hlc52mr25f37jsa5rxga-ruby-3.3.8/lib/libruby-3.3.8.so.3.3 +0x12a957 rb_protect [??:?]
+/nix/store/v5yg41abkm2wphqgn9i9h1xvcj9rzzwa-klayout-0.30.2/lib/libklayout_rba.so.0 +0x45c89 rba::rba_funcall2_checked(unsigned long, unsigned long, int, unsigned long*) [??:?]
+/nix/store/v5yg41abkm2wphqgn9i9h1xvcj9rzzwa-klayout-0.30.2/lib/libklayout_rba.so.0 +0x48162 rba::Proxy::call(int, gsi::SerialArgs&, gsi::SerialArgs&) const [??:?]
+/nix/store/v5yg41abkm2wphqgn9i9h1xvcj9rzzwa-klayout-0.30.2/lib/libklayout_gsi.so.0 +0x9f3e8 void gsi::Callback::issue<tl::Executable>(void (tl::Executable::*)()) const [??:?]
+/nix/store/v5yg41abkm2wphqgn9i9h1xvcj9rzzwa-klayout-0.30.2/lib/libklayout_tl.so.0 +0xcc189 tl::Executable::do_cleanup() [??:?]
+/nix/store/v5yg41abkm2wphqgn9i9h1xvcj9rzzwa-klayout-0.30.2/lib/libklayout_tl.so.0 +0xcc0df tl::Executable::do_execute() [??:?]
+/nix/store/v5yg41abkm2wphqgn9i9h1xvcj9rzzwa-klayout-0.30.2/lib/libklayout_lym.so.0 +0x4dec0 lym::MacroInterpreter::execute_macro(lym::Macro const*) [??:?]
+/nix/store/v5yg41abkm2wphqgn9i9h1xvcj9rzzwa-klayout-0.30.2/lib/libklayout_lym.so.0 +0x5cbc7 lym::Macro::run() const [??:?]
+/nix/store/v5yg41abkm2wphqgn9i9h1xvcj9rzzwa-klayout-0.30.2/lib/libklayout_lay.so.0 +0x15593c lay::ApplicationBase::run() [??:?]
+klayout +0x4c59
+/nix/store/v5yg41abkm2wphqgn9i9h1xvcj9rzzwa-klayout-0.30.2/lib/libklayout_rba.so.0 +0x25678
+/nix/store/9jslgkvdkn42hlc52mr25f37jsa5rxga-ruby-3.3.8/lib/libruby-3.3.8.so.3.3 +0x311ea9
+/nix/store/9jslgkvdkn42hlc52mr25f37jsa5rxga-ruby-3.3.8/lib/libruby-3.3.8.so.3.3 +0x3244a0
+/nix/store/9jslgkvdkn42hlc52mr25f37jsa5rxga-ruby-3.3.8/lib/libruby-3.3.8.so.3.3 +0x32a749
+/nix/store/9jslgkvdkn42hlc52mr25f37jsa5rxga-ruby-3.3.8/lib/libruby-3.3.8.so.3.3 +0x1260b9
+/nix/store/9jslgkvdkn42hlc52mr25f37jsa5rxga-ruby-3.3.8/lib/libruby-3.3.8.so.3.3 +0x12c7f3 ruby_run_node
+/nix/store/v5yg41abkm2wphqgn9i9h1xvcj9rzzwa-klayout-0.30.2/lib/libklayout_rba.so.0 +0x255ff _ZN3rba15RubyInterpreter10initializeERiPPcPFiS1_S3_E
+klayout +0x44a4
+klayout +0x3887
+/nix/store/cg9s562sa33k78m63njfn1rw47dp9z0i-glibc-2.40-66/lib/libc.so.6 +0x2a47e
+/nix/store/cg9s562sa33k78m63njfn1rw47dp9z0i-glibc-2.40-66/lib/libc.so.6 +0x2a539 __libc_start_main
+klayout +0x3625
+
+Crash log written to /home/cmaier/.klayout/klayout_crash.log

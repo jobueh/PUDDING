@@ -1,0 +1,122 @@
+
+Magic 8.3 revision 528 - Compiled on Sat Jun 21 19:19:56 UTC 2025.
+Starting magic under Tcl interpreter
+Using the terminal as the console.
+Using NULL graphics device.
+Processing system .magicrc file
+Sourcing design .magicrc for technology ihp-sg13g2 ...
+2 Magic internal units = 1 Lambda
+Input style sg13g2(): scaleFactor=2, multiplier=2
+The following types are not handled by extraction and will be treated as non-electrical types:
+    fillfet sealcont difffill nemitter hvnemitter hvisodiffres sealvia1 sealvia2 sealvia3 sealvia4 sealvia5 sealvia6 pad seal thruvia 
+Scaled tech values by 2 / 1 to match internal grid scaling
+Loading "/nix/store/3x0iz65q90laa2wjrvxaqx13fnzp1abs-python3-3.12.10-env/lib/python3.12/site-packages/librelane/scripts/magic/wrapper.tcl" from command line.
+Warning: Calma reading is not undoable!  I hope that's OK.
+Library written using GDS-II Release 6.0
+Library name: LIB
+Reading "via_stack$2$1".
+Reading "via_stack$3".
+Reading "FEOL$contacts$9$1".
+Reading "via_stack$1$1$1".
+Reading "FEOL$contacts$3$2$1".
+Reading "FEOL$contacts$1$1$1".
+Reading "FEOL$contacts$1$2".
+Reading "FEOL$contacts$4$1".
+Reading "FEOL$contacts$5$1".
+Reading "FEOL$contacts$7$1".
+Reading "FEOL$contacts$6$1".
+Reading "DAC_SW".
+Reading "NONOVERLAP".
+Reading "via_stack$6$2$1".
+Reading "via_stack$7$1$1".
+Reading "via_stack$4$1".
+Reading "PCSOURCE2U".
+Reading "CASCODEDRIVE".
+Reading "via_stack$9$1".
+Reading "via_stack$6".
+Reading "via_stack$5".
+Reading "FEOL$contacts$8".
+Reading "FEOL$contacts$3$1".
+Reading "UNITSOURCE2U".
+Reading "CASCODEBIAS".
+Reading "via_stack$4".
+Reading "DAC2U64OUT2IN".
+Reading "via_stack".
+Reading "dac2u128out4in".
+Reading "dac128module_vss_strap".
+Reading "dac128module_vdd_strap".
+Reading "VIA_TopVia1EWNS".
+Reading "VIA_Via4_YX".
+Reading "VIA_Via1_XY".
+Reading "VIA_Via3_XY".
+Reading "VIA_Via2_YX".
+Reading "VIA_Via1_YY".
+Reading "VIA_via1_2_2200_440_1_5_410_410".
+Reading "VIA_via2_3_2200_440_1_5_410_410".
+Reading "VIA_via3_4_2200_440_1_5_410_410".
+Reading "VIA_via4_5_2200_440_1_5_410_410".
+Reading "VIA_via5_6_2200_440_1_2_840_840".
+Reading "VIA_via5_6_2200_11810_13_2_840_840".
+Reading "VIA_via6_7_2200_2200_1_1_1960_1960".
+Reading "sg13g2_tiehi".
+CIF file read warning: CIF style sg13g2(): units rescaled by factor of 5 / 1
+Reading "sg13g2_buf_2".
+Reading "sg13g2_inv_1".
+Reading "dac128module".
+Reading "sg13g2_buf_1".
+Reading "sg13g2_decap_4".
+Reading "sg13g2_fill_2".
+Reading "sg13g2_fill_1".
+Reading "sg13g2_decap_8".
+Reading "heichips25_pudding".
+Error while reading cell "heichips25_pudding" (byte position 164418): Warning: cell "VIA_via6_7_2200_2200_1_1_1960_1960" placed on top of itself.  Ignoring the extra one.
+Error while reading cell "heichips25_pudding" (byte position 176220): Warning: cell "VIA_via6_7_2200_2200_1_1_1960_1960" placed on top of itself.  Ignoring the extra one.
+Error while reading cell "heichips25_pudding" (byte position 176568): Warning: cell "VIA_via6_7_2200_2200_1_1_1960_1960" placed on top of itself.  Ignoring the extra one.
+Error while reading cell "heichips25_pudding" (byte position 176626): Warning: cell "VIA_via6_7_2200_2200_1_1_1960_1960" placed on top of itself.  Ignoring the extra one.
+Error while reading cell "heichips25_pudding" (byte position 187022): Warning: cell "VIA_via6_7_2200_2200_1_1_1960_1960" placed on top of itself.  Ignoring the extra one.
+Error while reading cell "heichips25_pudding" (byte position 187348): Warning: cell "VIA_via6_7_2200_2200_1_1_1960_1960" placed on top of itself.  Ignoring the extra one.
+Error while reading cell "heichips25_pudding" (byte position 222262): Warning: cell "VIA_via6_7_2200_2200_1_1_1960_1960" placed on top of itself.  Ignoring the extra one.
+Error while reading cell "heichips25_pudding" (byte position 245618): Warning: cell "VIA_via6_7_2200_2200_1_1_1960_1960" placed on top of itself.  Ignoring the extra one.
+Error while reading cell "heichips25_pudding" (byte position 246074): Warning: cell "VIA_via6_7_2200_2200_1_1_1960_1960" placed on top of itself.  Ignoring the extra one.
+Error while reading cell "heichips25_pudding" (byte position 246132): Warning: cell "VIA_via6_7_2200_2200_1_1_1960_1960" placed on top of itself.  Ignoring the extra one.
+Error while reading cell "heichips25_pudding" (byte position 246306): Warning: cell "VIA_via6_7_2200_2200_1_1_1960_1960" placed on top of itself.  Ignoring the extra one.
+Error while reading cell "heichips25_pudding" (byte position 246422): Warning: cell "VIA_via6_7_2200_2200_1_1_1960_1960" placed on top of itself.  Ignoring the extra one.
+Error while reading cell "heichips25_pudding" (byte position 246480): Warning: cell "VIA_via6_7_2200_2200_1_1_1960_1960" placed on top of itself.  Ignoring the extra one.
+Error while reading cell "heichips25_pudding" (byte position 253676): Warning: cell "VIA_via6_7_2200_2200_1_1_1960_1960" placed on top of itself.  Ignoring the extra one.
+Error while reading cell "heichips25_pudding" (byte position 253792): Warning: cell "VIA_via6_7_2200_2200_1_1_1960_1960" placed on top of itself.  Ignoring the extra one.
+Error while reading cell "heichips25_pudding" (byte position 253966): Warning: cell "VIA_via6_7_2200_2200_1_1_1960_1960" placed on top of itself.  Ignoring the extra one.
+Error while reading cell "heichips25_pudding" (byte position 254082): Warning: cell "VIA_via6_7_2200_2200_1_1_1960_1960" placed on top of itself.  Ignoring the extra one.
+Error while reading cell "heichips25_pudding" (byte position 254140): Warning: cell "VIA_via6_7_2200_2200_1_1_1960_1960" placed on top of itself.  Ignoring the extra one.
+Error while reading cell "heichips25_pudding" (byte position 254256): Warning: cell "VIA_via6_7_2200_2200_1_1_1960_1960" placed on top of itself.  Ignoring the extra one.
+    5000 uses
+Error while reading cell "heichips25_pudding" (byte position 459808): Warning: cell "VIA_via6_7_2200_2200_1_1_1960_1960" placed on top of itself.  Ignoring the extra one.
+Error while reading cell "heichips25_pudding" (byte position 480124): Warning: cell "VIA_via6_7_2200_2200_1_1_1960_1960" placed on top of itself.  Ignoring the extra one.
+Error while reading cell "heichips25_pudding" (byte position 481400): Warning: cell "VIA_via6_7_2200_2200_1_1_1960_1960" placed on top of itself.  Ignoring the extra one.
+Error while reading cell "heichips25_pudding" (byte position 481660): Warning: cell "VIA_via6_7_2200_2200_1_1_1960_1960" placed on top of itself.  Ignoring the extra one.
+Error while reading cell "heichips25_pudding" (byte position 481718): Warning: cell "VIA_via6_7_2200_2200_1_1_1960_1960" placed on top of itself.  Ignoring the extra one.
+Error while reading cell "heichips25_pudding" (byte position 481776): Warning: cell "VIA_via6_7_2200_2200_1_1_1960_1960" placed on top of itself.  Ignoring the extra one.
+Error while reading cell "heichips25_pudding" (byte position 481942): Warning: cell "VIA_via6_7_2200_2200_1_1_1960_1960" placed on top of itself.  Ignoring the extra one.
+Error while reading cell "heichips25_pudding" (byte position 483284): Warning: cell "VIA_via6_7_2200_2200_1_1_1960_1960" placed on top of itself.  Ignoring the extra one.
+Error while reading cell "heichips25_pudding" (byte position 483486): Warning: cell "VIA_via6_7_2200_2200_1_1_1960_1960" placed on top of itself.  Ignoring the extra one.
+Error while reading cell "heichips25_pudding" (byte position 484322): Warning: cell "VIA_via6_7_2200_2200_1_1_1960_1960" placed on top of itself.  Ignoring the extra one.
+Error while reading cell "heichips25_pudding" (byte position 484942): Warning: cell "VIA_via6_7_2200_2200_1_1_1960_1960" placed on top of itself.  Ignoring the extra one.
+Error while reading cell "heichips25_pudding" (byte position 485238): Warning: cell "VIA_via6_7_2200_2200_1_1_1960_1960" placed on top of itself.  Ignoring the extra one.
+Error while reading cell "heichips25_pudding" (byte position 502500): Warning: cell "VIA_via6_7_2200_2200_1_1_1960_1960" placed on top of itself.  Ignoring the extra one.
+Error while reading cell "heichips25_pudding" (byte position 509788): Warning: cell "VIA_via6_7_2200_2200_1_1_1960_1960" placed on top of itself.  Ignoring the extra one.
+Error while reading cell "heichips25_pudding" (byte position 533256): Warning: cell "VIA_via6_7_2200_2200_1_1_1960_1960" placed on top of itself.  Ignoring the extra one.
+Error while reading cell "heichips25_pudding" (byte position 533430): Warning: cell "VIA_via6_7_2200_2200_1_1_1960_1960" placed on top of itself.  Ignoring the extra one.
+Error while reading cell "heichips25_pudding" (byte position 533488): Warning: cell "VIA_via6_7_2200_2200_1_1_1960_1960" placed on top of itself.  Ignoring the extra one.
+Error while reading cell "heichips25_pudding" (byte position 543354): Warning: cell "VIA_via6_7_2200_2200_1_1_1960_1960" placed on top of itself.  Ignoring the extra one.
+Error while reading cell "heichips25_pudding" (byte position 543528): Warning: cell "VIA_via6_7_2200_2200_1_1_1960_1960" placed on top of itself.  Ignoring the extra one.
+Error while reading cell "heichips25_pudding" (byte position 543586): Warning: cell "VIA_via6_7_2200_2200_1_1_1960_1960" placed on top of itself.  Ignoring the extra one.
+    10000 uses
+    15000 uses
+[INFO] Loading heichips25_pudding
+
+DRC style is now "drc(full)"
+Loading DRC CIF style.
+[INFO] COUNT: 6
+[INFO] Should be divided by 3 or 4
+[INFO] DRC Checking DONE (/home/cmaier/EDA/PUDDING/librelane/runs/RUN_2025-11-05_23-45-20/63-magic-drc/reports/drc_violations.magic.rpt)
+[INFO] Saving mag view with DRC errors (/home/cmaier/EDA/PUDDING/librelane/runs/RUN_2025-11-05_23-45-20/63-magic-drc/views/heichips25_pudding.drc.mag)
+[INFO] Saved
