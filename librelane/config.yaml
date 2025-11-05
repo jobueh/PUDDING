@@ -85,3 +85,5 @@ PDN_MACRO_CONNECTIONS:
   - "dacL VPWR VGND VDD VSS"
   - "dacH VPWR VGND VDD VSS"
 
+# select primary GDS streamout tool 
+PRIMARY_GDSII_STREAMOUT_TOOL: klayout
