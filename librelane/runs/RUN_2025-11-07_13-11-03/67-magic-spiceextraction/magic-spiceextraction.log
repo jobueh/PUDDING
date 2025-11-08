@@ -1,0 +1,87 @@
+
+Magic 8.3 revision 528 - Compiled on Sat Jun 21 19:19:56 UTC 2025.
+Starting magic under Tcl interpreter
+Using the terminal as the console.
+Using NULL graphics device.
+Processing system .magicrc file
+Sourcing design .magicrc for technology ihp-sg13g2 ...
+2 Magic internal units = 1 Lambda
+Input style sg13g2(): scaleFactor=2, multiplier=2
+The following types are not handled by extraction and will be treated as non-electrical types:
+    fillfet sealcont difffill nemitter hvnemitter hvisodiffres sealvia1 sealvia2 sealvia3 sealvia4 sealvia5 sealvia6 pad seal thruvia 
+Scaled tech values by 2 / 1 to match internal grid scaling
+Loading "/nix/store/3x0iz65q90laa2wjrvxaqx13fnzp1abs-python3-3.12.10-env/lib/python3.12/site-packages/librelane/scripts/magic/wrapper.tcl" from command line.
+> lef read /home/cmaier/.ciel/ciel/ihp-sg13g2/versions/cb7daaa8901016cf7c5d272dfa322c41f024931f/ihp-sg13g2/libs.ref/sg13g2_stdcell/lef/sg13g2_tech.lef
+Reading LEF data from file /home/cmaier/.ciel/ciel/ihp-sg13g2/versions/cb7daaa8901016cf7c5d272dfa322c41f024931f/ihp-sg13g2/libs.ref/sg13g2_stdcell/lef/sg13g2_tech.lef.
+This action cannot be undone.
+LEF read, Line 79 (Message): Unknown keyword "MAXIMUMDENSITY" in LEF file; ignoring.
+LEF read, Line 80 (Message): Unknown keyword "DENSITYCHECKSTEP" in LEF file; ignoring.
+LEF read, Line 81 (Message): Unknown keyword "DENSITYCHECKWINDOW" in LEF file; ignoring.
+LEF read, Line 87 (Message): Unknown keyword "MINIMUMCUT" in LEF file; ignoring.
+LEF read, Line 91 (Message): Unknown keyword "ANTENNACUMAREARATIO" in LEF file; ignoring.
+LEF read, Line 92 (Message): Unknown keyword "ANTENNACUMDIFFAREARATIO" in LEF file; ignoring.
+LEF read, Line 121 (Message): Unknown keyword "MAXIMUMDENSITY" in LEF file; ignoring.
+LEF read, Line 122 (Message): Unknown keyword "DENSITYCHECKSTEP" in LEF file; ignoring.
+LEF read, Line 123 (Message): Unknown keyword "DENSITYCHECKWINDOW" in LEF file; ignoring.
+LEF read, Line 129 (Message): Unknown keyword "MINIMUMCUT" in LEF file; ignoring.
+LEF read, Line 134 (Message): Unknown keyword "ANTENNACUMAREARATIO" in LEF file; ignoring.
+LEF read, Line 135 (Message): Unknown keyword "ANTENNACUMDIFFAREARATIO" in LEF file; ignoring.
+LEF read, Line 163 (Message): Unknown keyword "MAXIMUMDENSITY" in LEF file; ignoring.
+LEF read, Line 164 (Message): Unknown keyword "DENSITYCHECKSTEP" in LEF file; ignoring.
+LEF read, Line 165 (Message): Unknown keyword "DENSITYCHECKWINDOW" in LEF file; ignoring.
+LEF read, Line 171 (Message): Unknown keyword "MINIMUMCUT" in LEF file; ignoring.
+LEF read, Line 176 (Message): Unknown keyword "ANTENNACUMAREARATIO" in LEF file; ignoring.
+LEF read, Line 177 (Message): Unknown keyword "ANTENNACUMDIFFAREARATIO" in LEF file; ignoring.
+LEF read, Line 205 (Message): Unknown keyword "MAXIMUMDENSITY" in LEF file; ignoring.
+LEF read, Line 206 (Message): Unknown keyword "DENSITYCHECKSTEP" in LEF file; ignoring.
+LEF read, Line 207 (Message): Unknown keyword "DENSITYCHECKWINDOW" in LEF file; ignoring.
+LEF read, Line 213 (Message): Unknown keyword "MINIMUMCUT" in LEF file; ignoring.
+LEF read, Line 218 (Message): Unknown keyword "ANTENNACUMAREARATIO" in LEF file; ignoring.
+LEF read, Line 219 (Message): Unknown keyword "ANTENNACUMDIFFAREARATIO" in LEF file; ignoring.
+LEF read, Line 246 (Message): Unknown keyword "MAXIMUMDENSITY" in LEF file; ignoring.
+LEF read, Line 247 (Message): Unknown keyword "DENSITYCHECKSTEP" in LEF file; ignoring.
+LEF read, Line 248 (Message): Unknown keyword "DENSITYCHECKWINDOW" in LEF file; ignoring.
+LEF read, Line 254 (Message): Unknown keyword "MINIMUMCUT" in LEF file; ignoring.
+LEF read, Line 259 (Message): Unknown keyword "ANTENNACUMAREARATIO" in LEF file; ignoring.
+LEF read, Line 260 (Message): Unknown keyword "ANTENNACUMDIFFAREARATIO" in LEF file; ignoring.
+LEF read, Line 286 (Message): Unknown keyword "MAXIMUMDENSITY" in LEF file; ignoring.
+LEF read, Line 287 (Message): Unknown keyword "DENSITYCHECKSTEP" in LEF file; ignoring.
+LEF read, Line 288 (Message): Unknown keyword "DENSITYCHECKWINDOW" in LEF file; ignoring.
+LEF read, Line 293 (Message): Unknown keyword "ANTENNACUMAREARATIO" in LEF file; ignoring.
+LEF read, Line 294 (Message): Unknown keyword "ANTENNACUMDIFFAREARATIO" in LEF file; ignoring.
+LEF read, Line 320 (Message): Unknown keyword "MAXIMUMDENSITY" in LEF file; ignoring.
+LEF read, Line 321 (Message): Unknown keyword "DENSITYCHECKSTEP" in LEF file; ignoring.
+LEF read, Line 322 (Message): Unknown keyword "DENSITYCHECKWINDOW" in LEF file; ignoring.
+LEF read, Line 327 (Message): Unknown keyword "ANTENNACUMAREARATIO" in LEF file; ignoring.
+LEF read, Line 328 (Message): Unknown keyword "ANTENNACUMDIFFAREARATIO" in LEF file; ignoring.
+LEF read: Processed 1197 lines.
+> lef read /home/cmaier/.ciel/ciel/ihp-sg13g2/versions/cb7daaa8901016cf7c5d272dfa322c41f024931f/ihp-sg13g2/libs.ref/sg13g2_stdcell/lef/sg13g2_stdcell.lef
+Reading LEF data from file /home/cmaier/.ciel/ciel/ihp-sg13g2/versions/cb7daaa8901016cf7c5d272dfa322c41f024931f/ihp-sg13g2/libs.ref/sg13g2_stdcell/lef/sg13g2_stdcell.lef.
+This action cannot be undone.
+LEF read, Line 6473 (Message): Unknown keyword "ANTENNAMAXCUTCAR" in LEF file; ignoring.
+LEF read: Processed 7927 lines.
+> lef read /home/cmaier/EDA/PUDDING/gds/dac128module.lef
+Reading LEF data from file /home/cmaier/EDA/PUDDING/gds/dac128module.lef.
+This action cannot be undone.
+LEF read: Processed 2069 lines.
+> def read /home/cmaier/EDA/PUDDING/librelane/runs/RUN_2025-11-07_13-11-03/53-odb-cellfrequencytables/heichips25_pudding.def -noblockage -labels
+Reading DEF data from file /home/cmaier/EDA/PUDDING/librelane/runs/RUN_2025-11-07_13-11-03/53-odb-cellfrequencytables/heichips25_pudding.def.
+This action cannot be undone.
+  Processed 7 vias total.
+  Processed 7144 subcell instances total.
+  Processed 45 pins total.
+  Processed 2 special nets total.
+  Processed 685 nets total.
+DEF read: Processed 21401 lines.
+Processing heichips25_pudding
+Extracting sg13g2_decap_8 into sg13g2_decap_8.ext:
+Extracting sg13g2_buf_1 into sg13g2_buf_1.ext:
+Extracting sg13g2_fill_2 into sg13g2_fill_2.ext:
+Extracting sg13g2_decap_4 into sg13g2_decap_4.ext:
+Extracting sg13g2_fill_1 into sg13g2_fill_1.ext:
+Extracting sg13g2_inv_1 into sg13g2_inv_1.ext:
+Extracting sg13g2_buf_2 into sg13g2_buf_2.ext:
+Extracting dac128module into dac128module.ext:
+Extracting sg13g2_tiehi into sg13g2_tiehi.ext:
+Extracting heichips25_pudding into heichips25_pudding.ext:
+exttospice finished.
