@@ -1,0 +1,12 @@
+* Antenna
+Passed ✅
+
+* LVS
+Passed ✅
+
+* DRC
+Failed 𐄂
+KLayout DRC errors: 1592
+Magic DRC errors: 0
+Check the report directories of KLayout.DRC and Magic.DRC.
+

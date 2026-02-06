@@ -1,0 +1,198 @@
+Netgen 1.5.295 compiled on Sat Jun 21 19:15:42 UTC 2025
+Warning: netgen command 'format' use fully-qualified name '::netgen::format'
+Warning: netgen command 'global' use fully-qualified name '::netgen::global'
+Warning:  A case-insensitive file has been read and so the	verilog file must be treated case-insensitive to match.
+Reading SPICE netlist file '/home/cmaier/.ciel/ciel/ihp-sg13g2/versions/cb7daaa8901016cf7c5d272dfa322c41f024931f/ihp-sg13g2/libs.ref/sg13g2_stdcell/spice/sg13g2_stdcell.spice'...
+Call to undefined subcircuit sg13_lv_nmos
+Creating placeholder cell definition.
+Call to undefined subcircuit sg13_lv_pmos
+Creating placeholder cell definition.
+Call to undefined subcircuit dantenna
+Creating placeholder cell definition.
+Call to undefined subcircuit dpantenna
+Creating placeholder cell definition.
+Warning:  A case-insensitive file has been read and so the	verilog file must be treated case-insensitive to match.
+Creating placeholder cell definition for module dac128module.
+Treating empty subcircuits as black-box cells
+Generating JSON file result
+
+Reading setup file /nix/store/3x0iz65q90laa2wjrvxaqx13fnzp1abs-python3-3.12.10-env/lib/python3.12/site-packages/librelane/scripts/netgen/setup.tcl
+
+Model sg13_lv_nmos pin 1 == 3
+No property trise found for device sg13_lv_nmos
+No property z1 found for device sg13_lv_nmos
+No property z2 found for device sg13_lv_nmos
+No property wmin found for device sg13_lv_nmos
+No property rfmode found for device sg13_lv_nmos
+No property pre_layout found for device sg13_lv_nmos
+Model sg13_lv_pmos pin 1 == 3
+No property trise found for device sg13_lv_pmos
+No property z1 found for device sg13_lv_pmos
+No property z2 found for device sg13_lv_pmos
+No property wmin found for device sg13_lv_pmos
+No property rfmode found for device sg13_lv_pmos
+No property pre_layout found for device sg13_lv_pmos
+No property DEV_A found for device dantenna
+No property DEV_P found for device dantenna
+No property DEV_C found for device dantenna
+No property DEV_A found for device dpantenna
+No property DEV_P found for device dpantenna
+No property DEV_C found for device dpantenna
+Comparison output logged to file /home/cmaier/EDA/PUDDING/librelane/runs/RUN_2026-02-06_06-55-27/69-netgen-lvs/reports/lvs.netgen.rpt
+Logging to file "/home/cmaier/EDA/PUDDING/librelane/runs/RUN_2026-02-06_06-55-27/69-netgen-lvs/reports/lvs.netgen.rpt" enabled
+
+Contents of circuit 1:  Circuit: 'sg13g2_decap_8'
+Circuit sg13g2_decap_8 contains 0 device instances.
+Circuit contains 0 nets, and 2 disconnected pins.
+Contents of circuit 2:  Circuit: 'sg13g2_decap_8'
+Circuit sg13g2_decap_8 contains 2 device instances.
+  Class: sg13_lv_pmos          instances:   1
+  Class: sg13_lv_nmos          instances:   1
+Circuit contains 2 nets.
+
+Circuit sg13g2_decap_8 contains no devices.
+
+Contents of circuit 1:  Circuit: 'sg13g2_inv_1'
+Circuit sg13g2_inv_1 contains 0 device instances.
+Circuit contains 0 nets, and 4 disconnected pins.
+Contents of circuit 2:  Circuit: 'sg13g2_inv_1'
+Circuit sg13g2_inv_1 contains 2 device instances.
+  Class: sg13_lv_pmos          instances:   1
+  Class: sg13_lv_nmos          instances:   1
+Circuit contains 4 nets.
+
+Circuit sg13g2_inv_1 contains no devices.
+
+Contents of circuit 1:  Circuit: 'sg13g2_fill_2'
+Circuit sg13g2_fill_2 contains 0 device instances.
+Circuit contains 0 nets, and 2 disconnected pins.
+Contents of circuit 2:  Circuit: 'sg13g2_fill_2'
+Circuit sg13g2_fill_2 contains 0 device instances.
+Circuit contains 0 nets, and 2 disconnected pins.
+
+Circuit sg13g2_fill_2 contains no devices.
+
+Contents of circuit 1:  Circuit: 'sg13g2_fill_1'
+Circuit sg13g2_fill_1 contains 0 device instances.
+Circuit contains 0 nets, and 2 disconnected pins.
+Contents of circuit 2:  Circuit: 'sg13g2_fill_1'
+Circuit sg13g2_fill_1 contains 0 device instances.
+Circuit contains 0 nets, and 2 disconnected pins.
+
+Circuit sg13g2_fill_1 contains no devices.
+
+Contents of circuit 1:  Circuit: 'sg13g2_buf_1'
+Circuit sg13g2_buf_1 contains 0 device instances.
+Circuit contains 0 nets, and 4 disconnected pins.
+Contents of circuit 2:  Circuit: 'sg13g2_buf_1'
+Circuit sg13g2_buf_1 contains 4 device instances.
+  Class: sg13_lv_pmos          instances:   2
+  Class: sg13_lv_nmos          instances:   2
+Circuit contains 5 nets.
+
+Circuit sg13g2_buf_1 contains no devices.
+
+Contents of circuit 1:  Circuit: 'sg13g2_decap_4'
+Circuit sg13g2_decap_4 contains 0 device instances.
+Circuit contains 0 nets, and 2 disconnected pins.
+Contents of circuit 2:  Circuit: 'sg13g2_decap_4'
+Circuit sg13g2_decap_4 contains 2 device instances.
+  Class: sg13_lv_pmos          instances:   1
+  Class: sg13_lv_nmos          instances:   1
+Circuit contains 2 nets.
+
+Circuit sg13g2_decap_4 contains no devices.
+
+Contents of circuit 1:  Circuit: 'sg13g2_buf_2'
+Circuit sg13g2_buf_2 contains 0 device instances.
+Circuit contains 0 nets, and 4 disconnected pins.
+Contents of circuit 2:  Circuit: 'sg13g2_buf_2'
+Circuit sg13g2_buf_2 contains 4 device instances.
+  Class: sg13_lv_pmos          instances:   2
+  Class: sg13_lv_nmos          instances:   2
+Circuit contains 5 nets.
+
+Circuit sg13g2_buf_2 contains no devices.
+
+Contents of circuit 1:  Circuit: 'dac128module'
+Circuit dac128module contains 0 device instances.
+Circuit contains 0 nets, and 266 disconnected pins.
+Contents of circuit 2:  Circuit: 'dac128module'
+Circuit dac128module contains 0 device instances.
+Circuit contains 0 nets.
+
+Circuit dac128module contains no devices.
+
+Contents of circuit 1:  Circuit: 'sg13g2_tiehi'
+Circuit sg13g2_tiehi contains 0 device instances.
+Circuit contains 0 nets, and 3 disconnected pins.
+Contents of circuit 2:  Circuit: 'sg13g2_tiehi'
+Circuit sg13g2_tiehi contains 4 device instances.
+  Class: sg13_lv_pmos          instances:   2
+  Class: sg13_lv_nmos          instances:   2
+Circuit contains 6 nets.
+
+Circuit sg13g2_tiehi contains no devices.
+
+Contents of circuit 1:  Circuit: 'heichips25_pudding'
+Circuit heichips25_pudding contains 7144 device instances.
+  Class: dac128module          instances:   2
+  Class: sg13g2_decap_4        instances:  35
+  Class: sg13g2_decap_8        instances: 6192
+  Class: sg13g2_tiehi          instances:   8
+  Class: sg13g2_fill_1         instances: 160
+  Class: sg13g2_fill_2         instances:  91
+  Class: sg13g2_buf_1          instances: 380
+  Class: sg13g2_buf_2          instances:  12
+  Class: sg13g2_inv_1          instances: 264
+Circuit contains 670 nets, and 15 disconnected pins.
+Contents of circuit 2:  Circuit: 'heichips25_pudding'
+Circuit heichips25_pudding contains 7144 device instances.
+  Class: dac128module          instances:   2
+  Class: sg13g2_decap_4        instances:  35
+  Class: sg13g2_decap_8        instances: 6192
+  Class: sg13g2_tiehi          instances:   8
+  Class: sg13g2_fill_1         instances: 160
+  Class: sg13g2_fill_2         instances:  91
+  Class: sg13g2_buf_1          instances: 380
+  Class: sg13g2_buf_2          instances:  12
+  Class: sg13g2_inv_1          instances: 264
+Circuit contains 670 nets, and 15 disconnected pins.
+
+Circuit was modified by parallel/series device merging.
+New circuit summary:
+
+Contents of circuit 1:  Circuit: 'heichips25_pudding'
+Circuit heichips25_pudding contains 670 device instances.
+  Class: dac128module          instances:   2
+  Class: sg13g2_decap_4        instances:   1
+  Class: sg13g2_decap_8        instances:   1
+  Class: sg13g2_tiehi          instances:   8
+  Class: sg13g2_fill_1         instances:   1
+  Class: sg13g2_fill_2         instances:   1
+  Class: sg13g2_buf_1          instances: 380
+  Class: sg13g2_buf_2          instances:  12
+  Class: sg13g2_inv_1          instances: 264
+Circuit contains 670 nets, and 15 disconnected pins.
+Contents of circuit 2:  Circuit: 'heichips25_pudding'
+Circuit heichips25_pudding contains 670 device instances.
+  Class: dac128module          instances:   2
+  Class: sg13g2_decap_4        instances:   1
+  Class: sg13g2_decap_8        instances:   1
+  Class: sg13g2_tiehi          instances:   8
+  Class: sg13g2_fill_1         instances:   1
+  Class: sg13g2_fill_2         instances:   1
+  Class: sg13g2_buf_1          instances: 380
+  Class: sg13g2_buf_2          instances:  12
+  Class: sg13g2_inv_1          instances: 264
+Circuit contains 670 nets, and 15 disconnected pins.
+
+Circuit 1 contains 670 devices, Circuit 2 contains 670 devices.
+Circuit 1 contains 670 nets,    Circuit 2 contains 670 nets.
+
+
+Final result: 
+Circuits match uniquely.
+.
+Logging to file "/home/cmaier/EDA/PUDDING/librelane/runs/RUN_2026-02-06_06-55-27/69-netgen-lvs/reports/lvs.netgen.rpt" disabled
+LVS Done.
