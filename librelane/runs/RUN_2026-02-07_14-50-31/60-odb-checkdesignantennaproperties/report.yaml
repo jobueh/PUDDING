@@ -1,0 +1,19 @@
+- cell: heichips25_pudding
+  inout: []
+  input:
+  - clk
+  - ena
+  - rst_n
+  - ui_in[4]
+  - ui_in[5]
+  - ui_in[6]
+  - ui_in[7]
+  - uio_in[0]
+  - uio_in[1]
+  - uio_in[2]
+  - uio_in[3]
+  - uio_in[4]
+  - uio_in[5]
+  - uio_in[6]
+  - uio_in[7]
+  output: []
