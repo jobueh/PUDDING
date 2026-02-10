@@ -1,0 +1,9 @@
+set circuit1 [readnet spice /home/cmaier/EDA/PUDDING/librelane/runs/RUN_2026-02-09_04-26-24/67-magic-spiceextraction/heichips25_pudding.spice]
+set circuit2 [readnet verilog /dev/null]
+puts "Reading SPICE netlist file '/home/cmaier/.ciel/ciel/ihp-sg13g2/versions/c4b8b4e5e7a05f375cca3815d51b3a37721fbf5c/ihp-sg13g2/libs.ref/sg13g2_stdcell/spice/sg13g2_stdcell.spice'..."
+readnet spice /home/cmaier/.ciel/ciel/ihp-sg13g2/versions/c4b8b4e5e7a05f375cca3815d51b3a37721fbf5c/ihp-sg13g2/libs.ref/sg13g2_stdcell/spice/sg13g2_stdcell.spice $circuit2
+puts "Reading SPICE netlist file '/home/cmaier/.ciel/ciel/ihp-sg13g2/versions/c4b8b4e5e7a05f375cca3815d51b3a37721fbf5c/ihp-sg13g2/libs.ref/sg13g2_io/spice/sg13g2_io.spi'..."
+readnet spice /home/cmaier/.ciel/ciel/ihp-sg13g2/versions/c4b8b4e5e7a05f375cca3815d51b3a37721fbf5c/ihp-sg13g2/libs.ref/sg13g2_io/spice/sg13g2_io.spi $circuit2
+puts "Reading Verilog netlist file '/home/cmaier/EDA/PUDDING/librelane/runs/RUN_2026-02-09_04-26-24/52-openroad-fillinsertion/heichips25_pudding.pnl.v'..."
+readnet verilog /home/cmaier/EDA/PUDDING/librelane/runs/RUN_2026-02-09_04-26-24/52-openroad-fillinsertion/heichips25_pudding.pnl.v $circuit2
+lvs "$circuit1 heichips25_pudding" "$circuit2 heichips25_pudding" /nix/store/0kwn3pa8al4np6jss3x11hhh5wp0h27q-python3-3.13.9-env/lib/python3.13/site-packages/librelane/scripts/netgen/setup.tcl /home/cmaier/EDA/PUDDING/librelane/runs/RUN_2026-02-09_04-26-24/69-netgen-lvs/reports/lvs.netgen.rpt -blackbox -json

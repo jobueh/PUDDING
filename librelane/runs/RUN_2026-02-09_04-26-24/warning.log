@@ -1,0 +1,54 @@
+4 Lint warnings found.
+No libs found for macro dac128module at corner nom_typ_1p20V_25C. The module will be black-boxed.
+No libs found for macro dac128module at corner nom_typ_1p20V_25C. The module will be black-boxed.
+No libs found for macro dac128module at corner nom_fast_1p32V_m40C. The module will be black-boxed.
+No libs found for macro dac128module at corner nom_slow_1p08V_125C. The module will be black-boxed.
+No libs found for macro dac128module at corner nom_typ_1p20V_25C. The module will be black-boxed.
+No libs found for macro dac128module at corner nom_typ_1p20V_25C. The module will be black-boxed.
+[ORD-2011] LEF master dac128module has no liberty cell.
+No libs found for macro dac128module at corner nom_typ_1p20V_25C. The module will be black-boxed.
+No libs found for macro dac128module at corner nom_typ_1p20V_25C. The module will be black-boxed.
+No libs found for macro dac128module at corner nom_typ_1p20V_25C. The module will be black-boxed.
+No libs found for macro dac128module at corner nom_typ_1p20V_25C. The module will be black-boxed.
+[PDN-0211] Option -starts_with cannot be used with -followpins and will be ignored.
+Bterm VGND is declared as a 'GROUND' pin. It will be ignored.
+Bterm VPWR is declared as a 'POWER' pin. It will be ignored.
+No libs found for macro dac128module at corner nom_typ_1p20V_25C. The module will be black-boxed.
+No libs found for macro dac128module at corner nom_typ_1p20V_25C. The module will be black-boxed.
+No libs found for macro dac128module at corner nom_fast_1p32V_m40C. The module will be black-boxed.
+No libs found for macro dac128module at corner nom_slow_1p08V_125C. The module will be black-boxed.
+No libs found for macro dac128module at corner nom_typ_1p20V_25C. The module will be black-boxed.
+No libs found for macro dac128module at corner nom_typ_1p20V_25C. The module will be black-boxed.
+No libs found for macro dac128module at corner nom_fast_1p32V_m40C. The module will be black-boxed.
+No libs found for macro dac128module at corner nom_slow_1p08V_125C. The module will be black-boxed.
+No libs found for macro dac128module at corner nom_typ_1p20V_25C. The module will be black-boxed.
+No libs found for macro dac128module at corner nom_typ_1p20V_25C. The module will be black-boxed.
+No libs found for macro dac128module at corner nom_fast_1p32V_m40C. The module will be black-boxed.
+No libs found for macro dac128module at corner nom_slow_1p08V_125C. The module will be black-boxed.
+No libs found for macro dac128module at corner nom_typ_1p20V_25C. The module will be black-boxed.
+No libs found for macro dac128module at corner nom_typ_1p20V_25C. The module will be black-boxed.
+No libs found for macro dac128module at corner nom_typ_1p20V_25C. The module will be black-boxed.
+No libs found for macro dac128module at corner nom_typ_1p20V_25C. The module will be black-boxed.
+No libs found for macro dac128module at corner nom_typ_1p20V_25C. The module will be black-boxed.
+No libs found for macro dac128module at corner nom_typ_1p20V_25C. The module will be black-boxed.
+No libs found for macro dac128module at corner nom_typ_1p20V_25C. The module will be black-boxed.
+No libs found for macro dac128module at corner nom_typ_1p20V_25C. The module will be black-boxed.
+[DRT-0349] LEF58_ENCLOSURE with no CUTCLASS is not supported. Skipping for layer Cont
+[DRT-0349] LEF58_ENCLOSURE with no CUTCLASS is not supported. Skipping for layer Via1
+[DRT-0349] LEF58_ENCLOSURE with no CUTCLASS is not supported. Skipping for layer Via1
+[DRT-0349] LEF58_ENCLOSURE with no CUTCLASS is not supported. Skipping for layer Via2
+[DRT-0349] LEF58_ENCLOSURE with no CUTCLASS is not supported. Skipping for layer Via3
+[DRT-0349] LEF58_ENCLOSURE with no CUTCLASS is not supported. Skipping for layer Via4
+[DRT-0349] LEF58_ENCLOSURE with no CUTCLASS is not supported. Skipping for layer TopVia1
+[DRT-0349] LEF58_ENCLOSURE with no CUTCLASS is not supported. Skipping for layer TopVia1
+[DRT-0349] LEF58_ENCLOSURE with no CUTCLASS is not supported. Skipping for layer TopVia2
+[DRT-0349] LEF58_ENCLOSURE with no CUTCLASS is not supported. Skipping for layer TopVia2
+No libs found for macro dac128module at corner nom_typ_1p20V_25C. The module will be black-boxed.
+Threshold for Threshold-surpassing long wires is not set. The checker will be skipped.
+No libs found for macro dac128module at corner nom_typ_1p20V_25C. The module will be black-boxed.
+No libs found for macro dac128module at corner nom_fast_1p32V_m40C. The module will be black-boxed.
+No libs found for macro dac128module at corner nom_slow_1p08V_125C. The module will be black-boxed.
+No libs found for macro dac128module at corner nom_typ_1p20V_25C. The module will be black-boxed.
+'VSRC_LOC_FILES' was not given a value, which may make the results of IR drop analysis inaccurate. If you are not integrating a top-level chip for manufacture, you may ignore this warning, otherwise, see the documentation for 'VSRC_LOC_FILES'.
+No libs found for macro dac128module at corner nom_typ_1p20V_25C. The module will be black-boxed.
+Cell 'heichips25_pudding' has (11) input pin(s) without antenna gate information. They might not be connected to a gate.
