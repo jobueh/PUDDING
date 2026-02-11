@@ -15,6 +15,8 @@ module heichips25_pudding(
     input  wire       ena,      // always 1 when the design is powered, so you can ignore it
     input  wire       clk,      // clock
     input  wire       rst_n,    // reset_n - low to reset
+    inout  wire       i_in,	// input (reference) current
+    inout  wire       i_out,	// output (DAC) current
     inout VPWR,
     inout VGND
 );
@@ -23,7 +25,7 @@ module heichips25_pudding(
 //(* keep = "yes" *) wire VGND;
    
     // List all unused inputs to prevent warnings
-    wire _unused = &{ena, uio_in[7:0], ui_in[7:4]};
+    wire _unused = &{ena, uio_in[7:0], ui_in[7:5], i_in, i_out};
 
     logic[3:0] daisyen, daisyenp, daisyenn;
     logic[3:0] stateen, stateenp, stateenn;
@@ -39,7 +41,6 @@ module heichips25_pudding(
     assign dir      = ui_in[3];
 
     assign stateen = {4{ui_in[4]}};
-    assign daisyen = {4{ui_in[5]}};
 
     always_ff @(posedge clk) 
     begin

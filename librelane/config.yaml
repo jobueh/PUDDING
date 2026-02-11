@@ -20,7 +20,7 @@ PL_TARGET_DENSITY_PCT: 70
 
 # Small DEF template
 DIE_AREA: [0, 0, 500, 200]
-FP_DEF_TEMPLATE: dir::def/heichips25_template_small.def
+FP_DEF_TEMPLATE: dir::def/heichips25_template_small_cryo.def
 
 # Large DEF template
 #DIE_AREA: [0, 0, 500, 415]
