@@ -1,0 +1,1005 @@
+
+Cell sg13g2_decap_8 (0) disconnected node: VDD
+Cell sg13g2_decap_8 (0) disconnected node: VSS
+
+Subcircuit pins:
+Circuit 1: sg13g2_decap_8                  |Circuit 2: sg13g2_decap_8                  
+-------------------------------------------|-------------------------------------------
+VDD                                        |VDD                                        
+VSS                                        |VSS                                        
+---------------------------------------------------------------------------------------
+Cell pin lists are equivalent.
+Device classes sg13g2_decap_8 and sg13g2_decap_8 are equivalent.
+
+Cell sg13g2_fill_1 (0) disconnected node: VDD
+Cell sg13g2_fill_1 (0) disconnected node: VSS
+Cell sg13g2_fill_1 (1) disconnected node: VDD
+Cell sg13g2_fill_1 (1) disconnected node: VSS
+
+Subcircuit pins:
+Circuit 1: sg13g2_fill_1                   |Circuit 2: sg13g2_fill_1                   
+-------------------------------------------|-------------------------------------------
+VDD                                        |VDD                                        
+VSS                                        |VSS                                        
+---------------------------------------------------------------------------------------
+Cell pin lists are equivalent.
+Device classes sg13g2_fill_1 and sg13g2_fill_1 are equivalent.
+
+Cell sg13g2_nand2_1 (0) disconnected node: Y
+Cell sg13g2_nand2_1 (0) disconnected node: A
+Cell sg13g2_nand2_1 (0) disconnected node: B
+Cell sg13g2_nand2_1 (0) disconnected node: VDD
+Cell sg13g2_nand2_1 (0) disconnected node: VSS
+
+Subcircuit pins:
+Circuit 1: sg13g2_nand2_1                  |Circuit 2: sg13g2_nand2_1                  
+-------------------------------------------|-------------------------------------------
+Y                                          |Y                                          
+A                                          |A                                          
+B                                          |B                                          
+VDD                                        |VDD                                        
+VSS                                        |VSS                                        
+---------------------------------------------------------------------------------------
+Cell pin lists are equivalent.
+Device classes sg13g2_nand2_1 and sg13g2_nand2_1 are equivalent.
+
+Cell sg13g2_a221oi_1 (0) disconnected node: VDD
+Cell sg13g2_a221oi_1 (0) disconnected node: VSS
+Cell sg13g2_a221oi_1 (0) disconnected node: B2
+Cell sg13g2_a221oi_1 (0) disconnected node: C1
+Cell sg13g2_a221oi_1 (0) disconnected node: B1
+Cell sg13g2_a221oi_1 (0) disconnected node: A1
+Cell sg13g2_a221oi_1 (0) disconnected node: Y
+Cell sg13g2_a221oi_1 (0) disconnected node: A2
+
+Subcircuit pins:
+Circuit 1: sg13g2_a221oi_1                 |Circuit 2: sg13g2_a221oi_1                 
+-------------------------------------------|-------------------------------------------
+VDD                                        |VDD                                        
+VSS                                        |VSS                                        
+B2                                         |B2                                         
+C1                                         |C1                                         
+B1                                         |B1                                         
+A1                                         |A1                                         
+Y                                          |Y                                          
+A2                                         |A2                                         
+---------------------------------------------------------------------------------------
+Cell pin lists are equivalent.
+Device classes sg13g2_a221oi_1 and sg13g2_a221oi_1 are equivalent.
+
+Cell sg13g2_fill_2 (0) disconnected node: VDD
+Cell sg13g2_fill_2 (0) disconnected node: VSS
+Cell sg13g2_fill_2 (1) disconnected node: VDD
+Cell sg13g2_fill_2 (1) disconnected node: VSS
+
+Subcircuit pins:
+Circuit 1: sg13g2_fill_2                   |Circuit 2: sg13g2_fill_2                   
+-------------------------------------------|-------------------------------------------
+VDD                                        |VDD                                        
+VSS                                        |VSS                                        
+---------------------------------------------------------------------------------------
+Cell pin lists are equivalent.
+Device classes sg13g2_fill_2 and sg13g2_fill_2 are equivalent.
+
+Cell sg13g2_decap_4 (0) disconnected node: VDD
+Cell sg13g2_decap_4 (0) disconnected node: VSS
+
+Subcircuit pins:
+Circuit 1: sg13g2_decap_4                  |Circuit 2: sg13g2_decap_4                  
+-------------------------------------------|-------------------------------------------
+VDD                                        |VDD                                        
+VSS                                        |VSS                                        
+---------------------------------------------------------------------------------------
+Cell pin lists are equivalent.
+Device classes sg13g2_decap_4 and sg13g2_decap_4 are equivalent.
+
+Cell sg13g2_o21ai_1 (0) disconnected node: B1
+Cell sg13g2_o21ai_1 (0) disconnected node: VDD
+Cell sg13g2_o21ai_1 (0) disconnected node: Y
+Cell sg13g2_o21ai_1 (0) disconnected node: VSS
+Cell sg13g2_o21ai_1 (0) disconnected node: A1
+Cell sg13g2_o21ai_1 (0) disconnected node: A2
+
+Subcircuit pins:
+Circuit 1: sg13g2_o21ai_1                  |Circuit 2: sg13g2_o21ai_1                  
+-------------------------------------------|-------------------------------------------
+B1                                         |B1                                         
+VDD                                        |VDD                                        
+Y                                          |Y                                          
+VSS                                        |VSS                                        
+A1                                         |A1                                         
+A2                                         |A2                                         
+---------------------------------------------------------------------------------------
+Cell pin lists are equivalent.
+Device classes sg13g2_o21ai_1 and sg13g2_o21ai_1 are equivalent.
+
+Cell sg13g2_buf_1 (0) disconnected node: A
+Cell sg13g2_buf_1 (0) disconnected node: X
+Cell sg13g2_buf_1 (0) disconnected node: VDD
+Cell sg13g2_buf_1 (0) disconnected node: VSS
+
+Subcircuit pins:
+Circuit 1: sg13g2_buf_1                    |Circuit 2: sg13g2_buf_1                    
+-------------------------------------------|-------------------------------------------
+A                                          |A                                          
+X                                          |X                                          
+VDD                                        |VDD                                        
+VSS                                        |VSS                                        
+---------------------------------------------------------------------------------------
+Cell pin lists are equivalent.
+Device classes sg13g2_buf_1 and sg13g2_buf_1 are equivalent.
+
+Cell sg13g2_inv_1 (0) disconnected node: VDD
+Cell sg13g2_inv_1 (0) disconnected node: Y
+Cell sg13g2_inv_1 (0) disconnected node: A
+Cell sg13g2_inv_1 (0) disconnected node: VSS
+
+Subcircuit pins:
+Circuit 1: sg13g2_inv_1                    |Circuit 2: sg13g2_inv_1                    
+-------------------------------------------|-------------------------------------------
+VDD                                        |VDD                                        
+Y                                          |Y                                          
+A                                          |A                                          
+VSS                                        |VSS                                        
+---------------------------------------------------------------------------------------
+Cell pin lists are equivalent.
+Device classes sg13g2_inv_1 and sg13g2_inv_1 are equivalent.
+
+Cell sg13g2_tiehi (0) disconnected node: VDD
+Cell sg13g2_tiehi (0) disconnected node: VSS
+Cell sg13g2_tiehi (0) disconnected node: L_HI
+
+Subcircuit pins:
+Circuit 1: sg13g2_tiehi                    |Circuit 2: sg13g2_tiehi                    
+-------------------------------------------|-------------------------------------------
+VDD                                        |VDD                                        
+VSS                                        |VSS                                        
+L_HI                                       |L_HI                                       
+---------------------------------------------------------------------------------------
+Cell pin lists are equivalent.
+Device classes sg13g2_tiehi and sg13g2_tiehi are equivalent.
+
+Cell sg13g2_dfrbpq_1 (0) disconnected node: RESET_B
+Cell sg13g2_dfrbpq_1 (0) disconnected node: VSS
+Cell sg13g2_dfrbpq_1 (0) disconnected node: VDD
+Cell sg13g2_dfrbpq_1 (0) disconnected node: D
+Cell sg13g2_dfrbpq_1 (0) disconnected node: Q
+Cell sg13g2_dfrbpq_1 (0) disconnected node: CLK
+
+Subcircuit pins:
+Circuit 1: sg13g2_dfrbpq_1                 |Circuit 2: sg13g2_dfrbpq_1                 
+-------------------------------------------|-------------------------------------------
+RESET_B                                    |RESET_B                                    
+VSS                                        |VSS                                        
+VDD                                        |VDD                                        
+D                                          |D                                          
+Q                                          |Q                                          
+CLK                                        |CLK                                        
+---------------------------------------------------------------------------------------
+Cell pin lists are equivalent.
+Device classes sg13g2_dfrbpq_1 and sg13g2_dfrbpq_1 are equivalent.
+
+Cell sg13g2_a21oi_1 (0) disconnected node: VSS
+Cell sg13g2_a21oi_1 (0) disconnected node: VDD
+Cell sg13g2_a21oi_1 (0) disconnected node: A1
+Cell sg13g2_a21oi_1 (0) disconnected node: A2
+Cell sg13g2_a21oi_1 (0) disconnected node: Y
+Cell sg13g2_a21oi_1 (0) disconnected node: B1
+
+Subcircuit pins:
+Circuit 1: sg13g2_a21oi_1                  |Circuit 2: sg13g2_a21oi_1                  
+-------------------------------------------|-------------------------------------------
+VSS                                        |VSS                                        
+VDD                                        |VDD                                        
+A1                                         |A1                                         
+A2                                         |A2                                         
+Y                                          |Y                                          
+B1                                         |B1                                         
+---------------------------------------------------------------------------------------
+Cell pin lists are equivalent.
+Device classes sg13g2_a21oi_1 and sg13g2_a21oi_1 are equivalent.
+
+Cell sg13g2_a21o_1 (0) disconnected node: A2
+Cell sg13g2_a21o_1 (0) disconnected node: A1
+Cell sg13g2_a21o_1 (0) disconnected node: B1
+Cell sg13g2_a21o_1 (0) disconnected node: X
+Cell sg13g2_a21o_1 (0) disconnected node: VDD
+Cell sg13g2_a21o_1 (0) disconnected node: VSS
+
+Subcircuit pins:
+Circuit 1: sg13g2_a21o_1                   |Circuit 2: sg13g2_a21o_1                   
+-------------------------------------------|-------------------------------------------
+A2                                         |A2                                         
+A1                                         |A1                                         
+B1                                         |B1                                         
+X                                          |X                                          
+VDD                                        |VDD                                        
+VSS                                        |VSS                                        
+---------------------------------------------------------------------------------------
+Cell pin lists are equivalent.
+Device classes sg13g2_a21o_1 and sg13g2_a21o_1 are equivalent.
+
+Cell sg13g2_antennanp (0) disconnected node: VDD
+Cell sg13g2_antennanp (0) disconnected node: VSS
+Cell sg13g2_antennanp (0) disconnected node: A
+
+Subcircuit pins:
+Circuit 1: sg13g2_antennanp                |Circuit 2: sg13g2_antennanp                
+-------------------------------------------|-------------------------------------------
+VDD                                        |VDD                                        
+VSS                                        |VSS                                        
+A                                          |A                                          
+---------------------------------------------------------------------------------------
+Cell pin lists are equivalent.
+Device classes sg13g2_antennanp and sg13g2_antennanp are equivalent.
+
+Cell sg13g2_buf_8 (0) disconnected node: A
+Cell sg13g2_buf_8 (0) disconnected node: X
+Cell sg13g2_buf_8 (0) disconnected node: VDD
+Cell sg13g2_buf_8 (0) disconnected node: VSS
+
+Subcircuit pins:
+Circuit 1: sg13g2_buf_8                    |Circuit 2: sg13g2_buf_8                    
+-------------------------------------------|-------------------------------------------
+A                                          |A                                          
+X                                          |X                                          
+VDD                                        |VDD                                        
+VSS                                        |VSS                                        
+---------------------------------------------------------------------------------------
+Cell pin lists are equivalent.
+Device classes sg13g2_buf_8 and sg13g2_buf_8 are equivalent.
+
+Cell sg13g2_inv_8 (0) disconnected node: Y
+Cell sg13g2_inv_8 (0) disconnected node: A
+Cell sg13g2_inv_8 (0) disconnected node: VDD
+Cell sg13g2_inv_8 (0) disconnected node: VSS
+
+Subcircuit pins:
+Circuit 1: sg13g2_inv_8                    |Circuit 2: sg13g2_inv_8                    
+-------------------------------------------|-------------------------------------------
+Y                                          |Y                                          
+A                                          |A                                          
+VDD                                        |VDD                                        
+VSS                                        |VSS                                        
+---------------------------------------------------------------------------------------
+Cell pin lists are equivalent.
+Device classes sg13g2_inv_8 and sg13g2_inv_8 are equivalent.
+
+Cell sg13g2_buf_16 (0) disconnected node: X
+Cell sg13g2_buf_16 (0) disconnected node: A
+Cell sg13g2_buf_16 (0) disconnected node: VDD
+Cell sg13g2_buf_16 (0) disconnected node: VSS
+
+Subcircuit pins:
+Circuit 1: sg13g2_buf_16                   |Circuit 2: sg13g2_buf_16                   
+-------------------------------------------|-------------------------------------------
+X                                          |X                                          
+A                                          |A                                          
+VDD                                        |VDD                                        
+VSS                                        |VSS                                        
+---------------------------------------------------------------------------------------
+Cell pin lists are equivalent.
+Device classes sg13g2_buf_16 and sg13g2_buf_16 are equivalent.
+
+Cell sg13g2_inv_4 (0) disconnected node: A
+Cell sg13g2_inv_4 (0) disconnected node: Y
+Cell sg13g2_inv_4 (0) disconnected node: VDD
+Cell sg13g2_inv_4 (0) disconnected node: VSS
+
+Subcircuit pins:
+Circuit 1: sg13g2_inv_4                    |Circuit 2: sg13g2_inv_4                    
+-------------------------------------------|-------------------------------------------
+A                                          |A                                          
+Y                                          |Y                                          
+VDD                                        |VDD                                        
+VSS                                        |VSS                                        
+---------------------------------------------------------------------------------------
+Cell pin lists are equivalent.
+Device classes sg13g2_inv_4 and sg13g2_inv_4 are equivalent.
+
+Cell sg13g2_inv_2 (0) disconnected node: Y
+Cell sg13g2_inv_2 (0) disconnected node: A
+Cell sg13g2_inv_2 (0) disconnected node: VDD
+Cell sg13g2_inv_2 (0) disconnected node: VSS
+
+Subcircuit pins:
+Circuit 1: sg13g2_inv_2                    |Circuit 2: sg13g2_inv_2                    
+-------------------------------------------|-------------------------------------------
+Y                                          |Y                                          
+A                                          |A                                          
+VDD                                        |VDD                                        
+VSS                                        |VSS                                        
+---------------------------------------------------------------------------------------
+Cell pin lists are equivalent.
+Device classes sg13g2_inv_2 and sg13g2_inv_2 are equivalent.
+
+Cell dac128module (0) disconnected node: ON[64]
+Cell dac128module (0) disconnected node: ONB[64]
+Cell dac128module (0) disconnected node: ON[65]
+Cell dac128module (0) disconnected node: ONB[65]
+Cell dac128module (0) disconnected node: ON[66]
+Cell dac128module (0) disconnected node: ONB[66]
+Cell dac128module (0) disconnected node: ON[67]
+Cell dac128module (0) disconnected node: ONB[67]
+Cell dac128module (0) disconnected node: ON[68]
+Cell dac128module (0) disconnected node: ONB[68]
+Cell dac128module (0) disconnected node: ON[69]
+Cell dac128module (0) disconnected node: ONB[69]
+Cell dac128module (0) disconnected node: ON[70]
+Cell dac128module (0) disconnected node: ONB[70]
+Cell dac128module (0) disconnected node: ON[71]
+Cell dac128module (0) disconnected node: ONB[71]
+Cell dac128module (0) disconnected node: ON[72]
+Cell dac128module (0) disconnected node: ONB[72]
+Cell dac128module (0) disconnected node: EN[2]
+Cell dac128module (0) disconnected node: ENB[2]
+Cell dac128module (0) disconnected node: ON[73]
+Cell dac128module (0) disconnected node: ONB[73]
+Cell dac128module (0) disconnected node: ON[74]
+Cell dac128module (0) disconnected node: ONB[74]
+Cell dac128module (0) disconnected node: ON[75]
+Cell dac128module (0) disconnected node: ONB[75]
+Cell dac128module (0) disconnected node: ON[76]
+Cell dac128module (0) disconnected node: ONB[76]
+Cell dac128module (0) disconnected node: ON[77]
+Cell dac128module (0) disconnected node: ONB[77]
+Cell dac128module (0) disconnected node: ON[78]
+Cell dac128module (0) disconnected node: ONB[78]
+Cell dac128module (0) disconnected node: ON[79]
+Cell dac128module (0) disconnected node: ONB[79]
+Cell dac128module (0) disconnected node: ON[80]
+Cell dac128module (0) disconnected node: ONB[80]
+Cell dac128module (0) disconnected node: ON[81]
+Cell dac128module (0) disconnected node: ONB[81]
+Cell dac128module (0) disconnected node: ON[82]
+Cell dac128module (0) disconnected node: ONB[82]
+Cell dac128module (0) disconnected node: ON[83]
+Cell dac128module (0) disconnected node: ONB[83]
+Cell dac128module (0) disconnected node: ON[84]
+Cell dac128module (0) disconnected node: ONB[84]
+Cell dac128module (0) disconnected node: ON[85]
+Cell dac128module (0) disconnected node: ONB[85]
+Cell dac128module (0) disconnected node: ON[86]
+Cell dac128module (0) disconnected node: ONB[86]
+Cell dac128module (0) disconnected node: ON[87]
+Cell dac128module (0) disconnected node: ONB[87]
+Cell dac128module (0) disconnected node: ON[88]
+Cell dac128module (0) disconnected node: ONB[88]
+Cell dac128module (0) disconnected node: ON[89]
+Cell dac128module (0) disconnected node: ONB[89]
+Cell dac128module (0) disconnected node: ON[90]
+Cell dac128module (0) disconnected node: ONB[90]
+Cell dac128module (0) disconnected node: ON[91]
+Cell dac128module (0) disconnected node: ONB[91]
+Cell dac128module (0) disconnected node: ON[92]
+Cell dac128module (0) disconnected node: ONB[92]
+Cell dac128module (0) disconnected node: ON[93]
+Cell dac128module (0) disconnected node: ONB[93]
+Cell dac128module (0) disconnected node: ON[94]
+Cell dac128module (0) disconnected node: ONB[94]
+Cell dac128module (0) disconnected node: ON[95]
+Cell dac128module (0) disconnected node: ONB[95]
+Cell dac128module (0) disconnected node: ON[96]
+Cell dac128module (0) disconnected node: ONB[96]
+Cell dac128module (0) disconnected node: ON[97]
+Cell dac128module (0) disconnected node: ONB[97]
+Cell dac128module (0) disconnected node: ON[98]
+Cell dac128module (0) disconnected node: ONB[98]
+Cell dac128module (0) disconnected node: ON[99]
+Cell dac128module (0) disconnected node: ONB[99]
+Cell dac128module (0) disconnected node: ON[100]
+Cell dac128module (0) disconnected node: ONB[100]
+Cell dac128module (0) disconnected node: ON[101]
+Cell dac128module (0) disconnected node: ONB[101]
+Cell dac128module (0) disconnected node: ON[102]
+Cell dac128module (0) disconnected node: ONB[102]
+Cell dac128module (0) disconnected node: ON[103]
+Cell dac128module (0) disconnected node: ONB[103]
+Cell dac128module (0) disconnected node: ON[104]
+Cell dac128module (0) disconnected node: ONB[104]
+Cell dac128module (0) disconnected node: ON[105]
+Cell dac128module (0) disconnected node: ONB[105]
+Cell dac128module (0) disconnected node: ON[106]
+Cell dac128module (0) disconnected node: ONB[106]
+Cell dac128module (0) disconnected node: ON[107]
+Cell dac128module (0) disconnected node: ONB[107]
+Cell dac128module (0) disconnected node: ON[108]
+Cell dac128module (0) disconnected node: ONB[108]
+Cell dac128module (0) disconnected node: ON[109]
+Cell dac128module (0) disconnected node: ONB[109]
+Cell dac128module (0) disconnected node: ON[110]
+Cell dac128module (0) disconnected node: ONB[110]
+Cell dac128module (0) disconnected node: ON[111]
+Cell dac128module (0) disconnected node: ONB[111]
+Cell dac128module (0) disconnected node: ON[112]
+Cell dac128module (0) disconnected node: ONB[112]
+Cell dac128module (0) disconnected node: ON[113]
+Cell dac128module (0) disconnected node: ONB[113]
+Cell dac128module (0) disconnected node: ON[114]
+Cell dac128module (0) disconnected node: ONB[114]
+Cell dac128module (0) disconnected node: ON[115]
+Cell dac128module (0) disconnected node: ONB[115]
+Cell dac128module (0) disconnected node: ON[116]
+Cell dac128module (0) disconnected node: ONB[116]
+Cell dac128module (0) disconnected node: ON[117]
+Cell dac128module (0) disconnected node: ONB[117]
+Cell dac128module (0) disconnected node: ON[118]
+Cell dac128module (0) disconnected node: ONB[118]
+Cell dac128module (0) disconnected node: ON[119]
+Cell dac128module (0) disconnected node: ONB[119]
+Cell dac128module (0) disconnected node: ON[120]
+Cell dac128module (0) disconnected node: ONB[120]
+Cell dac128module (0) disconnected node: ON[121]
+Cell dac128module (0) disconnected node: ONB[121]
+Cell dac128module (0) disconnected node: ON[122]
+Cell dac128module (0) disconnected node: ONB[122]
+Cell dac128module (0) disconnected node: EN[3]
+Cell dac128module (0) disconnected node: ENB[3]
+Cell dac128module (0) disconnected node: ON[123]
+Cell dac128module (0) disconnected node: ONB[123]
+Cell dac128module (0) disconnected node: ON[124]
+Cell dac128module (0) disconnected node: ONB[124]
+Cell dac128module (0) disconnected node: ON[125]
+Cell dac128module (0) disconnected node: ONB[125]
+Cell dac128module (0) disconnected node: ON[126]
+Cell dac128module (0) disconnected node: ONB[126]
+Cell dac128module (0) disconnected node: ON[127]
+Cell dac128module (0) disconnected node: ONB[127]
+Cell dac128module (0) disconnected node: ON[0]
+Cell dac128module (0) disconnected node: ONB[0]
+Cell dac128module (0) disconnected node: ON[1]
+Cell dac128module (0) disconnected node: ONB[1]
+Cell dac128module (0) disconnected node: ON[2]
+Cell dac128module (0) disconnected node: ONB[2]
+Cell dac128module (0) disconnected node: ON[3]
+Cell dac128module (0) disconnected node: ONB[3]
+Cell dac128module (0) disconnected node: ON[4]
+Cell dac128module (0) disconnected node: ONB[4]
+Cell dac128module (0) disconnected node: ON[5]
+Cell dac128module (0) disconnected node: ONB[5]
+Cell dac128module (0) disconnected node: ON[6]
+Cell dac128module (0) disconnected node: EN[0]
+Cell dac128module (0) disconnected node: ENB[0]
+Cell dac128module (0) disconnected node: ONB[6]
+Cell dac128module (0) disconnected node: ON[7]
+Cell dac128module (0) disconnected node: ONB[7]
+Cell dac128module (0) disconnected node: ON[8]
+Cell dac128module (0) disconnected node: ONB[8]
+Cell dac128module (0) disconnected node: ON[9]
+Cell dac128module (0) disconnected node: ONB[9]
+Cell dac128module (0) disconnected node: ON[10]
+Cell dac128module (0) disconnected node: ONB[10]
+Cell dac128module (0) disconnected node: ON[11]
+Cell dac128module (0) disconnected node: ONB[11]
+Cell dac128module (0) disconnected node: ON[12]
+Cell dac128module (0) disconnected node: ONB[12]
+Cell dac128module (0) disconnected node: ON[13]
+Cell dac128module (0) disconnected node: ONB[13]
+Cell dac128module (0) disconnected node: ON[14]
+Cell dac128module (0) disconnected node: ONB[14]
+Cell dac128module (0) disconnected node: ON[15]
+Cell dac128module (0) disconnected node: ONB[15]
+Cell dac128module (0) disconnected node: ON[16]
+Cell dac128module (0) disconnected node: ONB[16]
+Cell dac128module (0) disconnected node: ON[17]
+Cell dac128module (0) disconnected node: ONB[17]
+Cell dac128module (0) disconnected node: ON[18]
+Cell dac128module (0) disconnected node: ONB[18]
+Cell dac128module (0) disconnected node: ON[19]
+Cell dac128module (0) disconnected node: ONB[19]
+Cell dac128module (0) disconnected node: ON[20]
+Cell dac128module (0) disconnected node: ONB[20]
+Cell dac128module (0) disconnected node: ON[21]
+Cell dac128module (0) disconnected node: ONB[21]
+Cell dac128module (0) disconnected node: ON[22]
+Cell dac128module (0) disconnected node: ONB[22]
+Cell dac128module (0) disconnected node: ON[23]
+Cell dac128module (0) disconnected node: ONB[23]
+Cell dac128module (0) disconnected node: ON[24]
+Cell dac128module (0) disconnected node: ONB[24]
+Cell dac128module (0) disconnected node: ON[25]
+Cell dac128module (0) disconnected node: ONB[25]
+Cell dac128module (0) disconnected node: ON[26]
+Cell dac128module (0) disconnected node: ONB[26]
+Cell dac128module (0) disconnected node: ON[27]
+Cell dac128module (0) disconnected node: ONB[27]
+Cell dac128module (0) disconnected node: ON[28]
+Cell dac128module (0) disconnected node: ONB[28]
+Cell dac128module (0) disconnected node: ON[29]
+Cell dac128module (0) disconnected node: ONB[29]
+Cell dac128module (0) disconnected node: ON[30]
+Cell dac128module (0) disconnected node: ONB[30]
+Cell dac128module (0) disconnected node: ON[31]
+Cell dac128module (0) disconnected node: ONB[31]
+Cell dac128module (0) disconnected node: ON[33]
+Cell dac128module (0) disconnected node: ONB[33]
+Cell dac128module (0) disconnected node: ON[32]
+Cell dac128module (0) disconnected node: ONB[32]
+Cell dac128module (0) disconnected node: ON[34]
+Cell dac128module (0) disconnected node: ONB[34]
+Cell dac128module (0) disconnected node: ON[35]
+Cell dac128module (0) disconnected node: ONB[35]
+Cell dac128module (0) disconnected node: ON[36]
+Cell dac128module (0) disconnected node: ONB[36]
+Cell dac128module (0) disconnected node: ON[37]
+Cell dac128module (0) disconnected node: ONB[37]
+Cell dac128module (0) disconnected node: ON[38]
+Cell dac128module (0) disconnected node: ONB[38]
+Cell dac128module (0) disconnected node: ON[39]
+Cell dac128module (0) disconnected node: ONB[39]
+Cell dac128module (0) disconnected node: ON[40]
+Cell dac128module (0) disconnected node: ONB[40]
+Cell dac128module (0) disconnected node: ON[41]
+Cell dac128module (0) disconnected node: ONB[41]
+Cell dac128module (0) disconnected node: ON[42]
+Cell dac128module (0) disconnected node: ONB[42]
+Cell dac128module (0) disconnected node: ON[43]
+Cell dac128module (0) disconnected node: ONB[43]
+Cell dac128module (0) disconnected node: ON[44]
+Cell dac128module (0) disconnected node: ONB[44]
+Cell dac128module (0) disconnected node: ON[45]
+Cell dac128module (0) disconnected node: ONB[45]
+Cell dac128module (0) disconnected node: ON[46]
+Cell dac128module (0) disconnected node: ONB[46]
+Cell dac128module (0) disconnected node: ON[47]
+Cell dac128module (0) disconnected node: ONB[47]
+Cell dac128module (0) disconnected node: ON[48]
+Cell dac128module (0) disconnected node: ONB[48]
+Cell dac128module (0) disconnected node: ON[49]
+Cell dac128module (0) disconnected node: ONB[49]
+Cell dac128module (0) disconnected node: ON[50]
+Cell dac128module (0) disconnected node: ONB[50]
+Cell dac128module (0) disconnected node: ON[51]
+Cell dac128module (0) disconnected node: ONB[51]
+Cell dac128module (0) disconnected node: ON[52]
+Cell dac128module (0) disconnected node: ONB[52]
+Cell dac128module (0) disconnected node: ON[53]
+Cell dac128module (0) disconnected node: ONB[53]
+Cell dac128module (0) disconnected node: ON[54]
+Cell dac128module (0) disconnected node: ONB[54]
+Cell dac128module (0) disconnected node: ON[55]
+Cell dac128module (0) disconnected node: ONB[55]
+Cell dac128module (0) disconnected node: ON[56]
+Cell dac128module (0) disconnected node: ONB[56]
+Cell dac128module (0) disconnected node: ON[57]
+Cell dac128module (0) disconnected node: ONB[57]
+Cell dac128module (0) disconnected node: ON[58]
+Cell dac128module (0) disconnected node: ONB[58]
+Cell dac128module (0) disconnected node: ON[59]
+Cell dac128module (0) disconnected node: ONB[59]
+Cell dac128module (0) disconnected node: ON[60]
+Cell dac128module (0) disconnected node: ONB[60]
+Cell dac128module (0) disconnected node: ON[61]
+Cell dac128module (0) disconnected node: ONB[61]
+Cell dac128module (0) disconnected node: ON[62]
+Cell dac128module (0) disconnected node: ONB[62]
+Cell dac128module (0) disconnected node: ON[63]
+Cell dac128module (0) disconnected node: ONB[63]
+Cell dac128module (0) disconnected node: EN[1]
+Cell dac128module (0) disconnected node: ENB[1]
+Cell dac128module (0) disconnected node: VSS
+Cell dac128module (0) disconnected node: VDD
+
+Subcircuit pins:
+Circuit 1: dac128module                    |Circuit 2: dac128module                    
+-------------------------------------------|-------------------------------------------
+ON[64]                                     |ON[64]                                     
+ONB[64]                                    |ONB[64]                                    
+ON[65]                                     |ON[65]                                     
+ONB[65]                                    |ONB[65]                                    
+ON[66]                                     |ON[66]                                     
+ONB[66]                                    |ONB[66]                                    
+ON[67]                                     |ON[67]                                     
+ONB[67]                                    |ONB[67]                                    
+ON[68]                                     |ON[68]                                     
+ONB[68]                                    |ONB[68]                                    
+ON[69]                                     |ON[69]                                     
+ONB[69]                                    |ONB[69]                                    
+ON[70]                                     |ON[70]                                     
+ONB[70]                                    |ONB[70]                                    
+ON[71]                                     |ON[71]                                     
+ONB[71]                                    |ONB[71]                                    
+ON[72]                                     |ON[72]                                     
+ONB[72]                                    |ONB[72]                                    
+EN[2]                                      |EN[2]                                      
+ENB[2]                                     |ENB[2]                                     
+ON[73]                                     |ON[73]                                     
+ONB[73]                                    |ONB[73]                                    
+ON[74]                                     |ON[74]                                     
+ONB[74]                                    |ONB[74]                                    
+ON[75]                                     |ON[75]                                     
+ONB[75]                                    |ONB[75]                                    
+ON[76]                                     |ON[76]                                     
+ONB[76]                                    |ONB[76]                                    
+ON[77]                                     |ON[77]                                     
+ONB[77]                                    |ONB[77]                                    
+ON[78]                                     |ON[78]                                     
+ONB[78]                                    |ONB[78]                                    
+ON[79]                                     |ON[79]                                     
+ONB[79]                                    |ONB[79]                                    
+ON[80]                                     |ON[80]                                     
+ONB[80]                                    |ONB[80]                                    
+ON[81]                                     |ON[81]                                     
+ONB[81]                                    |ONB[81]                                    
+ON[82]                                     |ON[82]                                     
+ONB[82]                                    |ONB[82]                                    
+ON[83]                                     |ON[83]                                     
+ONB[83]                                    |ONB[83]                                    
+ON[84]                                     |ON[84]                                     
+ONB[84]                                    |ONB[84]                                    
+ON[85]                                     |ON[85]                                     
+ONB[85]                                    |ONB[85]                                    
+ON[86]                                     |ON[86]                                     
+ONB[86]                                    |ONB[86]                                    
+ON[87]                                     |ON[87]                                     
+ONB[87]                                    |ONB[87]                                    
+ON[88]                                     |ON[88]                                     
+ONB[88]                                    |ONB[88]                                    
+ON[89]                                     |ON[89]                                     
+ONB[89]                                    |ONB[89]                                    
+ON[90]                                     |ON[90]                                     
+ONB[90]                                    |ONB[90]                                    
+ON[91]                                     |ON[91]                                     
+ONB[91]                                    |ONB[91]                                    
+ON[92]                                     |ON[92]                                     
+ONB[92]                                    |ONB[92]                                    
+ON[93]                                     |ON[93]                                     
+ONB[93]                                    |ONB[93]                                    
+ON[94]                                     |ON[94]                                     
+ONB[94]                                    |ONB[94]                                    
+ON[95]                                     |ON[95]                                     
+ONB[95]                                    |ONB[95]                                    
+ON[96]                                     |ON[96]                                     
+ONB[96]                                    |ONB[96]                                    
+ON[97]                                     |ON[97]                                     
+ONB[97]                                    |ONB[97]                                    
+ON[98]                                     |ON[98]                                     
+ONB[98]                                    |ONB[98]                                    
+ON[99]                                     |ON[99]                                     
+ONB[99]                                    |ONB[99]                                    
+ON[100]                                    |ON[100]                                    
+ONB[100]                                   |ONB[100]                                   
+ON[101]                                    |ON[101]                                    
+ONB[101]                                   |ONB[101]                                   
+ON[102]                                    |ON[102]                                    
+ONB[102]                                   |ONB[102]                                   
+ON[103]                                    |ON[103]                                    
+ONB[103]                                   |ONB[103]                                   
+ON[104]                                    |ON[104]                                    
+ONB[104]                                   |ONB[104]                                   
+ON[105]                                    |ON[105]                                    
+ONB[105]                                   |ONB[105]                                   
+ON[106]                                    |ON[106]                                    
+ONB[106]                                   |ONB[106]                                   
+ON[107]                                    |ON[107]                                    
+ONB[107]                                   |ONB[107]                                   
+ON[108]                                    |ON[108]                                    
+ONB[108]                                   |ONB[108]                                   
+ON[109]                                    |ON[109]                                    
+ONB[109]                                   |ONB[109]                                   
+ON[110]                                    |ON[110]                                    
+ONB[110]                                   |ONB[110]                                   
+ON[111]                                    |ON[111]                                    
+ONB[111]                                   |ONB[111]                                   
+ON[112]                                    |ON[112]                                    
+ONB[112]                                   |ONB[112]                                   
+ON[113]                                    |ON[113]                                    
+ONB[113]                                   |ONB[113]                                   
+ON[114]                                    |ON[114]                                    
+ONB[114]                                   |ONB[114]                                   
+ON[115]                                    |ON[115]                                    
+ONB[115]                                   |ONB[115]                                   
+ON[116]                                    |ON[116]                                    
+ONB[116]                                   |ONB[116]                                   
+ON[117]                                    |ON[117]                                    
+ONB[117]                                   |ONB[117]                                   
+ON[118]                                    |ON[118]                                    
+ONB[118]                                   |ONB[118]                                   
+ON[119]                                    |ON[119]                                    
+ONB[119]                                   |ONB[119]                                   
+ON[120]                                    |ON[120]                                    
+ONB[120]                                   |ONB[120]                                   
+ON[121]                                    |ON[121]                                    
+ONB[121]                                   |ONB[121]                                   
+ON[122]                                    |ON[122]                                    
+ONB[122]                                   |ONB[122]                                   
+EN[3]                                      |EN[3]                                      
+ENB[3]                                     |ENB[3]                                     
+ON[123]                                    |ON[123]                                    
+ONB[123]                                   |ONB[123]                                   
+ON[124]                                    |ON[124]                                    
+ONB[124]                                   |ONB[124]                                   
+ON[125]                                    |ON[125]                                    
+ONB[125]                                   |ONB[125]                                   
+ON[126]                                    |ON[126]                                    
+ONB[126]                                   |ONB[126]                                   
+ON[127]                                    |ON[127]                                    
+ONB[127]                                   |ONB[127]                                   
+ON[0]                                      |ON[0]                                      
+ONB[0]                                     |ONB[0]                                     
+ON[1]                                      |ON[1]                                      
+ONB[1]                                     |ONB[1]                                     
+ON[2]                                      |ON[2]                                      
+ONB[2]                                     |ONB[2]                                     
+ON[3]                                      |ON[3]                                      
+ONB[3]                                     |ONB[3]                                     
+ON[4]                                      |ON[4]                                      
+ONB[4]                                     |ONB[4]                                     
+ON[5]                                      |ON[5]                                      
+ONB[5]                                     |ONB[5]                                     
+ON[6]                                      |ON[6]                                      
+EN[0]                                      |EN[0]                                      
+ENB[0]                                     |ENB[0]                                     
+ONB[6]                                     |ONB[6]                                     
+ON[7]                                      |ON[7]                                      
+ONB[7]                                     |ONB[7]                                     
+ON[8]                                      |ON[8]                                      
+ONB[8]                                     |ONB[8]                                     
+ON[9]                                      |ON[9]                                      
+ONB[9]                                     |ONB[9]                                     
+ON[10]                                     |ON[10]                                     
+ONB[10]                                    |ONB[10]                                    
+ON[11]                                     |ON[11]                                     
+ONB[11]                                    |ONB[11]                                    
+ON[12]                                     |ON[12]                                     
+ONB[12]                                    |ONB[12]                                    
+ON[13]                                     |ON[13]                                     
+ONB[13]                                    |ONB[13]                                    
+ON[14]                                     |ON[14]                                     
+ONB[14]                                    |ONB[14]                                    
+ON[15]                                     |ON[15]                                     
+ONB[15]                                    |ONB[15]                                    
+ON[16]                                     |ON[16]                                     
+ONB[16]                                    |ONB[16]                                    
+ON[17]                                     |ON[17]                                     
+ONB[17]                                    |ONB[17]                                    
+ON[18]                                     |ON[18]                                     
+ONB[18]                                    |ONB[18]                                    
+ON[19]                                     |ON[19]                                     
+ONB[19]                                    |ONB[19]                                    
+ON[20]                                     |ON[20]                                     
+ONB[20]                                    |ONB[20]                                    
+ON[21]                                     |ON[21]                                     
+ONB[21]                                    |ONB[21]                                    
+ON[22]                                     |ON[22]                                     
+ONB[22]                                    |ONB[22]                                    
+ON[23]                                     |ON[23]                                     
+ONB[23]                                    |ONB[23]                                    
+ON[24]                                     |ON[24]                                     
+ONB[24]                                    |ONB[24]                                    
+ON[25]                                     |ON[25]                                     
+ONB[25]                                    |ONB[25]                                    
+ON[26]                                     |ON[26]                                     
+ONB[26]                                    |ONB[26]                                    
+ON[27]                                     |ON[27]                                     
+ONB[27]                                    |ONB[27]                                    
+ON[28]                                     |ON[28]                                     
+ONB[28]                                    |ONB[28]                                    
+ON[29]                                     |ON[29]                                     
+ONB[29]                                    |ONB[29]                                    
+ON[30]                                     |ON[30]                                     
+ONB[30]                                    |ONB[30]                                    
+ON[31]                                     |ON[31]                                     
+ONB[31]                                    |ONB[31]                                    
+ON[33]                                     |ON[33]                                     
+ONB[33]                                    |ONB[33]                                    
+ON[32]                                     |ON[32]                                     
+ONB[32]                                    |ONB[32]                                    
+ON[34]                                     |ON[34]                                     
+ONB[34]                                    |ONB[34]                                    
+ON[35]                                     |ON[35]                                     
+ONB[35]                                    |ONB[35]                                    
+ON[36]                                     |ON[36]                                     
+ONB[36]                                    |ONB[36]                                    
+ON[37]                                     |ON[37]                                     
+ONB[37]                                    |ONB[37]                                    
+ON[38]                                     |ON[38]                                     
+ONB[38]                                    |ONB[38]                                    
+ON[39]                                     |ON[39]                                     
+ONB[39]                                    |ONB[39]                                    
+ON[40]                                     |ON[40]                                     
+ONB[40]                                    |ONB[40]                                    
+ON[41]                                     |ON[41]                                     
+ONB[41]                                    |ONB[41]                                    
+ON[42]                                     |ON[42]                                     
+ONB[42]                                    |ONB[42]                                    
+ON[43]                                     |ON[43]                                     
+ONB[43]                                    |ONB[43]                                    
+ON[44]                                     |ON[44]                                     
+ONB[44]                                    |ONB[44]                                    
+ON[45]                                     |ON[45]                                     
+ONB[45]                                    |ONB[45]                                    
+ON[46]                                     |ON[46]                                     
+ONB[46]                                    |ONB[46]                                    
+ON[47]                                     |ON[47]                                     
+ONB[47]                                    |ONB[47]                                    
+ON[48]                                     |ON[48]                                     
+ONB[48]                                    |ONB[48]                                    
+ON[49]                                     |ON[49]                                     
+ONB[49]                                    |ONB[49]                                    
+ON[50]                                     |ON[50]                                     
+ONB[50]                                    |ONB[50]                                    
+ON[51]                                     |ON[51]                                     
+ONB[51]                                    |ONB[51]                                    
+ON[52]                                     |ON[52]                                     
+ONB[52]                                    |ONB[52]                                    
+ON[53]                                     |ON[53]                                     
+ONB[53]                                    |ONB[53]                                    
+ON[54]                                     |ON[54]                                     
+ONB[54]                                    |ONB[54]                                    
+ON[55]                                     |ON[55]                                     
+ONB[55]                                    |ONB[55]                                    
+ON[56]                                     |ON[56]                                     
+ONB[56]                                    |ONB[56]                                    
+ON[57]                                     |ON[57]                                     
+ONB[57]                                    |ONB[57]                                    
+ON[58]                                     |ON[58]                                     
+ONB[58]                                    |ONB[58]                                    
+ON[59]                                     |ON[59]                                     
+ONB[59]                                    |ONB[59]                                    
+ON[60]                                     |ON[60]                                     
+ONB[60]                                    |ONB[60]                                    
+ON[61]                                     |ON[61]                                     
+ONB[61]                                    |ONB[61]                                    
+ON[62]                                     |ON[62]                                     
+ONB[62]                                    |ONB[62]                                    
+ON[63]                                     |ON[63]                                     
+ONB[63]                                    |ONB[63]                                    
+EN[1]                                      |EN[1]                                      
+ENB[1]                                     |ENB[1]                                     
+VSS                                        |VSS                                        
+VDD                                        |VDD                                        
+---------------------------------------------------------------------------------------
+Cell pin lists are equivalent.
+Device classes dac128module and dac128module are equivalent.
+
+Cell sg13g2_nor2_1 (0) disconnected node: A
+Cell sg13g2_nor2_1 (0) disconnected node: B
+Cell sg13g2_nor2_1 (0) disconnected node: Y
+Cell sg13g2_nor2_1 (0) disconnected node: VDD
+Cell sg13g2_nor2_1 (0) disconnected node: VSS
+
+Subcircuit pins:
+Circuit 1: sg13g2_nor2_1                   |Circuit 2: sg13g2_nor2_1                   
+-------------------------------------------|-------------------------------------------
+A                                          |A                                          
+B                                          |B                                          
+Y                                          |Y                                          
+VDD                                        |VDD                                        
+VSS                                        |VSS                                        
+---------------------------------------------------------------------------------------
+Cell pin lists are equivalent.
+Device classes sg13g2_nor2_1 and sg13g2_nor2_1 are equivalent.
+
+Cell heichips25_pudding (0) disconnected node: ena
+Cell heichips25_pudding (0) disconnected node: ui_in[6]
+Cell heichips25_pudding (0) disconnected node: ui_in[7]
+Cell heichips25_pudding (0) disconnected node: uio_in[0]
+Cell heichips25_pudding (0) disconnected node: uio_in[1]
+Cell heichips25_pudding (0) disconnected node: uio_in[2]
+Cell heichips25_pudding (0) disconnected node: uio_in[3]
+Cell heichips25_pudding (0) disconnected node: uio_in[4]
+Cell heichips25_pudding (0) disconnected node: uio_in[5]
+Cell heichips25_pudding (0) disconnected node: uio_in[6]
+Cell heichips25_pudding (0) disconnected node: uio_in[7]
+Cell heichips25_pudding (1) disconnected node: ena
+Cell heichips25_pudding (1) disconnected node: ui_in[7]
+Cell heichips25_pudding (1) disconnected node: ui_in[6]
+Cell heichips25_pudding (1) disconnected node: uio_in[7]
+Cell heichips25_pudding (1) disconnected node: uio_in[6]
+Cell heichips25_pudding (1) disconnected node: uio_in[5]
+Cell heichips25_pudding (1) disconnected node: uio_in[4]
+Cell heichips25_pudding (1) disconnected node: uio_in[3]
+Cell heichips25_pudding (1) disconnected node: uio_in[2]
+Cell heichips25_pudding (1) disconnected node: uio_in[1]
+Cell heichips25_pudding (1) disconnected node: uio_in[0]
+Class heichips25_pudding (0):  Merged 5349 parallel devices.
+Class heichips25_pudding (1):  Merged 5349 parallel devices.
+Cell heichips25_pudding (0) disconnected node: ena
+Cell heichips25_pudding (0) disconnected node: ui_in[6]
+Cell heichips25_pudding (0) disconnected node: ui_in[7]
+Cell heichips25_pudding (0) disconnected node: uio_in[0]
+Cell heichips25_pudding (0) disconnected node: uio_in[1]
+Cell heichips25_pudding (0) disconnected node: uio_in[2]
+Cell heichips25_pudding (0) disconnected node: uio_in[3]
+Cell heichips25_pudding (0) disconnected node: uio_in[4]
+Cell heichips25_pudding (0) disconnected node: uio_in[5]
+Cell heichips25_pudding (0) disconnected node: uio_in[6]
+Cell heichips25_pudding (0) disconnected node: uio_in[7]
+Cell heichips25_pudding (1) disconnected node: ena
+Cell heichips25_pudding (1) disconnected node: ui_in[7]
+Cell heichips25_pudding (1) disconnected node: ui_in[6]
+Cell heichips25_pudding (1) disconnected node: uio_in[7]
+Cell heichips25_pudding (1) disconnected node: uio_in[6]
+Cell heichips25_pudding (1) disconnected node: uio_in[5]
+Cell heichips25_pudding (1) disconnected node: uio_in[4]
+Cell heichips25_pudding (1) disconnected node: uio_in[3]
+Cell heichips25_pudding (1) disconnected node: uio_in[2]
+Cell heichips25_pudding (1) disconnected node: uio_in[1]
+Cell heichips25_pudding (1) disconnected node: uio_in[0]
+Subcircuit summary:
+Circuit 1: heichips25_pudding              |Circuit 2: heichips25_pudding              
+-------------------------------------------|-------------------------------------------
+sg13g2_decap_8 (4130->1)                   |sg13g2_decap_8 (4130->1)                   
+sg13g2_fill_1 (493->1)                     |sg13g2_fill_1 (493->1)                     
+sg13g2_nand2_1 (128)                       |sg13g2_nand2_1 (128)                       
+sg13g2_a221oi_1 (128)                      |sg13g2_a221oi_1 (128)                      
+sg13g2_fill_2 (432->1)                     |sg13g2_fill_2 (432->1)                     
+sg13g2_decap_4 (298->1)                    |sg13g2_decap_4 (298->1)                    
+sg13g2_o21ai_1 (128)                       |sg13g2_o21ai_1 (128)                       
+sg13g2_buf_1 (244)                         |sg13g2_buf_1 (244)                         
+sg13g2_inv_1 (279)                         |sg13g2_inv_1 (279)                         
+sg13g2_tiehi (264)                         |sg13g2_tiehi (264)                         
+sg13g2_dfrbpq_1 (256)                      |sg13g2_dfrbpq_1 (256)                      
+sg13g2_a21oi_1 (256)                       |sg13g2_a21oi_1 (256)                       
+sg13g2_a21o_1 (128)                        |sg13g2_a21o_1 (128)                        
+sg13g2_antennanp (61)                      |sg13g2_antennanp (61)                      
+sg13g2_buf_8 (22)                          |sg13g2_buf_8 (22)                          
+sg13g2_inv_8 (2)                           |sg13g2_inv_8 (2)                           
+sg13g2_buf_16 (5)                          |sg13g2_buf_16 (5)                          
+sg13g2_inv_4 (2)                           |sg13g2_inv_4 (2)                           
+sg13g2_inv_2 (2)                           |sg13g2_inv_2 (2)                           
+dac128module (2)                           |dac128module (2)                           
+sg13g2_nor2_1 (1)                          |sg13g2_nor2_1 (1)                          
+Number of devices: 1912                    |Number of devices: 1912                    
+Number of nets: 1855                       |Number of nets: 1855                       
+---------------------------------------------------------------------------------------
+Resolving symmetries by property value.
+Resolving symmetries by pin name.
+Resolving symmetries by net name.
+Netlists match with 15 symmetries.
+
+Subcircuit pins:
+Circuit 1: heichips25_pudding              |Circuit 2: heichips25_pudding              
+-------------------------------------------|-------------------------------------------
+uio_oe[5]                                  |uio_oe[5]                                  
+uio_oe[4]                                  |uio_oe[4]                                  
+uio_oe[3]                                  |uio_oe[3]                                  
+uio_oe[2]                                  |uio_oe[2]                                  
+uio_oe[1]                                  |uio_oe[1]                                  
+uio_oe[7]                                  |uio_oe[7]                                  
+uio_oe[0]                                  |uio_oe[0]                                  
+uio_oe[6]                                  |uio_oe[6]                                  
+ui_in[2]                                   |ui_in[2]                                   
+ui_in[3]                                   |ui_in[3]                                   
+ui_in[1]                                   |ui_in[1]                                   
+ui_in[0]                                   |ui_in[0]                                   
+rst_n                                      |rst_n                                      
+ui_in[4]                                   |ui_in[4]                                   
+ui_in[5]                                   |ui_in[5]                                   
+uo_out[6]                                  |uo_out[6]                                  
+uio_out[0]                                 |uio_out[0]                                 
+uio_out[1]                                 |uio_out[1]                                 
+uio_out[2]                                 |uio_out[2]                                 
+uio_out[3]                                 |uio_out[3]                                 
+uio_out[4]                                 |uio_out[4]                                 
+uio_out[5]                                 |uio_out[5]                                 
+uio_out[6]                                 |uio_out[6]                                 
+uio_out[7]                                 |uio_out[7]                                 
+uo_out[0]                                  |uo_out[0]                                  
+uo_out[1]                                  |uo_out[1]                                  
+uo_out[2]                                  |uo_out[2]                                  
+uo_out[3]                                  |uo_out[3]                                  
+uo_out[4]                                  |uo_out[4]                                  
+uo_out[5]                                  |uo_out[5]                                  
+uo_out[7]                                  |uo_out[7]                                  
+clk                                        |clk                                        
+VPWR                                       |VPWR                                       
+VGND                                       |VGND                                       
+ena                                        |ena                                        
+ui_in[6]                                   |ui_in[6]                                   
+ui_in[7]                                   |ui_in[7]                                   
+uio_in[0]                                  |uio_in[0]                                  
+uio_in[1]                                  |uio_in[1]                                  
+uio_in[2]                                  |uio_in[2]                                  
+uio_in[3]                                  |uio_in[3]                                  
+uio_in[4]                                  |uio_in[4]                                  
+uio_in[5]                                  |uio_in[5]                                  
+uio_in[6]                                  |uio_in[6]                                  
+uio_in[7]                                  |uio_in[7]                                  
+---------------------------------------------------------------------------------------
+Cell pin lists are equivalent.
+Device classes heichips25_pudding and heichips25_pudding are equivalent.
+
+Final result: Circuits match uniquely.
+.

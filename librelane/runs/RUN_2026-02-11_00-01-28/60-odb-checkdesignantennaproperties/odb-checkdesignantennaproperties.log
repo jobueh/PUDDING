@@ -1,0 +1,12 @@
+[WARNING ORD-0039] .openroad ignored with -python
+[INFO ODB-0227] LEF file: /home/cmaier/.ciel/ciel/ihp-sg13g2/versions/c4b8b4e5e7a05f375cca3815d51b3a37721fbf5c/ihp-sg13g2/libs.ref/sg13g2_stdcell/lef/sg13g2_tech.lef, created 19 layers, 70 vias
+[INFO ODB-0227] LEF file: /home/cmaier/.ciel/ciel/ihp-sg13g2/versions/c4b8b4e5e7a05f375cca3815d51b3a37721fbf5c/ihp-sg13g2/libs.ref/sg13g2_stdcell/lef/sg13g2_stdcell.lef, created 84 library cells
+[INFO ODB-0227] LEF file: /home/cmaier/.ciel/ciel/ihp-sg13g2/versions/c4b8b4e5e7a05f375cca3815d51b3a37721fbf5c/ihp-sg13g2/libs.ref/sg13g2_io/lef/sg13g2_io.lef, created 22 library cells
+[WARNING ODB-0220] WARNING (LEFPARS-2008): NOWIREEXTENSIONATPIN statement is obsolete in version 5.6 or later.
+The NOWIREEXTENSIONATPIN statement will be ignored. See file /home/cmaier/EDA/PUDDING/librelane/runs/RUN_2026-02-11_00-01-28/59-magic-writelef/heichips25_pudding.lef at line 2.
+
+[INFO ODB-0227] LEF file: /home/cmaier/EDA/PUDDING/librelane/runs/RUN_2026-02-11_00-01-28/59-magic-writelef/heichips25_pudding.lef, created 1 library cells
+[INFO ODB-0127] Reading DEF file: /tmp/tmp7u2efzq0
+[INFO ODB-0128] Design: empty
+[INFO ODB-0134] Finished DEF file: /tmp/tmp7u2efzq0
+[WARNING] Cell 'heichips25_pudding' has (11) input pin(s) without antenna gate information. They might not be connected to a gate.
