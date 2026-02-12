@@ -2,6 +2,7 @@
 // SPDX-License-Identifier: Apache-2.0
 
 // Adapted from the Tiny Tapeout template
+// minimum design: 128 DAC sources only
 
 `default_nettype none
 
@@ -68,35 +69,22 @@ assign uo_out  = daisychain[127:120];
 assign uio_out = state[127:120];
 assign uio_oe  = 8'hFF;
 
-    digital4 digitalenL (
+    digital4 digitalen (
     .in(stateen[3:0]),
     .outp(stateenp[3:0]),
     .outn(stateenn[3:0])
-);
+    );
 
-    digital4 digitalenH (
-    .in(daisyen[3:0]),
-    .outp(daisyenp[3:0]),
-    .outn(daisyenn[3:0])
-);
 
-(* keep_hierarchy = "yes", keep = "yes" *) dac128module dacL (
+(* keep_hierarchy = "yes", keep = "yes" *) dac128module dac (
     .ON(state[127:0]),
     .ONB(~state[127:0]),
     .EN(stateenp[3:0]),
     .ENB(stateenn[3:0]),
     .VDD(VPWR),
     .VSS(VGND)
-);
+    );
 
-(* keep_hierarchy = "yes", keep = "yes" *) dac128module dacH (
-    .ON(daisychain[127:0]),
-    .ONB(~daisychain[127:0]),
-    .EN(daisyenp[3:0]),
-    .ENB(daisyenn[3:0]),
-    .VDD(VPWR),
-    .VSS(VGND)
-);
 endmodule
 
 module digital4(
