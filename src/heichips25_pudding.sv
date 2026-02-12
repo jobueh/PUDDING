@@ -25,9 +25,10 @@ module heichips25_pudding(
 //(* keep = "yes" *) wire VGND;
    
     // List all unused inputs to prevent warnings
-    wire _unused = &{ena, uio_in[7:0], ui_in[7:5], i_in, i_out};
+    wire[1:0] iref;
+    wire[1:0] bias;
+    wire _unused = &{ena, uio_in[7:0], ui_in[7:5], bias};
 
-    logic[3:0] daisyen, daisyenp, daisyenn;
     logic[3:0] stateen, stateenp, stateenn;
 
     logic datum, shift, transfer, dir;
@@ -35,6 +36,7 @@ module heichips25_pudding(
     logic[127:0] daisychain;
     logic[127:0] state;
 
+    assign iref     = {2{i_in}};
     assign datum    = ui_in[0];
     assign shift    = ui_in[1];
     assign transfer = ui_in[2];
@@ -78,6 +80,9 @@ assign uio_oe  = 8'hFF;
 
 
 (* keep_hierarchy = "yes", keep = "yes" *) dac128module dac (
+    .Iout(i_out),
+    .VcascP(iref),
+    .VbiasP(bias),
     .ON(state[127:0]),
     .ONB(~state[127:0]),
     .EN(stateenp[3:0]),
