@@ -81,7 +81,7 @@ timing__setup_r2r__ws,8.726697
 timing__setup_r2r_vio__count,0
 design__die__bbox,0.0 0.0 500.0 200.0
 design__core__bbox,2.88 3.78 496.8 192.78
-design__io,45
+design__io,47
 design__die__area,100000
 design__core__area,93350.9
 design__instance__count__stdcell,1811
@@ -139,7 +139,7 @@ antenna__violating__nets,0
 antenna__violating__pins,0
 route__antenna_violation__count,0
 antenna_diodes_count,0
-route__net,1815
+route__net,1817
 route__net__special,2
 route__drc_errors__iter:0,471
 route__wirelength__iter:0,57239
@@ -157,18 +157,18 @@ route__vias,10643
 route__vias__singlecut,10643
 route__vias__multicut,0
 flow__warnings__count:DRT-0349,10
-design__disconnected_pin__count,12
+design__disconnected_pin__count,14
 design__critical_disconnected_pin__count,0
 route__wirelength__max,678.53
 design__instance__count__class:fill_cell,5713
 design__instance__area__class:fill_cell,62159.5
-timing__unannotated_net__count__corner:nom_fast_1p32V_m40C,291
+timing__unannotated_net__count__corner:nom_fast_1p32V_m40C,293
 timing__unannotated_net_filtered__count__corner:nom_fast_1p32V_m40C,0
-timing__unannotated_net__count__corner:nom_slow_1p08V_125C,291
+timing__unannotated_net__count__corner:nom_slow_1p08V_125C,293
 timing__unannotated_net_filtered__count__corner:nom_slow_1p08V_125C,0
-timing__unannotated_net__count__corner:nom_typ_1p20V_25C,291
+timing__unannotated_net__count__corner:nom_typ_1p20V_25C,293
 timing__unannotated_net_filtered__count__corner:nom_typ_1p20V_25C,0
-timing__unannotated_net__count,291
+timing__unannotated_net__count,293
 timing__unannotated_net_filtered__count,0
 design_powergrid__voltage__worst__net:VPWR__corner:nom_typ_1p20V_25C,1.19624
 design_powergrid__drop__average__net:VPWR__corner:nom_typ_1p20V_25C,1.19993

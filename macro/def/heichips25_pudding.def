@@ -7617,7 +7617,7 @@ COMPONENTS 7525 ;
     - output8 sg13g2_buf_1 + SOURCE TIMING + PLACED ( 2880 45360 ) S ;
     - output9 sg13g2_buf_1 + SOURCE TIMING + PLACED ( 2880 49140 ) FN ;
 END COMPONENTS
-PINS 45 ;
+PINS 47 ;
     - VGND + NET VGND + SPECIAL + DIRECTION INOUT + USE GROUND
       + PORT
         + LAYER TopMetal2 ( -246960 -1100 ) ( 246960 1100 )
@@ -7699,6 +7699,14 @@ PINS 45 ;
       + PORT
         + LAYER Metal3 ( -200 -200 ) ( 200 200 )
         + PLACED ( 200 179340 ) N ;
+    - i_in + NET i_in + DIRECTION INOUT + USE SIGNAL
+      + PORT
+        + LAYER Metal3 ( -200 -200 ) ( 200 200 )
+        + PLACED ( 499800 49980 ) N ;
+    - i_out + NET i_out + DIRECTION INOUT + USE SIGNAL
+      + PORT
+        + LAYER Metal3 ( -200 -200 ) ( 200 200 )
+        + PLACED ( 499800 149940 ) N ;
     - rst_n + NET rst_n + DIRECTION INPUT + USE SIGNAL
       + PORT
         + LAYER Metal3 ( -200 -200 ) ( 200 200 )
@@ -15410,7 +15418,7 @@ SPECIALNETS 2 ;
       NEW Metal2 0 + SHAPE STRIPE ( 16480 7560 ) via2_3_2200_440_1_5_410_410
       NEW Metal1 0 + SHAPE STRIPE ( 16480 7560 ) via1_2_2200_440_1_5_410_410 ;
 END SPECIALNETS
-NETS 1817 ;
+NETS 1819 ;
     - VGND ( PIN VGND ) ( dac VSS ) + USE GROUND ;
     - VPWR ( PIN VPWR ) ( dac VDD ) + USE POWER ;
     - _0000_ ( dac ONB[0] ) ( _1412_ Y ) + USE SIGNAL
@@ -27108,6 +27116,8 @@ NETS 1817 ;
       NEW Metal2 ( 355200 113820 ) Via2_YX
       NEW Metal2 ( 362175 113820 ) Via2_YX ;
     - ena ( PIN ena ) + USE SIGNAL ;
+    - i_in ( PIN i_in ) + USE SIGNAL ;
+    - i_out ( PIN i_out ) + USE SIGNAL ;
     - net ( _2472_ RESET_B ) ( _2472__202 L_HI ) + USE SIGNAL
       + ROUTED Metal2 ( 396000 55020 ) ( * 59220 )
       NEW Metal2 ( 395040 55020 ) ( 396000 * )

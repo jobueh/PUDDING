@@ -97,6 +97,14 @@ library (heichips25_pudding) {
       direction : input;
       capacitance : 0.0000;
     }
+    pin("i_in") {
+      direction : inout;
+      capacitance : 0.0000;
+    }
+    pin("i_out") {
+      direction : inout;
+      capacitance : 0.0000;
+    }
     pin("rst_n") {
       direction : input;
       capacitance : 0.0028;

@@ -2,6 +2,8 @@ module heichips25_pudding (VGND,
     VPWR,
     clk,
     ena,
+    i_in,
+    i_out,
     rst_n,
     ui_in,
     uio_in,
@@ -12,6 +14,8 @@ module heichips25_pudding (VGND,
  inout VPWR;
  input clk;
  input ena;
+ inout i_in;
+ inout i_out;
  input rst_n;
  input [7:0] ui_in;
  input [7:0] uio_in;

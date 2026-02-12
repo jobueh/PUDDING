@@ -300,6 +300,22 @@ MACRO heichips25_pudding
         RECT 0.000 179.140 0.400 179.540 ;
     END
   END ena
+  PIN i_in
+    DIRECTION INOUT ;
+    USE SIGNAL ;
+    PORT
+      LAYER Metal3 ;
+        RECT 499.600 49.780 500.000 50.180 ;
+    END
+  END i_in
+  PIN i_out
+    DIRECTION INOUT ;
+    USE SIGNAL ;
+    PORT
+      LAYER Metal3 ;
+        RECT 499.600 149.740 500.000 150.140 ;
+    END
+  END i_out
   PIN rst_n
     DIRECTION INPUT ;
     USE SIGNAL ;
