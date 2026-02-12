@@ -3217,5 +3217,41 @@
   </cell>
  </cells>
  <items>
+  <item>
+   <tags />
+   <category>'M3.e'</category>
+   <cell>heichips25_pudding</cell>
+   <visited>false</visited>
+   <multiplicity>1</multiplicity>
+   <comment />
+   <image />
+   <values>
+    <value>edge-pair: (359.884,86.62;361.77,86.62)/(361.886,86.83;360,86.83)</value>
+   </values>
+  </item>
+  <item>
+   <tags />
+   <category>'M3.e'</category>
+   <cell>heichips25_pudding</cell>
+   <visited>false</visited>
+   <multiplicity>1</multiplicity>
+   <comment />
+   <image />
+   <values>
+    <value>edge-pair: (364.7,86.62;366.32,86.62)/(366.436,86.83;364.584,86.83)</value>
+   </values>
+  </item>
+  <item>
+   <tags />
+   <category>'M3.e'</category>
+   <cell>heichips25_pudding</cell>
+   <visited>false</visited>
+   <multiplicity>1</multiplicity>
+   <comment />
+   <image />
+   <values>
+    <value>edge-pair: (362.3,86.62;364.32,86.62)/(364.436,86.83;362.184,86.83)</value>
+   </values>
+  </item>
  </items>
 </report-database>
