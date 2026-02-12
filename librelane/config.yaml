@@ -44,7 +44,7 @@ USE_SLANG: true
 
 # reserve space for the DAC
 FP_OBSTRUCTIONS: 
-- [358, 38, 500, 68.33]
+- [358, 84, 500, 114.33]
 
 MACROS:
   dac128module:
@@ -56,7 +56,7 @@ MACROS:
 #     - dir::../src/dac128module.sv
     instances:
       dac:
-        location: [360, 40]
+        location: [360, 86]
         orientation: N
 
 # Connect macro power pins to the PDN
