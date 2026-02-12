@@ -80,7 +80,7 @@ assign uio_oe  = 8'hFF;
 
 
 (* keep_hierarchy = "yes", keep = "yes" *) dac128module dac (
-    .Iout(i_out),
+    .IOUT(i_out),
     .VcascP(iref),
     .VbiasP(bias),
     .ON(state[127:0]),
